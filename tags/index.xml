@@ -5,9 +5,55 @@
     <link>https://fdalvi.github.io/tags/</link>
     <description>Recent content in Tags on Fahim Dalvi</description>
     <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 05 Feb 2018 22:00:00 +0300</lastBuildDate>
     
 	<atom:link href="https://fdalvi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Chrome</title>
+      <link>https://fdalvi.github.io/tags/chrome/</link>
+      <pubDate>Mon, 05 Feb 2018 22:00:00 +0300</pubDate>
+      
+      <guid>https://fdalvi.github.io/tags/chrome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Network</title>
+      <link>https://fdalvi.github.io/tags/network/</link>
+      <pubDate>Mon, 05 Feb 2018 22:00:00 +0300</pubDate>
+      
+      <guid>https://fdalvi.github.io/tags/network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Puppeteer</title>
+      <link>https://fdalvi.github.io/tags/puppeteer/</link>
+      <pubDate>Mon, 05 Feb 2018 22:00:00 +0300</pubDate>
+      
+      <guid>https://fdalvi.github.io/tags/puppeteer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Testing</title>
+      <link>https://fdalvi.github.io/tags/testing/</link>
+      <pubDate>Mon, 05 Feb 2018 22:00:00 +0300</pubDate>
+      
+      <guid>https://fdalvi.github.io/tags/testing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Webapps</title>
+      <link>https://fdalvi.github.io/tags/webapps/</link>
+      <pubDate>Mon, 05 Feb 2018 22:00:00 +0300</pubDate>
+      
+      <guid>https://fdalvi.github.io/tags/webapps/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

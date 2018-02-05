@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='Puppeteer is an awesome way to run Chrome (or Chromium) in headless mode, i.e. load and interact with web pages without ever visually seeing them.
+ Why would this be useful?
+A headless browser is a great way to automate testing, even on remote server machines!
+ Puppeteer provides a nice interface through Node to script any interactions you can have with a page, like entering input in a textbox, clicking a button and so on.'>
+
+<meta property='og:title' content='Network throttling in Puppeteer • Fahim Dalvi'>
+<meta property='og:description' content='Puppeteer is an awesome way to run Chrome (or Chromium) in headless mode, i.e. load and interact with web pages without ever visually seeing them.
+ Why would this be useful?
+A headless browser is a great way to automate testing, even on remote server machines!
+ Puppeteer provides a nice interface through Node to script any interactions you can have with a page, like entering input in a textbox, clicking a button and so on.'>
+<meta property='og:url' content='https://fdalvi.github.io/blog/2018-02-05-puppeteer-network-throttle/'>
+<meta property='og:site_name' content='Fahim Dalvi'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/6c9adb6a0501da300bcdc582ade1e58d?s=256'><meta property='article:section' content='Blog'><meta property='article:tag' content='chrome'><meta property='article:tag' content='webapps'><meta property='article:tag' content='testing'><meta property='article:tag' content='network'><meta property='article:tag' content='puppeteer'><meta property='article:published_time' content='2018-02-05T22:00:00&#43;03:00'/><meta property='article:modified_time' content='2018-02-05T22:00:00&#43;03:00'/><meta name='twitter:card' content='summary'>
+
+<meta name="generator" content="Hugo 0.32.2" />
+
+  <title>Network throttling in Puppeteer • Fahim Dalvi</title>
+  <link rel='canonical' href='https://fdalvi.github.io/blog/2018-02-05-puppeteer-network-throttle/'>
+  
+  
+  <link rel='icon' href='/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.f0e8df71.css'><link rel='stylesheet' href='/css/custom.css'>
+</head>
+
+
+<body class='page type-blog'>
+  <div class='site'>
+
+    <a class='screen-reader' href='#main'>Skip to Content</a>
+
+    <header id='header' class='header-container'>
+      <div class='header site-header'>
+        <nav id='main-menu' class='main-menu-container' aria-label='Main Menu'>
+  <ul class='main-menu'>
+  <li>
+      <a href='/'>Home</a>
+    </li>
+  <li>
+      <a href='/projects/'>Projects</a>
+    </li>
+  <li>
+      <a href='/research/'>Research</a>
+    </li>
+  <li>
+      <a href='/teaching/'>Teaching</a>
+    </li>
+  <li>
+      <a href='/blog/'>Blog</a>
+    </li>
+  
+  </ul>
+</nav>
+
+        <div class='header-info'>
+          
+          <p class='site-title title'>Fahim Dalvi</p>
+          
+          <p class='site-description subtitle'>Software Engineer | Deep Learning Researcher | Mentor</p>
+        </div>
+      </div>
+    </header>
+
+
+<main id='main' class='main'>
+  <article lang='en' class='entry'>
+    <header class='header-container'>
+  <div class='header entry-header'>
+    <div class='header-info'>
+      <h1 class='title'>Network throttling in Puppeteer</h1>
+      
+
+    </div>
+    
+<div class='meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader'>Posted on </span>
+  <time class='date' datetime='2018-02-05T22:00:00&#43;03:00'>2018, Feb 05</time>
+</span>
+
+  <span class='byline'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M21,21V20c0-2.76-4-5-9-5s-9,2.24-9,5v1"/>
+  <path d="M16,6.37A4,4,0,1,1,12.63,3,4,4,0,0,1,16,6.37Z"/>
+  
+</svg>
+<span class='screen-reader'> by </span><a href='/authors/fdalvi'>Fahim Dalvi</a></span>
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+3 mins read
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+    
+    
+
+    <div class='entry-content'>
+  <p><a href="https://github.com/GoogleChrome/puppeteer" target="_blank">Puppeteer</a> is an awesome way to run Chrome (or Chromium) in <em>headless</em> mode, i.e. load and interact with web pages without ever visually seeing them.</p>
+
+<blockquote>
+<p>Why would this be useful?<br />
+A headless browser is a great way to automate testing, even on remote server machines!</p>
+</blockquote>
+
+<p>Puppeteer provides a nice interface through <a href="https://nodejs.org/en/" target="_blank">Node</a> to script any interactions you can have with a page, like entering input in a textbox, clicking a button and so on. It also allows you grab screenshots or convert web pages into PDFs.</p>
+
+<p>Now, Puppeteer does not come with support for Network throttling out of the box, but it does have a way to communicate directly with the <a href="https://developer.chrome.com/devtools" target="_blank">Chrome DevTools</a>, which have support for throttling. The DevTools property in question is <code>Network.emulateNetworkConditions</code>, and it expects a configuration with the following attributes:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">config</span> <span style="color:#f92672">=</span> {
+  <span style="color:#75715e">// Whether chrome should simulate
+</span><span style="color:#75715e"></span>  <span style="color:#75715e">// the absence of connectivity
+</span><span style="color:#75715e"></span>  <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+  <span style="color:#75715e">// Simulated download speed (bytes/s)
+</span><span style="color:#75715e"></span>  <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">500</span>,
+  <span style="color:#75715e">// Simulated upload speed (bytes/s)
+</span><span style="color:#75715e"></span>  <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">500</span>,
+  <span style="color:#75715e">// Simulated latency (ms)
+</span><span style="color:#75715e"></span>  <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">20</span>
+}</code></pre></div>
+
+<p>As an example, lets say you wanted to load this site with a <em>200 Kb/s</em> connection and <em>20 ms</em> latency, and take a screenshot before shutting down, you could use the following script:</p>
+
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style=";border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 1</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 2</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 3</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 4</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 5</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 6</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 7</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 8</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;"> 9</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">10</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">11</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">12</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">13</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">14</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">15</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">16</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">17</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">18</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">19</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">20</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">21</span><span style="color:#7c7c79;margin-right:0.4em;padding:00.4em00.4em;display:block;">22</span></code></pre></td>
+<td style=";vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">puppeteer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;puppeteer&#39;</span>)
+
+<span style="color:#a6e22e">puppeteer</span>.<span style="color:#a6e22e">launch</span>().<span style="color:#a6e22e">then</span>(<span style="color:#66d9ef">async</span> <span style="color:#a6e22e">browser</span> =&gt; {
+  <span style="color:#75715e">// Create a new tab
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">page</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">newPage</span>()
+
+  <span style="color:#75715e">// Connect to Chrome DevTools
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">client</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">target</span>().<span style="color:#a6e22e">createCDPSession</span>()
+
+  <span style="color:#75715e">// Set throttling property
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#39;Network.emulateNetworkConditions&#39;</span>, {
+    <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+    <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">200</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
+    <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">200</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
+    <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">20</span>
+  })
+
+  <span style="color:#75715e">// Navigate and take a screenshot
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">page</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#e6db74">&#39;https://fdalvi.github.io&#39;</span>)
+  <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">screenshot</span>({<span style="color:#a6e22e">path</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;screenshot.png&#39;</span>})
+  <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">close</span>()
+})</code></pre></td></tr></table>
+</div>
+</div>
+
+<p>Chrome DevTools also have some nice presets like 3G (and used to have a lot more!). Although the original presets are gone, a <a href="https://cs.chromium.org/chromium/src/tools/android/loading/emulation.py" target="_blank">source file in the Chromium repo</a> still has the presets, listed below for convenience. Just replace the second option in line 11 with <code>NETWORK_PRESETS['...']</code> to use the preset of your choice. These values are probably average values for each type of connection, and all of the <code>/ 8</code> operations are because network speed is commonly measured in <em>bits/s</em>, while DevTools expects the throughputs in <em>bytes/s</em>!</p>
+
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">NETWORK_PRESETS</span> <span style="color:#f92672">=</span> {
+  <span style="color:#e6db74">&#39;GPRS&#39;</span><span style="color:#f92672">:</span> {
+    <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+    <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">50</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
+    <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">20</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
+    <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">500</span>
+  },
+  <span style="color:#e6db74">&#39;Regular2G&#39;</span><span style="color:#f92672">:</span> {
+    <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+    <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">250</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
+    <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">50</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
+    <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">300</span>
+  },
+  <span style="color:#e6db74">&#39;Good2G&#39;</span><span style="color:#f92672">:</span> {
+    <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+    <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">450</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
+    <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">150</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
+    <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">150</span>
+  },
+  <span style="color:#e6db74">&#39;Regular3G&#39;</span><span style="color:#f92672">:</span> {
+    <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+    <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">750</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
+    <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">250</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
+    <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">100</span>
+  },
+  <span style="color:#e6db74">&#39;Good3G&#39;</span><span style="color:#f92672">:</span> {
+    <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+    <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1.5</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
+    <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">750</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
+    <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">40</span>
+  },
+  <span style="color:#e6db74">&#39;Regular4G&#39;</span><span style="color:#f92672">:</span> {
+    <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+    <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
+    <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
+    <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">20</span>
+  },
+  <span style="color:#e6db74">&#39;DSL&#39;</span><span style="color:#f92672">:</span> {
+    <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+    <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
+    <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
+    <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">5</span>
+  },
+  <span style="color:#e6db74">&#39;WiFi&#39;</span><span style="color:#f92672">:</span> {
+    <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+    <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">30</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
+    <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">15</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
+    <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>
+  }
+}</code></pre></div></p>
+
+</div>
+
+    
+<footer class='entry-footer-container'>
+  <div class='entry-footer'>
+  <div class='categories'>
+  <span class='taxonomyTerm-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+</span>
+  <span class='screen-reader'>Categories: </span><a class='category' href='/categories/techtips'>Techtips</a></div>
+<div class='tags'>
+  <span class='taxonomyTerm-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+</span>
+  <span class='screen-reader'>Tags: </span><a class='tag' href='/tags/chrome'>Chrome</a>, <a class='tag' href='/tags/webapps'>Webapps</a>, <a class='tag' href='/tags/testing'>Testing</a>, <a class='tag' href='/tags/network'>Network</a>, <a class='tag' href='/tags/puppeteer'>Puppeteer</a></div>
+
+  </div>
+</footer>
+
+
+  </article>
+  
+  
+</main>
+
+    <footer id='footer' class='footer-container'>
+      <div class='footer'>
+        <div class='social-menu-container'>
+  <nav aria-label='Social Menu'>
+    <ul class='social-menu'><li>
+        <a href='mailto:contact@example.com' target='_blank' rel='noopener'>
+          <span class='screen-reader'>Contact via Email</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://github.com/fdalvi' target='_blank' rel='noopener'>
+          <span class='screen-reader'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://linkedin.com/in/fdalvi' target='_blank' rel='noopener'>
+          <span class='screen-reader'>Open Linkedin account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path stroke-width="1.8" d="m5.839218,4.101561c0,1.211972 -0.974141,2.194011 -2.176459,2.194011s-2.176459,-0.982039 -2.176459,-2.194011c0,-1.211094 0.974141,-2.194011 2.176459,-2.194011s2.176459,0.982917 2.176459,2.194011zm0.017552,3.94922l-4.388022,0l0,14.04167l4.388022,0l0,-14.04167zm7.005038,0l-4.359939,0l0,14.04167l4.360816,0l0,-7.370999c0,-4.098413 5.291077,-4.433657 5.291077,0l0,7.370999l4.377491,0l0,-8.89101c0,-6.915523 -7.829986,-6.66365 -9.669445,-3.259423l0,-1.891237z"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://scholar.google.com/citations?user=uQGCv10AAAAJ' target='_blank' rel='noopener'>
+          <span class='screen-reader'>Open Google_scholar account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="m 21.328275,2.0024135 0,9.2003395 M 8.6946469,7.8499245 C 8.7093132,7.0626829 8.5847937,5.6137351 8.974154,4.9606655 9.5975597,3.9150339 9.8307613,3.5706847 10.771796,2.9710948 c 1.952751,-0.9885544 4.296697,0.6921318 4.296697,0.6921318 0.802938,0.5633891 1.671609,2.1003572 1.671609,2.1003572 L 18.10751,3.9389634 12.664268,2.1848034 9.1486088,3.5252042 6.0803816,7.6807366 m 9.1084104,3.4210684 c 0,0 0.649411,-0.633314 1.16841,-1.085735 0.461179,-0.4020173 0.516019,-0.7138532 0.600027,-0.9143396 0.179361,-0.4260207 0.26781,-0.9086204 0.26781,-1.4456774 0,-0.700605 -0.131107,-1.273996 -0.388464,-1.735025 -0.03055,-0.05304 0,0 -0.09651,-0.157448 l 4.58821,-3.7611665 -11.008856,0 -6.6476714,5.847511 5.0228993,-0.023624 c 0.2297796,1.2364085 0.619154,1.5748978 1.0191038,2.2220455 0.7438823,0.718552 1.1307993,1.193512 2.2155363,1.193512 0.253393,0 2.600615,-0.05638 2.841896,-0.08994 0,0 0.546169,1.198902 -0.133007,1.710039 -0.410959,0.30928 0.575624,1.304408 0.575624,1.304408 0,0 -5.576506,0.830968 -6.5223057,1.426284 -0.5420277,0.3385 -0.9779337,0.765847 -1.3068337,1.277621 -0.328918,0.515574 -0.492962,1.068544 -0.492962,1.664655 0,0.502491 0.10615,0.955033 0.32009,1.357362 0.21394,0.402417 0.492962,0.732871 0.839589,0.988803 0.345779,0.258672 0.7447117,0.473936 1.1950694,0.649418 0.4495537,0.174157 0.895903,0.297836 1.341351,0.367764 0.444036,0.06984 0.885521,0.104139 1.323077,0.104139 0.693237,0 1.387285,-0.09035 2.086939,-0.270163 0.698021,-0.181495 1.352643,-0.450067 1.964661,-0.806867 0.610393,-0.354503 1.107389,-0.837897 1.488596,-1.443645 0.380376,-0.6084 0.571028,-1.291942 0.571028,-2.048772 0,-0.573746 -0.11578,-1.095773 -0.34743,-1.569799 -0.229999,-0.47252 -0.511492,-0.8615 -0.84681,-1.163755 -0.334594,-0.302696 -2.189683,-1.837453 -2.189683,-1.837453"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</div>
+        <div class='copyright'>
+  <p>
+        
+          
+        
+      
+
+       &copy; 2017-2018 Fahim Dalvi. Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> and <a href="https://github.com/MunifTanjim/minimo" target="_blank">Minimo</a>
+  </p>
+</div>
+
+      </div>
+    </footer>
+
+  </div><script src='/assets/js/main.5871befd.js'></script></body>
+
+</html>
+

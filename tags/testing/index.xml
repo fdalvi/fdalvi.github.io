@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Testing on Fahim Dalvi</title>
+    <link>https://fdalvi.github.io/tags/testing/</link>
+    <description>Recent content in Testing on Fahim Dalvi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 05 Feb 2018 22:00:00 +0300</lastBuildDate>
+    
+	<atom:link href="https://fdalvi.github.io/tags/testing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Network throttling in Puppeteer</title>
+      <link>https://fdalvi.github.io/blog/2018-02-05-puppeteer-network-throttle/</link>
+      <pubDate>Mon, 05 Feb 2018 22:00:00 +0300</pubDate>
+      
+      <guid>https://fdalvi.github.io/blog/2018-02-05-puppeteer-network-throttle/</guid>
+      <description>Puppeteer is an awesome way to run Chrome (or Chromium) in headless mode, i.e. load and interact with web pages without ever visually seeing them.
+ Why would this be useful?
+A headless browser is a great way to automate testing, even on remote server machines!
+ Puppeteer provides a nice interface through Node to script any interactions you can have with a page, like entering input in a textbox, clicking a button and so on.</description>
+    </item>
+    
+  </channel>
+</rss>

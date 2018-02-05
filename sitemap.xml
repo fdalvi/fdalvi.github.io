@@ -4,6 +4,7 @@
   
   <url>
     <loc>https://fdalvi.github.io/</loc>
+    <lastmod>2018-02-05T22:00:00+03:00</lastmod>
   </url>
   
   <url>
@@ -19,6 +20,16 @@
   </url>
   
   <url>
+    <loc>https://fdalvi.github.io/blog/</loc>
+    <lastmod>2018-02-05T22:00:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://fdalvi.github.io/blog/2018-02-05-puppeteer-network-throttle/</loc>
+    <lastmod>2018-02-05T22:00:00+03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://fdalvi.github.io/authors/</loc>
     <priority>0</priority>
   </url>
@@ -29,12 +40,55 @@
   </url>
   
   <url>
+    <loc>https://fdalvi.github.io/tags/chrome/</loc>
+    <lastmod>2018-02-05T22:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://fdalvi.github.io/authors/fdalvi/</loc>
+    <lastmod>2018-02-05T22:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://fdalvi.github.io/tags/network/</loc>
+    <lastmod>2018-02-05T22:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://fdalvi.github.io/page/</loc>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://fdalvi.github.io/tags/puppeteer/</loc>
+    <lastmod>2018-02-05T22:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://fdalvi.github.io/tags/</loc>
+    <lastmod>2018-02-05T22:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://fdalvi.github.io/categories/techtips/</loc>
+    <lastmod>2018-02-05T22:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://fdalvi.github.io/tags/testing/</loc>
+    <lastmod>2018-02-05T22:00:00+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://fdalvi.github.io/tags/webapps/</loc>
+    <lastmod>2018-02-05T22:00:00+03:00</lastmod>
     <priority>0</priority>
   </url>
   
