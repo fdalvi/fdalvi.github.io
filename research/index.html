@@ -12,7 +12,7 @@
 <meta property='og:site_name' content='Fahim Dalvi'>
 <meta property='og:type' content='article'><meta property='article:section' content='Page'><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.32.2" />
+<meta name="generator" content="Hugo 0.37" />
 
   <title>Research • Fahim Dalvi</title>
   <link rel='canonical' href='https://fdalvi.github.io/research/'>
@@ -94,14 +94,362 @@ ga('send', 'pageview');
   
 
   <div class='container entry-content'>
-  <div class='align-center'>
-  <blockquote>
-<p>Minimalism is not a lack of something. It’s simply the perfect amount of something.
-— Nicholas Burroughs</p>
-</blockquote>
+  <p><h3> 2017 </h3>
 
+	<div class="research-entry">
+	<div class="research-thumb">
+		<img src="/research/2017-12-IWSLT-multidomain-nmt/thumbnail.jpg">
+	</div>
+	<div class="research-details">
+		<div class="research-title"><b>Neural Machine Translation Training in a Multi-Domain Scenario</b></div>
+		<div class="research-authors"> <i> Hassan Sajjad, Nadir Durrani, <span class='highlight-author'>Fahim Dalvi</span>, Yonatan Belinkov, Stephan Vogel </i> </div>
+		<div class="research-venue"><a href='http://workshop2017.iwslt.org'>International Workshop on Spoken Language Translation 2017</a></div>
+		<div class="research-abstract">	
+			In this paper, we explore alternative ways to train a neural machine translation system in a multi-domain scenario. We investigate data concatenation (with fine tuning), model stacking (multi-level fine tuning), data selection and weighted ensemble. Our findings show that the best translation quality can be achieved by building an initial system on a concatenation of available out-of-domain data and then fine-tuning it on in-domain data. Model stacking works best when training begins with the furthest out-of-domain data and the model is incrementally fine-tuned with the next furthest domain and so on. Data selection did not give the best results, but can be considered as a decent compromise between training time and translation quality. A weighted ensemble of different individual models performed better than data selection. It is beneficial in a scenario when there is no time for fine-tuning.
+		</div>
+		<div class="research-actions">
+			<div class="research-action" onclick="this.parentNode.previousElementSibling.classList.toggle('expanded')">Abstract</div>
+			<a class="research-action" href="/research/2017-12-IWSLT-multidomain-nmt/paper.pdf">PDF</a> 
+			<a class="research-action" href="/research/2017-12-IWSLT-multidomain-nmt/poster.pdf">Poster</a> 
+			<div class="research-action" onclick="this.parentNode.nextElementSibling.classList.toggle('expanded')">Cite (.bib)</div>
+			
+		</div>
+		
+			<div class="research-citation">	
+				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{sajjad2017iwslt,
+  title={Neural Machine Translation Training in a Multi-Domain Scenario},
+  author={Sajjad, Hassan and Durrani, Nadir and Dalvi, Fahim and Belinkov, Yonatan and Vogel, Stephan},
+  booktitle={International Workshop on Spoken Language Translation},
+  year={2017}
+}
+</code></pre></div>
+			</div>
+		
+	</div>
 </div>
 
+
+	<div class="research-entry">
+	<div class="research-thumb">
+		<img src="/research/2017-12-IWSLT-reordering-models/thumbnail.jpg">
+	</div>
+	<div class="research-details">
+		<div class="research-title"><b>Continuous Space Reordering Models for Phrase-based MT</b></div>
+		<div class="research-authors"> <i> Nadir Durrani, <span class='highlight-author'>Fahim Dalvi</span> </i> </div>
+		<div class="research-venue"><a href='http://workshop2017.iwslt.org'>International Workshop on Spoken Language Translation 2017</a></div>
+		<div class="research-abstract">	
+			Bilingual sequence models improve phrase-based translation and reordering by overcoming phrasal independence assumption and handling long range reordering. However, due to data sparsity, these models often fall back to very small context sizes. This problem has been previously addressed by learning sequences over generalized representations such as POS tags or word clusters. In this paper, we explore an alternative based on neural network models. More concretely we train neuralized versions of lexicalized reordering and the operation sequence models using feed-forward neural network. Our results show improvements of up to 0.6 and 0.5 BLEU points on top of the baseline German→English and English→German systems. We also observed improvements compared to the systems that used POS tags and word clusters to train these models. Because we modify the bilingual corpus to integrate reordering operations, this allows us to also train a sequence-to-sequence neural MT model having explicit reordering triggers. Our motivation was to directly enable reordering information in the encoder-decoder framework, which otherwise relies solely on the attention model to handle long range reordering. We tried both coarser and fine-grained reordering operations. However, these experiments did not yield any improvements over the baseline Neural MT systems.
+		</div>
+		<div class="research-actions">
+			<div class="research-action" onclick="this.parentNode.previousElementSibling.classList.toggle('expanded')">Abstract</div>
+			<a class="research-action" href="/research/2017-12-IWSLT-reordering-models/paper.pdf">PDF</a> 
+			
+			<div class="research-action" onclick="this.parentNode.nextElementSibling.classList.toggle('expanded')">Cite (.bib)</div>
+			
+		</div>
+		
+			<div class="research-citation">	
+				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{durrani2017iwslt,
+  title={Continuous Space Reordering Models for Phrase-based MT},
+  author={Durrani, Nadir and Dalvi, Fahim},
+  booktitle={International Workshop on Spoken Language Translation},
+  year={2017}
+}
+</code></pre></div>
+			</div>
+		
+	</div>
+</div>
+
+
+	<div class="research-entry">
+	<div class="research-thumb">
+		<img src="/research/2017-11-IJCNLP-improving-nmt/thumbnail.jpg">
+	</div>
+	<div class="research-details">
+		<div class="research-title"><b>Understanding and Improving Morphological Learning in the Neural Machine Translation Decoder</b></div>
+		<div class="research-authors"> <i> <span class='highlight-author'>Fahim Dalvi</span>, Nadir Durrani, Hassan Sajjad, Yonatan Belinkov, Stephan Vogel </i> </div>
+		<div class="research-venue"><a href='http://ijcnlp2017.org'> Eighth International Joint Conference on Natural Language Processing </a></div>
+		<div class="research-abstract">	
+			End-to-end training makes the neural machine translation (NMT) architecture simpler, yet elegant compared to traditional statistical machine translation (SMT). However, little is known about linguistic patterns of morphology, syntax and semantics learned during the training of NMT systems, and more importantly, which parts of the architecture are responsible for learning each of these phenomena. In this paper we i) analyze how much morphology an NMT decoder learns, and ii) investigate whether injecting target morphology into the decoder helps it produce better translations. To this end we present three methods: i) joint generation, ii) joint-data learning, and iii) multi-task learning. Our results show that explicit morphological information helps the decoder learn target language morphology and improves the translation quality by 0.2–0.6 BLEU points.
+		</div>
+		<div class="research-actions">
+			<div class="research-action" onclick="this.parentNode.previousElementSibling.classList.toggle('expanded')">Abstract</div>
+			<a class="research-action" href="/research/2017-11-IJCNLP-improving-nmt/paper.pdf">PDF</a> 
+			
+			<div class="research-action" onclick="this.parentNode.nextElementSibling.classList.toggle('expanded')">Cite (.bib)</div>
+			<a class="research-action" href="/research/2017-11-IJCNLP-improving-nmt/slides.pdf">Slides</a> 
+		</div>
+		
+			<div class="research-citation">	
+				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@InProceedings{I17-1015,
+  author =  &#34;Dalvi, Fahim
+    and Durrani, Nadir
+    and Sajjad, Hassan
+    and Belinkov, Yonatan
+    and Vogel, Stephan&#34;,
+  title =   &#34;Understanding and Improving Morphological Learning in the Neural Machine Translation Decoder&#34;,
+  booktitle =   &#34;Proceedings of the Eighth International Joint Conference on Natural Language Processing (Volume 1: Long Papers)&#34;,
+  year =  &#34;2017&#34;,
+  publisher =   &#34;Asian Federation of Natural Language Processing&#34;,
+  pages =   &#34;142--151&#34;,
+  location =  &#34;Taipei, Taiwan&#34;,
+  url =   &#34;http://aclweb.org/anthology/I17-1015&#34;
+}
+</code></pre></div>
+			</div>
+		
+	</div>
+</div>
+
+
+	<div class="research-entry">
+	<div class="research-thumb">
+		<img src="/research/2017-11-IJCNLP-nmt-layers/thumbnail.jpg">
+	</div>
+	<div class="research-details">
+		<div class="research-title"><b>Evaluating Layers of Representation in Neural Machine Translation on Part-of-Speech and Semantic Tagging Tasks</b></div>
+		<div class="research-authors"> <i> Yonatan Belinkov, Lluís Màrquez, Hassan Sajjad, Nadir Durrani, <span class='highlight-author'>Fahim Dalvi</span>, James Glass </i> </div>
+		<div class="research-venue"><a href='http://ijcnlp2017.org'> Eighth International Joint Conference on Natural Language Processing </a></div>
+		<div class="research-abstract">	
+			While neural machine translation (NMT) models provide improved translation quality in an elegant framework, it is less clear what they learn about language. Recent work has started evaluating the quality of vector representations learned by NMT models on morphological and syntactic tasks. In this paper, we investigate the representations learned at different layers of NMT encoders. We train NMT systems on parallel data and use the models to extract features for training a classifier on two tasks: part-of-speech and semantic tagging. We then measure the performance of the classifier as a proxy to the quality of the original NMT model for the given task. Our quantitative analysis yields interesting insights regarding representation learning in NMT models. For instance, we find that higher layers are better at learning semantics while lower layers tend to be better for part-of-speech tagging. We also observe little effect of the target language on source-side representations, especially in higher quality models.
+		</div>
+		<div class="research-actions">
+			<div class="research-action" onclick="this.parentNode.previousElementSibling.classList.toggle('expanded')">Abstract</div>
+			<a class="research-action" href="/research/2017-11-IJCNLP-nmt-layers/paper.pdf">PDF</a> 
+			
+			<div class="research-action" onclick="this.parentNode.nextElementSibling.classList.toggle('expanded')">Cite (.bib)</div>
+			
+		</div>
+		
+			<div class="research-citation">	
+				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@InProceedings{I17-1001,
+  author =  &#34;Belinkov, Yonatan
+    and M{<span style="color:#66d9ef">\`</span>a}rquez, Llu{<span style="color:#66d9ef">\&#39;</span>i}s
+    and Sajjad, Hassan
+    and Durrani, Nadir
+    and Dalvi, Fahim
+    and Glass, James&#34;,
+  title =   &#34;Evaluating Layers of Representation in Neural Machine Translation on Part-of-Speech and Semantic Tagging Tasks&#34;,
+  booktitle =   &#34;Proceedings of the Eighth International Joint Conference on Natural Language Processing (Volume 1: Long Papers)&#34;,
+  year =  &#34;2017&#34;,
+  publisher =   &#34;Asian Federation of Natural Language Processing&#34;,
+  pages =   &#34;1--10&#34;,
+  location =  &#34;Taipei, Taiwan&#34;,
+  url =   &#34;http://aclweb.org/anthology/I17-1001&#34;
+}
+</code></pre></div>
+			</div>
+		
+	</div>
+</div>
+
+
+	<div class="research-entry">
+	<div class="research-thumb">
+		<img src="/research/2017-07-ACL-challenging-morphology/thumbnail.jpg">
+	</div>
+	<div class="research-details">
+		<div class="research-title"><b>Challenging Language-Dependent Segmentation for Arabic: An Application to Machine Translation and Part-of-Speech Tagging</b></div>
+		<div class="research-authors"> <i> Hassan Sajjad, <span class='highlight-author'>Fahim Dalvi</span>, Nadir Durrani, Ahmed Abdelali, Yonatan Belinkov, Stephan Vogel  </i> </div>
+		<div class="research-venue"><a href='http://acl2017.org'>55th Annual Meeting of the Association for Computational Linguistics</a></div>
+		<div class="research-abstract">	
+			Word segmentation plays a pivotal role in improving any Arabic NLP application. Therefore, a lot of research has been spent in improving its accuracy. Off-the-shelf tools, however, are: i) complicated to use and ii) domain/dialect dependent. We explore three language-independent alternatives to morphological segmentation using: i) data-driven sub-word units, ii) characters as a unit of learning, and iii) word embeddings learned using a character CNN (Convolution Neural Network). On the tasks of Machine Translation and POS tagging, we found these methods to achieve close to, and occasionally surpass state-of-the-art performance. In our analysis, we show that a neural machine translation system is sensitive to the ratio of source and target tokens, and a ratio close to 1 or greater, gives optimal performance.
+		</div>
+		<div class="research-actions">
+			<div class="research-action" onclick="this.parentNode.previousElementSibling.classList.toggle('expanded')">Abstract</div>
+			<a class="research-action" href="/research/2017-07-ACL-challenging-morphology/paper.pdf">PDF</a> 
+			<a class="research-action" href="/research/2017-07-ACL-challenging-morphology/poster.pdf">Poster</a> 
+			<div class="research-action" onclick="this.parentNode.nextElementSibling.classList.toggle('expanded')">Cite (.bib)</div>
+			
+		</div>
+		
+			<div class="research-citation">	
+				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@InProceedings{P17-2095,
+  author =  &#34;Sajjad, Hassan
+    and Dalvi, Fahim
+    and Durrani, Nadir
+    and Abdelali, Ahmed
+    and Belinkov, Yonatan
+    and Vogel, Stephan&#34;,
+  title =   &#34;Challenging Language-Dependent Segmentation for Arabic: An Application to Machine Translation and Part-of-Speech Tagging&#34;,
+  booktitle =   &#34;Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)&#34;,
+  year =  &#34;2017&#34;,
+  publisher =   &#34;Association for Computational Linguistics&#34;,
+  pages =   &#34;601--607&#34;,
+  location =  &#34;Vancouver, Canada&#34;,
+  doi =   &#34;10.18653/v1/P17-2095&#34;,
+  url =   &#34;http://www.aclweb.org/anthology/P17-2095&#34;
+}</code></pre></div>
+			</div>
+		
+	</div>
+</div>
+
+
+	<div class="research-entry">
+	<div class="research-thumb">
+		<img src="/research/2017-07-ACL-nmt-morphology/thumbnail.jpg">
+	</div>
+	<div class="research-details">
+		<div class="research-title"><b>What do Neural Machine Translation Models Learn about Morphology?</b></div>
+		<div class="research-authors"> <i> Yonatan Belinkov, Nadir Durrani, <span class='highlight-author'>Fahim Dalvi</span>, Hassan Sajjad, James Glass   </i> </div>
+		<div class="research-venue"><a href='http://acl2017.org'>55th Annual Meeting of the Association for Computational Linguistics</a></div>
+		<div class="research-abstract">	
+			Neural machine translation (MT) models obtain state-of-the-art performance while maintaining a simple, end-to-end architecture. However, little is known about what these models learn about source and target languages during the training process. In this work, we analyze the representations learned by neural MT models at various levels of granularity and empirically evaluate the quality of the representations for learning morphology through extrinsic part-of-speech and morphological tagging tasks. We conduct a thorough investigation along several parameters: word-based vs. character-based representations, depth of the encoding layer, the identity of the target language, and encoder vs. decoder representations. Our data-driven, quantitative evaluation sheds light on important aspects in the neural MT system and its ability to capture word structure.
+		</div>
+		<div class="research-actions">
+			<div class="research-action" onclick="this.parentNode.previousElementSibling.classList.toggle('expanded')">Abstract</div>
+			<a class="research-action" href="/research/2017-07-ACL-nmt-morphology/paper.pdf">PDF</a> 
+			<a class="research-action" href="/research/2017-07-ACL-nmt-morphology/poster.pdf">Poster</a> 
+			<div class="research-action" onclick="this.parentNode.nextElementSibling.classList.toggle('expanded')">Cite (.bib)</div>
+			
+		</div>
+		
+			<div class="research-citation">	
+				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@InProceedings{P17-1080,
+  author =  &#34;Belinkov, Yonatan
+    and Durrani, Nadir
+    and Dalvi, Fahim
+    and Sajjad, Hassan
+    and Glass, James&#34;,
+  title =   &#34;What do Neural Machine Translation Models Learn about Morphology?&#34;,
+  booktitle =   &#34;Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)&#34;,
+  year =  &#34;2017&#34;,
+  publisher =   &#34;Association for Computational Linguistics&#34;,
+  pages =   &#34;861--872&#34;,
+  location =  &#34;Vancouver, Canada&#34;,
+  doi =   &#34;10.18653/v1/P17-1080&#34;,
+  url =   &#34;http://www.aclweb.org/anthology/P17-1080&#34;
+}
+</code></pre></div>
+			</div>
+		
+	</div>
+</div>
+
+
+	<div class="research-entry">
+	<div class="research-thumb">
+		<img src="/research/2017-04-EACL-Demo/thumbnail.jpg">
+	</div>
+	<div class="research-details">
+		<div class="research-title"><b>QCRI&#39;s Live Speech Translation System</b></div>
+		<div class="research-authors"> <i> <span class='highlight-author'>Fahim Dalvi</span>, Yifan Zhang, Sameer Khurana, Nadir Durrani, Hassan Sajjad Ahmed Abdelali, Hamdy Mubarak, Ahmed Ali, Stephan Vogel </i> </div>
+		<div class="research-venue"><a href='http://eacl2017.org'>European Chapter of the Association for Computational Linguistics 2017</a></div>
+		<div class="research-abstract">	
+			We present QCRI’s Arabic-to-English speech translation system. It features modern web technologies to capture live audio, and broadcasts Arabic transcriptions and English translations simultaneously. Our Kaldi-based ASR system uses the Time Delay Neural Network architecture, while our Machine Translation (MT) system uses both phrase-based and neural frameworks. Although our neural MT system is slower than the phrase-based system, it produces significantly better translations and is memory efficient.
+		</div>
+		<div class="research-actions">
+			<div class="research-action" onclick="this.parentNode.previousElementSibling.classList.toggle('expanded')">Abstract</div>
+			<a class="research-action" href="/research/2017-04-EACL-Demo/paper.pdf">PDF</a> 
+			
+			<div class="research-action" onclick="this.parentNode.nextElementSibling.classList.toggle('expanded')">Cite (.bib)</div>
+			
+		</div>
+		
+			<div class="research-citation">	
+				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@InProceedings{E17-3016,
+  author =  &#34;Dalvi, Fahim
+    and Zhang, Yifan
+    and Khurana, Sameer
+    and Durrani, Nadir
+    and Sajjad, Hassan
+    and Abdelali, Ahmed
+    and Mubarak, Hamdy
+    and Ali, Ahmed
+    and Vogel, Stephan&#34;,
+  title =   &#34;QCRI Live Speech Translation System&#34;,
+  booktitle =   &#34;Proceedings of the Software Demonstrations of the 15th Conference of the European Chapter of the Association for Computational Linguistics&#34;,
+  year =  &#34;2017&#34;,
+  publisher =   &#34;Association for Computational Linguistics&#34;,
+  pages =   &#34;61--64&#34;,
+  location =  &#34;Valencia, Spain&#34;,
+  url =   &#34;http://aclweb.org/anthology/E17-3016&#34;
+}
+</code></pre></div>
+			</div>
+		
+	</div>
+</div>
+
+</p>
+
+<p><h3> 2016 </h3>
+
+	<div class="research-entry">
+	<div class="research-thumb">
+		<img src="/research/2016-12-DSL-Dialect-ID/thumbnail.jpg">
+	</div>
+	<div class="research-details">
+		<div class="research-title"><b>QCRI @ DSL 2016: Spoken Arabic Dialect Identification Using Textual Features</b></div>
+		<div class="research-authors"> <i> Mohamed Eldesouki, <span class='highlight-author'>Fahim Dalvi</span>, Hassan Sajjad, and Kareem Darwish </i> </div>
+		<div class="research-venue"><a href='http://ttg.uni-saarland.de/vardial2016/'>The Third Workshop on NLP for Similar Languages, Varieties and Dialects (VarDial3)</a></div>
+		<div class="research-abstract">	
+			The paper describes the QCRI submissions to the shared task of automatic Arabic dialect classification into 5 Arabic variants, namely Egyptian, Gulf, Levantine, North-African (Maghrebi), and Modern Standard Arabic (MSA). The relatively small training set is automatically generated from an ASR system. To avoid over-fitting on such small data, we selected and designed features that capture the morphological essence of the different dialects. We submitted four runs to the Arabic sub-task. For all runs, we used a combined feature vector of character bigrams, trigrams, 4-grams, and 5-grams. We tried several machine-learning algorithms, namely Logistic Regres- sion, Naive Bayes, Neural Networks, and Support Vector Machines (SVM) with linear and string kernels. Our submitted runs used SVM with a linear kernel. In the closed submission, we got the best accuracy of 0.5136 and the third best weighted F1 score, with a difference of less than 0.002 from the best system.
+		</div>
+		<div class="research-actions">
+			<div class="research-action" onclick="this.parentNode.previousElementSibling.classList.toggle('expanded')">Abstract</div>
+			<a class="research-action" href="/research/2016-12-DSL-Dialect-ID/paper.pdf">PDF</a> 
+			
+			<div class="research-action" onclick="this.parentNode.nextElementSibling.classList.toggle('expanded')">Cite (.bib)</div>
+			
+		</div>
+		
+			<div class="research-citation">	
+				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@InProceedings{W16-4828,
+  author =  &#34;Eldesouki, Mohamed
+    and Dalvi, Fahim
+    and Sajjad, Hassan
+    and Darwish, Kareem&#34;,
+  title =   &#34;QCRI {<span style="color:#66d9ef">\$</span>}@{<span style="color:#66d9ef">\$</span>} DSL 2016: Spoken Arabic Dialect Identification Using Textual Features&#34;,
+  booktitle =   &#34;Proceedings of the Third Workshop on NLP for Similar Languages, Varieties      and Dialects (VarDial3)    &#34;,
+  year =  &#34;2016&#34;,
+  publisher =   &#34;The COLING 2016 Organizing Committee&#34;,
+  pages =   &#34;221--226&#34;,
+  location =  &#34;Osaka, Japan&#34;,
+  url =   &#34;http://www.aclweb.org/anthology/W16-4828&#34;
+}
+</code></pre></div>
+			</div>
+		
+	</div>
+</div>
+
+
+	<div class="research-entry">
+	<div class="research-thumb">
+		<img src="/research/2016-12-IWSLT/thumbnail.jpg">
+	</div>
+	<div class="research-details">
+		<div class="research-title"><b>QCRI Machine Translation Systems for IWSLT 16</b></div>
+		<div class="research-authors"> <i> Nadir Durrani, <span class='highlight-author'>Fahim Dalvi</span>, Hassan Sajjad, Stephan Vogel </i> </div>
+		<div class="research-venue"><a href='http://workshop2016.iwslt.org'>International Workshop on Spoken Language Translation 2016</a></div>
+		<div class="research-abstract">	
+			This paper describes QCRI’s machine translation systems for the IWSLT 2016 evaluation campaign. We participated in the Arabic→English and English→Arabic tracks. We built both Phrase-based and Neural machine translation models, in an effort to probe whether the newly emerged NMT framework surpasses the traditional phrase-based systems in Arabic-English language pairs. We trained a very strong phrase-based system including, a big language model, the Operation Sequence Model, Neural Network Joint Model and Class-based models along with different domain adaptation techniques such as MML filtering, mixture modeling and using fine tuning over NNJM model. However, a Neural MT system, trained by stacking data from different genres through fine-tuning, and applying ensemble over 8 models, beat our very strong phrase-based system by a significant 2 BLEU points margin in Arabic→English direction. We did not obtain similar gains in the other direction but were still able to outperform the phrase-based system. We also applied system combination on phrase-based and NMT outputs.
+		</div>
+		<div class="research-actions">
+			<div class="research-action" onclick="this.parentNode.previousElementSibling.classList.toggle('expanded')">Abstract</div>
+			<a class="research-action" href="/research/2016-12-IWSLT/paper.pdf">PDF</a> 
+			<a class="research-action" href="/research/2016-12-IWSLT/poster.pdf">Poster</a> 
+			<div class="research-action" onclick="this.parentNode.nextElementSibling.classList.toggle('expanded')">Cite (.bib)</div>
+			<a class="research-action" href="/research/2016-12-IWSLT/slides.pdf">Slides</a> 
+		</div>
+		
+			<div class="research-citation">	
+				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{durrani2016iwslt,
+  title={QCRI Machine Translation Systems for IWSLT 16},
+  author={Durrani, Nadir and Dalvi, Fahim and Sajjad, Hassan and Vogel, Stephan},
+  booktitle={International Workshop on Spoken Language Translation},
+  year={2016}
+}
+</code></pre></div>
+			</div>
+		
+	</div>
+</div>
+
+</p>
 
 </div>
 

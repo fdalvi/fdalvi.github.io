@@ -27,8 +27,7 @@ Distributed backend managing multiple machine translation engines built at QCRI 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://fdalvi.github.io/research/</guid>
-      <description> Minimalism is not a lack of something. It’s simply the perfect amount of something. — Nicholas Burroughs
-  </description>
+      <description>2017   Neural Machine Translation Training in a Multi-Domain Scenario  Hassan Sajjad, Nadir Durrani, Fahim Dalvi, Yonatan Belinkov, Stephan Vogel   International Workshop on Spoken Language Translation 2017 In this paper, we explore alternative ways to train a neural machine translation system in a multi-domain scenario. We investigate data concatenation (with fine tuning), model stacking (multi-level fine tuning), data selection and weighted ensemble. Our findings show that the best translation quality can be achieved by building an initial system on a concatenation of available out-of-domain data and then fine-tuning it on in-domain data.</description>
     </item>
     
     <item>
