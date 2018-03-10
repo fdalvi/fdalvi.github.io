@@ -37,8 +37,17 @@ Distributed backend managing multiple machine translation engines built at QCRI 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://fdalvi.github.io/teaching/</guid>
-      <description> Minimalism is not a lack of something. It’s simply the perfect amount of something. — Nicholas Burroughs
-  </description>
+      <description>15-213: Introduction to Computer Systems (Recitations) Carnegie Mellon University Qatar, Fall 2013 As a Teaching Assistant for the Introduction to Computer Systems course at CMU-Q, I prepared and delivered recitation sections weekly over the 14-week semester. These materials include the slides, code and illustrations that hopefully make Computer Systems more accessible!   </description>
+    </item>
+    
+    <item>
+      <title>15-213: Introduction to Computer Systems</title>
+      <link>https://fdalvi.github.io/teaching/2013-15213-computer-systems-cmuq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fdalvi.github.io/teaching/2013-15213-computer-systems-cmuq/</guid>
+      <description>As a Teaching Assistant for the course, part of my responsibilities was to prepare and deliver recitations every Thursday. These recitations reviewed the material from the week&amp;rsquo;s lectures, talked about assignments and just generally served as a platform to clear any lingering confusion or doubts. All these slides were created from scratch, but a lot of inspiration was drawn from previous recitations for the same course.
+ Week 1: Introduction [slides] Week 2: Floating point representations [slides] Week 3: Introduction to Assembly [slides] [code] Week 4: Assembly continued [slides] [code] Week 5: C Data-structures [slides] [code] Week 6: System Memory managment [slides] Week 7: Exam 1 preparation [slides] Week 8: C Signals and UNIX IO [slides] [code] Week 9: Virtual Memory [slides] [code] Week 10: Memory Allocation in C and Debugging tips [slides] Week 11: Exam 2 preparation [slides] Week 12: Proxies [slides] Week 13: Proxies continued and concurrency [slides] [code] Week 14: Final exam review [slides]  Feel free to use the above material for your own courses.</description>
     </item>
     
   </channel>
