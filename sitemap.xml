@@ -1,100 +1,398 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
-  <url>
-    <loc>https://fdalvi.github.io/</loc>
-    <lastmod>2018-02-05T22:00:00+03:00</lastmod>
-    <priority>1</priority>
-  </url>
+    <url>
+      <loc>https://fdalvi.github.io/</loc>
+      <lastmod>2018-02-05T22:00:00+03:00</lastmod>
+      <priority>1</priority>
+    </url>
   
-  <url>
-    <loc>https://fdalvi.github.io/projects/</loc>
-  </url>
+    <url>
+      <loc>https://fdalvi.github.io/projects/</loc>
+    </url>
   
-  <url>
-    <loc>https://fdalvi.github.io/research/</loc>
-  </url>
+    <url>
+      <loc>https://fdalvi.github.io/research/</loc>
+    </url>
+      <url>
+        <loc>https://fdalvi.github.io/research/2017-12-IWSLT-multidomain-nmt/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2017-12-IWSLT-multidomain-nmt/poster.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2017-12-IWSLT-reordering-models/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2017-11-IJCNLP-improving-nmt/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2017-11-IJCNLP-improving-nmt/slides.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2017-11-IJCNLP-nmt-layers/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2017-07-ACL-challenging-morphology/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2017-07-ACL-challenging-morphology/poster.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2017-07-ACL-nmt-morphology/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2017-07-ACL-nmt-morphology/poster.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2017-04-EACL-Demo/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2016-12-DSL-Dialect-ID/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2016-12-IWSLT/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2016-12-IWSLT/poster.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2016-12-IWSLT/slides.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/unpublished-2016-stanford-ee267/report.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/unpublished-2016-stanford-ee267/poster.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/unpublished-2016-stanford-231n/report.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/unpublished-2016-stanford-231n/poster.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/unpublished-2015-stanford-229/report.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/unpublished-2015-stanford-229/poster.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/unpublished-2015-stanford-231a/report.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/unpublished-2015-stanford-231a/slides.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/unpublished-2014-stanford-221/report.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/unpublished-2014-stanford-221/poster.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/unpublished-2013-met-qcri/report.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/unpublished-2013-met-qcri/poster.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/unpublished-2013-i-want-my-mommy/poster.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/unpublished-2012-riss/poster.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/unpublished-2012-malware-inc/report.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/unpublished-2012-malware-inc/poster.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/unpublished-2012-malware-inc/slides.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/unpublished-2011-hala-interface/poster.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
   
-  <url>
-    <loc>https://fdalvi.github.io/teaching/</loc>
-  </url>
+    <url>
+      <loc>https://fdalvi.github.io/teaching/</loc>
+    </url>
   
-  <url>
-    <loc>https://fdalvi.github.io/blog/</loc>
-    <lastmod>2018-02-05T22:00:00+03:00</lastmod>
-  </url>
+    <url>
+      <loc>https://fdalvi.github.io/blog/</loc>
+      <lastmod>2018-02-05T22:00:00+03:00</lastmod>
+    </url>
   
-  <url>
-    <loc>https://fdalvi.github.io/blog/2018-02-05-puppeteer-network-throttle/</loc>
-    <lastmod>2018-02-05T22:00:00+03:00</lastmod>
-  </url>
+    <url>
+      <loc>https://fdalvi.github.io/blog/2018-02-05-puppeteer-network-throttle/</loc>
+      <lastmod>2018-02-05T22:00:00+03:00</lastmod>
+    </url>
   
-  <url>
-    <loc>https://fdalvi.github.io/teaching/2013-15213-computer-systems-cmuq/</loc>
-  </url>
+    <url>
+      <loc>https://fdalvi.github.io/teaching/2013-15213-computer-systems-cmuq/</loc>
+    </url>
+      <url>
+        <loc>https://fdalvi.github.io/strong%3E%20Introduction%20%5B%3Ca%20href=%22/teaching/2013-15213-computer-systems-cmuq/rec-1.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/strong%3E%20Floating%20point%20representations%20%5B%3Ca%20href=%22/teaching/2013-15213-computer-systems-cmuq/rec-2.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/strong%3E%20Introduction%20to%20Assembly%20%5B%3Ca%20href=%22/teaching/2013-15213-computer-systems-cmuq/rec-3.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/strong%3E%20Assembly%20continued%20%5B%3Ca%20href=%22/teaching/2013-15213-computer-systems-cmuq/rec-4.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/strong%3E%20C%20Data-structures%20%5B%3Ca%20href=%22/teaching/2013-15213-computer-systems-cmuq/rec-5.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/strong%3E%20System%20Memory%20management%20%5B%3Ca%20href=%22/teaching/2013-15213-computer-systems-cmuq/rec-6.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/strong%3E%20Exam%201%20preparation%20%5B%3Ca%20href=%22/teaching/2013-15213-computer-systems-cmuq/rec-7.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/strong%3E%20C%20Signals%20and%20UNIX%20IO%20%5B%3Ca%20href=%22/teaching/2013-15213-computer-systems-cmuq/rec-8.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/strong%3E%20Virtual%20Memory%20%5B%3Ca%20href=%22/teaching/2013-15213-computer-systems-cmuq/rec-9.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/strong%3E%20Memory%20Allocation%20in%20C%20and%20Debugging%20tips%20%5B%3Ca%20href=%22/teaching/2013-15213-computer-systems-cmuq/rec-10.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/strong%3E%20Exam%202%20preparation%20%5B%3Ca%20href=%22/teaching/2013-15213-computer-systems-cmuq/rec-11.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/strong%3E%20Proxies%20%5B%3Ca%20href=%22/teaching/2013-15213-computer-systems-cmuq/rec-12.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/strong%3E%20Proxies%20continued%20and%20concurrency%20%5B%3Ca%20href=%22/teaching/2013-15213-computer-systems-cmuq/rec-13.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/strong%3E%20Final%20exam%20review%20%5B%3Ca%20href=%22/teaching/2013-15213-computer-systems-cmuq/rec-14.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
   
-  <url>
-    <loc>https://fdalvi.github.io/authors/</loc>
-    <priority>0</priority>
-  </url>
+    <url>
+      <loc>https://fdalvi.github.io/authors/</loc>
+      <priority>0</priority>
+    </url>
   
-  <url>
-    <loc>https://fdalvi.github.io/categories/</loc>
-    <priority>0</priority>
-  </url>
+    <url>
+      <loc>https://fdalvi.github.io/categories/</loc>
+      <priority>0</priority>
+    </url>
   
-  <url>
-    <loc>https://fdalvi.github.io/tags/chrome/</loc>
-    <lastmod>2018-02-05T22:00:00+03:00</lastmod>
-    <priority>0</priority>
-  </url>
+    <url>
+      <loc>https://fdalvi.github.io/tags/chrome/</loc>
+      <lastmod>2018-02-05T22:00:00+03:00</lastmod>
+      <priority>0</priority>
+    </url>
   
-  <url>
-    <loc>https://fdalvi.github.io/authors/fdalvi/</loc>
-    <lastmod>2018-02-05T22:00:00+03:00</lastmod>
-    <priority>0</priority>
-  </url>
+    <url>
+      <loc>https://fdalvi.github.io/teaching/2017-dgfs-cl/</loc>
+    </url>
+      <url>
+        <loc>//www.cedar.buffalo.edu/~srihari/CSE574/Chap1/LinearAlgebra.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/strong%3E%20Introduction%20&amp;%20Roadmap%20%5B%3Ca%20href=%22/teaching/2017-dgfs-cl/Lecture0.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/strong%3E%20Language%20&amp;%20Translation%20%5B%3Ca%20href=%22/teaching/2017-dgfs-cl/Lecture1.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/strong%3E%20Language%20Modeling%20%5B%3Ca%20href=%22/teaching/2017-dgfs-cl/Lecture2.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/strong%3E%20Machine%20Learning%20%5B%3Ca%20href=%22/teaching/2017-dgfs-cl/Lecture3.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/strong%3E%20Machine%20Learning%20II%20%5B%3Ca%20href=%22/teaching/2017-dgfs-cl/Lecture4.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/strong%3E%20Machine%20Learning%20and%20Neural%20Networks%20%5B%3Ca%20href=%22/teaching/2017-dgfs-cl/Lecture5.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/strong%3E%20Neural%20Network%20Language%20Models%20%5B%3Ca%20href=%22/teaching/2017-dgfs-cl/Lecture6.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/strong%3E%20Sequence%20to%20Sequence%20%5B%3Ca%20href=%22/teaching/2017-dgfs-cl/Lecture7.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/strong%3E%20Practical%20Neural%20MT%20%5B%3Ca%20href=%22/teaching/2017-dgfs-cl/Lecture8.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/strong%3E%20Analysis%20of%20Neural%20MT%20%5B%3Ca%20href=%22/teaching/2017-dgfs-cl/Lecture9.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/strong%3E%20Recent%20Advancements%20%5B%3Ca%20href=%22/teaching/2017-dgfs-cl/Lecture10.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
   
-  <url>
-    <loc>https://fdalvi.github.io/tags/network/</loc>
-    <lastmod>2018-02-05T22:00:00+03:00</lastmod>
-    <priority>0</priority>
-  </url>
+    <url>
+      <loc>https://fdalvi.github.io/authors/fdalvi/</loc>
+      <lastmod>2018-02-05T22:00:00+03:00</lastmod>
+      <priority>0</priority>
+    </url>
   
-  <url>
-    <loc>https://fdalvi.github.io/page/</loc>
-    <priority>0</priority>
-  </url>
+    <url>
+      <loc>https://fdalvi.github.io/tags/network/</loc>
+      <lastmod>2018-02-05T22:00:00+03:00</lastmod>
+      <priority>0</priority>
+    </url>
   
-  <url>
-    <loc>https://fdalvi.github.io/tags/puppeteer/</loc>
-    <lastmod>2018-02-05T22:00:00+03:00</lastmod>
-    <priority>0</priority>
-  </url>
+    <url>
+      <loc>https://fdalvi.github.io/page/</loc>
+      <priority>0</priority>
+    </url>
   
-  <url>
-    <loc>https://fdalvi.github.io/tags/</loc>
-    <lastmod>2018-02-05T22:00:00+03:00</lastmod>
-    <priority>0</priority>
-  </url>
+    <url>
+      <loc>https://fdalvi.github.io/tags/puppeteer/</loc>
+      <lastmod>2018-02-05T22:00:00+03:00</lastmod>
+      <priority>0</priority>
+    </url>
   
-  <url>
-    <loc>https://fdalvi.github.io/categories/techtips/</loc>
-    <lastmod>2018-02-05T22:00:00+03:00</lastmod>
-    <priority>0</priority>
-  </url>
+    <url>
+      <loc>https://fdalvi.github.io/tags/</loc>
+      <lastmod>2018-02-05T22:00:00+03:00</lastmod>
+      <priority>0</priority>
+    </url>
   
-  <url>
-    <loc>https://fdalvi.github.io/tags/testing/</loc>
-    <lastmod>2018-02-05T22:00:00+03:00</lastmod>
-    <priority>0</priority>
-  </url>
+    <url>
+      <loc>https://fdalvi.github.io/categories/techtips/</loc>
+      <lastmod>2018-02-05T22:00:00+03:00</lastmod>
+      <priority>0</priority>
+    </url>
   
-  <url>
-    <loc>https://fdalvi.github.io/tags/webapps/</loc>
-    <lastmod>2018-02-05T22:00:00+03:00</lastmod>
-    <priority>0</priority>
-  </url>
+    <url>
+      <loc>https://fdalvi.github.io/tags/testing/</loc>
+      <lastmod>2018-02-05T22:00:00+03:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/webapps/</loc>
+      <lastmod>2018-02-05T22:00:00+03:00</lastmod>
+      <priority>0</priority>
+    </url>
   
 </urlset>
