@@ -70,6 +70,11 @@
       </url>
     
       <url>
+        <loc>https://fdalvi.github.io/research/2017-04-EACL-Demo/poster.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
         <loc>https://fdalvi.github.io/research/2016-12-DSL-Dialect-ID/paper.pdf</loc>
         <priority>0.4</priority>
       </url>
