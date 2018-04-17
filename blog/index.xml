@@ -5,10 +5,20 @@
     <link>https://fdalvi.github.io/blog/</link>
     <description>Recent content in Blog on Fahim Dalvi</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 07 Apr 2018 20:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 15 Apr 2018 19:00:00 +0300</lastBuildDate>
     
 	<atom:link href="https://fdalvi.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Deep Learning for NLP Crash course @ Uni Duisburg-Essen</title>
+      <link>https://fdalvi.github.io/blog/2018-04-15-dl4nlp-duisburg/</link>
+      <pubDate>Sun, 15 Apr 2018 19:00:00 +0300</pubDate>
+      
+      <guid>https://fdalvi.github.io/blog/2018-04-15-dl4nlp-duisburg/</guid>
+      <description>Hassan Sajjad and I just had a great time delivering a 5-day crash course at the Universität Duisburg-Essen. It was delivers roughly over 18 hours - with quite a lot of practical exercises! Check out the course materials.
+Duisburg was a nice and calm place, not a lot of crowded places. A döner place was ready to greet you almost around every corner, and the Königstraße was super-lively with a lot of pop-up shops and restaurants.</description>
+    </item>
     
     <item>
       <title>One-Hot layer using Keras Sequential API</title>

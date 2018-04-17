@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='Hassan Sajjad and I just had a great time delivering a 5-day crash course at the Universität Duisburg-Essen. It was delivers roughly over 18 hours - with quite a lot of practical exercises! Check out the course materials.
+Duisburg was a nice and calm place, not a lot of crowded places. A döner place was ready to greet you almost around every corner, and the Königstraße was super-lively with a lot of pop-up shops and restaurants.'>
+<meta name='theme-color' content='#ffcd00'>
+
+<meta property='og:title' content='Deep Learning for NLP Crash course @ Uni Duisburg-Essen • Fahim Dalvi'>
+<meta property='og:description' content='Hassan Sajjad and I just had a great time delivering a 5-day crash course at the Universität Duisburg-Essen. It was delivers roughly over 18 hours - with quite a lot of practical exercises! Check out the course materials.
+Duisburg was a nice and calm place, not a lot of crowded places. A döner place was ready to greet you almost around every corner, and the Königstraße was super-lively with a lot of pop-up shops and restaurants.'>
+<meta property='og:url' content='https://fdalvi.github.io/blog/2018-04-15-dl4nlp-duisburg/'>
+<meta property='og:site_name' content='Fahim Dalvi'>
+<meta property='og:type' content='article'><meta property='og:image' content='https://fdalvi.github.io/blog/2018-04-15-dl4nlp-duisburg/panorama.jpg'><meta property='article:section' content='Blog'><meta property='article:tag' content='Deep learning'><meta property='article:tag' content='Neural networks'><meta property='article:tag' content='keras'><meta property='article:tag' content='python'><meta property='article:published_time' content='2018-04-15T19:00:00&#43;03:00'/><meta property='article:modified_time' content='2018-04-15T19:00:00&#43;03:00'/><meta name='twitter:card' content='summary_large_image'><meta property='twitter:image' content='https://fdalvi.github.io/blog/2018-04-15-dl4nlp-duisburg/panorama.jpg'>
+
+<meta name="generator" content="Hugo 0.37" />
+
+  <title>Deep Learning for NLP Crash course @ Uni Duisburg-Essen • Fahim Dalvi</title>
+  <link rel='canonical' href='https://fdalvi.github.io/blog/2018-04-15-dl4nlp-duisburg/'>
+  
+  
+  
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=almNBqOxQo">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=almNBqOxQo">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=almNBqOxQo">
+<link rel="manifest" href="/site.webmanifest?v=almNBqOxQo">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=almNBqOxQo" color="#444444">
+<link rel="shortcut icon" href="/favicon.ico?v=almNBqOxQo">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<link rel='stylesheet' href='/assets/css/main.b8f9eb89.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:#ffcd00;}
+</style>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-19417017-2', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+
+<body class='page type-blog has-cover'>
+
+  <div class='site'>
+
+    <a class='screen-reader-text' href='#content'>Skip to Content</a>
+
+    <div class='main'>
+
+      <nav id='main-menu' class='main-menu' aria-label='Main Menu'>
+  <div class='container'>
+    
+    <ul><li class='item'>
+        <a href='/'>Home</a>
+      </li><li class='item'>
+        <a href='/projects/'>Projects</a>
+      </li><li class='item'>
+        <a href='/research/'>Research</a>
+      </li><li class='item'>
+        <a href='/teaching/'>Teaching</a>
+      </li><li class='item'>
+        <a href='/blog/'>Blog</a>
+      </li><li class='item'>
+        <a href='/fdalvi-resume.pdf'>Resume</a>
+      </li></ul>
+  </div>
+</nav>
+
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>Fahim Dalvi</p><p class='desc site-desc'>Software Engineer | Deep Learning Researcher | Mentor</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='en' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>Deep Learning for NLP Crash course @ Uni Duisburg-Essen</h1>
+      
+
+    </div>
+    
+<div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+  
+</svg>
+<span class='screen-reader-text'>Posted on </span>
+  <time class='entry-date' datetime='2018-04-15T19:00:00&#43;03:00'>2018, Apr 15</time>
+</span>
+
+  <span class='byline'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M21,21V20c0-2.76-4-5-9-5s-9,2.24-9,5v1"/>
+  <path d="M16,6.37A4,4,0,1,1,12.63,3,4,4,0,0,1,16,6.37Z"/>
+  
+</svg>
+<span class='screen-reader-text'> by </span><a href='/authors/fdalvi'>Fahim Dalvi</a></span>
+  
+<span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+  
+</svg>
+One min read
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+  <div class='entry-cover'>
+  <figure class='container cover-full'>
+    <img src='/blog/2018-04-15-dl4nlp-duisburg/panorama.jpg'/>
+    
+      
+    
+  </figure>
+</div>
+  
+
+  <div class='container entry-content'>
+  <p>Hassan Sajjad and I just had a great time delivering a 5-day crash course at the Universität Duisburg-Essen. It was delivers roughly over 18 hours - with quite a lot of practical exercises! Check out the <a href="/teaching/2018-dl4nlp-duisburg">course materials</a>.</p>
+
+<p>Duisburg was a nice and calm place, not a lot of crowded places. A döner place was ready to greet you almost around every corner, and the Königstraße was super-lively with a lot of pop-up shops and restaurants.</p>
+
+<div class='align-center'>
+  <figure>
+    
+        <img src="/blog/2018-04-15-dl4nlp-duisburg/sunset.jpg" alt="Sunsets were quite beautiful!" />
+    
+    
+    <figcaption>
+        <p>
+        Sunsets were quite beautiful!
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+</div>
+
+
+<p>We also got featured in the <a href="https://www.waz.de/staedte/duisburg/verdi-warnstreik-50-busse-aus-duisburg-zur-kundgebung-nach-koeln-id213971813.html" target="_blank">local newspaper</a> (front page!) - though not for the reasons we could have ever imagined. On the second day of the course, there was a strike by the public transportation employees. We were completely unaware of this, and after standing at the bus stop for a while wondering how German transportation could be late, a journalist approached us for the story.</p>
+
+<div class='align-center'>
+  <figure>
+    
+        <img src="/blog/2018-04-15-dl4nlp-duisburg/newspaper.jpg" alt="A clipping from the local newspaper" />
+    
+    
+    <figcaption>
+        <p>
+        A clipping from the local newspaper
+        
+            
+        
+        </p> 
+    </figcaption>
+    
+</figure>
+
+</div>
+
+
+<p>Overall it was an excellent experience, we learned a lot and look forward to future teaching opportunities!</p>
+
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'>
+  <div class='categories'>
+  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+  
+</svg>
+</span>
+  <span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/news'>News</a></div>
+<div class='tags'>
+  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
+  <line x1="7" y1="7" x2="7" y2="7"/>
+  
+</svg>
+</span>
+  <span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/deep-learning'>Deep learning</a>, <a class='tag' href='/tags/neural-networks'>Neural networks</a>, <a class='tag' href='/tags/keras'>Keras</a>, <a class='tag' href='/tags/python'>Python</a></div>
+
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/blog/2018-04-07-keras-sequential-onehot/'>
+        <span aria-hidden='true'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+  
+</svg>
+ Previous</span>
+        <span class='screen-reader-text'>Previous post: </span>One-Hot layer using Keras Sequential API</a>
+    </div></div>
+</nav>
+
+
+
+	<section class="post-comments">
+  <h2 style="padding-top: 15px;">Comments</h2>
+  
+  
+  
+
+  
+    
+  
+
+
+  
+    <p>No comments yet.</p>
+  
+
+  <section class="custom-comment_form">
+  <a id="custom-comment-form"></a>
+  <h3>Say something:</h3>
+  <i><p id="post-replying-to"></p></i>
+  <form id="post-comment-form" class="post-new-comment" method="POST" action="https://api.staticman.net/v2/entry/fdalvi/website-hugo-source/master/comments">
+    <input type="hidden" name="options[entryId]" value="2018-04-15-dl4nlp-duisburg">
+    <input type="hidden" name="options[slug]" value="https://fdalvi.github.io/blog/2018-04-15-dl4nlp-duisburg/">
+    <input type="hidden" name="options[origin]" value="https://fdalvi.github.io/blog/2018-04-15-dl4nlp-duisburg/">
+    <input type="hidden" name="options[parent]" value="2018-04-15-dl4nlp-duisburg">
+    <input type="hidden" name="fields[reply_to]" value="">
+    <input type="hidden" name="options[reCaptcha][siteKey]" value="6LffakUUAAAAAOnpoeUZXjAwXo5B_mk5q_eLsJyY">
+    <input type="hidden" name="options[reCaptcha][secret]" value="aG5MlHYf7QYGlY6a2Xdv/1&#43;U&#43;GYpv1QAgkkMyZwWmemdCqrqwOp4Y3duylvGXBDu7v0GGGO83St9X54&#43;1DgQDmRfePPqNiL/ZTA02HHGKTJZfsbzyNbIuW/JG&#43;peTcbxyyfHBsn&#43;7/iYSY8c1X2TVKtLsREDp8XtsAwaPUi7I0I=">
+
+    <input type="hidden" name="fields[color]" value="red">
+    <div class="post-comment-field">
+      <input name="fields[name]" type="text" placeholder="Your name">
+      <div id="colors" style="flex-grow: 2">
+        <a class="color-picker color-selected" style="background-color: #ffeeb0;" onclick="chooseColor(this)"></a>
+        <a class="color-picker" style="background-color: #ec2045;" onclick="chooseColor(this)"></a>
+        <a class="color-picker" style="background-color: #f26247;" onclick="chooseColor(this)"></a>
+        <a class="color-picker" style="background-color: #c7c12f;" onclick="chooseColor(this)"></a>
+        <a class="color-picker" style="background-color: #a2d49f;" onclick="chooseColor(this)"></a>
+      </div>
+    </div>
+    <textarea name="fields[comment]" class="post-comment-field" placeholder="Your message. Feel free to use Markdown!" rows="5"></textarea>
+    <button class="g-recaptcha" data-sitekey="6LffakUUAAAAAOnpoeUZXjAwXo5B_mk5q_eLsJyY" data-callback='onSubmit'>Submit</button>
+  </form>
+
+  <script async src='https://www.google.com/recaptcha/api.js' ></script>
+  
+  <script type="text/javascript">
+    function chooseColor(e) {
+      var elems = document.getElementsByClassName("color-picker");
+      for (var i = elems.length - 1; i >= 0; i--) {
+        elems[i].classList.remove("color-selected");
+      }
+      e.classList.add("color-selected");
+
+      document.getElementsByName('fields[color]')[0].value = e.style.backgroundColor;
+    }
+
+    function chooseRandomColor() {
+      var elems = document.getElementsByClassName("color-picker");
+      chooseColor(elems[Math.floor(Math.random() * elems.length)]);
+    }
+    function onSubmit(){
+      var form = document.getElementById("post-comment-form");
+      var xhr = new XMLHttpRequest();
+      var params = [].filter.call(form.elements, function (el) {return !(el.type in ['checkbox', 'radio']) || el.checked;})
+      .filter(function(el) { return !!el.name; }) 
+      .filter(function(el) { return !el.disabled; }) 
+      .map(function(el) {
+        if (el.type=='checkbox') return encodeURIComponent(el.name) + '=' + encodeURIComponent(el.checked);
+        else return encodeURIComponent(el.name) + '=' + encodeURIComponent(el.value);
+      }).join('&'); 
+      xhr.open("POST", form.action);
+      xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      xhr.onload = function(r) {
+        var success = JSON.parse(r.target.response).success;
+
+        if (success) {
+          document.getElementById("post-submitting").classList.add("hidden")
+          document.getElementById("post-submitted").classList.remove("hidden")
+        } else {
+          document.getElementById("post-submitting").classList.add("hidden")
+          document.getElementById("post-error").classList.remove("hidden")
+        }
+      };
+      xhr.send(params);
+
+      form.classList.add("hidden")
+      document.getElementById("post-submitting").classList.remove("hidden")
+    }
+
+    window.onload = function() {
+      chooseRandomColor()
+    }
+  </script>
+
+  <div id="post-submitting" class="dialog hidden">
+    Submitting comment...
+  </div>
+
+  <div id="post-submitted" class="dialog hidden">
+    Your comment has been submitted and will be published once it has been approved.
+  </div>
+
+  <div id="post-error" class="dialog hidden">
+    Oops! Your comment has not been submitted. Please return to the page and try again. Thank you!
+  </div> 
+
+</section>
+
+  <script type="text/javascript">
+    function replyTo(id, name) {
+      document.getElementById("post-replying-to").innerHTML = "Replying to <b>" + name + "</b>";
+      document.getElementsByName('fields[reply_to]')[0].value = id;
+    }
+  </script>
+</section>
+
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'>
+          <section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
+    <ul><li>
+        <a href='https://github.com/fdalvi' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='mailto:dalvifahim&#43;website@gmail.com' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Contact via Email</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://linkedin.com/in/fdalvi' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Linkedin account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+  <rect x="2" y="9" width="4" height="12"/>
+  <circle cx="4" cy="4" r="2"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://scholar.google.com/citations?user=uQGCv10AAAAJ' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Google_scholar account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M21.328 2.002v9.2M8.695 7.85c.014-.787-.11-2.236.28-2.89.623-1.045.856-1.39 1.797-1.989 1.953-.988 4.296.692 4.296.692.803.564 1.672 2.1 1.672 2.1l1.368-1.824-5.444-1.754-3.515 1.34L6.08 7.681m9.109 3.42s.65-.633 1.168-1.085c.461-.402.516-.714.6-.914.18-.426.268-.909.268-1.446 0-.7-.131-1.274-.388-1.735-.031-.053 0 0-.097-.157l4.588-3.762H10.32L3.672 7.85l5.023-.024c.23 1.237.619 1.575 1.019 2.222.744.719 1.13 1.194 2.215 1.194.254 0 2.6-.057 2.842-.09 0 0 .546 1.199-.133 1.71-.41.31.576 1.304.576 1.304s-5.577.831-6.523 1.427a4.13 4.13 0 0 0-1.306 1.277 3.034 3.034 0 0 0-.493 1.665c0 .502.106.955.32 1.357.214.403.493.733.84.99.345.258.744.473 1.194.649.45.174.896.297 1.342.367a8.348 8.348 0 0 0 3.41-.166 7.754 7.754 0 0 0 1.964-.807 4.28 4.28 0 0 0 1.49-1.443c.38-.609.57-1.292.57-2.049 0-.574-.116-1.096-.347-1.57a3.755 3.755 0 0 0-.847-1.164c-.335-.302-2.19-1.837-2.19-1.837"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section>
+          <div class='copyright'>
+  <p> &copy; 2017-2018 Fahim Dalvi. Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> and <a href="https://github.com/MunifTanjim/minimo" target="_blank">Minimo</a></p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__public_path__='\/assets\/js\/'</script>
+
+<script src='/assets/js/main.4d3afaaf.js'></script>
+</body>
+
+</html>
+

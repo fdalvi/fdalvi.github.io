@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='Delivered in Spring 2018 at Universität Duisburg-Essen.'>
+<meta name='theme-color' content='#ffcd00'>
+
+<meta property='og:title' content='From Theory to Practice: Deep Learning for NLP • Fahim Dalvi'>
+<meta property='og:description' content='Delivered in Spring 2018 at Universität Duisburg-Essen.'>
+<meta property='og:url' content='https://fdalvi.github.io/teaching/2018-dl4nlp-duisburg/'>
+<meta property='og:site_name' content='Fahim Dalvi'>
+<meta property='og:type' content='article'><meta property='article:section' content='Page'><meta name='twitter:card' content='summary'>
+
+<meta name="generator" content="Hugo 0.37" />
+
+  <title>From Theory to Practice: Deep Learning for NLP • Fahim Dalvi</title>
+  <link rel='canonical' href='https://fdalvi.github.io/teaching/2018-dl4nlp-duisburg/'>
+  
+  
+  
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=almNBqOxQo">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=almNBqOxQo">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=almNBqOxQo">
+<link rel="manifest" href="/site.webmanifest?v=almNBqOxQo">
+<link rel="mask-icon" href="/safari-pinned-tab.svg?v=almNBqOxQo" color="#444444">
+<link rel="shortcut icon" href="/favicon.ico?v=almNBqOxQo">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<link rel='stylesheet' href='/assets/css/main.b8f9eb89.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:#ffcd00;}
+</style>
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-19417017-2', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+
+<body class='page type-page'>
+
+  <div class='site'>
+
+    <a class='screen-reader-text' href='#content'>Skip to Content</a>
+
+    <div class='main'>
+
+      <nav id='main-menu' class='main-menu' aria-label='Main Menu'>
+  <div class='container'>
+    
+    <ul><li class='item'>
+        <a href='/'>Home</a>
+      </li><li class='item'>
+        <a href='/projects/'>Projects</a>
+      </li><li class='item'>
+        <a href='/research/'>Research</a>
+      </li><li class='item'>
+        <a href='/teaching/'>Teaching</a>
+      </li><li class='item'>
+        <a href='/blog/'>Blog</a>
+      </li><li class='item'>
+        <a href='/fdalvi-resume.pdf'>Resume</a>
+      </li></ul>
+  </div>
+</nav>
+
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>Fahim Dalvi</p><p class='desc site-desc'>Software Engineer | Deep Learning Researcher | Mentor</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='en' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>From Theory to Practice: Deep Learning for NLP</h1>
+      
+<p class='desc'>Delivered in Spring 2018 at Universität Duisburg-Essen.</p>
+
+
+    </div>
+    
+
+  </div>
+</header>
+
+  
+  
+
+  <div class='container entry-content'>
+  
+
+<p><a href="https://hsajjad.github.io" target="_blank">Hassan Sajjad</a> and I got another chance to teach our deep learning course, but this time it was only for five days, delivered over roughly 18 hours! This course is a bit more general than our <a href="/teaching/2017-dgfs-cl/">DGfS course</a>, and has a lot more practical material.</p>
+
+<h3 id="the-official-spiel">The official spiel</h3>
+
+<blockquote>
+<p>In this lecture series, we cover the basics of machine learning, neural networks and deep neural networks. We look at several deep neural network architectures from the perspective of applying them to various classification tasks, such as sequence prediction and generation. Every lecture is accompanied with practice problems implemented in Keras, a popular Python framework for deep learning.</p>
+</blockquote>
+
+<h4 id="pre-requisites">Pre-requisites</h4>
+
+<ul>
+<li>Python
+
+<ul>
+<li><a href="https://cs231n.github.io/python-numpy-tutorial/" target="_blank">Python/numpy</a> tutorial</li>
+<li><a href="https://cs231n.github.io/ipython-tutorial/" target="_blank">iPython/Jupyter notebook</a> tutorial</li>
+</ul></li>
+<li>Basics of linear algebra
+
+<ul>
+<li><a href="http://www.cedar.buffalo.edu/~srihari/CSE574/Chap1/LinearAlgebra.pdf" target="_blank">Linear Algebra for Machine Learning</a></li>
+</ul></li>
+</ul>
+
+<p>Small portions of the lectures and exercises are dedicated to refreshing these concepts as well!</p>
+
+<h4 id="lecture-materials">Lecture materials</h4>
+
+<ul>
+<li><strong>Lecture 0</strong> - Introduction &amp; Roadmap <a href="https://drive.google.com/open?id=1SUaoBDjAoFG2f_SAX2FNqM4Wcs3JeXbs" target="_blank">[slides]</a></li>
+<li><strong>Lecture 1</strong> - Introduction to Machine Learning <a href="https://drive.google.com/open?id=1U0289zrCDrABLpTZOUba_IcDoApq1tZT" target="_blank">[slides]</a>
+
+<ul>
+<li>Practical session <a href="https://drive.google.com/open?id=1nZTTXiHOlXo5HO4wRy88I5Sk0-_egGwI" target="_blank">[slides]</a></li>
+<li>Learning Rate and Optimization Demo <a href="https://drive.google.com/open?id=1VDBHBh_hGRiiZfIL61b7-RRm6r05Hkg0" target="_blank">[JupyterNotebook]</a></li>
+<li>Introduction to Jupyter Notebooks <a href="https://drive.google.com/open?id=15re_PMcGbg-I-UULld_FJZIIT6OC53A6" target="_blank">[JupyterNotebook]</a></li>
+<li>Introduction to Python and Numpy <a href="https://drive.google.com/open?id=178OeAeD_n-T_MChwiEbkbvZfquko3EZh" target="_blank">[JupyterNotebook]</a></li>
+<li>Linear Classification by Regression <a href="https://drive.google.com/open?id=1PbIKa_u4Y19heQOa0dIenZWODNi354W-" target="_blank">[JupyterNotebook]</a></li>
+<li>Binary Linear Classification <a href="https://drive.google.com/open?id=1GIBoQxs1zlAauI8fY5vX2LDDTtkUXx8C" target="_blank">[JupyterNotebook]</a></li>
+<li>Linear Classification on Spiral Data <a href="https://drive.google.com/open?id=1ZkmhRrI6eISdJppCVTKJ5cbhVYDg8uU5" target="_blank">[JupyterNotebook]</a></li>
+<li>Supplementary Material <a href="https://drive.google.com/open?id=10RjjHIY9W38YwzwiJ_6CPI19qpP1_4L_" target="_blank">[slides]</a></li>
+</ul></li>
+<li><strong>Lecture 2</strong> - Neural Networks <a href="https://drive.google.com/open?id=19m3Cf6_AqjmAZZi-n1gMfwYqUdIaFw7G" target="_blank">[slides]</a>
+
+<ul>
+<li>Practical session <a href="https://drive.google.com/open?id=1sYQLeSDxl_i7s5mzoeY5b6kPuxLP36d1" target="_blank">[slides]</a></li>
+<li>Neural Networks on Spiral Data <a href="https://drive.google.com/open?id=1vAGPhE1w7Vc3u0OBBSpdCdwzEqa6Vl0H" target="_blank">[JupyterNotebook]</a></li>
+<li>Data <a href="https://drive.google.com/open?id=1V0ioyI79Qf-Bc4FTs6MFylTGWDMzwMbZ" target="_blank">[.zip]</a></li>
+<li>Sentiment Classification using Neural Networks <a href="https://drive.google.com/open?id=11CticibncR7YqF40CwC8I2qUqmMfuRwn" target="_blank">[JupyterNotebook]</a></li>
+<li>Neural Network Language Model <a href="https://drive.google.com/open?id=1uWQ8NWtKqESY5WC7VRrz9fnRJFykmos3" target="_blank">[JupyterNotebook]</a></li>
+</ul></li>
+<li><strong>Lecture 3</strong> - Recurrent Neural Networks <a href="https://drive.google.com/open?id=1jeQCTTxZkJ0E1R9kjGv1Upx4y2g1iMz5" target="_blank">[slides]</a>
+
+<ul>
+<li>Recurrent Neural Networks <a href="https://drive.google.com/open?id=1_AURYVRlVsEpIrK1yzkho_rO1E4mQRfD" target="_blank">[JupyterNotebook]</a></li>
+<li>Hybrid Model <a href="https://drive.google.com/open?id=1fe5HKrE2KMrLUM68ObrjM1gbB_dSRZE8" target="_blank">[JupyterNotebook]</a></li>
+</ul></li>
+<li><strong>Lecture 4</strong> - Sequence to Sequence Models and Practical Considerations
+
+<ul>
+<li>Sequence to Sequence Models <a href="https://drive.google.com/open?id=19PtpBXrIoj7v2Ux-Tw8zmnd5CNTK59OH" target="_blank">[slides]</a></li>
+<li>Practical Considerations <a href="https://drive.google.com/open?id=1V3XD5_aLpbTOP90mgqsL-EtxZL2PYHME" target="_blank">[slides]</a></li>
+<li>Per Timestep Prediction <a href="https://drive.google.com/open?id=13L75QInaEmpF12YptSvGqvKwLGgytj7k" target="_blank">[JupyterNotebook]</a></li>
+<li>Pretrained Embeddings <a href="https://drive.google.com/open?id=1fiYX7cXKSZhcpNuuO_vkvOO_QDyIEEWT" target="_blank">[JupyterNotebook]</a></li>
+<li>Imbalanced Classes <a href="https://drive.google.com/open?id=1ND2Gqjo5mDuG0H9O58yLuMsNsKhWC2g1" target="_blank">[JupyterNotebook]</a></li>
+</ul></li>
+<li><strong>Lecture 5</strong> - Advanced Topics, CNN, Multitask, GAN, RL, etc. <a href="https://drive.google.com/open?id=1vimK8YQXJLP1z2dxZUHph-pW40hJ8FEg" target="_blank">[slides]</a></li>
+</ul>
+
+</div>
+
+  
+
+</article>
+
+
+
+	<section class="post-comments">
+  <h2 style="padding-top: 15px;">Comments</h2>
+  
+  
+  
+
+  
+    
+  
+
+
+  
+    <p>No comments yet.</p>
+  
+
+  <section class="custom-comment_form">
+  <a id="custom-comment-form"></a>
+  <h3>Say something:</h3>
+  <i><p id="post-replying-to"></p></i>
+  <form id="post-comment-form" class="post-new-comment" method="POST" action="https://api.staticman.net/v2/entry/fdalvi/website-hugo-source/master/comments">
+    <input type="hidden" name="options[entryId]" value="2018-dl4nlp-duisburg">
+    <input type="hidden" name="options[slug]" value="https://fdalvi.github.io/teaching/2018-dl4nlp-duisburg/">
+    <input type="hidden" name="options[origin]" value="https://fdalvi.github.io/teaching/2018-dl4nlp-duisburg/">
+    <input type="hidden" name="options[parent]" value="2018-dl4nlp-duisburg">
+    <input type="hidden" name="fields[reply_to]" value="">
+    <input type="hidden" name="options[reCaptcha][siteKey]" value="6LffakUUAAAAAOnpoeUZXjAwXo5B_mk5q_eLsJyY">
+    <input type="hidden" name="options[reCaptcha][secret]" value="aG5MlHYf7QYGlY6a2Xdv/1&#43;U&#43;GYpv1QAgkkMyZwWmemdCqrqwOp4Y3duylvGXBDu7v0GGGO83St9X54&#43;1DgQDmRfePPqNiL/ZTA02HHGKTJZfsbzyNbIuW/JG&#43;peTcbxyyfHBsn&#43;7/iYSY8c1X2TVKtLsREDp8XtsAwaPUi7I0I=">
+
+    <input type="hidden" name="fields[color]" value="red">
+    <div class="post-comment-field">
+      <input name="fields[name]" type="text" placeholder="Your name">
+      <div id="colors" style="flex-grow: 2">
+        <a class="color-picker color-selected" style="background-color: #ffeeb0;" onclick="chooseColor(this)"></a>
+        <a class="color-picker" style="background-color: #ec2045;" onclick="chooseColor(this)"></a>
+        <a class="color-picker" style="background-color: #f26247;" onclick="chooseColor(this)"></a>
+        <a class="color-picker" style="background-color: #c7c12f;" onclick="chooseColor(this)"></a>
+        <a class="color-picker" style="background-color: #a2d49f;" onclick="chooseColor(this)"></a>
+      </div>
+    </div>
+    <textarea name="fields[comment]" class="post-comment-field" placeholder="Your message. Feel free to use Markdown!" rows="5"></textarea>
+    <button class="g-recaptcha" data-sitekey="6LffakUUAAAAAOnpoeUZXjAwXo5B_mk5q_eLsJyY" data-callback='onSubmit'>Submit</button>
+  </form>
+
+  <script async src='https://www.google.com/recaptcha/api.js' ></script>
+  
+  <script type="text/javascript">
+    function chooseColor(e) {
+      var elems = document.getElementsByClassName("color-picker");
+      for (var i = elems.length - 1; i >= 0; i--) {
+        elems[i].classList.remove("color-selected");
+      }
+      e.classList.add("color-selected");
+
+      document.getElementsByName('fields[color]')[0].value = e.style.backgroundColor;
+    }
+
+    function chooseRandomColor() {
+      var elems = document.getElementsByClassName("color-picker");
+      chooseColor(elems[Math.floor(Math.random() * elems.length)]);
+    }
+    function onSubmit(){
+      var form = document.getElementById("post-comment-form");
+      var xhr = new XMLHttpRequest();
+      var params = [].filter.call(form.elements, function (el) {return !(el.type in ['checkbox', 'radio']) || el.checked;})
+      .filter(function(el) { return !!el.name; }) 
+      .filter(function(el) { return !el.disabled; }) 
+      .map(function(el) {
+        if (el.type=='checkbox') return encodeURIComponent(el.name) + '=' + encodeURIComponent(el.checked);
+        else return encodeURIComponent(el.name) + '=' + encodeURIComponent(el.value);
+      }).join('&'); 
+      xhr.open("POST", form.action);
+      xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      xhr.onload = function(r) {
+        var success = JSON.parse(r.target.response).success;
+
+        if (success) {
+          document.getElementById("post-submitting").classList.add("hidden")
+          document.getElementById("post-submitted").classList.remove("hidden")
+        } else {
+          document.getElementById("post-submitting").classList.add("hidden")
+          document.getElementById("post-error").classList.remove("hidden")
+        }
+      };
+      xhr.send(params);
+
+      form.classList.add("hidden")
+      document.getElementById("post-submitting").classList.remove("hidden")
+    }
+
+    window.onload = function() {
+      chooseRandomColor()
+    }
+  </script>
+
+  <div id="post-submitting" class="dialog hidden">
+    Submitting comment...
+  </div>
+
+  <div id="post-submitted" class="dialog hidden">
+    Your comment has been submitted and will be published once it has been approved.
+  </div>
+
+  <div id="post-error" class="dialog hidden">
+    Oops! Your comment has not been submitted. Please return to the page and try again. Thank you!
+  </div> 
+
+</section>
+
+  <script type="text/javascript">
+    function replyTo(id, name) {
+      document.getElementById("post-replying-to").innerHTML = "Replying to <b>" + name + "</b>";
+      document.getElementsByName('fields[reply_to]')[0].value = id;
+    }
+  </script>
+</section>
+
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'>
+          <section class='widget widget-social_menu sep-after'><nav aria-label='Social Menu'>
+    <ul><li>
+        <a href='https://github.com/fdalvi' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Github account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='mailto:dalvifahim&#43;website@gmail.com' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Contact via Email</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+  <polyline points="22,6 12,13 2,6"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://linkedin.com/in/fdalvi' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Linkedin account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+  <rect x="2" y="9" width="4" height="12"/>
+  <circle cx="4" cy="4" r="2"/>
+  
+</svg>
+</a>
+      </li><li>
+        <a href='https://scholar.google.com/citations?user=uQGCv10AAAAJ' target='_blank' rel='noopener'>
+          <span class='screen-reader-text'>Open Google_scholar account in new tab</span><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  
+  <path d="M21.328 2.002v9.2M8.695 7.85c.014-.787-.11-2.236.28-2.89.623-1.045.856-1.39 1.797-1.989 1.953-.988 4.296.692 4.296.692.803.564 1.672 2.1 1.672 2.1l1.368-1.824-5.444-1.754-3.515 1.34L6.08 7.681m9.109 3.42s.65-.633 1.168-1.085c.461-.402.516-.714.6-.914.18-.426.268-.909.268-1.446 0-.7-.131-1.274-.388-1.735-.031-.053 0 0-.097-.157l4.588-3.762H10.32L3.672 7.85l5.023-.024c.23 1.237.619 1.575 1.019 2.222.744.719 1.13 1.194 2.215 1.194.254 0 2.6-.057 2.842-.09 0 0 .546 1.199-.133 1.71-.41.31.576 1.304.576 1.304s-5.577.831-6.523 1.427a4.13 4.13 0 0 0-1.306 1.277 3.034 3.034 0 0 0-.493 1.665c0 .502.106.955.32 1.357.214.403.493.733.84.99.345.258.744.473 1.194.649.45.174.896.297 1.342.367a8.348 8.348 0 0 0 3.41-.166 7.754 7.754 0 0 0 1.964-.807 4.28 4.28 0 0 0 1.49-1.443c.38-.609.57-1.292.57-2.049 0-.574-.116-1.096-.347-1.57a3.755 3.755 0 0 0-.847-1.164c-.335-.302-2.19-1.837-2.19-1.837"/>
+  
+</svg>
+</a>
+      </li></ul>
+  </nav>
+</section>
+          <div class='copyright'>
+  <p> &copy; 2017-2018 Fahim Dalvi. Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> and <a href="https://github.com/MunifTanjim/minimo" target="_blank">Minimo</a></p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__public_path__='\/assets\/js\/'</script>
+
+<script src='/assets/js/main.4d3afaaf.js'></script>
+</body>
+
+</html>
+

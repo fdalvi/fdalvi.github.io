@@ -37,7 +37,7 @@ Distributed backend managing multiple machine translation engines built at QCRI 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://fdalvi.github.io/teaching/</guid>
-      <description>Deep Learning for Natural Language Processing Co-Lecturer Universität Duisburg-Essen, 2018 Coming soon!   Deep Learning for Machine Translation Co-Lecturer DGfS Computational Linguistics Fall School, 2017 A 10-lecture crash course in deep learning, specialized towards machine translation. These lectures cover Language Modeling, basics of Machine Learning, Neural Networks, Recurrent Neural Networks and finish with Sequence to Sequence models for Machine translation. We take a look at practical considerations, along with exercises to help solidify the concepts.</description>
+      <description>Deep Learning for Natural Language Processing Co-Lecturer Universität Duisburg-Essen, 2018 A 5-day lecture series covering the basics of machine learning, neural networks and deep neural networks. We look at several deep neural network architectures from the perspective of applying them to various classification tasks, such as sequence prediction and generation. Every lecture is accompanied with practice problems implemented in Keras, a popular Python framework for deep learning.   Deep Learning for Machine Translation Co-Lecturer DGfS Computational Linguistics Fall School, 2017 A 10-lecture crash course in deep learning, specialized towards machine translation.</description>
     </item>
     
     <item>
@@ -57,6 +57,16 @@ Distributed backend managing multiple machine translation engines built at QCRI 
       
       <guid>https://fdalvi.github.io/teaching/2017-dgfs-cl/</guid>
       <description>Hassan Sajjad and I were fortunate enough to have the opportunity to teach a deep learning course at the Computation Linguistics school organized by Deutsche Gesellschaft für Sprachwissenschaft. This course is geared towards students with a limited background in deep and machine learning. It walks them through building their very first machine learning model, all the way up to developing a strong intuition behind sequence-to-sequence models, with the material wrapped in the context of language.</description>
+    </item>
+    
+    <item>
+      <title>From Theory to Practice: Deep Learning for NLP</title>
+      <link>https://fdalvi.github.io/teaching/2018-dl4nlp-duisburg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fdalvi.github.io/teaching/2018-dl4nlp-duisburg/</guid>
+      <description>Hassan Sajjad and I got another chance to teach our deep learning course, but this time it was only for five days, delivered over roughly 18 hours! This course is a bit more general than our DGfS course, and has a lot more practical material.
+The official spiel  In this lecture series, we cover the basics of machine learning, neural networks and deep neural networks. We look at several deep neural network architectures from the perspective of applying them to various classification tasks, such as sequence prediction and generation.</description>
     </item>
     
     <item>
