@@ -37,7 +37,7 @@ Distributed backend managing multiple machine translation engines built at QCRI 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://fdalvi.github.io/teaching/</guid>
-      <description>Deep Learning for Natural Language Processing Co-Lecturer Universität Duisburg-Essen, 2018 A 5-day lecture series covering the basics of machine learning, neural networks and deep neural networks. We look at several deep neural network architectures from the perspective of applying them to various classification tasks, such as sequence prediction and generation. Every lecture is accompanied with practice problems implemented in Keras, a popular Python framework for deep learning.   Deep Learning for Machine Translation Co-Lecturer DGfS Computational Linguistics Fall School, 2017 A 10-lecture crash course in deep learning, specialized towards machine translation.</description>
+      <description>From Theory to Practice: Deep Learning for NLP Co-Lecturer Universität Duisburg-Essen, 2018 A 5-day lecture series covering the basics of machine learning, neural networks and deep neural networks. We look at several deep neural network architectures from the perspective of applying them to various classification tasks, such as sequence prediction and generation. Every lecture is accompanied with practice problems implemented in Keras, a popular Python framework for deep learning.   Deep Learning for Machine Translation Co-Lecturer DGfS Computational Linguistics Fall School, 2017 A 10-lecture crash course in deep learning, specialized towards machine translation.</description>
     </item>
     
     <item>
