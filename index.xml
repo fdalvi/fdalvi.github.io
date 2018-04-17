@@ -5,7 +5,7 @@
     <link>https://fdalvi.github.io/</link>
     <description>Recent content in Home on Fahim Dalvi</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 05 Feb 2018 22:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 07 Apr 2018 20:00:00 +0300</lastBuildDate>
     
 	<atom:link href="https://fdalvi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -42,6 +42,25 @@ Distributed backend managing multiple machine translation engines built at QCRI 
     </item>
     
     <item>
+      <title>One-Hot layer using Keras Sequential API</title>
+      <link>https://fdalvi.github.io/blog/2018-04-07-keras-sequential-onehot/</link>
+      <pubDate>Sat, 07 Apr 2018 20:00:00 +0300</pubDate>
+      
+      <guid>https://fdalvi.github.io/blog/2018-04-07-keras-sequential-onehot/</guid>
+      <description>It is quite common to use a One-Hot representation for categorical data in machine learning, for example textual instances in Natural Language Processing tasks. In Keras, the Embedding layer automatically takes inputs with the category indices (such as [5, 3, 1, 5]) and converts them into dense vectors of some length (e.g. 5 → [0.2 1.7 3.2 -7.6 ...]). What actually happens internally is that 5 gets converted to a one-hot vector (like [0 0 0 0 0 1 0 0 .</description>
+    </item>
+    
+    <item>
+      <title>Speech Translation at ALT wins the Best Innovation Award</title>
+      <link>https://fdalvi.github.io/blog/2018-03-21-arc-best-innovation-award/</link>
+      <pubDate>Wed, 21 Mar 2018 14:00:00 +0300</pubDate>
+      
+      <guid>https://fdalvi.github.io/blog/2018-03-21-arc-best-innovation-award/</guid>
+      <description>One of our projects in the Arabic Language Team at the Qatar Computing Research Institute is the Speech Translation Project - a real-time low-latency system where a speaker&amp;rsquo;s voice is transcribed and translated (both in Arabic or English). Check out the project here.
+This project was recently awarded the Best Innovation Award at the annual Qatar Foundation Annual Research Conference! It was been a long effort to take our state-of-the-art research in Speech Recognition and Machine Translation and bring it all together in one system.</description>
+    </item>
+    
+    <item>
       <title>Network throttling in Puppeteer</title>
       <link>https://fdalvi.github.io/blog/2018-02-05-puppeteer-network-throttle/</link>
       <pubDate>Mon, 05 Feb 2018 22:00:00 +0300</pubDate>
@@ -70,6 +89,15 @@ A headless browser is a great way to automate testing, even on remote server mac
       
       <guid>https://fdalvi.github.io/teaching/2017-dgfs-cl/</guid>
       <description>Hassan Sajjad and I were fortunate enough to have the opportunity to teach a deep learning course at the Computation Linguistics school organized by Deutsche Gesellschaft für Sprachwissenschaft. This course is geared towards students with a limited background in deep and machine learning. It walks them through building their very first machine learning model, all the way up to developing a strong intuition behind sequence-to-sequence models, with the material wrapped in the context of language.</description>
+    </item>
+    
+    <item>
+      <title>Live Speech Translation</title>
+      <link>https://fdalvi.github.io/projects/live-speech-translation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fdalvi.github.io/projects/live-speech-translation/</guid>
+      <description>More details coming soon!</description>
     </item>
     
   </channel>

@@ -59,5 +59,14 @@ Distributed backend managing multiple machine translation engines built at QCRI 
       <description>Hassan Sajjad and I were fortunate enough to have the opportunity to teach a deep learning course at the Computation Linguistics school organized by Deutsche Gesellschaft für Sprachwissenschaft. This course is geared towards students with a limited background in deep and machine learning. It walks them through building their very first machine learning model, all the way up to developing a strong intuition behind sequence-to-sequence models, with the material wrapped in the context of language.</description>
     </item>
     
+    <item>
+      <title>Live Speech Translation</title>
+      <link>https://fdalvi.github.io/projects/live-speech-translation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fdalvi.github.io/projects/live-speech-translation/</guid>
+      <description>More details coming soon!</description>
+    </item>
+    
   </channel>
 </rss>
