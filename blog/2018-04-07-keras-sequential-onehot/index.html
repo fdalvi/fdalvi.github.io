@@ -7,7 +7,7 @@
 <meta name='description' content='It is quite common to use a One-Hot representation for categorical data in machine learning, for example textual instances in Natural Language Processing tasks. In Keras, the Embedding layer automatically takes inputs with the category indices (such as [5, 3, 1, 5]) and converts them into dense vectors of some length (e.g. 5 → [0.2 1.7 3.2 -7.6 ...]). What actually happens internally is that 5 gets converted to a one-hot vector (like [0 0 0 0 0 1 0 0 .'>
 <meta name='theme-color' content='#ffcd00'>
 
-<meta property='og:title' content='One-Hot layer using Keras Sequential API • Fahim Dalvi'>
+<meta property='og:title' content='One-Hot layer in Keras&#39;s Sequential API • Fahim Dalvi'>
 <meta property='og:description' content='It is quite common to use a One-Hot representation for categorical data in machine learning, for example textual instances in Natural Language Processing tasks. In Keras, the Embedding layer automatically takes inputs with the category indices (such as [5, 3, 1, 5]) and converts them into dense vectors of some length (e.g. 5 → [0.2 1.7 3.2 -7.6 ...]). What actually happens internally is that 5 gets converted to a one-hot vector (like [0 0 0 0 0 1 0 0 .'>
 <meta property='og:url' content='https://fdalvi.github.io/blog/2018-04-07-keras-sequential-onehot/'>
 <meta property='og:site_name' content='Fahim Dalvi'>
@@ -15,7 +15,7 @@
 
 <meta name="generator" content="Hugo 0.37" />
 
-  <title>One-Hot layer using Keras Sequential API • Fahim Dalvi</title>
+  <title>One-Hot layer in Keras&#39;s Sequential API • Fahim Dalvi</title>
   <link rel='canonical' href='https://fdalvi.github.io/blog/2018-04-07-keras-sequential-onehot/'>
   
   
@@ -85,7 +85,7 @@ ga('send', 'pageview');
   <header class='header entry-header'>
   <div class='container sep-after'>
     <div class='header-info'>
-      <h1 class='title'>One-Hot layer using Keras Sequential API</h1>
+      <h1 class='title'>One-Hot layer in Keras&#39;s Sequential API</h1>
       
 
     </div>
@@ -190,7 +190,7 @@ model<span style="color:#f92672">.</span>compile(loss<span style="color:#f92672"
 
 <p>Note that we don&rsquo;t use the argument <code>output_dim</code> from the Embedding layer since we are only interesting in the one-hot representation, not an embedding from the weight matrix.</p>
 
-<p>Finally for the sake of completeness, if you want to replicate the Embedding layer using this OneHot layer, it would look something like this:</p>
+<p>Finally for the sake of completeness, if you want to replicate the Embedding layer using this <code>OneHot</code> layer, it would look something like this:</p>
 
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python">model <span style="color:#f92672">=</span> Sequential()
 model<span style="color:#f92672">.</span>add(OneHot(input_dim<span style="color:#f92672">=</span>VOCAB_SIZE,
@@ -205,7 +205,7 @@ model<span style="color:#f92672">.</span>compile(loss<span style="color:#f92672"
 <p>Some thoughts following this implementation:</p>
 
 <ul>
-<li>Its a good question to ask why we need a OneHot layer anyways (and not just use the Embedding layer). In my case, I wanted to show an RNN model that has an explicit Embedding layer vs one that does not, and hence it was necessary to pass the one-hot vector as is to the recurrent layer. I&rsquo;m sure there are other scenarios as well, given the discussions around the web regarding this topic.</li>
+<li>Its a good question to ask why we need a <code>OneHot</code> layer anyways (and not just use the Embedding layer). In my case, I wanted to show an RNN model that has an explicit Embedding layer vs one that does not, and hence it was necessary to pass the one-hot vector as is to the recurrent layer. I&rsquo;m sure there are other scenarios as well, given the discussions around the web regarding this topic.</li>
 <li>Another potential solution is to just convert the input matrix <code>X</code> into a one-hot representation before passing it as input (e.g. using <code>keras.utils.to_categorical</code>) - but this method quickly fails when you have a lot of data. With 1000 instances of length 50 and a vocabulary of 5000 words, the one-hot representation would need <code>1000 x 50 x 5000</code> entries in the one-hot tensor, and if each entry is of 8 bytes, that adds up to 2GB of memory for representing the input alone! Hence, creating the one-hot representations on the fly becomes the only option.</li>
 </ul>
 
