@@ -28,8 +28,7 @@ Distributed backend managing multiple machine translation engines built at QCRI 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://fdalvi.github.io/research/</guid>
-      <description>2018 Coming soon!
- 2017  Neural Machine Translation Training in a Multi-Domain Scenario  Hassan Sajjad, Nadir Durrani, Fahim Dalvi, Yonatan Belinkov, Stephan Vogel   International Workshop on Spoken Language Translation 2017 In this paper, we explore alternative ways to train a neural machine translation system in a multi-domain scenario. We investigate data concatenation (with fine tuning), model stacking (multi-level fine tuning), data selection and weighted ensemble. Our findings show that the best translation quality can be achieved by building an initial system on a concatenation of available out-of-domain data and then fine-tuning it on in-domain data.</description>
+      <description>2018  Incremental Decoding and Training Methods for Simultaneous Translation in Neural Machine Translation  Fahim Dalvi*, Nadir Durrani*, Hassan Sajjad, Stephan Vogel   * These authors contributed equally to this work  The 16th Annual Conference of the North American Chapter of the Association for Computational Linguistics  We address the problem of simultaneous translation by modifying the Neural MT decoder to operate with dynamically built encoder and attention.</description>
     </item>
     
     <item>

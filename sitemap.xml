@@ -15,6 +15,11 @@
       <loc>https://fdalvi.github.io/research/</loc>
     </url>
       <url>
+        <loc>https://fdalvi.github.io/research/2018-06-NAACL-stream-decoding/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
         <loc>https://fdalvi.github.io/research/2017-12-IWSLT-multidomain-nmt/paper.pdf</loc>
         <priority>0.4</priority>
       </url>
