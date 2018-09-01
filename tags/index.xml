@@ -65,11 +65,29 @@
     </item>
     
     <item>
+      <title>Ffmpeg</title>
+      <link>https://fdalvi.github.io/tags/ffmpeg/</link>
+      <pubDate>Sat, 01 Sep 2018 12:00:00 +0300</pubDate>
+      
+      <guid>https://fdalvi.github.io/tags/ffmpeg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Groupme</title>
       <link>https://fdalvi.github.io/tags/groupme/</link>
       <pubDate>Mon, 20 Aug 2018 16:00:00 +0300</pubDate>
       
       <guid>https://fdalvi.github.io/tags/groupme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Imagemagick</title>
+      <link>https://fdalvi.github.io/tags/imagemagick/</link>
+      <pubDate>Sat, 01 Sep 2018 12:00:00 +0300</pubDate>
+      
+      <guid>https://fdalvi.github.io/tags/imagemagick/</guid>
       <description></description>
     </item>
     
@@ -128,6 +146,15 @@
     </item>
     
     <item>
+      <title>Screencaps</title>
+      <link>https://fdalvi.github.io/tags/screencaps/</link>
+      <pubDate>Sat, 01 Sep 2018 12:00:00 +0300</pubDate>
+      
+      <guid>https://fdalvi.github.io/tags/screencaps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Speech Translation</title>
       <link>https://fdalvi.github.io/tags/speech-translation/</link>
       <pubDate>Wed, 21 Mar 2018 14:00:00 +0300</pubDate>
@@ -142,6 +169,15 @@
       <pubDate>Mon, 05 Feb 2018 22:00:00 +0300</pubDate>
       
       <guid>https://fdalvi.github.io/tags/testing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Video processing</title>
+      <link>https://fdalvi.github.io/tags/video-processing/</link>
+      <pubDate>Sat, 01 Sep 2018 12:00:00 +0300</pubDate>
+      
+      <guid>https://fdalvi.github.io/tags/video-processing/</guid>
       <description></description>
     </item>
     

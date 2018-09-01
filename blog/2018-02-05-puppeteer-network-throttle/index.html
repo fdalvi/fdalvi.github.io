@@ -19,7 +19,7 @@ A headless browser is a great way to automate testing, even on remote server mac
 <meta property='og:site_name' content='Fahim Dalvi'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/6c9adb6a0501da300bcdc582ade1e58d?s=256'><meta property='article:section' content='Blog'><meta property='article:tag' content='chrome'><meta property='article:tag' content='webapps'><meta property='article:tag' content='testing'><meta property='article:tag' content='network'><meta property='article:tag' content='puppeteer'><meta property='article:published_time' content='2018-02-05T22:00:00&#43;03:00'/><meta property='article:modified_time' content='2018-02-05T22:00:00&#43;03:00'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.37" />
+<meta name="generator" content="Hugo 0.34" />
 
   <title>Network throttling in Puppeteer • Fahim Dalvi</title>
   <link rel='canonical' href='https://fdalvi.github.io/blog/2018-02-05-puppeteer-network-throttle/'>
@@ -158,14 +158,13 @@ A headless browser is a great way to automate testing, even on remote server mac
 </span><span style="color:#75715e"></span>  <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">500</span>,
   <span style="color:#75715e">// Simulated latency (ms)
 </span><span style="color:#75715e"></span>  <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">20</span>
-}
-</code></pre></div>
+}</code></pre></div>
 
 <p>As an example, lets say you wanted to load this site with a <em>200 Kb/s</em> connection and <em>20 ms</em> latency, and take a screenshot before shutting down, you could use the following script:</p>
 
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;display:block;color:#7c7c79"> 1</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;display:block;color:#7c7c79"> 2</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;display:block;color:#7c7c79"> 3</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;display:block;color:#7c7c79"> 4</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;display:block;color:#7c7c79"> 5</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;display:block;color:#7c7c79"> 6</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;display:block;color:#7c7c79"> 7</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;display:block;color:#7c7c79"> 8</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;display:block;color:#7c7c79"> 9</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;display:block;color:#7c7c79">10</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;display:block;color:#7c7c79">11</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;display:block;color:#7c7c79">12</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;display:block;color:#7c7c79">13</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;display:block;color:#7c7c79">14</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;display:block;color:#7c7c79">15</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;display:block;color:#7c7c79">16</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;display:block;color:#7c7c79">17</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;display:block;color:#7c7c79">18</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;display:block;color:#7c7c79">19</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;display:block;color:#7c7c79">20</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;display:block;color:#7c7c79">21</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;display:block;color:#7c7c79">22</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;display:block;color:#7c7c79">23</span></code></pre></td>
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79"> 1</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79"> 2</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79"> 3</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79"> 4</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79"> 5</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79"> 6</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79"> 7</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79"> 8</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79"> 9</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79">10</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79">11</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79">12</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79">13</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79">14</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79">15</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79">16</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79">17</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79">18</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79">19</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79">20</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79">21</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79">22</span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">puppeteer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;puppeteer&#39;</span>)
 
@@ -188,8 +187,7 @@ A headless browser is a great way to automate testing, even on remote server mac
 </span><span style="color:#75715e"></span>  <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">page</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#e6db74">&#39;https://fdalvi.github.io&#39;</span>)
   <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">screenshot</span>({<span style="color:#a6e22e">path</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;screenshot.png&#39;</span>})
   <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">close</span>()
-})
-</code></pre></td></tr></table>
+})</code></pre></td></tr></table>
 </div>
 </div>
 
@@ -244,8 +242,7 @@ A headless browser is a great way to automate testing, even on remote server mac
     <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">15</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
     <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>
   }
-}
-</code></pre></div></p>
+}</code></pre></div></p>
 
 </div>
 

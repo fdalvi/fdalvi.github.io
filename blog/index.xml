@@ -5,10 +5,20 @@
     <link>https://fdalvi.github.io/blog/</link>
     <description>Recent content in Blog on Fahim Dalvi</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 20 Aug 2018 16:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 01 Sep 2018 12:00:00 +0300</lastBuildDate>
     
 	<atom:link href="https://fdalvi.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Creating Video Screencaps using FFMPEG and ImageMagick</title>
+      <link>https://fdalvi.github.io/blog/2018-09-01-creating-video-screencaps/</link>
+      <pubDate>Sat, 01 Sep 2018 12:00:00 +0300</pubDate>
+      
+      <guid>https://fdalvi.github.io/blog/2018-09-01-creating-video-screencaps/</guid>
+      <description>I recently wanted to create screencaps for a large set of videos of various lengths and resolutions - basically screenshot each video 5 times, and then combine these 5 screencaps all into one nice image per video, with all of the images being of consistent size.
+  Sample render from a seaplane ride over Vancouver    There are a bunch of tools available online that I can either install locally, or upload my video files to get similar results - but given that this was easily achievable using simple tools like ffmpeg and imagemagick, I decided to whip up a quick script to accomplish this.</description>
+    </item>
     
     <item>
       <title>Introducing GroupMe Archiver</title>
