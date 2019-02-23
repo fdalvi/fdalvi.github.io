@@ -28,7 +28,7 @@ Distributed backend managing multiple machine translation engines built at QCRI 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://fdalvi.github.io/research/</guid>
-      <description>2018  Incremental Decoding and Training Methods for Simultaneous Translation in Neural Machine Translation  Fahim Dalvi*, Nadir Durrani*, Hassan Sajjad, Stephan Vogel   * These authors contributed equally to this work  The 16th Annual Conference of the North American Chapter of the Association for Computational Linguistics  We address the problem of simultaneous translation by modifying the Neural MT decoder to operate with dynamically built encoder and attention.</description>
+      <description>2019  Identifying And Controlling Important Neurons In Neural Machine Translation  Anthony Bau, Yonatan Belinkov, Hassan Sajjad, Nadir Durrani, Fahim Dalvi, James Glass   Seventh International Conference on Learning Representations  Neural machine translation (NMT) models learn representations containing substantial linguistic information. However, it is not clear if such information is fully distributed or if some of it can be attributed to individual neurons. We develop unsupervised methods for discovering important neurons in NMT models.</description>
     </item>
     
     <item>
@@ -47,7 +47,8 @@ Distributed backend managing multiple machine translation engines built at QCRI 
       
       <guid>https://fdalvi.github.io/blog/2018-09-01-creating-video-screencaps/</guid>
       <description>I recently wanted to create screencaps for a large set of videos of various lengths and resolutions - basically screenshot each video 5 times, and then combine these 5 screencaps all into one nice image per video, with all of the images being of consistent size.
-  Sample render from a seaplane ride over Vancouver    There are a bunch of tools available online that I can either install locally, or upload my video files to get similar results - but given that this was easily achievable using simple tools like ffmpeg and imagemagick, I decided to whip up a quick script to accomplish this.</description>
+&amp;lt;figure&amp;gt; &amp;lt;img src=&amp;quot;https://github.com/fdalvi/video-screencaps/blob/master/docs/sample%20-%20500px.jpg?raw=true&amp;quot; alt=&amp;quot;Sample render from a seaplane ride over Vancouver&amp;quot;/&amp;gt; &amp;lt;figcaption&amp;gt; &amp;lt;p&amp;gt;Sample render from a seaplane ride over Vancouver&amp;lt;/p&amp;gt; &amp;lt;/figcaption&amp;gt;  
+ There are a bunch of tools available online that I can either install locally, or upload my video files to get similar results - but given that this was easily achievable using simple tools like ffmpeg and imagemagick, I decided to whip up a quick script to accomplish this.</description>
     </item>
     
     <item>

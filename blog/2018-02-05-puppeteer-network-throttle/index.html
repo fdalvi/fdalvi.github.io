@@ -19,7 +19,7 @@ A headless browser is a great way to automate testing, even on remote server mac
 <meta property='og:site_name' content='Fahim Dalvi'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/6c9adb6a0501da300bcdc582ade1e58d?s=256'><meta property='article:section' content='Blog'><meta property='article:tag' content='chrome'><meta property='article:tag' content='webapps'><meta property='article:tag' content='testing'><meta property='article:tag' content='network'><meta property='article:tag' content='puppeteer'><meta property='article:published_time' content='2018-02-05T22:00:00&#43;03:00'/><meta property='article:modified_time' content='2018-02-05T22:00:00&#43;03:00'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.34" />
+<meta name="generator" content="Hugo 0.54.0" />
 
   <title>Network throttling in Puppeteer • Fahim Dalvi</title>
   <link rel='canonical' href='https://fdalvi.github.io/blog/2018-02-05-puppeteer-network-throttle/'>
@@ -39,12 +39,16 @@ A headless browser is a great way to automate testing, even on remote server mac
 :root{--color-accent:#ffcd00;}
 </style>
 
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-19417017-2', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-19417017-2', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 </head>
 
@@ -158,13 +162,36 @@ A headless browser is a great way to automate testing, even on remote server mac
 </span><span style="color:#75715e"></span>  <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">500</span>,
   <span style="color:#75715e">// Simulated latency (ms)
 </span><span style="color:#75715e"></span>  <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">20</span>
-}</code></pre></div>
+}
+</code></pre></div>
 
 <p>As an example, lets say you wanted to load this site with a <em>200 Kb/s</em> connection and <em>20 ms</em> latency, and take a screenshot before shutting down, you could use the following script:</p>
 
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:100%;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79"> 1</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79"> 2</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79"> 3</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79"> 4</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79"> 5</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79"> 6</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79"> 7</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79"> 8</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79"> 9</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79">10</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79">11</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79">12</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79">13</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79">14</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79">15</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79">16</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79">17</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79">18</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79">19</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79">20</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79">21</span><span style="margin-right:0.4em;padding:00.4em00.4em;display:block;color:#7c7c79">22</span></code></pre></td>
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">22
+</span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">puppeteer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;puppeteer&#39;</span>)
 
@@ -187,13 +214,14 @@ A headless browser is a great way to automate testing, even on remote server mac
 </span><span style="color:#75715e"></span>  <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">page</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#e6db74">&#39;https://fdalvi.github.io&#39;</span>)
   <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">screenshot</span>({<span style="color:#a6e22e">path</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;screenshot.png&#39;</span>})
   <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">close</span>()
-})</code></pre></td></tr></table>
+})
+</code></pre></td></tr></table>
 </div>
 </div>
 
 <p>Chrome DevTools also have some nice presets like 3G (and used to have a lot more!). Although the original presets are gone, a <a href="https://cs.chromium.org/chromium/src/tools/android/loading/emulation.py" target="_blank">source file in the Chromium repo</a> still has the presets, listed below for convenience. Just replace the second option in line 11 with <code>NETWORK_PRESETS['...']</code> to use the preset of your choice. These values are probably average values for each type of connection, and all of the <code>/ 8</code> operations are because network speed is commonly measured in <em>bits/s</em>, while DevTools expects the throughputs in <em>bytes/s</em>!</p>
 
-<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">NETWORK_PRESETS</span> <span style="color:#f92672">=</span> {
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">NETWORK_PRESETS</span> <span style="color:#f92672">=</span> {
   <span style="color:#e6db74">&#39;GPRS&#39;</span><span style="color:#f92672">:</span> {
     <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
     <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">50</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
@@ -242,31 +270,26 @@ A headless browser is a great way to automate testing, even on remote server mac
     <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">15</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
     <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>
   }
-}</code></pre></div></p>
+}
+</code></pre></div>
 
 </div>
 
   
 <footer class='entry-footer'>
   <div class='container sep-before'>
-  <div class='categories'>
-  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  <div class='categories'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
   
 </svg>
-</span>
-  <span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/techtips'>Techtips</a></div>
-<div class='tags'>
-  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/techtips/'>techtips</a></div><div class='tags'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
   <line x1="7" y1="7" x2="7" y2="7"/>
   
 </svg>
-</span>
-  <span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/chrome'>Chrome</a>, <a class='tag' href='/tags/webapps'>Webapps</a>, <a class='tag' href='/tags/testing'>Testing</a>, <a class='tag' href='/tags/network'>Network</a>, <a class='tag' href='/tags/puppeteer'>Puppeteer</a></div>
-
+<span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/chrome/'>chrome</a>, <a class='tag' href='/tags/webapps/'>webapps</a>, <a class='tag' href='/tags/testing/'>testing</a>, <a class='tag' href='/tags/network/'>network</a>, <a class='tag' href='/tags/puppeteer/'>puppeteer</a></div>
   </div>
 </footer>
 
@@ -295,6 +318,8 @@ A headless browser is a great way to automate testing, even on remote server mac
   
   
 
+  
+    
   
     
   
@@ -450,7 +475,7 @@ A headless browser is a great way to automate testing, even on remote server mac
   </nav>
 </section>
           <div class='copyright'>
-  <p> &copy; 2017-2018 Fahim Dalvi. Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> and <a href="https://github.com/MunifTanjim/minimo" target="_blank">Minimo</a></p>
+  <p> &copy; 2017-2019 Fahim Dalvi. Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> and <a href="https://github.com/MunifTanjim/minimo" target="_blank">Minimo</a></p>
 </div>
 
         </div>

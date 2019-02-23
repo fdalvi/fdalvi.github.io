@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Video processing on Fahim Dalvi</title>
+    <title>video processing on Fahim Dalvi</title>
     <link>https://fdalvi.github.io/tags/video-processing/</link>
-    <description>Recent content in Video processing on Fahim Dalvi</description>
+    <description>Recent content in video processing on Fahim Dalvi</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 01 Sep 2018 12:00:00 +0300</lastBuildDate>
     
@@ -17,7 +17,8 @@
       
       <guid>https://fdalvi.github.io/blog/2018-09-01-creating-video-screencaps/</guid>
       <description>I recently wanted to create screencaps for a large set of videos of various lengths and resolutions - basically screenshot each video 5 times, and then combine these 5 screencaps all into one nice image per video, with all of the images being of consistent size.
-  Sample render from a seaplane ride over Vancouver    There are a bunch of tools available online that I can either install locally, or upload my video files to get similar results - but given that this was easily achievable using simple tools like ffmpeg and imagemagick, I decided to whip up a quick script to accomplish this.</description>
+&amp;lt;figure&amp;gt; &amp;lt;img src=&amp;quot;https://github.com/fdalvi/video-screencaps/blob/master/docs/sample%20-%20500px.jpg?raw=true&amp;quot; alt=&amp;quot;Sample render from a seaplane ride over Vancouver&amp;quot;/&amp;gt; &amp;lt;figcaption&amp;gt; &amp;lt;p&amp;gt;Sample render from a seaplane ride over Vancouver&amp;lt;/p&amp;gt; &amp;lt;/figcaption&amp;gt;  
+ There are a bunch of tools available online that I can either install locally, or upload my video files to get similar results - but given that this was easily achievable using simple tools like ffmpeg and imagemagick, I decided to whip up a quick script to accomplish this.</description>
     </item>
     
   </channel>

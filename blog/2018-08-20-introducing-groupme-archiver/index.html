@@ -15,7 +15,7 @@ Today, the situation gets a bit better for one platform, GroupMe. GroupMe is a p
 <meta property='og:site_name' content='Fahim Dalvi'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/6c9adb6a0501da300bcdc582ade1e58d?s=256'><meta property='article:section' content='Blog'><meta property='article:tag' content='groupme'><meta property='article:tag' content='backup'><meta property='article:tag' content='archive'><meta property='article:tag' content='chats'><meta property='article:published_time' content='2018-08-20T16:00:00&#43;03:00'/><meta property='article:modified_time' content='2018-08-20T16:00:00&#43;03:00'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.34" />
+<meta name="generator" content="Hugo 0.54.0" />
 
   <title>Introducing GroupMe Archiver • Fahim Dalvi</title>
   <link rel='canonical' href='https://fdalvi.github.io/blog/2018-08-20-introducing-groupme-archiver/'>
@@ -35,12 +35,16 @@ Today, the situation gets a bit better for one platform, GroupMe. GroupMe is a p
 :root{--color-accent:#ffcd00;}
 </style>
 
-<script>
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-19417017-2', 'auto');
-ga('send', 'pageview');
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-19417017-2', 'auto');
+	
+	ga('send', 'pageview');
+}
 </script>
-<script async src='//www.google-analytics.com/analytics.js'></script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 </head>
 
@@ -138,21 +142,12 @@ One min read
 <p>Today, the situation gets a bit better for one platform, <a href="https://www.groupme.com" target="_blank">GroupMe</a>. GroupMe is a platform focused on group messaging, and features nice subtle features like <em>likes per message</em>, attachments and so on. They also provide an awesome dev REST API - so it was very easy to pull historical data. The result is <a href="https://github.com/fdalvi/groupme-archiver" target="_blank">hosted on GitHub</a> - scripts to archive any chat on GroupMe, along with its metadata like group and user avatars, mentions, likes and attachments.</p>
 
 <div class='align-center'>
-  <figure >
-    
-        <img src="https://github.com/fdalvi/groupme-archiver/raw/master/docs/render.jpg?raw=true" alt="Sample render for a test chat" />
-    
-    
-    <figcaption>
-        <p>
-        Sample render for a test chat
-        
-            
-        
-        </p> 
-    </figcaption>
-    
-</figure>
+  <p><figure>
+    <img src="https://github.com/fdalvi/groupme-archiver/raw/master/docs/render.jpg?raw=true"
+         alt="Sample render for a test chat"/> <figcaption>
+            <p>Sample render for a test chat</p>
+        </figcaption>
+</figure></p>
 
 </div>
 
@@ -164,24 +159,18 @@ One min read
   
 <footer class='entry-footer'>
   <div class='container sep-before'>
-  <div class='categories'>
-  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+  <div class='categories'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
   
 </svg>
-</span>
-  <span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/announcements'>Announcements</a></div>
-<div class='tags'>
-  <span class='taxonomy-icon'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/announcements/'>announcements</a></div><div class='tags'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
   <path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z"/>
   <line x1="7" y1="7" x2="7" y2="7"/>
   
 </svg>
-</span>
-  <span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/groupme'>Groupme</a>, <a class='tag' href='/tags/backup'>Backup</a>, <a class='tag' href='/tags/archive'>Archive</a>, <a class='tag' href='/tags/chats'>Chats</a></div>
-
+<span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/groupme/'>groupme</a>, <a class='tag' href='/tags/backup/'>backup</a>, <a class='tag' href='/tags/archive/'>archive</a>, <a class='tag' href='/tags/chats/'>chats</a></div>
   </div>
 </footer>
 
@@ -220,6 +209,8 @@ One min read
   
   
 
+  
+    
   
     
   
@@ -375,7 +366,7 @@ One min read
   </nav>
 </section>
           <div class='copyright'>
-  <p> &copy; 2017-2018 Fahim Dalvi. Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> and <a href="https://github.com/MunifTanjim/minimo" target="_blank">Minimo</a></p>
+  <p> &copy; 2017-2019 Fahim Dalvi. Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> and <a href="https://github.com/MunifTanjim/minimo" target="_blank">Minimo</a></p>
 </div>
 
         </div>

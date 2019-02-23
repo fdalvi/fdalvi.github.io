@@ -15,7 +15,27 @@
       <loc>https://fdalvi.github.io/research/</loc>
     </url>
       <url>
+        <loc>https://fdalvi.github.io/research/2019-05-ICLR-unsupervised-neurons/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2019-02-AAAI-individual-neurons/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2019-02-AAAI-neurox/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
         <loc>https://fdalvi.github.io/research/2018-06-NAACL-stream-decoding/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2018-03-NEWSIR-qclusty/paper.pdf</loc>
         <priority>0.4</priority>
       </url>
     
@@ -304,49 +324,12 @@
     
   
     <url>
-      <loc>https://fdalvi.github.io/categories/announcements/</loc>
-      <lastmod>2018-08-20T16:00:00+03:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-      <loc>https://fdalvi.github.io/tags/archive/</loc>
-      <lastmod>2018-08-20T16:00:00+03:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
       <loc>https://fdalvi.github.io/authors/</loc>
       <priority>0</priority>
     </url>
   
     <url>
-      <loc>https://fdalvi.github.io/tags/awards/</loc>
-      <lastmod>2018-03-21T14:00:00+03:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-      <loc>https://fdalvi.github.io/tags/backup/</loc>
-      <lastmod>2018-08-20T16:00:00+03:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
       <loc>https://fdalvi.github.io/categories/</loc>
-      <lastmod>2018-08-20T16:00:00+03:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-      <loc>https://fdalvi.github.io/tags/chats/</loc>
-      <lastmod>2018-08-20T16:00:00+03:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-      <loc>https://fdalvi.github.io/tags/chrome/</loc>
-      <lastmod>2018-02-05T22:00:00+03:00</lastmod>
       <priority>0</priority>
     </url>
   
@@ -416,6 +399,73 @@
     </url>
   
     <url>
+      <loc>https://fdalvi.github.io/teaching/2018-dl4nlp-duisburg/</loc>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/projects/live-speech-translation/</loc>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/neural-networks/</loc>
+      <lastmod>2018-04-15T19:00:00+03:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/page/</loc>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/speech-translation/</loc>
+      <lastmod>2018-03-21T14:00:00+03:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/</loc>
+      <lastmod>2018-04-15T19:00:00+03:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/categories/announcements/</loc>
+      <lastmod>2018-08-20T16:00:00+03:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/archive/</loc>
+      <lastmod>2018-08-20T16:00:00+03:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/awards/</loc>
+      <lastmod>2018-03-21T14:00:00+03:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/backup/</loc>
+      <lastmod>2018-08-20T16:00:00+03:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/chats/</loc>
+      <lastmod>2018-08-20T16:00:00+03:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/chrome/</loc>
+      <lastmod>2018-02-05T22:00:00+03:00</lastmod>
+      <priority>0</priority>
+    </url>
+  
+    <url>
       <loc>https://fdalvi.github.io/authors/fdalvi/</loc>
       <lastmod>2018-09-01T12:00:00+03:00</lastmod>
       <priority>0</priority>
@@ -425,10 +475,6 @@
       <loc>https://fdalvi.github.io/tags/ffmpeg/</loc>
       <lastmod>2018-09-01T12:00:00+03:00</lastmod>
       <priority>0</priority>
-    </url>
-  
-    <url>
-      <loc>https://fdalvi.github.io/teaching/2018-dl4nlp-duisburg/</loc>
     </url>
   
     <url>
@@ -450,29 +496,14 @@
     </url>
   
     <url>
-      <loc>https://fdalvi.github.io/projects/live-speech-translation/</loc>
-    </url>
-  
-    <url>
       <loc>https://fdalvi.github.io/tags/network/</loc>
       <lastmod>2018-02-05T22:00:00+03:00</lastmod>
       <priority>0</priority>
     </url>
   
     <url>
-      <loc>https://fdalvi.github.io/tags/neural-networks/</loc>
-      <lastmod>2018-04-15T19:00:00+03:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
       <loc>https://fdalvi.github.io/categories/news/</loc>
       <lastmod>2018-04-15T19:00:00+03:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-      <loc>https://fdalvi.github.io/page/</loc>
       <priority>0</priority>
     </url>
   
@@ -497,18 +528,6 @@
     <url>
       <loc>https://fdalvi.github.io/tags/screencaps/</loc>
       <lastmod>2018-09-01T12:00:00+03:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-      <loc>https://fdalvi.github.io/tags/speech-translation/</loc>
-      <lastmod>2018-03-21T14:00:00+03:00</lastmod>
-      <priority>0</priority>
-    </url>
-  
-    <url>
-      <loc>https://fdalvi.github.io/tags/</loc>
-      <lastmod>2018-08-20T16:00:00+03:00</lastmod>
       <priority>0</priority>
     </url>
   
