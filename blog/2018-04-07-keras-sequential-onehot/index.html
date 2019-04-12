@@ -291,6 +291,27 @@ model<span style="color:#f92672">.</span>compile(loss<span style="color:#f92672"
 
   
 
+  
+    <div class="post-comment-reply">
+      <div class="post-comment-header">
+        <img class="post-comment-avatar" src="/img/icons8-name-filled-100.png" style="background-color: rgb(236, 32, 69)">
+        <p class="post-comment-info">
+        	<strong>Fahim</strong>
+        	
+        	<i><small>(In reply to TrentBrick)</i></small><br>
+        	Friday, Apr 12, 2019</p>
+      </div>
+      <p>Hi, Thanks for reporting this!</p>
+
+<p>Unfortunately, there have been some significant changes in the Sequential API which causes these kinds of errors.</p>
+
+<p>I&rsquo;ll look into it, but the best way forward is to use the Functional API :( This <a href="https://gist.github.com/bzamecnik/a33052ec46ee7efeb217856d98a4fb5f" target="_blank">gist</a> walks through doing this.</p>
+
+    </div>
+  
+
+  
+
           </div>
         
       
@@ -315,7 +336,27 @@ one_hot = OneHot(input_dim = num_class, input_length = 1)(class)
 
   
 
+  
+
+  
+    <div class="post-comment-reply">
+      <div class="post-comment-header">
+        <img class="post-comment-avatar" src="/img/icons8-name-filled-100.png" style="background-color: rgb(236, 32, 69)">
+        <p class="post-comment-info">
+        	<strong>Fahim</strong>
+        	
+        	<i><small>(In reply to Iqbal)</i></small><br>
+        	Friday, Apr 12, 2019</p>
+      </div>
+      Hello - This method is meant to be used in the Sequential API only, and so cannot be used Functionally. I did not test this recently, but this <a href="https://gist.github.com/bzamecnik/a33052ec46ee7efeb217856d98a4fb5f" target="_blank">gist</a> walks through a OneHot implementation using the functional API of Keras.
+    </div>
+  
+
           </div>
+        
+      
+        
+      
         
       
       
