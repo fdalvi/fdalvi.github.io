@@ -106,7 +106,185 @@ if (!doNotTrack) {
   <div class='container entry-content'>
   
 
+<h3 id="2020">2020</h3>
+
+
+	<div class="research-entry">
+	<div class="research-thumb">
+		<img src="/research/2020-07-ACL-similarity-analysis/thumbnail.jpg">
+	</div>
+	<div class="research-details">
+		<div class="research-title"><b>Similarity Analysis of Contextual Word Representation Models</b></div>
+		<div class="research-authors"> <i> John Wu, Yonatan Belinkov, Hassan Sajjad, Nadir Durrani, <span class='highlight-author'>Fahim Dalvi</span>, James Glass </i> </div>
+		
+		<div class="research-venue"><a href='http://acl2020.org'>58th Annual Meeting of the Association for Computational Linguistics</a></div>
+		<div class="research-abstract">	
+			This paper investigates contextual word representation models from the lens of similarity analysis. Given a collection of trained models, we measure the similarity of their internal representations and attention. Critically, these models come from vastly different architectures. We use existing and novel similarity measures that aim to gauge the level of localization of information in the deep models, and facilitate the investigation of which design factors affect model similarity, without requiring any external linguistic annotation. The analysis reveals that models within the same family are more similar to one another, as may be expected. Surprisingly, different architectures have rather similar representations, but different individual neurons. We also observed differences in information localization in lower and higher layers and found that higher layers are more affected by fine-tuning on downstream tasks.
+		</div>
+		<div class="research-actions">
+			<div class="research-action" onclick="this.parentNode.previousElementSibling.classList.toggle('expanded')">Abstract</div>
+			<a class="research-action" href="/research/2020-07-ACL-similarity-analysis/paper.pdf">PDF</a> 
+			
+			<div class="research-action" onclick="this.parentNode.nextElementSibling.classList.toggle('expanded')">Cite (.bib)</div> 
+			
+			
+		</div>
+		
+			<div class="research-citation">	
+				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{wu-etal-2020-similarity,
+    title = &#34;Similarity Analysis of Contextual Word Representation Models&#34;,
+    author = &#34;Wu, John  and
+      Belinkov, Yonatan  and
+      Sajjad, Hassan  and
+      Durrani, Nadir  and
+      Dalvi, Fahim  and
+      Glass, James&#34;,
+    booktitle = &#34;Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics&#34;,
+    month = jul,
+    year = &#34;2020&#34;,
+    address = &#34;Online&#34;,
+    publisher = &#34;Association for Computational Linguistics&#34;,
+    url = &#34;https://www.aclweb.org/anthology/2020.acl-main.422&#34;,
+    doi = &#34;10.18653/v1/2020.acl-main.422&#34;,
+    pages = &#34;4638--4655&#34;,
+    abstract = &#34;This paper investigates contextual word representation models from the lens of similarity analysis. Given a collection of trained models, we measure the similarity of their internal representations and attention. Critically, these models come from vastly different architectures. We use existing and novel similarity measures that aim to gauge the level of localization of information in the deep models, and facilitate the investigation of which design factors affect model similarity, without requiring any external linguistic annotation. The analysis reveals that models within the same family are more similar to one another, as may be expected. Surprisingly, different architectures have rather similar representations, but different individual neurons. We also observed differences in information localization in lower and higher layers and found that higher layers are more affected by fine-tuning on downstream tasks.&#34;,
+}</code></pre></div>
+			</div>
+		
+	</div>
+</div>
+
+
+	<div class="research-entry">
+	<div class="research-thumb">
+		<img src="/research/2020-03-CL-linguistic-representations-nmt/thumbnail.jpg">
+	</div>
+	<div class="research-details">
+		<div class="research-title"><b>On the Linguistic Representational Power of Neural Machine Translation Models</b></div>
+		<div class="research-authors"> <i> Yonatan Belinkov, Nadir Durrani, <span class='highlight-author'>Fahim Dalvi</span>, Hassan Sajjad, James Glass </i> </div>
+		
+		<div class="research-venue"><a href='https://www.aclweb.org/anthology/events/cl-2020/'> Computational Linguistics, Volume 46, Issue 1 </a></div>
+		<div class="research-abstract">	
+			Despite the recent success of deep neural networks in natural language processing and other spheres of artificial intelligence, their interpretability remains a challenge. We analyze the representations learned by neural machine translation (NMT) models at various levels of granularity and evaluate their quality through relevant extrinsic properties. In particular, we seek answers to the following questions: (i) How accurately is word structure captured within the learned representations, which is an important aspect in translating morphologically rich languages? (ii) Do the representations capture long-range dependencies, and effectively handle syntactically divergent languages? (iii) Do the representations capture lexical semantics? We conduct a thorough investigation along several parameters: (i) Which layers in the architecture capture each of these linguistic phenomena; (ii) How does the choice of translation unit (word, character, or subword unit) impact the linguistic properties captured by the underlying representations? (iii) Do the encoder and decoder learn differently and independently? (iv) Do the representations learned by multilingual NMT models capture the same amount of linguistic information as their bilingual counterparts? Our data-driven, quantitative evaluation illuminates important aspects in NMT models and their ability to capture various linguistic phenomena. We show that deep NMT models trained in an end-to-end fashion, without being provided any direct supervision during the training process, learn a non-trivial amount of linguistic information. Notable findings include the following observations: (i) Word morphology and part-of-speech information are captured at the lower layers of the model; (ii) In contrast, lexical semantics or non-local syntactic and semantic dependencies are better represented at the higher layers of the model; (iii) Representations learned using characters are more informed about word-morphology compared to those learned using subword units; and (iv) Representations learned by multilingual models are richer compared to bilingual models.
+		</div>
+		<div class="research-actions">
+			<div class="research-action" onclick="this.parentNode.previousElementSibling.classList.toggle('expanded')">Abstract</div>
+			<a class="research-action" href="/research/2020-03-CL-linguistic-representations-nmt/paper.pdf">PDF</a> 
+			
+			<div class="research-action" onclick="this.parentNode.nextElementSibling.classList.toggle('expanded')">Cite (.bib)</div> 
+			
+			
+		</div>
+		
+			<div class="research-citation">	
+				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@article{belinkov-etal-2020-linguistic,
+    title = &#34;On the Linguistic Representational Power of Neural Machine Translation Models&#34;,
+    author = &#34;Belinkov, Yonatan  and
+      Durrani, Nadir  and
+      Dalvi, Fahim  and
+      Sajjad, Hassan  and
+      Glass, James&#34;,
+    journal = &#34;Computational Linguistics&#34;,
+    volume = &#34;46&#34;,
+    number = &#34;1&#34;,
+    month = mar,
+    year = &#34;2020&#34;,
+    url = &#34;https://www.aclweb.org/anthology/2020.cl-1.1&#34;,
+    doi = &#34;10.1162/coli_a_00367&#34;,
+    pages = &#34;1--52&#34;
+}</code></pre></div>
+			</div>
+		
+	</div>
+</div>
+
+
+
 <h3 id="2019">2019</h3>
+
+
+	<div class="research-entry">
+	<div class="research-thumb">
+		<img src="/research/2019-09-OSNEM-rumour-verification/thumbnail.jpg">
+	</div>
+	<div class="research-details">
+		<div class="research-title"><b>Rumour verification through recurring information and an inner-attention mechanism</b></div>
+		<div class="research-authors"> <i> Ahmet Aker, Alfred Sliwa, <span class='highlight-author'>Fahim Dalvi</span>, Kalina Bontcheva </i> </div>
+		
+		<div class="research-venue"><a href='https://www.sciencedirect.com/journal/online-social-networks-and-media/vol/13/suppl/C'> Online Social Networks and Media Volume 13 </a></div>
+		<div class="research-abstract">	
+			Verification of online rumours is becoming an increasingly important task with the prevalence of event discussions on social media platforms. This paper proposes an inner-attention-based neural network model that uses frequent, recurring terms from past rumours to classify a newly emerging rumour as true, false or unverified. Unlike other methods proposed in related work, our model uses the source rumour alone without any additional information, such as user replies to the rumour or additional feature engineering. Our method outperforms the current state-of-the-art methods on benchmark datasets (RumourEval2017) by 3% accuracy and 6% F-1 leading to 60.7% accuracy and 61.6% F-1. We also compare our attention-based method to two similar models which however do not make use of recurrent terms. The attention-based method guided by frequent recurring terms outperforms this baseline on the same dataset, indicating that the recurring terms injected by the attention mechanism have high positive impact on distinguishing between true and false rumours. Furthermore, we perform out-of-domain evaluations and show that our model is indeed highly competitive compared to the baselines on a newly released RumourEval2019 dataset and also achieves the best performance on classifying fake and legitimate news headlines.
+		</div>
+		<div class="research-actions">
+			<div class="research-action" onclick="this.parentNode.previousElementSibling.classList.toggle('expanded')">Abstract</div>
+			<a class="research-action" href="/research/2019-09-OSNEM-rumour-verification/paper.pdf">PDF</a> 
+			
+			<div class="research-action" onclick="this.parentNode.nextElementSibling.classList.toggle('expanded')">Cite (.bib)</div> 
+			
+			
+		</div>
+		
+			<div class="research-citation">	
+				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@article{AKER2019100045,
+  title = &#34;Rumour verification through recurring information and an inner-attention mechanism&#34;,
+  journal = &#34;Online Social Networks and Media&#34;,
+  volume = &#34;13&#34;,
+  pages = &#34;100045&#34;,
+  year = &#34;2019&#34;,
+  issn = &#34;2468-6964&#34;,
+  doi = &#34;https://doi.org/10.1016/j.osnem.2019.07.001&#34;,
+  url = &#34;http://www.sciencedirect.com/science/article/pii/S2468696419300588&#34;,
+  author = &#34;Ahmet Aker and Alfred Sliwa and Fahim Dalvi and Kalina Bontcheva&#34;,
+  keywords = &#34;Rumour Verification, Inner Attention Model, Recurring Terms in Rumours&#34;
+}</code></pre></div>
+			</div>
+		
+	</div>
+</div>
+
+
+	<div class="research-entry">
+	<div class="research-thumb">
+		<img src="/research/2019-06-NAACL-comparing-nmt-granularity/thumbnail.jpg">
+	</div>
+	<div class="research-details">
+		<div class="research-title"><b>One Size Does Not Fit All: Comparing NMT Representations of Different Granularities</b></div>
+		<div class="research-authors"> <i> Nadir Durrani, <span class='highlight-author'>Fahim Dalvi</span>, Hassan Sajjad, Yonatan Belinkov, Preslav Nakov </i> </div>
+		
+		<div class="research-venue"><a href='https://www.aclweb.org/anthology/events/naacl-2019/'> The 17th Annual Conference of the North American Chapter of the Association for Computational Linguistics </a></div>
+		<div class="research-abstract">	
+			Recent work has shown that contextualized word representations derived from neural machine translation are a viable alternative to such from simple word predictions tasks. This is because the internal understanding that needs to be built in order to be able to translate from one language to another is much more comprehensive. Unfortunately, computational and memory limitations as of present prevent NMT models from using large word vocabularies, and thus alternatives such as subword units (BPE and morphological segmentations) and characters have been used. Here we study the impact of using different kinds of units on the quality of the resulting representations when used to model morphology, syntax, and semantics. We found that while representations derived from subwords are slightly better for modeling syntax, character-based representations are superior for modeling morphology and are also more robust to noisy input.
+		</div>
+		<div class="research-actions">
+			<div class="research-action" onclick="this.parentNode.previousElementSibling.classList.toggle('expanded')">Abstract</div>
+			<a class="research-action" href="/research/2019-06-NAACL-comparing-nmt-granularity/paper.pdf">PDF</a> 
+			
+			<div class="research-action" onclick="this.parentNode.nextElementSibling.classList.toggle('expanded')">Cite (.bib)</div> 
+			
+			
+		</div>
+		
+			<div class="research-citation">	
+				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{durrani-etal-2019-one,
+  title = &#34;One Size Does Not Fit All: Comparing {NMT} Representations of Different Granularities&#34;,
+  author = &#34;Durrani, Nadir  and
+            Dalvi, Fahim  and
+            Sajjad, Hassan  and
+            Belinkov, Yonatan  and
+            Nakov, Preslav&#34;,
+  booktitle = &#34;Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)&#34;,
+  month = jun,
+  year = &#34;2019&#34;,
+  address = &#34;Minneapolis, Minnesota&#34;,
+  publisher = &#34;Association for Computational Linguistics&#34;,
+  url = &#34;https://www.aclweb.org/anthology/N19-1154&#34;,
+  doi = &#34;10.18653/v1/N19-1154&#34;,
+  pages = &#34;1504--1516&#34;,
+}</code></pre></div>
+			</div>
+		
+	</div>
+</div>
 
 
 	<div class="research-entry">
@@ -234,6 +412,44 @@ if (!doNotTrack) {
 
 
 <h3 id="2018">2018</h3>
+
+
+	<div class="research-entry">
+	<div class="research-thumb">
+		<img src="/research/2018-10-LCN-group-identification-crowd/thumbnail.jpg">
+	</div>
+	<div class="research-details">
+		<div class="research-title"><b>Group Identification in Crowded Environments Using Proximity Sensing</b></div>
+		<div class="research-authors"> <i> Shaden Shaar, Saquib Razak, <span class='highlight-author'>Fahim Dalvi</span>, Syed Ali Hashim Moosavi </i> </div>
+		
+		<div class="research-venue"><a href='https://ieeexplore.ieee.org/servlet/opac?punumber=8635823'> 43rd IEEE Conference on Local Computer Networks </a></div>
+		<div class="research-abstract">	
+			Children and elderly separating from their family members is a common phenomenon, especially in crowded environments. In order to avoid this problem, places like Disney World and pilgrimage officials have developed systems like wearable tags to determine groups or families. These tags require information about families to be entered manually, either by the users or the facility organizers. The information, if correct, can then be used to help identify and locate a lost person&#39;s group. Manually entering information is inefficient, and usually leads to either long waiting times during entry, or partial information entry within the tags. In this paper, we propose a system that uses proximity sensing to determine groups and families without any input or interaction with the user. In our system, each user is given a wearable device that keeps track of it&#39;s neighbors using bluetooth transmissions. The system then uses this proximity data to predict cliques that represent family members.
+		</div>
+		<div class="research-actions">
+			<div class="research-action" onclick="this.parentNode.previousElementSibling.classList.toggle('expanded')">Abstract</div>
+			<a class="research-action" href="/research/2018-10-LCN-group-identification-crowd/paper.pdf">PDF</a> 
+			
+			<div class="research-action" onclick="this.parentNode.nextElementSibling.classList.toggle('expanded')">Cite (.bib)</div> 
+			
+			
+		</div>
+		
+			<div class="research-citation">	
+				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@InProceedings{shaar2018group,
+  title={Group Identification in Crowded Environments Using Proximity Sensing},
+  author={Shaar, Shaden and Razak, Saquib and Dalvi, Fahim and Moosavi, Syed Ali Hashim},
+  booktitle={43rd {IEEE} Conference on Local Computer Networks, {LCN} 2018, Chicago, IL, USA, October 1-4, 2018},
+  pages={319--322},
+  year={2018},
+  organization={IEEE},
+  url={https://doi.org/10.1109/LCN.2018.8638142},
+  doi={10.1109/LCN.2018.8638142}
+}</code></pre></div>
+			</div>
+		
+	</div>
+</div>
 
 
 	<div class="research-entry">
@@ -1041,7 +1257,7 @@ if (!doNotTrack) {
   </nav>
 </section>
           <div class='copyright'>
-  <p> &copy; 2017-2019 Fahim Dalvi. Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> and <a href="https://github.com/MunifTanjim/minimo" target="_blank">Minimo</a></p>
+  <p> &copy; 2017-2020 Fahim Dalvi. Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> and <a href="https://github.com/MunifTanjim/minimo" target="_blank">Minimo</a></p>
 </div>
 
         </div>

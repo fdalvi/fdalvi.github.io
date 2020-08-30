@@ -27,7 +27,7 @@ Distributed backend managing multiple machine translation engines built at QCRI 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://fdalvi.github.io/research/</guid>
-      <description>2019  Identifying And Controlling Important Neurons In Neural Machine Translation  Anthony Bau, Yonatan Belinkov, Hassan Sajjad, Nadir Durrani, Fahim Dalvi, James Glass   Seventh International Conference on Learning Representations  Neural machine translation (NMT) models learn representations containing substantial linguistic information. However, it is not clear if such information is fully distributed or if some of it can be attributed to individual neurons. We develop unsupervised methods for discovering important neurons in NMT models.</description>
+      <description>2020  Similarity Analysis of Contextual Word Representation Models  John Wu, Yonatan Belinkov, Hassan Sajjad, Nadir Durrani, Fahim Dalvi, James Glass   58th Annual Meeting of the Association for Computational Linguistics This paper investigates contextual word representation models from the lens of similarity analysis. Given a collection of trained models, we measure the similarity of their internal representations and attention. Critically, these models come from vastly different architectures.</description>
     </item>
     
     <item>

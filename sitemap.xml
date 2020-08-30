@@ -15,6 +15,26 @@
       <loc>https://fdalvi.github.io/research/</loc>
     </url>
       <url>
+        <loc>https://fdalvi.github.io/research/2020-07-ACL-similarity-analysis/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2020-03-CL-linguistic-representations-nmt/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2019-09-OSNEM-rumour-verification/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2019-06-NAACL-comparing-nmt-granularity/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
         <loc>https://fdalvi.github.io/research/2019-05-ICLR-unsupervised-neurons/paper.pdf</loc>
         <priority>0.4</priority>
       </url>
@@ -36,6 +56,11 @@
     
       <url>
         <loc>https://fdalvi.github.io/research/2019-02-AAAI-individual-neurons/poster.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2018-10-LCN-group-identification-crowd/paper.pdf</loc>
         <priority>0.4</priority>
       </url>
     
