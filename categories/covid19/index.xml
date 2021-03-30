@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>covid19 on Fahim Dalvi</title>
+    <link>https://fdalvi.github.io/categories/covid19/</link>
+    <description>Recent content in covid19 on Fahim Dalvi</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 29 Mar 2021 12:00:00 +0300</lastBuildDate>
+    
+	<atom:link href="https://fdalvi.github.io/categories/covid19/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>COVID19 Vaccine Registration Guide for Qatar</title>
+      <link>https://fdalvi.github.io/blog/2021-03-29-covid-vaccine-registration-guide/</link>
+      <pubDate>Mon, 29 Mar 2021 12:00:00 +0300</pubDate>
+      
+      <guid>https://fdalvi.github.io/blog/2021-03-29-covid-vaccine-registration-guide/</guid>
+      <description>The government of the State of Qatar launched a website to register for the free national vaccination drive. However, a significant portion of the population may lack the technical know-how to register themselves. This project aims to bridge this gap and provide easy-to-follow instructions with screenshots for people to register themselves in multiple languages.
+Click on one of following links to read the guide in your preferred language:
+How can I register for the COVID-19 vaccine in Qatar?</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -5,7 +5,7 @@
     <link>https://fdalvi.github.io/</link>
     <description>Recent content in Home on Fahim Dalvi</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 01 Sep 2018 12:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 29 Mar 2021 12:00:00 +0300</lastBuildDate>
     
 	<atom:link href="https://fdalvi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -38,6 +38,17 @@ Distributed backend managing multiple machine translation engines built at QCRI 
       
       <guid>https://fdalvi.github.io/teaching/</guid>
       <description>From Theory to Practice: Deep Learning for NLP Co-Lecturer Universität Duisburg-Essen, 2018 A 5-day lecture series covering the basics of machine learning, neural networks and deep neural networks. We look at several deep neural network architectures from the perspective of applying them to various classification tasks, such as sequence prediction and generation. Every lecture is accompanied with practice problems implemented in Keras, a popular Python framework for deep learning.   Deep Learning for Machine Translation Co-Lecturer DGfS Computational Linguistics Fall School, 2017 A 10-lecture crash course in deep learning, specialized towards machine translation.</description>
+    </item>
+    
+    <item>
+      <title>COVID19 Vaccine Registration Guide for Qatar</title>
+      <link>https://fdalvi.github.io/blog/2021-03-29-covid-vaccine-registration-guide/</link>
+      <pubDate>Mon, 29 Mar 2021 12:00:00 +0300</pubDate>
+      
+      <guid>https://fdalvi.github.io/blog/2021-03-29-covid-vaccine-registration-guide/</guid>
+      <description>The government of the State of Qatar launched a website to register for the free national vaccination drive. However, a significant portion of the population may lack the technical know-how to register themselves. This project aims to bridge this gap and provide easy-to-follow instructions with screenshots for people to register themselves in multiple languages.
+Click on one of following links to read the guide in your preferred language:
+How can I register for the COVID-19 vaccine in Qatar?</description>
     </item>
     
     <item>
