@@ -5,7 +5,7 @@
     <link>https://fdalvi.github.io/</link>
     <description>Recent content in Home on Fahim Dalvi</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 29 Mar 2021 12:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 11 Jun 2021 12:00:00 +0300</lastBuildDate>
     
 	<atom:link href="https://fdalvi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -38,6 +38,17 @@ Distributed backend managing multiple machine translation engines built at QCRI 
       
       <guid>https://fdalvi.github.io/teaching/</guid>
       <description>From Theory to Practice: Deep Learning for NLP Co-Lecturer Universität Duisburg-Essen, 2018 A 5-day lecture series covering the basics of machine learning, neural networks and deep neural networks. We look at several deep neural network architectures from the perspective of applying them to various classification tasks, such as sequence prediction and generation. Every lecture is accompanied with practice problems implemented in Keras, a popular Python framework for deep learning.   Deep Learning for Machine Translation Co-Lecturer DGfS Computational Linguistics Fall School, 2017 A 10-lecture crash course in deep learning, specialized towards machine translation.</description>
+    </item>
+    
+    <item>
+      <title>Consuming Paginated API&#39;s in Javascript</title>
+      <link>https://fdalvi.github.io/blog/2021-06-11-consume-paginated-apis/</link>
+      <pubDate>Fri, 11 Jun 2021 12:00:00 +0300</pubDate>
+      
+      <guid>https://fdalvi.github.io/blog/2021-06-11-consume-paginated-apis/</guid>
+      <description>Several providers adopt a notion of pagination in their API&amp;rsquo;s when the number of results from a query is large. This is common to see when the API provides a list of things, like users, billing statements, posts and so on.
+A pattern that is adopted by several providers works as follows:
+ Developer makes a request to provider (e.g. for the billing statements) The API returns a &amp;ldquo;page&amp;rdquo; with say 10 statements, and a link to the next page Developer makes a request to the provided link The API returns another &amp;ldquo;page&amp;rdquo; with statements, and no link Seeing no link, the developer now knows that all the required entries have been fetched  The number of pages can be dynamic, so the developer needs to keep following the links until they exist if they want to fetch all the results.</description>
     </item>
     
     <item>

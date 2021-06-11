@@ -38,11 +38,29 @@
     </item>
     
     <item>
+      <title>api</title>
+      <link>https://fdalvi.github.io/tags/api/</link>
+      <pubDate>Fri, 11 Jun 2021 12:00:00 +0300</pubDate>
+      
+      <guid>https://fdalvi.github.io/tags/api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>archive</title>
       <link>https://fdalvi.github.io/tags/archive/</link>
       <pubDate>Mon, 20 Aug 2018 16:00:00 +0300</pubDate>
       
       <guid>https://fdalvi.github.io/tags/archive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>async</title>
+      <link>https://fdalvi.github.io/tags/async/</link>
+      <pubDate>Fri, 11 Jun 2021 12:00:00 +0300</pubDate>
+      
+      <guid>https://fdalvi.github.io/tags/async/</guid>
       <description></description>
     </item>
     
@@ -61,6 +79,15 @@
       <pubDate>Mon, 20 Aug 2018 16:00:00 +0300</pubDate>
       
       <guid>https://fdalvi.github.io/tags/backup/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>browser</title>
+      <link>https://fdalvi.github.io/tags/browser/</link>
+      <pubDate>Fri, 11 Jun 2021 12:00:00 +0300</pubDate>
+      
+      <guid>https://fdalvi.github.io/tags/browser/</guid>
       <description></description>
     </item>
     
@@ -119,6 +146,15 @@
     </item>
     
     <item>
+      <title>javascript</title>
+      <link>https://fdalvi.github.io/tags/javascript/</link>
+      <pubDate>Fri, 11 Jun 2021 12:00:00 +0300</pubDate>
+      
+      <guid>https://fdalvi.github.io/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>keras</title>
       <link>https://fdalvi.github.io/tags/keras/</link>
       <pubDate>Sun, 15 Apr 2018 19:00:00 +0300</pubDate>
@@ -133,6 +169,24 @@
       <pubDate>Mon, 05 Feb 2018 22:00:00 +0300</pubDate>
       
       <guid>https://fdalvi.github.io/tags/network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nodejs</title>
+      <link>https://fdalvi.github.io/tags/nodejs/</link>
+      <pubDate>Fri, 11 Jun 2021 12:00:00 +0300</pubDate>
+      
+      <guid>https://fdalvi.github.io/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>paginations</title>
+      <link>https://fdalvi.github.io/tags/paginations/</link>
+      <pubDate>Fri, 11 Jun 2021 12:00:00 +0300</pubDate>
+      
+      <guid>https://fdalvi.github.io/tags/paginations/</guid>
       <description></description>
     </item>
     

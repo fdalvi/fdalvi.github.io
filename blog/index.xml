@@ -5,10 +5,21 @@
     <link>https://fdalvi.github.io/blog/</link>
     <description>Recent content in Blog on Fahim Dalvi</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 29 Mar 2021 12:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Fri, 11 Jun 2021 12:00:00 +0300</lastBuildDate>
     
 	<atom:link href="https://fdalvi.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Consuming Paginated API&#39;s in Javascript</title>
+      <link>https://fdalvi.github.io/blog/2021-06-11-consume-paginated-apis/</link>
+      <pubDate>Fri, 11 Jun 2021 12:00:00 +0300</pubDate>
+      
+      <guid>https://fdalvi.github.io/blog/2021-06-11-consume-paginated-apis/</guid>
+      <description>Several providers adopt a notion of pagination in their API&amp;rsquo;s when the number of results from a query is large. This is common to see when the API provides a list of things, like users, billing statements, posts and so on.
+A pattern that is adopted by several providers works as follows:
+ Developer makes a request to provider (e.g. for the billing statements) The API returns a &amp;ldquo;page&amp;rdquo; with say 10 statements, and a link to the next page Developer makes a request to the provided link The API returns another &amp;ldquo;page&amp;rdquo; with statements, and no link Seeing no link, the developer now knows that all the required entries have been fetched  The number of pages can be dynamic, so the developer needs to keep following the links until they exist if they want to fetch all the results.</description>
+    </item>
     
     <item>
       <title>COVID19 Vaccine Registration Guide for Qatar</title>
