@@ -15,6 +15,31 @@
       <loc>https://fdalvi.github.io/research/</loc>
     </url>
       <url>
+        <loc>https://fdalvi.github.io/research/2021-06-ICWSM-fighting-covid-infodemic/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2021-06-NAACL-finegrained-interpretation-tutorial/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2020-12-COLING-arabench/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2020-11-EMNLP-analyzing-indiividual-neurons-transformers/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2020-11-EMNLP-analyzing-redundancy-pretrained-models/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
         <loc>https://fdalvi.github.io/research/2020-07-ACL-similarity-analysis/paper.pdf</loc>
         <priority>0.4</priority>
       </url>
