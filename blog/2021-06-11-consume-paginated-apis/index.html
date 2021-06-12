@@ -183,7 +183,10 @@ if (!doNotTrack) {
 
 <p>Now let us use the aformentioned <a href="https://caolan.github.io/async/v3/" target="_blank">async</a> library to implement our consumer that can follow the next links until all the pages are exhausted. Specifically, we will use the <a href="https://caolan.github.io/async/v3/docs.html#whilst" target="_blank">async.whilst</a> control flow helper.</p>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#a6e22e">all_results</span> <span style="color:#f92672">=</span> []
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">// Tested in node v14
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">async</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;async&#39;</span>);
+
+<span style="color:#a6e22e">all_results</span> <span style="color:#f92672">=</span> []
 <span style="color:#a6e22e">sample_paginated_api</span>(<span style="color:#e6db74">&#39;0&#39;</span>).<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">results</span>)  =&gt; {
   <span style="color:#a6e22e">latest_results</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">results</span>;
   <span style="color:#a6e22e">all_results</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">latest_results</span>);
