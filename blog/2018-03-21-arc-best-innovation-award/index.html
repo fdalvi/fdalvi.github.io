@@ -274,7 +274,6 @@ One min read
     }
     function onSubmit(){
       var form = document.getElementById("post-comment-form");
-      var xhr = new XMLHttpRequest();
       var params = [].filter.call(form.elements, function (el) {return !(el.type in ['checkbox', 'radio']) || el.checked;})
       .filter(function(el) { return !!el.name; }) 
       .filter(function(el) { return !el.disabled; }) 
@@ -282,6 +281,14 @@ One min read
         if (el.type=='checkbox') return encodeURIComponent(el.name) + '=' + encodeURIComponent(el.checked);
         else return encodeURIComponent(el.name) + '=' + encodeURIComponent(el.value);
       }).join('&'); 
+
+      var comment_text = form.elements["fields[comment]"].value;
+      if (comment_text.indexOf("http://") != -1 || comment_text.indexOf("https://") != -1) {
+        return false;  
+      }
+      
+
+      var xhr = new XMLHttpRequest();
       xhr.open("POST", form.action);
       xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
       xhr.onload = function(r) {
