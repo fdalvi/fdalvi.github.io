@@ -16,10 +16,11 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://fdalvi.github.io/projects/</guid>
-      <description> Live Speech Translation
+      <description>NeuroX: Explainable AI
+Interpretation and Explainability for Deep NLP models. Lots of analysis of Foundational language models and Machine Translation models. Research assets and toolkits for easy interpretation at the neuron-level in Deep NLP models.
+Python Flask PyTorch Transformers React    Live Speech Translation
 Bilingual Arabic and English transcription and translation platform with a robust backend enabling live broadcastable sessions
-React NodeJS MongoDB Nginx Puppeteer Artillery.io    Machine Translation API
-Distributed backend managing multiple machine translation engines built at QCRI and a simple to use user-facing REST API. Served over 400K requests from 30+ countries so far! Python React NodeJS MongoDB Grommet   More to come!   </description>
+React NodeJS MongoDB Nginx Puppeteer Artillery.io    Shaheen: Machine Translation API</description>
     </item>
     
     <item>
