@@ -28,7 +28,7 @@ React NodeJS MongoDB Nginx Puppeteer Artillery.io    Shaheen: Machine Translatio
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://fdalvi.github.io/research/</guid>
-      <description>2022  On the Transformation of Latent Space in Fine-Tuned NLP Models  Nadir Durrani, Hassan Sajjad, Fahim Dalvi, Firoj Alam   The 2022 Conference on Empirical Methods in Natural Language Processing We study the evolution of latent space in fine-tuned NLP models. Different from the commonly used probing-framework, we opt for an unsupervised method to analyze representations. More specifically, we discover latent concepts in the representational space using hierarchical clustering.</description>
+      <description>2023  NeuroX Library for Neuron Analysis of Deep NLP Models  Fahim Dalvi, Hassan Sajjad, Nadir Durrani   The 61st Annual Meeting of the Association for Computational Linguistics Neuron analysis provides insights into how knowledge is structured in representations and discovers the role of neurons in the network. In addition to developing an understanding of our models, neuron analysis enables various applications such as debiasing, domain adaptation and architectural search.</description>
     </item>
     
     <item>

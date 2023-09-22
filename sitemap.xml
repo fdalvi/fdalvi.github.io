@@ -15,6 +15,36 @@
       <loc>https://fdalvi.github.io/research/</loc>
     </url>
       <url>
+        <loc>https://fdalvi.github.io/research/2023-07-ACL-NeuroX-demo/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2023-07-ACL-NeuroX-demo/poster.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2023-05-EACL-nxplain/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2023-05-EACL-nxplain/poster.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2023-02-AAAI-conceptx-demo/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2023-01-CSL-dropping-layers-transformers/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
         <loc>https://fdalvi.github.io/research/2022-12-EMNLP-transformation-latent-space-fine-tuned/paper.pdf</loc>
         <priority>0.4</priority>
       </url>
