@@ -1,15 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>guide on Fahim Dalvi</title>
     <link>https://fdalvi.github.io/tags/guide/</link>
     <description>Recent content in guide on Fahim Dalvi</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 29 Mar 2021 12:00:00 +0300</lastBuildDate>
-    
-	<atom:link href="https://fdalvi.github.io/tags/guide/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en</language>
+    <lastBuildDate>Mon, 29 Mar 2021 12:00:00 +0300</lastBuildDate><atom:link href="https://fdalvi.github.io/tags/guide/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>COVID19 Vaccine Registration Guide for Qatar</title>
       <link>https://fdalvi.github.io/blog/2021-03-29-covid-vaccine-registration-guide/</link>
@@ -17,7 +14,7 @@
       
       <guid>https://fdalvi.github.io/blog/2021-03-29-covid-vaccine-registration-guide/</guid>
       <description>COVID-19 vaccine registration guide in English, Urdu, Tamil, Sinhala and Hindi. More languages coming soon!
-  How can I register for the COVID-19 vaccine in Qatar? (English)
+How can I register for the COVID-19 vaccine in Qatar? (English)
 میں قطر میں کووڈ ۱۹ ویکسین کیلیے کیسے رجسٹر کر سکتا ہوں؟ (Urdu)
 நான் எப்படி கத்தாரில் COVID 19 தடுப்பூசி பதிவு செய்யலாம்? (Tamil)
 මම කොහොමද කටාර් COVID-19 එන්නත් සඳහා ලියාපදිංචි විය හැකිය? (Sinhala)

@@ -6,20 +6,20 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <meta name='description' content='Several providers adopt a notion of pagination in their API&rsquo;s when the number of results from a query is large. This is common to see when the API provides a list of things, like users, billing statements, posts and so on.
 A pattern that is adopted by several providers works as follows:
- Developer makes a request to provider (e.g. for the billing statements) The API returns a &ldquo;page&rdquo; with say 10 statements, and a link to the next page Developer makes a request to the provided link The API returns another &ldquo;page&rdquo; with statements, and no link Seeing no link, the developer now knows that all the required entries have been fetched  The number of pages can be dynamic, so the developer needs to keep following the links until they exist if they want to fetch all the results.'>
+Developer makes a request to provider (e.g. for the billing statements) The API returns a &ldquo;page&rdquo; with say 10 statements, and a link to the next page Developer makes a request to the provided link The API returns another &ldquo;page&rdquo; with statements, and no link Seeing no link, the developer now knows that all the required entries have been fetched The number of pages can be dynamic, so the developer needs to keep following the links until they exist if they want to fetch all the results.'>
 <meta name='theme-color' content='#ffcd00'>
 
-<meta property='og:title' content='Consuming Paginated API&#39;s in Javascript • Fahim Dalvi'>
+<meta property='og:title' content='Consuming Paginated API&#39;s in Javascript • '>
 <meta property='og:description' content='Several providers adopt a notion of pagination in their API&rsquo;s when the number of results from a query is large. This is common to see when the API provides a list of things, like users, billing statements, posts and so on.
 A pattern that is adopted by several providers works as follows:
- Developer makes a request to provider (e.g. for the billing statements) The API returns a &ldquo;page&rdquo; with say 10 statements, and a link to the next page Developer makes a request to the provided link The API returns another &ldquo;page&rdquo; with statements, and no link Seeing no link, the developer now knows that all the required entries have been fetched  The number of pages can be dynamic, so the developer needs to keep following the links until they exist if they want to fetch all the results.'>
+Developer makes a request to provider (e.g. for the billing statements) The API returns a &ldquo;page&rdquo; with say 10 statements, and a link to the next page Developer makes a request to the provided link The API returns another &ldquo;page&rdquo; with statements, and no link Seeing no link, the developer now knows that all the required entries have been fetched The number of pages can be dynamic, so the developer needs to keep following the links until they exist if they want to fetch all the results.'>
 <meta property='og:url' content='https://fdalvi.github.io/blog/2021-06-11-consume-paginated-apis/'>
 <meta property='og:site_name' content='Fahim Dalvi'>
-<meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/6c9adb6a0501da300bcdc582ade1e58d?s=256'><meta property='article:section' content='Blog'><meta property='article:tag' content='javascript'><meta property='article:tag' content='api'><meta property='article:tag' content='nodejs'><meta property='article:tag' content='async'><meta property='article:tag' content='paginations'><meta property='article:tag' content='browser'><meta property='article:published_time' content='2021-06-11T12:00:00&#43;03:00'/><meta property='article:modified_time' content='2021-06-11T12:00:00&#43;03:00'/><meta name='twitter:card' content='summary'>
+<meta property='og:type' content='article'><meta property='article:section' content='Blog'><meta property='article:tag' content='javascript'><meta property='article:tag' content='api'><meta property='article:tag' content='nodejs'><meta property='article:tag' content='async'><meta property='article:tag' content='paginations'><meta property='article:tag' content='browser'><meta property='article:published_time' content='2021-06-11T12:00:00&#43;03:00'/><meta property='article:modified_time' content='2021-06-11T12:00:00&#43;03:00'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.118.2">
 
-  <title>Consuming Paginated API&#39;s in Javascript • Fahim Dalvi</title>
+  <title>Consuming Paginated API&#39;s in Javascript • </title>
   <link rel='canonical' href='https://fdalvi.github.io/blog/2021-06-11-consume-paginated-apis/'>
   
   
@@ -70,8 +70,8 @@ if (!doNotTrack) {
         <a href='/research/'>Research</a>
       </li><li class='item'>
         <a href='/teaching/'>Teaching</a>
-      </li><li class='item'>
-        <a href='/blog/'>Blog</a>
+      </li><li class='item current'>
+        <a aria-current='page' href='/blog/'>Blog</a>
       </li><li class='item'>
         <a href='/fdalvi-resume.pdf'>Resume</a>
       </li></ul>
@@ -117,7 +117,7 @@ if (!doNotTrack) {
   <path d="M16,6.37A4,4,0,1,1,12.63,3,4,4,0,0,1,16,6.37Z"/>
   
 </svg>
-<span class='screen-reader-text'> by </span><a href='/authors/fdalvi'>Fahim Dalvi</a></span>
+<span class='screen-reader-text'> by </span><a href='/authors/%3cnil%3e'></a></span>
   
 <span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
@@ -140,9 +140,7 @@ if (!doNotTrack) {
 
   <div class='container entry-content'>
   <p>Several providers adopt a notion of pagination in their API&rsquo;s when the number of results from a query is large. This is common to see when the API provides a list of <em>things</em>, like <em>users</em>, <em>billing statements</em>, <em>posts</em> and so on.</p>
-
 <p>A pattern that is adopted by several providers works as follows:</p>
-
 <ol>
 <li>Developer makes a request to provider (e.g. for the billing statements)</li>
 <li>The API returns a &ldquo;page&rdquo; with say 10 statements, and a link to the next page</li>
@@ -150,82 +148,67 @@ if (!doNotTrack) {
 <li>The API returns another &ldquo;page&rdquo; with statements, and no link</li>
 <li>Seeing no link, the developer now knows that all the required entries have been fetched</li>
 </ol>
-
-<p>The number of pages can be dynamic, so the developer needs to keep following the links until they exist if they want to fetch all the results. The code to do this manually can get quite convoluted, with many custom solutions requiring some sort of queue. An easier solution is to use the excellent <a href="https://caolan.github.io/async/v3/" target="_blank">async</a> library, which works both in the browser and in NodeJS.</p>
-
+<p>The number of pages can be dynamic, so the developer needs to keep following the links until they exist if they want to fetch all the results. The code to do this manually can get quite convoluted, with many custom solutions requiring some sort of queue. An easier solution is to use the excellent <a href="https://caolan.github.io/async/v3/">async</a> library, which works both in the browser and in NodeJS.</p>
 <p>Let us first create a sample API provider that returns paginated results:</p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">sample_paginated_api</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">query</span>)
-{
-  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Promise(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">resolve</span>, <span style="color:#a6e22e">reject</span>) {
-    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">page_number</span> <span style="color:#f92672">=</span> parseInt(<span style="color:#a6e22e">query</span>);
-    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">page_number</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">5</span>) {
-      <span style="color:#75715e">// Final page
-</span><span style="color:#75715e"></span>      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">resolve</span>({
-        <span style="color:#e6db74">&#34;results&#34;</span><span style="color:#f92672">:</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>].<span style="color:#a6e22e">map</span>((<span style="color:#a6e22e">x</span>) =&gt; (<span style="color:#a6e22e">x</span><span style="color:#f92672">*</span><span style="color:#a6e22e">page_number</span>)),
-      });
-    } <span style="color:#66d9ef">else</span> {
-      <span style="color:#75715e">// Intermediate pages
-</span><span style="color:#75715e"></span>      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">resolve</span>({
-        <span style="color:#e6db74">&#34;results&#34;</span><span style="color:#f92672">:</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>].<span style="color:#a6e22e">map</span>((<span style="color:#a6e22e">x</span>) =&gt; (<span style="color:#a6e22e">x</span><span style="color:#f92672">*</span><span style="color:#a6e22e">page_number</span>)),
-        <span style="color:#e6db74">&#34;nextLink&#34;</span><span style="color:#f92672">:</span> (<span style="color:#a6e22e">page_number</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>).<span style="color:#a6e22e">toString</span>()
-      });
-    }
-  });
-}
-</code></pre></div>
-
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">sample_paginated_api</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">query</span>)
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Promise(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">resolve</span>, <span style="color:#a6e22e">reject</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">page_number</span> <span style="color:#f92672">=</span> parseInt(<span style="color:#a6e22e">query</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">page_number</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">5</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Final page
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">resolve</span>({
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;results&#34;</span><span style="color:#f92672">:</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>].<span style="color:#a6e22e">map</span>((<span style="color:#a6e22e">x</span>) =&gt; (<span style="color:#a6e22e">x</span><span style="color:#f92672">*</span><span style="color:#a6e22e">page_number</span>)),
+</span></span><span style="display:flex;"><span>      });
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Intermediate pages
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">resolve</span>({
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;results&#34;</span><span style="color:#f92672">:</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>].<span style="color:#a6e22e">map</span>((<span style="color:#a6e22e">x</span>) =&gt; (<span style="color:#a6e22e">x</span><span style="color:#f92672">*</span><span style="color:#a6e22e">page_number</span>)),
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;nextLink&#34;</span><span style="color:#f92672">:</span> (<span style="color:#a6e22e">page_number</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>).<span style="color:#a6e22e">toString</span>()
+</span></span><span style="display:flex;"><span>      });
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 <p>This little snippet emulates a request to a API provider that returns a Promise, which resolves to the response. The response may contain a <code>nextLink</code> key if there are more pages. For example, Using the API with <code>query</code> as <code>0</code>, we get the following output:</p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#a6e22e">sample_paginated_api</span>(<span style="color:#e6db74">&#39;0&#39;</span>).<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>) =&gt; <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">res</span>))
-<span style="color:#75715e">// Output: { results: [ 0, 0, 0, 0, 0 ], nextLink: &#39;1&#39; }
-</span></code></pre></div>
-
-<p>Now let us use the aformentioned <a href="https://caolan.github.io/async/v3/" target="_blank">async</a> library to implement our consumer that can follow the next links until all the pages are exhausted. Specifically, we will use the <a href="https://caolan.github.io/async/v3/docs.html#whilst" target="_blank">async.whilst</a> control flow helper.</p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#75715e">// Tested in node v14
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">async</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;async&#39;</span>);
-
-<span style="color:#a6e22e">all_results</span> <span style="color:#f92672">=</span> []
-<span style="color:#a6e22e">sample_paginated_api</span>(<span style="color:#e6db74">&#39;0&#39;</span>).<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">results</span>)  =&gt; {
-  <span style="color:#a6e22e">latest_results</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">results</span>;
-  <span style="color:#a6e22e">all_results</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">latest_results</span>);
-  <span style="color:#66d9ef">async</span>.<span style="color:#a6e22e">whilst</span>(
-    (<span style="color:#a6e22e">cb</span>) =&gt; <span style="color:#a6e22e">cb</span>(<span style="color:#66d9ef">null</span>, <span style="color:#a6e22e">latest_results</span>.<span style="color:#a6e22e">nextLink</span>),
-    (<span style="color:#a6e22e">iteration_cb</span>) =&gt; {
-      <span style="color:#a6e22e">sample_paginated_api</span>(<span style="color:#a6e22e">latest_results</span>.<span style="color:#a6e22e">nextLink</span>).<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>) =&gt; {
-        <span style="color:#a6e22e">latest_results</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">res</span>;
-        <span style="color:#a6e22e">all_results</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">latest_results</span>);
-        <span style="color:#a6e22e">iteration_cb</span>(<span style="color:#66d9ef">null</span>, <span style="color:#a6e22e">res</span>)
-      });
-    },
-    (<span style="color:#a6e22e">err</span>, <span style="color:#a6e22e">results</span>) =&gt; {
-      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">all_results</span>)
-    }
-  )
-});
-</code></pre></div>
-
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#a6e22e">sample_paginated_api</span>(<span style="color:#e6db74">&#39;0&#39;</span>).<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>) =&gt; <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">res</span>))
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Output: { results: [ 0, 0, 0, 0, 0 ], nextLink: &#39;1&#39; }
+</span></span></span></code></pre></div>
+<p>Now let us use the aformentioned <a href="https://caolan.github.io/async/v3/">async</a> library to implement our consumer that can follow the next links until all the pages are exhausted. Specifically, we will use the <a href="https://caolan.github.io/async/v3/docs.html#whilst">async.whilst</a> control flow helper.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#75715e">// Tested in node v14
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">async</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;async&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">all_results</span> <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">sample_paginated_api</span>(<span style="color:#e6db74">&#39;0&#39;</span>).<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">results</span>)  =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">latest_results</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">results</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">all_results</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">latest_results</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">async</span>.<span style="color:#a6e22e">whilst</span>(
+</span></span><span style="display:flex;"><span>    (<span style="color:#a6e22e">cb</span>) =&gt; <span style="color:#a6e22e">cb</span>(<span style="color:#66d9ef">null</span>, <span style="color:#a6e22e">latest_results</span>.<span style="color:#a6e22e">nextLink</span>),
+</span></span><span style="display:flex;"><span>    (<span style="color:#a6e22e">iteration_cb</span>) =&gt; {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">sample_paginated_api</span>(<span style="color:#a6e22e">latest_results</span>.<span style="color:#a6e22e">nextLink</span>).<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>) =&gt; {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">latest_results</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">res</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">all_results</span>.<span style="color:#a6e22e">push</span>(<span style="color:#a6e22e">latest_results</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">iteration_cb</span>(<span style="color:#66d9ef">null</span>, <span style="color:#a6e22e">res</span>)
+</span></span><span style="display:flex;"><span>      });
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    (<span style="color:#a6e22e">err</span>, <span style="color:#a6e22e">results</span>) =&gt; {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">all_results</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  )
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div>
 <p>Let&rsquo;s try to understand whats going on here. The <code>async.whilst</code> method accepts three arguments:</p>
-
 <ol>
 <li>The <strong>test callback</strong>: This function should return a boolean indicating if the <code>while</code> loop should continue. In our case, we simply check for the presence or absense of <code>latest_results.nextLink</code></li>
 <li>The <strong>iteration callback</strong>: This function is called for every iteration where the <strong>test callback</strong> returned <code>true</code>. In our case, since there is a <code>nextLink</code> (since the test passed), we call the API again with the <code>nextLink</code> and store the result in <code>latest_results</code> for the next iteration&rsquo;s test</li>
 <li>The <strong>final callback</strong>: This function is called at the end of all iterations, but only contains the results from the last iteration. Hence, we store the results from all iterations in a global variable <code>all_results</code></li>
 </ol>
-
 <p>The output of the above snippet is:</p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript">[
-  { <span style="color:#a6e22e">results</span><span style="color:#f92672">:</span> [ <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span> ], <span style="color:#a6e22e">nextLink</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;1&#39;</span> },
-  { <span style="color:#a6e22e">results</span><span style="color:#f92672">:</span> [ <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span> ], <span style="color:#a6e22e">nextLink</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;2&#39;</span> },
-  { <span style="color:#a6e22e">results</span><span style="color:#f92672">:</span> [ <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">8</span> ], <span style="color:#a6e22e">nextLink</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;3&#39;</span> },
-  { <span style="color:#a6e22e">results</span><span style="color:#f92672">:</span> [ <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">12</span> ], <span style="color:#a6e22e">nextLink</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;4&#39;</span> },
-  { <span style="color:#a6e22e">results</span><span style="color:#f92672">:</span> [ <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">16</span> ], <span style="color:#a6e22e">nextLink</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;5&#39;</span> },
-  { <span style="color:#a6e22e">results</span><span style="color:#f92672">:</span> [ <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">5</span> ] }
-]
-</code></pre></div>
-
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span>[
+</span></span><span style="display:flex;"><span>  { <span style="color:#a6e22e">results</span><span style="color:#f92672">:</span> [ <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span> ], <span style="color:#a6e22e">nextLink</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;1&#39;</span> },
+</span></span><span style="display:flex;"><span>  { <span style="color:#a6e22e">results</span><span style="color:#f92672">:</span> [ <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span> ], <span style="color:#a6e22e">nextLink</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;2&#39;</span> },
+</span></span><span style="display:flex;"><span>  { <span style="color:#a6e22e">results</span><span style="color:#f92672">:</span> [ <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">8</span> ], <span style="color:#a6e22e">nextLink</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;3&#39;</span> },
+</span></span><span style="display:flex;"><span>  { <span style="color:#a6e22e">results</span><span style="color:#f92672">:</span> [ <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">12</span> ], <span style="color:#a6e22e">nextLink</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;4&#39;</span> },
+</span></span><span style="display:flex;"><span>  { <span style="color:#a6e22e">results</span><span style="color:#f92672">:</span> [ <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">12</span>, <span style="color:#ae81ff">16</span> ], <span style="color:#a6e22e">nextLink</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;5&#39;</span> },
+</span></span><span style="display:flex;"><span>  { <span style="color:#a6e22e">results</span><span style="color:#f92672">:</span> [ <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">5</span> ] }
+</span></span><span style="display:flex;"><span>]</span></span></code></pre></div>
 <p>And thats all! <code>all_results</code> will contain the results from each iteration, i.e. each page for you to process as needed.</p>
 
 </div>
@@ -450,7 +433,7 @@ if (!doNotTrack) {
   </nav>
 </section>
           <div class='copyright'>
-  <p> &copy; 2017-2023 Fahim Dalvi. Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> and <a href="https://github.com/MunifTanjim/minimo" target="_blank">Minimo</a></p>
+  <p> &copy; 2017-2024 Fahim Dalvi. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/MunifTanjim/minimo">Minimo</a></p>
 </div>
 
         </div>

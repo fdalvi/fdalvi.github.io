@@ -1,15 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Fahim Dalvi</title>
     <link>https://fdalvi.github.io/blog/</link>
     <description>Recent content in Blog on Fahim Dalvi</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 11 Jun 2021 12:00:00 +0300</lastBuildDate>
-    
-	<atom:link href="https://fdalvi.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en</language>
+    <lastBuildDate>Fri, 11 Jun 2021 12:00:00 +0300</lastBuildDate><atom:link href="https://fdalvi.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Consuming Paginated API&#39;s in Javascript</title>
       <link>https://fdalvi.github.io/blog/2021-06-11-consume-paginated-apis/</link>
@@ -18,7 +15,7 @@
       <guid>https://fdalvi.github.io/blog/2021-06-11-consume-paginated-apis/</guid>
       <description>Several providers adopt a notion of pagination in their API&amp;rsquo;s when the number of results from a query is large. This is common to see when the API provides a list of things, like users, billing statements, posts and so on.
 A pattern that is adopted by several providers works as follows:
- Developer makes a request to provider (e.g. for the billing statements) The API returns a &amp;ldquo;page&amp;rdquo; with say 10 statements, and a link to the next page Developer makes a request to the provided link The API returns another &amp;ldquo;page&amp;rdquo; with statements, and no link Seeing no link, the developer now knows that all the required entries have been fetched  The number of pages can be dynamic, so the developer needs to keep following the links until they exist if they want to fetch all the results.</description>
+Developer makes a request to provider (e.g. for the billing statements) The API returns a &amp;ldquo;page&amp;rdquo; with say 10 statements, and a link to the next page Developer makes a request to the provided link The API returns another &amp;ldquo;page&amp;rdquo; with statements, and no link Seeing no link, the developer now knows that all the required entries have been fetched The number of pages can be dynamic, so the developer needs to keep following the links until they exist if they want to fetch all the results.</description>
     </item>
     
     <item>
@@ -28,7 +25,7 @@ A pattern that is adopted by several providers works as follows:
       
       <guid>https://fdalvi.github.io/blog/2021-03-29-covid-vaccine-registration-guide/</guid>
       <description>COVID-19 vaccine registration guide in English, Urdu, Tamil, Sinhala and Hindi. More languages coming soon!
-  How can I register for the COVID-19 vaccine in Qatar? (English)
+How can I register for the COVID-19 vaccine in Qatar? (English)
 میں قطر میں کووڈ ۱۹ ویکسین کیلیے کیسے رجسٹر کر سکتا ہوں؟ (Urdu)
 நான் எப்படி கத்தாரில் COVID 19 தடுப்பூசி பதிவு செய்யலாம்? (Tamil)
 මම කොහොමද කටාර් COVID-19 එන්නත් සඳහා ලියාපදිංචි විය හැකිය? (Sinhala)
@@ -42,9 +39,7 @@ A pattern that is adopted by several providers works as follows:
       
       <guid>https://fdalvi.github.io/blog/2018-09-01-creating-video-screencaps/</guid>
       <description>I recently wanted to create screencaps for a large set of videos of various lengths and resolutions - basically screenshot each video 5 times, and then combine these 5 screencaps all into one nice image per video, with all of the images being of consistent size.
-  Sample render from a seaplane ride over Vancouver
- 
- There are a bunch of tools available online that I can either install locally, or upload my video files to get similar results - but given that this was easily achievable using simple tools like ffmpeg and imagemagick, I decided to whip up a quick script to accomplish this.</description>
+There are a bunch of tools available online that I can either install locally, or upload my video files to get similar results - but given that this was easily achievable using simple tools like ffmpeg and imagemagick, I decided to whip up a quick script to accomplish this.</description>
     </item>
     
     <item>
@@ -93,9 +88,9 @@ This project was recently awarded the Best Innovation Award at the annual Qatar 
       
       <guid>https://fdalvi.github.io/blog/2018-02-05-puppeteer-network-throttle/</guid>
       <description>Puppeteer is an awesome way to run Chrome (or Chromium) in headless mode, i.e. load and interact with web pages without ever visually seeing them.
- Why would this be useful?
+Why would this be useful?
 A headless browser is a great way to automate testing, even on remote server machines!
- Puppeteer provides a nice interface through Node to script any interactions you can have with a page, like entering input in a textbox, clicking a button and so on.</description>
+Puppeteer provides a nice interface through Node to script any interactions you can have with a page, like entering input in a textbox, clicking a button and so on.</description>
     </item>
     
   </channel>

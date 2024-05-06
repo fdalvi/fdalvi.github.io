@@ -1,15 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>archive on Fahim Dalvi</title>
     <link>https://fdalvi.github.io/tags/archive/</link>
     <description>Recent content in archive on Fahim Dalvi</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 20 Aug 2018 16:00:00 +0300</lastBuildDate>
-    
-	<atom:link href="https://fdalvi.github.io/tags/archive/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en</language>
+    <lastBuildDate>Mon, 20 Aug 2018 16:00:00 +0300</lastBuildDate><atom:link href="https://fdalvi.github.io/tags/archive/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introducing GroupMe Archiver</title>
       <link>https://fdalvi.github.io/blog/2018-08-20-introducing-groupme-archiver/</link>

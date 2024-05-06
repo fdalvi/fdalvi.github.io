@@ -1,20 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Fahim Dalvi</title>
     <link>https://fdalvi.github.io/categories/</link>
     <description>Recent content in Categories on Fahim Dalvi</description>
     <generator>Hugo -- gohugo.io</generator>
-    
-	<atom:link href="https://fdalvi.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en</language>
+    <lastBuildDate>Fri, 11 Jun 2021 12:00:00 +0300</lastBuildDate><atom:link href="https://fdalvi.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>announcements</title>
-      <link>https://fdalvi.github.io/categories/announcements/</link>
-      <pubDate>Mon, 20 Aug 2018 16:00:00 +0300</pubDate>
+      <title>techtips</title>
+      <link>https://fdalvi.github.io/categories/techtips/</link>
+      <pubDate>Fri, 11 Jun 2021 12:00:00 +0300</pubDate>
       
-      <guid>https://fdalvi.github.io/categories/announcements/</guid>
+      <guid>https://fdalvi.github.io/categories/techtips/</guid>
       <description></description>
     </item>
     
@@ -28,20 +26,20 @@
     </item>
     
     <item>
+      <title>announcements</title>
+      <link>https://fdalvi.github.io/categories/announcements/</link>
+      <pubDate>Mon, 20 Aug 2018 16:00:00 +0300</pubDate>
+      
+      <guid>https://fdalvi.github.io/categories/announcements/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>news</title>
       <link>https://fdalvi.github.io/categories/news/</link>
       <pubDate>Sun, 15 Apr 2018 19:00:00 +0300</pubDate>
       
       <guid>https://fdalvi.github.io/categories/news/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>techtips</title>
-      <link>https://fdalvi.github.io/categories/techtips/</link>
-      <pubDate>Fri, 11 Jun 2021 12:00:00 +0300</pubDate>
-      
-      <guid>https://fdalvi.github.io/categories/techtips/</guid>
       <description></description>
     </item>
     

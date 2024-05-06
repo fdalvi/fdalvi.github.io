@@ -5,23 +5,23 @@
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <meta name='description' content='Puppeteer is an awesome way to run Chrome (or Chromium) in headless mode, i.e. load and interact with web pages without ever visually seeing them.
- Why would this be useful?
+Why would this be useful?
 A headless browser is a great way to automate testing, even on remote server machines!
- Puppeteer provides a nice interface through Node to script any interactions you can have with a page, like entering input in a textbox, clicking a button and so on.'>
+Puppeteer provides a nice interface through Node to script any interactions you can have with a page, like entering input in a textbox, clicking a button and so on.'>
 <meta name='theme-color' content='#ffcd00'>
 
-<meta property='og:title' content='Network throttling in Puppeteer • Fahim Dalvi'>
+<meta property='og:title' content='Network throttling in Puppeteer • '>
 <meta property='og:description' content='Puppeteer is an awesome way to run Chrome (or Chromium) in headless mode, i.e. load and interact with web pages without ever visually seeing them.
- Why would this be useful?
+Why would this be useful?
 A headless browser is a great way to automate testing, even on remote server machines!
- Puppeteer provides a nice interface through Node to script any interactions you can have with a page, like entering input in a textbox, clicking a button and so on.'>
+Puppeteer provides a nice interface through Node to script any interactions you can have with a page, like entering input in a textbox, clicking a button and so on.'>
 <meta property='og:url' content='https://fdalvi.github.io/blog/2018-02-05-puppeteer-network-throttle/'>
 <meta property='og:site_name' content='Fahim Dalvi'>
-<meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/6c9adb6a0501da300bcdc582ade1e58d?s=256'><meta property='article:section' content='Blog'><meta property='article:tag' content='chrome'><meta property='article:tag' content='webapps'><meta property='article:tag' content='testing'><meta property='article:tag' content='network'><meta property='article:tag' content='puppeteer'><meta property='article:published_time' content='2018-02-05T22:00:00&#43;03:00'/><meta property='article:modified_time' content='2018-02-05T22:00:00&#43;03:00'/><meta name='twitter:card' content='summary'>
+<meta property='og:type' content='article'><meta property='article:section' content='Blog'><meta property='article:tag' content='chrome'><meta property='article:tag' content='webapps'><meta property='article:tag' content='testing'><meta property='article:tag' content='network'><meta property='article:tag' content='puppeteer'><meta property='article:published_time' content='2018-02-05T22:00:00&#43;03:00'/><meta property='article:modified_time' content='2018-02-05T22:00:00&#43;03:00'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.118.2">
 
-  <title>Network throttling in Puppeteer • Fahim Dalvi</title>
+  <title>Network throttling in Puppeteer • </title>
   <link rel='canonical' href='https://fdalvi.github.io/blog/2018-02-05-puppeteer-network-throttle/'>
   
   
@@ -72,8 +72,8 @@ if (!doNotTrack) {
         <a href='/research/'>Research</a>
       </li><li class='item'>
         <a href='/teaching/'>Teaching</a>
-      </li><li class='item'>
-        <a href='/blog/'>Blog</a>
+      </li><li class='item current'>
+        <a aria-current='page' href='/blog/'>Blog</a>
       </li><li class='item'>
         <a href='/fdalvi-resume.pdf'>Resume</a>
       </li></ul>
@@ -119,7 +119,7 @@ if (!doNotTrack) {
   <path d="M16,6.37A4,4,0,1,1,12.63,3,4,4,0,0,1,16,6.37Z"/>
   
 </svg>
-<span class='screen-reader-text'> by </span><a href='/authors/fdalvi'>Fahim Dalvi</a></span>
+<span class='screen-reader-text'> by </span><a href='/authors/%3cnil%3e'></a></span>
   
 <span class='reading-time'><svg class='icon' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
   
@@ -141,137 +141,126 @@ if (!doNotTrack) {
   
 
   <div class='container entry-content'>
-  <p><a href="https://github.com/GoogleChrome/puppeteer" target="_blank">Puppeteer</a> is an awesome way to run Chrome (or Chromium) in <em>headless</em> mode, i.e. load and interact with web pages without ever visually seeing them.</p>
-
+  <p><a href="https://github.com/GoogleChrome/puppeteer">Puppeteer</a> is an awesome way to run Chrome (or Chromium) in <em>headless</em> mode, i.e. load and interact with web pages without ever visually seeing them.</p>
 <blockquote>
-<p>Why would this be useful?<br />
+<p>Why would this be useful?<br>
 A headless browser is a great way to automate testing, even on remote server machines!</p>
 </blockquote>
-
-<p>Puppeteer provides a nice interface through <a href="https://nodejs.org/en/" target="_blank">Node</a> to script any interactions you can have with a page, like entering input in a textbox, clicking a button and so on. It also allows you grab screenshots or convert web pages into PDFs.</p>
-
-<p>Now, Puppeteer does not come with support for Network throttling out of the box, but it does have a way to communicate directly with the <a href="https://developer.chrome.com/devtools" target="_blank">Chrome DevTools</a>, which have support for throttling. The DevTools property in question is <code>Network.emulateNetworkConditions</code>, and it expects a configuration with the following attributes:</p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">config</span> <span style="color:#f92672">=</span> {
-  <span style="color:#75715e">// Whether chrome should simulate
-</span><span style="color:#75715e"></span>  <span style="color:#75715e">// the absence of connectivity
-</span><span style="color:#75715e"></span>  <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
-  <span style="color:#75715e">// Simulated download speed (bytes/s)
-</span><span style="color:#75715e"></span>  <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">500</span>,
-  <span style="color:#75715e">// Simulated upload speed (bytes/s)
-</span><span style="color:#75715e"></span>  <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">500</span>,
-  <span style="color:#75715e">// Simulated latency (ms)
-</span><span style="color:#75715e"></span>  <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">20</span>
-}
-</code></pre></div>
-
+<p>Puppeteer provides a nice interface through <a href="https://nodejs.org/en/">Node</a> to script any interactions you can have with a page, like entering input in a textbox, clicking a button and so on. It also allows you grab screenshots or convert web pages into PDFs.</p>
+<p>Now, Puppeteer does not come with support for Network throttling out of the box, but it does have a way to communicate directly with the <a href="https://developer.chrome.com/devtools">Chrome DevTools</a>, which have support for throttling. The DevTools property in question is <code>Network.emulateNetworkConditions</code>, and it expects a configuration with the following attributes:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">config</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Whether chrome should simulate
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#75715e">// the absence of connectivity
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Simulated download speed (bytes/s)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">500</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Simulated upload speed (bytes/s)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">500</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Simulated latency (ms)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">20</span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 <p>As an example, lets say you wanted to load this site with a <em>200 Kb/s</em> connection and <em>20 ms</em> latency, and take a screenshot before shutting down, you could use the following script:</p>
-
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7c7c79">22
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">puppeteer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;puppeteer&#39;</span>)
-
-<span style="color:#a6e22e">puppeteer</span>.<span style="color:#a6e22e">launch</span>().<span style="color:#a6e22e">then</span>(<span style="color:#66d9ef">async</span> <span style="color:#a6e22e">browser</span> =&gt; {
-  <span style="color:#75715e">// Create a new tab
-</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">page</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">newPage</span>()
-
-  <span style="color:#75715e">// Connect to Chrome DevTools
-</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">client</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">target</span>().<span style="color:#a6e22e">createCDPSession</span>()
-
-  <span style="color:#75715e">// Set throttling property
-</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#39;Network.emulateNetworkConditions&#39;</span>, {
-    <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
-    <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">200</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
-    <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">200</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
-    <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">20</span>
-  })
-
-  <span style="color:#75715e">// Navigate and take a screenshot
-</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">page</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#e6db74">&#39;https://fdalvi.github.io&#39;</span>)
-  <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">screenshot</span>({<span style="color:#a6e22e">path</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;screenshot.png&#39;</span>})
-  <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">close</span>()
-})
-</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">puppeteer</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;puppeteer&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">puppeteer</span>.<span style="color:#a6e22e">launch</span>().<span style="color:#a6e22e">then</span>(<span style="color:#66d9ef">async</span> <span style="color:#a6e22e">browser</span> =&gt; {
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Create a new tab
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">page</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">newPage</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Connect to Chrome DevTools
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">client</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">target</span>().<span style="color:#a6e22e">createCDPSession</span>()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Set throttling property
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">send</span>(<span style="color:#e6db74">&#39;Network.emulateNetworkConditions&#39;</span>, {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">200</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">8</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">200</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">8</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">20</span>
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Navigate and take a screenshot
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">page</span>.<span style="color:#66d9ef">goto</span>(<span style="color:#e6db74">&#39;https://fdalvi.github.io&#39;</span>)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">page</span>.<span style="color:#a6e22e">screenshot</span>({<span style="color:#a6e22e">path</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;screenshot.png&#39;</span>})
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">browser</span>.<span style="color:#a6e22e">close</span>()
+</span></span><span style="display:flex;"><span>})</span></span></code></pre></td></tr></table>
 </div>
 </div>
-
-<p>Chrome DevTools also have some nice presets like 3G (and used to have a lot more!). Although the original presets are gone, a <a href="https://cs.chromium.org/chromium/src/tools/android/loading/emulation.py" target="_blank">source file in the Chromium repo</a> still has the presets, listed below for convenience. Just replace the second option in line 11 with <code>NETWORK_PRESETS['...']</code> to use the preset of your choice. These values are probably average values for each type of connection, and all of the <code>/ 8</code> operations are because network speed is commonly measured in <em>bits/s</em>, while DevTools expects the throughputs in <em>bytes/s</em>!</p>
-
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">NETWORK_PRESETS</span> <span style="color:#f92672">=</span> {
-  <span style="color:#e6db74">&#39;GPRS&#39;</span><span style="color:#f92672">:</span> {
-    <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
-    <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">50</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
-    <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">20</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
-    <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">500</span>
-  },
-  <span style="color:#e6db74">&#39;Regular2G&#39;</span><span style="color:#f92672">:</span> {
-    <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
-    <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">250</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
-    <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">50</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
-    <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">300</span>
-  },
-  <span style="color:#e6db74">&#39;Good2G&#39;</span><span style="color:#f92672">:</span> {
-    <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
-    <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">450</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
-    <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">150</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
-    <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">150</span>
-  },
-  <span style="color:#e6db74">&#39;Regular3G&#39;</span><span style="color:#f92672">:</span> {
-    <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
-    <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">750</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
-    <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">250</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
-    <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">100</span>
-  },
-  <span style="color:#e6db74">&#39;Good3G&#39;</span><span style="color:#f92672">:</span> {
-    <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
-    <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1.5</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
-    <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">750</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
-    <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">40</span>
-  },
-  <span style="color:#e6db74">&#39;Regular4G&#39;</span><span style="color:#f92672">:</span> {
-    <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
-    <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
-    <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
-    <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">20</span>
-  },
-  <span style="color:#e6db74">&#39;DSL&#39;</span><span style="color:#f92672">:</span> {
-    <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
-    <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
-    <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
-    <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">5</span>
-  },
-  <span style="color:#e6db74">&#39;WiFi&#39;</span><span style="color:#f92672">:</span> {
-    <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
-    <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">30</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
-    <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">15</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#960050;background-color:#1e0010">/ 8,</span>
-    <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>
-  }
-}
-</code></pre></div>
+<p>Chrome DevTools also have some nice presets like 3G (and used to have a lot more!). Although the original presets are gone, a <a href="https://cs.chromium.org/chromium/src/tools/android/loading/emulation.py">source file in the Chromium repo</a> still has the presets, listed below for convenience. Just replace the second option in line 11 with <code>NETWORK_PRESETS['...']</code> to use the preset of your choice. These values are probably average values for each type of connection, and all of the <code>/ 8</code> operations are because network speed is commonly measured in <em>bits/s</em>, while DevTools expects the throughputs in <em>bytes/s</em>!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">NETWORK_PRESETS</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#39;GPRS&#39;</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">50</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">8</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">20</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">8</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">500</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#39;Regular2G&#39;</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">250</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">8</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">50</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">8</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">300</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#39;Good2G&#39;</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">450</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">8</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">150</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">8</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">150</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#39;Regular3G&#39;</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">750</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">8</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">250</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">8</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#39;Good3G&#39;</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1.5</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">8</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">750</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">8</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">40</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#39;Regular4G&#39;</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">8</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">8</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">20</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#39;DSL&#39;</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">8</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">8</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#39;WiFi&#39;</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;offline&#39;</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;downloadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">30</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">8</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;uploadThroughput&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">15</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">1024</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">8</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;latency&#39;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 
 </div>
 
@@ -399,7 +388,6 @@ A headless browser is a great way to automate testing, even on remote server mac
         	Monday, Oct 4, 2021</p>
       </div>
       <p>Hi Tapi,</p>
-
 <p>How are you performing the speed test? Are you visiting a speed test site within puppeteer? Also, is your code hosted somewhere publicly or can you give a link to a minimal example that doesn&rsquo;t work?</p>
 
     </div>
@@ -698,7 +686,7 @@ A headless browser is a great way to automate testing, even on remote server mac
   </nav>
 </section>
           <div class='copyright'>
-  <p> &copy; 2017-2023 Fahim Dalvi. Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> and <a href="https://github.com/MunifTanjim/minimo" target="_blank">Minimo</a></p>
+  <p> &copy; 2017-2024 Fahim Dalvi. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/MunifTanjim/minimo">Minimo</a></p>
 </div>
 
         </div>

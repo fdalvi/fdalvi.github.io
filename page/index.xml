@@ -1,14 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on Fahim Dalvi</title>
     <link>https://fdalvi.github.io/page/</link>
     <description>Recent content in Pages on Fahim Dalvi</description>
     <generator>Hugo -- gohugo.io</generator>
-    
-	<atom:link href="https://fdalvi.github.io/page/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en</language><atom:link href="https://fdalvi.github.io/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Projects</title>
       <link>https://fdalvi.github.io/projects/</link>
@@ -17,9 +14,9 @@
       <guid>https://fdalvi.github.io/projects/</guid>
       <description>NeuroX: Explainable AI
 Interpretation and Explainability for Deep NLP models. Lots of analysis of Foundational language models and Machine Translation models. Research assets and toolkits for easy interpretation at the neuron-level in Deep NLP models.
-Python Flask PyTorch Transformers React    Live Speech Translation
+Python Flask PyTorch Transformers React Live Speech Translation
 Bilingual Arabic and English transcription and translation platform with a robust backend enabling live broadcastable sessions
-React NodeJS MongoDB Nginx Puppeteer Artillery.io    Shaheen: Machine Translation API</description>
+React NodeJS MongoDB Nginx Puppeteer Artillery.io Shaheen: Machine Translation API</description>
     </item>
     
     <item>
@@ -28,7 +25,7 @@ React NodeJS MongoDB Nginx Puppeteer Artillery.io    Shaheen: Machine Translatio
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://fdalvi.github.io/research/</guid>
-      <description>2023  NeuroX Library for Neuron Analysis of Deep NLP Models  Fahim Dalvi, Hassan Sajjad, Nadir Durrani   The 61st Annual Meeting of the Association for Computational Linguistics Neuron analysis provides insights into how knowledge is structured in representations and discovers the role of neurons in the network. In addition to developing an understanding of our models, neuron analysis enables various applications such as debiasing, domain adaptation and architectural search.</description>
+      <description>2024 LLMeBench: A Flexible Framework for Accelerating LLMs Benchmarking Fahim Dalvi, Maram Hasanain, Sabri Boughorbel, Basel Mousi, Samir Abdaljalil, Nizi Nazar, Ahmed Abdelali, Shammur Absar Chowdhury, Hamdy Mubarak, Ahmed Ali, Majd Hawasly, Nadir Durrani, Firoj Alam The 18th Conference of the European Chapter of the Association for Computational Linguistics The recent development and success of Large Language Models (LLMs) necessitate an evaluation of their performance across diverse NLP tasks in different languages.</description>
     </item>
     
     <item>
@@ -37,7 +34,7 @@ React NodeJS MongoDB Nginx Puppeteer Artillery.io    Shaheen: Machine Translatio
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://fdalvi.github.io/teaching/</guid>
-      <description>From Theory to Practice: Deep Learning for NLP Co-Lecturer Universität Duisburg-Essen, 2018 A 5-day lecture series covering the basics of machine learning, neural networks and deep neural networks. We look at several deep neural network architectures from the perspective of applying them to various classification tasks, such as sequence prediction and generation. Every lecture is accompanied with practice problems implemented in Keras, a popular Python framework for deep learning.   Deep Learning for Machine Translation Co-Lecturer DGfS Computational Linguistics Fall School, 2017 A 10-lecture crash course in deep learning, specialized towards machine translation.</description>
+      <description>Neural Networks for NLP Guest Lecturer Carnegie Mellon University Qatar, 2022 Two-part guest lectures for the 67-212 course taught at Carnegie Mellon From Theory to Practice: Deep Learning for NLP Co-Lecturer Universität Duisburg-Essen, 2018 A 5-day lecture series covering the basics of machine learning, neural networks and deep neural networks. We look at several deep neural network architectures from the perspective of applying them to various classification tasks, such as sequence prediction and generation.</description>
     </item>
     
     <item>
@@ -47,7 +44,7 @@ React NodeJS MongoDB Nginx Puppeteer Artillery.io    Shaheen: Machine Translatio
       
       <guid>https://fdalvi.github.io/teaching/2013-15213-computer-systems-cmuq/</guid>
       <description>As a Teaching Assistant for the course, part of my responsibilities was to prepare and deliver recitations every Thursday. These recitations reviewed the material from the week&amp;rsquo;s lectures, talked about assignments and just generally served as a platform to clear any lingering confusion or doubts. All these slides were created from scratch, but a lot of inspiration was drawn from previous recitations for the same course.
- Week 1: Introduction [slides] Week 2: Floating point representations [slides] Week 3: Introduction to Assembly [slides] [code] Week 4: Assembly continued [slides] [code] Week 5: C Data-structures [slides] [code] Week 6: System Memory management [slides] Week 7: Exam 1 preparation [slides] Week 8: C Signals and UNIX IO [slides] [code] Week 9: Virtual Memory [slides] [code] Week 10: Memory Allocation in C and Debugging tips [slides] Week 11: Exam 2 preparation [slides] Week 12: Proxies [slides] Week 13: Proxies continued and concurrency [slides] [code] Week 14: Final exam review [slides]  Feel free to use the above material for your own courses.</description>
+Week 1: Introduction [slides] Week 2: Floating point representations [slides] Week 3: Introduction to Assembly [slides] [code] Week 4: Assembly continued [slides] [code] Week 5: C Data-structures [slides] [code] Week 6: System Memory management [slides] Week 7: Exam 1 preparation [slides] Week 8: C Signals and UNIX IO [slides] [code] Week 9: Virtual Memory [slides] [code] Week 10: Memory Allocation in C and Debugging tips [slides] Week 11: Exam 2 preparation [slides] Week 12: Proxies [slides] Week 13: Proxies continued and concurrency [slides] [code] Week 14: Final exam review [slides] Feel free to use the above material for your own courses.</description>
     </item>
     
     <item>
@@ -66,7 +63,7 @@ React NodeJS MongoDB Nginx Puppeteer Artillery.io    Shaheen: Machine Translatio
       
       <guid>https://fdalvi.github.io/teaching/2018-dl4nlp-duisburg/</guid>
       <description>Hassan Sajjad and I got another chance to teach our deep learning course, but this time it was only for five days, delivered over roughly 18 hours! This course is a bit more general than our DGfS course, and has a lot more practical material.
-The official spiel  In this lecture series, we cover the basics of machine learning, neural networks and deep neural networks. We look at several deep neural network architectures from the perspective of applying them to various classification tasks, such as sequence prediction and generation.</description>
+The official spiel In this lecture series, we cover the basics of machine learning, neural networks and deep neural networks. We look at several deep neural network architectures from the perspective of applying them to various classification tasks, such as sequence prediction and generation.</description>
     </item>
     
     <item>

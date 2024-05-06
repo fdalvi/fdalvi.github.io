@@ -13,7 +13,7 @@
 <meta property='og:site_name' content='Fahim Dalvi'>
 <meta property='og:type' content='article'><meta property='article:section' content='Page'><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.118.2">
 
   <title>Research • Fahim Dalvi</title>
   <link rel='canonical' href='https://fdalvi.github.io/research/'>
@@ -104,11 +104,326 @@ if (!doNotTrack) {
   
 
   <div class='container entry-content'>
-  
+  <h3 id="2024">2024</h3>
+
+	
+	<div class="research-entry">
+	<div class="research-thumb">
+		<img src="/research/2024-03-EACL-LLMeBench/thumbnail.jpg">
+	</div>
+	<div class="research-details">
+		<div class="research-title"><b>LLMeBench: A Flexible Framework for Accelerating LLMs Benchmarking</b></div>
+		<div class="research-authors"> <i> <span class='highlight-author'>Fahim Dalvi</span>, Maram Hasanain, Sabri Boughorbel, Basel Mousi, Samir Abdaljalil, Nizi Nazar, Ahmed Abdelali, Shammur Absar Chowdhury, Hamdy Mubarak, Ahmed Ali, Majd Hawasly, Nadir Durrani, Firoj Alam </i> </div>
+		
+		<div class="research-venue"><a href='https://2024.eacl.org'>The 18th Conference of the European Chapter of the Association for Computational Linguistics</a></div>
+		<div class="research-abstract">	
+			The recent development and success of Large Language Models (LLMs) necessitate an evaluation of their performance across diverse NLP tasks in different languages. Although several frameworks have been developed and made publicly available, their customization capabilities for specific tasks and datasets are often complex for different users. In this study, we introduce the LLMeBench framework, which can be seamlessly customized to evaluate LLMs for any NLP task, regardless of language. The framework features generic dataset loaders, several model providers, and pre-implements most standard evaluation metrics. It supports in-context learning with zero- and few-shot settings. A specific dataset and task can be evaluated for a given LLM in less than 20 lines of code while allowing full flexibility to extend the framework for custom datasets, models, or tasks. The framework has been tested on 31 unique NLP tasks using 53 publicly available datasets within 90 experimental setups, involving approximately 296K data points. We open-sourced LLMeBench for the community (https://github.com/qcri/LLMeBench/) and a video demonstrating the framework is available online (https://youtu.be/9cC2m_abk3A).
+		</div>
+		<div class="research-actions">
+			<div class="research-action" onclick="this.parentNode.previousElementSibling.classList.toggle('expanded')">Abstract</div>
+			<a class="research-action" href="/research/2024-03-EACL-LLMeBench/paper.pdf">PDF</a> 
+			<a class="research-action" href="/research/2024-03-EACL-LLMeBench/poster.pdf">Poster</a> 
+			<div class="research-action" onclick="this.parentNode.nextElementSibling.classList.toggle('expanded')">Cite (.bib)</div> 
+			
+			<a class="research-action" href="https://github.com/qcri/LLMeBench/">Code</a> 
+			
+			<a class="research-action" href="https://youtu.be/9cC2m_abk3A">Video</a> 
+			
+			
+		</div>
+		
+			<div class="research-citation">	
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{dalvi-etal-2024-llmebench,
+</span></span><span style="display:flex;"><span>  title = &#34;{LLM}e{B}ench: A Flexible Framework for Accelerating {LLM}s Benchmarking&#34;,
+</span></span><span style="display:flex;"><span>  author = &#34;Dalvi, Fahim  and
+</span></span><span style="display:flex;"><span>    Hasanain, Maram  and
+</span></span><span style="display:flex;"><span>    Boughorbel, Sabri  and
+</span></span><span style="display:flex;"><span>    Mousi, Basel  and
+</span></span><span style="display:flex;"><span>    Abdaljalil, Samir  and
+</span></span><span style="display:flex;"><span>    Nazar, Nizi  and
+</span></span><span style="display:flex;"><span>    Abdelali, Ahmed  and
+</span></span><span style="display:flex;"><span>    Chowdhury, Shammur Absar  and
+</span></span><span style="display:flex;"><span>    Mubarak, Hamdy  and
+</span></span><span style="display:flex;"><span>    Ali, Ahmed and
+</span></span><span style="display:flex;"><span>    Hawasly, Majd and
+</span></span><span style="display:flex;"><span>    Durrani, Nadir and
+</span></span><span style="display:flex;"><span>    Alam, Firoj&#34;,
+</span></span><span style="display:flex;"><span>  editor = &#34;Aletras, Nikolaos  and
+</span></span><span style="display:flex;"><span>    De Clercq, Orphee&#34;,
+</span></span><span style="display:flex;"><span>  booktitle = &#34;Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics: System Demonstrations&#34;,
+</span></span><span style="display:flex;"><span>  month = mar,
+</span></span><span style="display:flex;"><span>  year = &#34;2024&#34;,
+</span></span><span style="display:flex;"><span>  address = &#34;St. Julians, Malta&#34;,
+</span></span><span style="display:flex;"><span>  publisher = &#34;Association for Computational Linguistics&#34;,
+</span></span><span style="display:flex;"><span>  url = &#34;https://aclanthology.org/2024.eacl-demo.23&#34;,
+</span></span><span style="display:flex;"><span>  pages = &#34;214--222&#34;,
+</span></span><span style="display:flex;"><span>  abstract = &#34;The recent development and success of Large Language Models (LLMs) necessitate an evaluation of their performance across diverse NLP tasks in different languages. Although several frameworks have been developed and made publicly available, their customization capabilities for specific tasks and datasets are often complex for different users. In this study, we introduce the LLMeBench framework, which can be seamlessly customized to evaluate LLMs for any NLP task, regardless of language. The framework features generic dataset loaders, several model providers, and pre-implements most standard evaluation metrics. It supports in-context learning with zero- and few-shot settings. A specific dataset and task can be evaluated for a given LLM in less than 20 lines of code while allowing full flexibility to extend the framework for custom datasets, models, or tasks. The framework has been tested on 31 unique NLP tasks using 53 publicly available datasets within 90 experimental setups, involving approximately 296K data points. We open-sourced LLMeBench for the community (https://github.com/qcri/LLMeBench/) and a video demonstrating the framework is available online (https://youtu.be/9cC2m{<span style="color:#66d9ef">\_</span>}abk3A).&#34;,
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+			</div>
+		
+	</div>
+</div>
+
+
+	
+	<div class="research-entry">
+	<div class="research-thumb">
+		<img src="/research/2024-03-EACL-scaling-discovery-latent-concepts/thumbnail.jpg">
+	</div>
+	<div class="research-details">
+		<div class="research-title"><b>Scaling up Discovery of Latent Concepts in Deep NLP Models</b></div>
+		<div class="research-authors"> <i> Majd Hawasly, <span class='highlight-author'>Fahim Dalvi</span>, Nadir Durrani </i> </div>
+		
+		<div class="research-venue"><a href='https://2024.eacl.org'>The 18th Conference of the European Chapter of the Association for Computational Linguistics</a></div>
+		<div class="research-abstract">	
+			Despite the revolution caused by deep NLP models, they remain black boxes, necessitating research to understand their decision-making processes. A recent work by Dalvi et al. (2022) carried out representation analysis through the lens of clustering latent spaces within pre-trained models (PLMs), but that approach is limited to small scale due to the high cost of running Agglomerative hierarchical clustering. This paper studies clustering algorithms in order to scale the discovery of encoded concepts in PLM representations to larger datasets and models. We propose metrics for assessing the quality of discovered latent concepts and use them to compare the studied clustering algorithms. We found that K-Means-based concept discovery significantly enhances efficiency while maintaining the quality of the obtained concepts. Furthermore, we demonstrate the practicality of this newfound efficiency by scaling latent concept discovery to LLMs and phrasal concepts.
+		</div>
+		<div class="research-actions">
+			<div class="research-action" onclick="this.parentNode.previousElementSibling.classList.toggle('expanded')">Abstract</div>
+			<a class="research-action" href="/research/2024-03-EACL-scaling-discovery-latent-concepts/paper.pdf">PDF</a> 
+			
+			<div class="research-action" onclick="this.parentNode.nextElementSibling.classList.toggle('expanded')">Cite (.bib)</div> 
+			
+			<a class="research-action" href="https://aclanthology.org/attachments/2024.eacl-long.48.software.zip">Code</a> 
+			
+			
+			
+			
+		</div>
+		
+			<div class="research-citation">	
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{hawasly-etal-2024-scaling,
+</span></span><span style="display:flex;"><span>    title = &#34;Scaling up Discovery of Latent Concepts in Deep {NLP} Models&#34;,
+</span></span><span style="display:flex;"><span>    author = &#34;Hawasly, Majd  and
+</span></span><span style="display:flex;"><span>      Dalvi, Fahim  and
+</span></span><span style="display:flex;"><span>      Durrani, Nadir&#34;,
+</span></span><span style="display:flex;"><span>    editor = &#34;Graham, Yvette  and
+</span></span><span style="display:flex;"><span>      Purver, Matthew&#34;,
+</span></span><span style="display:flex;"><span>    booktitle = &#34;Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)&#34;,
+</span></span><span style="display:flex;"><span>    month = mar,
+</span></span><span style="display:flex;"><span>    year = &#34;2024&#34;,
+</span></span><span style="display:flex;"><span>    address = &#34;St. Julian{&#39;}s, Malta&#34;,
+</span></span><span style="display:flex;"><span>    publisher = &#34;Association for Computational Linguistics&#34;,
+</span></span><span style="display:flex;"><span>    url = &#34;https://aclanthology.org/2024.eacl-long.48&#34;,
+</span></span><span style="display:flex;"><span>    pages = &#34;793--806&#34;,
+</span></span><span style="display:flex;"><span>    abstract = &#34;Despite the revolution caused by deep NLP models, they remain black boxes, necessitating research to understand their decision-making processes. A recent work by Dalvi et al. (2022) carried out representation analysis through the lens of clustering latent spaces within pre-trained models (PLMs), but that approach is limited to small scale due to the high cost of running Agglomerative hierarchical clustering. This paper studies clustering algorithms in order to scale the discovery of encoded concepts in PLM representations to larger datasets and models. We propose metrics for assessing the quality of discovered latent concepts and use them to compare the studied clustering algorithms. We found that K-Means-based concept discovery significantly enhances efficiency while maintaining the quality of the obtained concepts. Furthermore, we demonstrate the practicality of this newfound efficiency by scaling latent concept discovery to LLMs and phrasal concepts.&#34;,
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+			</div>
+		
+	</div>
+</div>
+
+
+	
+	<div class="research-entry">
+	<div class="research-thumb">
+		<img src="/research/2024-03-EACL-LAraBench/thumbnail.jpg">
+	</div>
+	<div class="research-details">
+		<div class="research-title"><b>LAraBench: Benchmarking Arabic AI with Large Language Models</b></div>
+		<div class="research-authors"> <i> Ahmed Abdelali, Hamdy Mubarak, Shammur Chowdhury, Maram Hasanain, Basel Mousi, Sabri Boughorbel, Samir Abdaljalil, Yassine El Kheir, Daniel Izham, <span class='highlight-author'>Fahim Dalvi</span>, Majd Hawasly, Nizi Nazar, Youssef Elshahawy, Ahmed Ali, Nadir Durrani, Natasa Milic-Frayling, Firoj Alam </i> </div>
+		
+		<div class="research-venue"><a href='https://2024.eacl.org'>The 18th Conference of the European Chapter of the Association for Computational Linguistics</a></div>
+		<div class="research-abstract">	
+			Recent advancements in Large Language Models (LLMs) have significantly influenced the landscape of language and speech research. Despite this progress, these models lack specific benchmarking against state-of-the-art (SOTA) models tailored to particular languages and tasks. LAraBench addresses this gap for Arabic Natural Language Processing (NLP) and Speech Processing tasks, including sequence tagging and content classification across different domains. We utilized models such as GPT-3.5-turbo, GPT-4, BLOOMZ, Jais-13b-chat, Whisper, and USM, employing zero and few-shot learning techniques to tackle 33 distinct tasks across 61 publicly available datasets. This involved 98 experimental setups, encompassing ~296K data points, ~46 hours of speech, and 30 sentences for Text-to-Speech (TTS). This effort resulted in 330&#43; sets of experiments. Our analysis focused on measuring the performance gap between SOTA models and LLMs. The overarching trend observed was that SOTA models generally outperformed LLMs in zero-shot learning, with a few exceptions. Notably, larger computational models with few-shot learning techniques managed to reduce these performance gaps. Our findings provide valuable insights into the applicability of LLMs for Arabic NLP and speech processing tasks.
+		</div>
+		<div class="research-actions">
+			<div class="research-action" onclick="this.parentNode.previousElementSibling.classList.toggle('expanded')">Abstract</div>
+			<a class="research-action" href="/research/2024-03-EACL-LAraBench/paper.pdf">PDF</a> 
+			<a class="research-action" href="/research/2024-03-EACL-LAraBench/poster.pdf">Poster</a> 
+			<div class="research-action" onclick="this.parentNode.nextElementSibling.classList.toggle('expanded')">Cite (.bib)</div> 
+			
+			<a class="research-action" href="https://github.com/qcri/LLMeBench/">Code</a> 
+			
+			
+			
+			
+		</div>
+		
+			<div class="research-citation">	
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{abdelali-etal-2024-larabench,
+</span></span><span style="display:flex;"><span>    title = &#34;{LA}ra{B}ench: Benchmarking {A}rabic {AI} with Large Language Models&#34;,
+</span></span><span style="display:flex;"><span>    author = &#34;Abdelali, Ahmed  and
+</span></span><span style="display:flex;"><span>      Mubarak, Hamdy  and
+</span></span><span style="display:flex;"><span>      Chowdhury, Shammur  and
+</span></span><span style="display:flex;"><span>      Hasanain, Maram  and
+</span></span><span style="display:flex;"><span>      Mousi, Basel  and
+</span></span><span style="display:flex;"><span>      Boughorbel, Sabri  and
+</span></span><span style="display:flex;"><span>      Abdaljalil, Samir  and
+</span></span><span style="display:flex;"><span>      El Kheir, Yassine  and
+</span></span><span style="display:flex;"><span>      Izham, Daniel  and
+</span></span><span style="display:flex;"><span>      Dalvi, Fahim  and
+</span></span><span style="display:flex;"><span>      Hawasly, Majd  and
+</span></span><span style="display:flex;"><span>      Nazar, Nizi  and
+</span></span><span style="display:flex;"><span>      Elshahawy, Youssef  and
+</span></span><span style="display:flex;"><span>      Ali, Ahmed  and
+</span></span><span style="display:flex;"><span>      Durrani, Nadir  and
+</span></span><span style="display:flex;"><span>      Milic-Frayling, Natasa  and
+</span></span><span style="display:flex;"><span>      Alam, Firoj&#34;,
+</span></span><span style="display:flex;"><span>    editor = &#34;Graham, Yvette  and
+</span></span><span style="display:flex;"><span>      Purver, Matthew&#34;,
+</span></span><span style="display:flex;"><span>    booktitle = &#34;Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)&#34;,
+</span></span><span style="display:flex;"><span>    month = mar,
+</span></span><span style="display:flex;"><span>    year = &#34;2024&#34;,
+</span></span><span style="display:flex;"><span>    address = &#34;St. Julian{&#39;}s, Malta&#34;,
+</span></span><span style="display:flex;"><span>    publisher = &#34;Association for Computational Linguistics&#34;,
+</span></span><span style="display:flex;"><span>    url = &#34;https://aclanthology.org/2024.eacl-long.30&#34;,
+</span></span><span style="display:flex;"><span>    pages = &#34;487--520&#34;,
+</span></span><span style="display:flex;"><span>    abstract = &#34;Recent advancements in Large Language Models (LLMs) have significantly influenced the landscape of language and speech research. Despite this progress, these models lack specific benchmarking against state-of-the-art (SOTA) models tailored to particular languages and tasks. LAraBench addresses this gap for Arabic Natural Language Processing (NLP) and Speech Processing tasks, including sequence tagging and content classification across different domains. We utilized models such as GPT-3.5-turbo, GPT-4, BLOOMZ, Jais-13b-chat, Whisper, and USM, employing zero and few-shot learning techniques to tackle 33 distinct tasks across 61 publicly available datasets. This involved 98 experimental setups, encompassing {<span style="color:#66d9ef">\textasciitilde</span>}296K data points, {<span style="color:#66d9ef">\textasciitilde</span>}46 hours of speech, and 30 sentences for Text-to-Speech (TTS). This effort resulted in 330+ sets of experiments. Our analysis focused on measuring the performance gap between SOTA models and LLMs. The overarching trend observed was that SOTA models generally outperformed LLMs in zero-shot learning, with a few exceptions. Notably, larger computational models with few-shot learning techniques managed to reduce these performance gaps. Our findings provide valuable insights into the applicability of LLMs for Arabic NLP and speech processing tasks.&#34;,
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+			</div>
+		
+	</div>
+</div>
+
 
 <h3 id="2023">2023</h3>
 
+	
+	<div class="research-entry">
+	<div class="research-thumb">
+		<img src="/research/2023-12-NeurIPS-evaluating-neuron-interpretation/thumbnail.jpg">
+	</div>
+	<div class="research-details">
+		<div class="research-title"><b>Evaluating Neuron Interpretation Methods of NLP Models</b></div>
+		<div class="research-authors"> <i> Yimin Fan, <span class='highlight-author'>Fahim Dalvi</span>, Nadir Durrani, Hassan Sajjad </i> </div>
+		
+		<div class="research-venue"><a href='https://neurips.cc/Conferences/2023'>The Thirty-seventh Annual Conference on Neural Information Processing Systems</a></div>
+		<div class="research-abstract">	
+			Neuron interpretation offers valuable insights into how knowledge is structured within a deep neural network model. While a number of neuron interpretation methods have been proposed in the literature, the field lacks a comprehensive comparison among these methods. This gap hampers progress due to the absence of standardized metrics and benchmarks. The commonly used evaluation metric has limitations, and creating ground truth annotations for neurons is impractical. Addressing these challenges, we propose an evaluation framework based on voting theory. Our hypothesis posits that neurons consistently identified by different methods carry more significant information. We rigorously assess our framework across a diverse array of neuron interpretation methods. Notable findings include: i) despite the theoretical differences among the methods, neuron ranking methods share over 60% of their rankings when identifying salient neurons, ii) the neuron interpretation methods are most sensitive to the last layer representations, iii) Probeless neuron ranking emerges as the most consistent method.
+		</div>
+		<div class="research-actions">
+			<div class="research-action" onclick="this.parentNode.previousElementSibling.classList.toggle('expanded')">Abstract</div>
+			<a class="research-action" href="/research/2023-12-NeurIPS-evaluating-neuron-interpretation/paper.pdf">PDF</a> 
+			<a class="research-action" href="/research/2023-12-NeurIPS-evaluating-neuron-interpretation/poster.pdf">Poster</a> 
+			<div class="research-action" onclick="this.parentNode.nextElementSibling.classList.toggle('expanded')">Cite (.bib)</div> 
+			
+			<a class="research-action" href="https://github.com/fdalvi/neuron-comparative-analysis">Code</a> 
+			
+			<a class="research-action" href="https://neurips.cc/virtual/2023/poster/71278">Video</a> 
+			
+			
+		</div>
+		
+			<div class="research-citation">	
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{NEURIPS2023_eef6cb60,
+</span></span><span style="display:flex;"><span> author = {Fan, Yimin and Dalvi, Fahim and Durrani, Nadir and Sajjad, Hassan},
+</span></span><span style="display:flex;"><span> booktitle = {Advances in Neural Information Processing Systems},
+</span></span><span style="display:flex;"><span> editor = {A. Oh and T. Naumann and A. Globerson and K. Saenko and M. Hardt and S. Levine},
+</span></span><span style="display:flex;"><span> pages = {75644--75668},
+</span></span><span style="display:flex;"><span> publisher = {Curran Associates, Inc.},
+</span></span><span style="display:flex;"><span> title = {Evaluating Neuron Interpretation Methods of NLP Models},
+</span></span><span style="display:flex;"><span> url = {https://proceedings.neurips.cc/paper_files/paper/2023/file/eef6cb60fd59b32d35718e176b4b08d6-Paper-Conference.pdf},
+</span></span><span style="display:flex;"><span> volume = {36},
+</span></span><span style="display:flex;"><span> year = {2023}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+			</div>
+		
+	</div>
+</div>
 
+
+	
+	<div class="research-entry">
+	<div class="research-thumb">
+		<img src="/research/2023-12-JMLR-discovering-neurons/thumbnail.jpg">
+	</div>
+	<div class="research-details">
+		<div class="research-title"><b>Discovering Salient Neurons in Deep NLP models</b></div>
+		<div class="research-authors"> <i> Nadir Durrani, <span class='highlight-author'>Fahim Dalvi</span>, Hassan Sajjad </i> </div>
+		
+		<div class="research-venue"><a href='https://jmlr.org'>Journal of Machine Learning Research</a></div>
+		<div class="research-abstract">	
+			While a lot of work has been done in understanding representations learned within deep NLP models and what knowledge they capture, work done towards analyzing individual neurons is relatively sparse. We present a technique called Linguistic Correlation Analysis to extract salient neurons in the model, with respect to any extrinsic property, with the goal of understanding how such knowledge is preserved within neurons. We carry out a fine-grained analysis to answer the following questions: (i) can we identify subsets of neurons in the network that learn a specific linguistic property? (ii) is a certain linguistic phenomenon in a given model localized (encoded in few individual neurons) or distributed across many neurons? (iii) how redundantly is the information preserved? (iv) how does fine-tuning pre-trained models towards downstream NLP tasks impact the learned linguistic knowledge? (v) how do models vary in learning different linguistic properties? Our data-driven, quantitative analysis illuminates interesting findings: (i) we found small subsets of neurons that can predict different linguistic tasks; (ii) neurons capturing basic lexical information, such as suffixation, are localized in the lowermost layers; (iii) neurons learning complex concepts, such as syntactic role, are predominantly found in middle and higher layers; (iv) salient linguistic neurons are relocated from higher to lower layers during transfer learning, as the network preserves the higher layers for task-specific information; (v) we found interesting differences across pre-trained models regarding how linguistic information is preserved within them; and (vi) we found that concepts exhibit similar neuron distribution across different languages in the multilingual transformer models. Our code is publicly available as part of the NeuroX toolkit (Dalvi et al., 2023).
+		</div>
+		<div class="research-actions">
+			<div class="research-action" onclick="this.parentNode.previousElementSibling.classList.toggle('expanded')">Abstract</div>
+			<a class="research-action" href="/research/2023-12-JMLR-discovering-neurons/paper.pdf">PDF</a> 
+			
+			<div class="research-action" onclick="this.parentNode.nextElementSibling.classList.toggle('expanded')">Cite (.bib)</div> 
+			
+			<a class="research-action" href="https://neurox.qcri.org/">Code</a> 
+			
+			
+			
+			
+		</div>
+		
+			<div class="research-citation">	
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@article{JMLR:v24:23-0074,
+</span></span><span style="display:flex;"><span>  author  = {Nadir Durrani and Fahim Dalvi and Hassan Sajjad},
+</span></span><span style="display:flex;"><span>  title   = {Discovering Salient Neurons in deep NLP models},
+</span></span><span style="display:flex;"><span>  journal = {Journal of Machine Learning Research},
+</span></span><span style="display:flex;"><span>  year    = {2023},
+</span></span><span style="display:flex;"><span>  volume  = {24},
+</span></span><span style="display:flex;"><span>  number  = {362},
+</span></span><span style="display:flex;"><span>  pages   = {1--40},
+</span></span><span style="display:flex;"><span>  url     = {http://jmlr.org/papers/v24/23-0074.html}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+			</div>
+		
+	</div>
+</div>
+
+
+	
+	<div class="research-entry">
+	<div class="research-thumb">
+		<img src="/research/2023-12-EMNLP-LLMs-interpretation/thumbnail.jpg">
+	</div>
+	<div class="research-details">
+		<div class="research-title"><b>Can LLMs Facilitate Interpretation of Pre-trained Language Models?</b></div>
+		<div class="research-authors"> <i> Basel Mousi, Nadir Durrani, <span class='highlight-author'>Fahim Dalvi</span> </i> </div>
+		
+		<div class="research-venue"><a href='https://2023.emnlp.org'>The 2023 Conference on Empirical Methods in Natural Language Processing</a></div>
+		<div class="research-abstract">	
+			Work done to uncover the knowledge encoded within pre-trained language models rely on annotated corpora or human-in-the-loop methods. However, these approaches are limited in terms of scalability and the scope of interpretation. We propose using a large language model, ChatGPT, as an annotator to enable fine-grained interpretation analysis of pre-trained language models. We discover latent concepts within pre-trained language models by applying agglomerative hierarchical clustering over contextualized representations and then annotate these concepts using ChatGPT. Our findings demonstrate that ChatGPT produces accurate and semantically richer annotations compared to human-annotated concepts. Additionally, we showcase how GPT-based annotations empower interpretation analysis methodologies of which we demonstrate two: probing frameworks and neuron interpretation. To facilitate further exploration and experimentation in the field, we make available a substantial ConceptNet dataset (TCN) comprising 39,000 annotated concepts.
+		</div>
+		<div class="research-actions">
+			<div class="research-action" onclick="this.parentNode.previousElementSibling.classList.toggle('expanded')">Abstract</div>
+			<a class="research-action" href="/research/2023-12-EMNLP-LLMs-interpretation/paper.pdf">PDF</a> 
+			
+			<div class="research-action" onclick="this.parentNode.nextElementSibling.classList.toggle('expanded')">Cite (.bib)</div> 
+			
+			<a class="research-action" href="https://neurox.qcri.org/projects/transformers-concept-net/">Code</a> 
+			
+			<a class="research-action" href="https://aclanthology.org/2023.emnlp-main.196.mp4">Video</a> 
+			
+			
+		</div>
+		
+			<div class="research-citation">	
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{mousi-etal-2023-llms,
+</span></span><span style="display:flex;"><span>    title = &#34;Can {LLM}s Facilitate Interpretation of Pre-trained Language Models?&#34;,
+</span></span><span style="display:flex;"><span>    author = &#34;Mousi, Basel  and
+</span></span><span style="display:flex;"><span>      Durrani, Nadir  and
+</span></span><span style="display:flex;"><span>      Dalvi, Fahim&#34;,
+</span></span><span style="display:flex;"><span>    editor = &#34;Bouamor, Houda  and
+</span></span><span style="display:flex;"><span>      Pino, Juan  and
+</span></span><span style="display:flex;"><span>      Bali, Kalika&#34;,
+</span></span><span style="display:flex;"><span>    booktitle = &#34;Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing&#34;,
+</span></span><span style="display:flex;"><span>    month = dec,
+</span></span><span style="display:flex;"><span>    year = &#34;2023&#34;,
+</span></span><span style="display:flex;"><span>    address = &#34;Singapore&#34;,
+</span></span><span style="display:flex;"><span>    publisher = &#34;Association for Computational Linguistics&#34;,
+</span></span><span style="display:flex;"><span>    url = &#34;https://aclanthology.org/2023.emnlp-main.196&#34;,
+</span></span><span style="display:flex;"><span>    doi = &#34;10.18653/v1/2023.emnlp-main.196&#34;,
+</span></span><span style="display:flex;"><span>    pages = &#34;3248--3268&#34;,
+</span></span><span style="display:flex;"><span>    abstract = &#34;Work done to uncover the knowledge encoded within pre-trained language models rely on annotated corpora or human-in-the-loop methods. However, these approaches are limited in terms of scalability and the scope of interpretation. We propose using a large language model, ChatGPT, as an annotator to enable fine-grained interpretation analysis of pre-trained language models. We discover latent concepts within pre-trained language models by applying agglomerative hierarchical clustering over contextualized representations and then annotate these concepts using ChatGPT. Our findings demonstrate that ChatGPT produces accurate and semantically richer annotations compared to human-annotated concepts. Additionally, we showcase how GPT-based annotations empower interpretation analysis methodologies of which we demonstrate two: probing frameworks and neuron interpretation. To facilitate further exploration and experimentation in the field, we make available a substantial ConceptNet dataset (TCN) comprising 39,000 annotated concepts.&#34;,
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+			</div>
+		
+	</div>
+</div>
+
+
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2023-07-ACL-NeuroX-demo/thumbnail.jpg">
@@ -135,28 +450,29 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{dalvi-etal-2023-neurox,
-    title = &#34;{N}euro{X} Library for Neuron Analysis of Deep {NLP} Models&#34;,
-    author = &#34;Dalvi, Fahim  and
-      Sajjad, Hassan  and
-      Durrani, Nadir&#34;,
-    booktitle = &#34;Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 3: System Demonstrations)&#34;,
-    month = jul,
-    year = &#34;2023&#34;,
-    address = &#34;Toronto, Canada&#34;,
-    publisher = &#34;Association for Computational Linguistics&#34;,
-    url = &#34;https://aclanthology.org/2023.acl-demo.21&#34;,
-    doi = &#34;10.18653/v1/2023.acl-demo.21&#34;,
-    pages = &#34;226--234&#34;,
-    abstract = &#34;Neuron analysis provides insights into how knowledge is structured in representations and discovers the role of neurons in the network. In addition to developing an understanding of our models, neuron analysis enables various applications such as debiasing, domain adaptation and architectural search. We present NeuroX, a comprehensive open-source toolkit to conduct neuron analysis of natural language processing models. It implements various interpretation methods under a unified API, and provides a framework for data processing and evaluation, thus making it easier for researchers and practitioners to perform neuron analysis. The Python toolkit is available at https://www.github.com/fdalvi/NeuroX.Demo Video available at: https://youtu.be/mLhs2YMx4u8&#34;,
-}
-</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{dalvi-etal-2023-neurox,
+</span></span><span style="display:flex;"><span>    title = &#34;{N}euro{X} Library for Neuron Analysis of Deep {NLP} Models&#34;,
+</span></span><span style="display:flex;"><span>    author = &#34;Dalvi, Fahim  and
+</span></span><span style="display:flex;"><span>      Sajjad, Hassan  and
+</span></span><span style="display:flex;"><span>      Durrani, Nadir&#34;,
+</span></span><span style="display:flex;"><span>    booktitle = &#34;Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 3: System Demonstrations)&#34;,
+</span></span><span style="display:flex;"><span>    month = jul,
+</span></span><span style="display:flex;"><span>    year = &#34;2023&#34;,
+</span></span><span style="display:flex;"><span>    address = &#34;Toronto, Canada&#34;,
+</span></span><span style="display:flex;"><span>    publisher = &#34;Association for Computational Linguistics&#34;,
+</span></span><span style="display:flex;"><span>    url = &#34;https://aclanthology.org/2023.acl-demo.21&#34;,
+</span></span><span style="display:flex;"><span>    doi = &#34;10.18653/v1/2023.acl-demo.21&#34;,
+</span></span><span style="display:flex;"><span>    pages = &#34;226--234&#34;,
+</span></span><span style="display:flex;"><span>    abstract = &#34;Neuron analysis provides insights into how knowledge is structured in representations and discovers the role of neurons in the network. In addition to developing an understanding of our models, neuron analysis enables various applications such as debiasing, domain adaptation and architectural search. We present NeuroX, a comprehensive open-source toolkit to conduct neuron analysis of natural language processing models. It implements various interpretation methods under a unified API, and provides a framework for data processing and evaluation, thus making it easier for researchers and practitioners to perform neuron analysis. The Python toolkit is available at https://www.github.com/fdalvi/NeuroX.Demo Video available at: https://youtu.be/mLhs2YMx4u8&#34;,
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2023-05-EACL-nxplain/thumbnail.jpg">
@@ -183,30 +499,31 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{dalvi-etal-2023-nxplain,
-  title = &#34;{N}x{P}lain: A Web-based Tool for Discovery of Latent Concepts&#34;,
-  author = &#34;Dalvi, Fahim  and
-    Durrani, Nadir  and
-    Sajjad, Hassan  and
-    Jaban, Tamim  and
-    Husaini, Mus{&#39;}ab  and
-    Abbas, Ummar&#34;,
-  booktitle = &#34;Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics: System Demonstrations&#34;,
-  month = may,
-  year = &#34;2023&#34;,
-  address = &#34;Dubrovnik, Croatia&#34;,
-  publisher = &#34;Association for Computational Linguistics&#34;,
-  url = &#34;https://aclanthology.org/2023.eacl-demo.10&#34;,
-  doi = &#34;10.18653/v1/2023.eacl-demo.10&#34;,
-  pages = &#34;75--83&#34;,
-  abstract = &#34;The proliferation of deep neural networks in various domains has seen an increased need for the interpretability of these models, especially in scenarios where fairness and trust are as important as model performance. A lot of independent work is being carried out to: i) analyze what linguistic and non-linguistic knowledge is learned within these models, and ii) highlight the salient parts of the input. We present NxPlain, a web-app that provides an explanation of a model{&#39;}s prediction using latent concepts. NxPlain discovers latent concepts learned in a deep NLP model, provides an interpretation of the knowledge learned in the model, and explains its predictions based on the used concepts. The application allows users to browse through the latent concepts in an intuitive order, letting them efficiently scan through the most salient concepts with a global corpus-level view and a local sentence-level view. Our tool is useful for debugging, unraveling model bias, and for highlighting spurious correlations in a model. A hosted demo is available here: https://nxplain.qcri.org&#34;,
-}</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{dalvi-etal-2023-nxplain,
+</span></span><span style="display:flex;"><span>  title = &#34;{N}x{P}lain: A Web-based Tool for Discovery of Latent Concepts&#34;,
+</span></span><span style="display:flex;"><span>  author = &#34;Dalvi, Fahim  and
+</span></span><span style="display:flex;"><span>    Durrani, Nadir  and
+</span></span><span style="display:flex;"><span>    Sajjad, Hassan  and
+</span></span><span style="display:flex;"><span>    Jaban, Tamim  and
+</span></span><span style="display:flex;"><span>    Husaini, Mus{&#39;}ab  and
+</span></span><span style="display:flex;"><span>    Abbas, Ummar&#34;,
+</span></span><span style="display:flex;"><span>  booktitle = &#34;Proceedings of the 17th Conference of the European Chapter of the Association for Computational Linguistics: System Demonstrations&#34;,
+</span></span><span style="display:flex;"><span>  month = may,
+</span></span><span style="display:flex;"><span>  year = &#34;2023&#34;,
+</span></span><span style="display:flex;"><span>  address = &#34;Dubrovnik, Croatia&#34;,
+</span></span><span style="display:flex;"><span>  publisher = &#34;Association for Computational Linguistics&#34;,
+</span></span><span style="display:flex;"><span>  url = &#34;https://aclanthology.org/2023.eacl-demo.10&#34;,
+</span></span><span style="display:flex;"><span>  doi = &#34;10.18653/v1/2023.eacl-demo.10&#34;,
+</span></span><span style="display:flex;"><span>  pages = &#34;75--83&#34;,
+</span></span><span style="display:flex;"><span>  abstract = &#34;The proliferation of deep neural networks in various domains has seen an increased need for the interpretability of these models, especially in scenarios where fairness and trust are as important as model performance. A lot of independent work is being carried out to: i) analyze what linguistic and non-linguistic knowledge is learned within these models, and ii) highlight the salient parts of the input. We present NxPlain, a web-app that provides an explanation of a model{&#39;}s prediction using latent concepts. NxPlain discovers latent concepts learned in a deep NLP model, provides an interpretation of the knowledge learned in the model, and explains its predictions based on the used concepts. The application allows users to browse through the latent concepts in an intuitive order, letting them efficiently scan through the most salient concepts with a global corpus-level view and a local sentence-level view. Our tool is useful for debugging, unraveling model bias, and for highlighting spurious correlations in a model. A hosted demo is available here: https://nxplain.qcri.org&#34;,
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2023-02-AAAI-conceptx-demo/thumbnail.jpg">
@@ -233,26 +550,27 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@article{Alam_Dalvi_Durrani_Sajjad_Khan_Xu_2023, 
-    title={ConceptX: A Framework for Latent Concept Analysis},
-    volume={37},
-    url={https://ojs.aaai.org/index.php/AAAI/article/view/27057},
-    DOI={10.1609/aaai.v37i13.27057},
-    abstractNote={The opacity of deep neural networks remains a challenge in deploying solutions where explanation is as important as precision. We present ConceptX, a human-in-the-loop framework for interpreting and annotating latent representational space in pre-trained Language Models (pLMs). We use an unsupervised method to discover concepts learned in these models and enable a graphical interface for humans to generate explanations for the concepts. To facilitate the process, we provide auto-annotations of the concepts (based on traditional linguistic ontologies). Such annotations enable development of a linguistic resource that directly represents latent concepts learned within deep NLP models. These include not just traditional linguistic concepts, but also task-specific or sensitive concepts (words grouped based on gender or religious connotation) that helps the annotators to mark bias in the model. The framework consists of two parts (i) concept discovery and (ii) annotation platform.},
-    number={13},
-    journal={Proceedings of the AAAI Conference on Artificial Intelligence},
-    author={Alam, Firoj and Dalvi, Fahim and Durrani, Nadir and Sajjad, Hassan and Khan, Abdul Rafae and Xu, Jia},
-    year={2023},
-    month={Sep.},
-    pages={16395-16397}
-}
-</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@article{Alam_Dalvi_Durrani_Sajjad_Khan_Xu_2023, 
+</span></span><span style="display:flex;"><span>    title={ConceptX: A Framework for Latent Concept Analysis},
+</span></span><span style="display:flex;"><span>    volume={37},
+</span></span><span style="display:flex;"><span>    url={https://ojs.aaai.org/index.php/AAAI/article/view/27057},
+</span></span><span style="display:flex;"><span>    DOI={10.1609/aaai.v37i13.27057},
+</span></span><span style="display:flex;"><span>    abstractNote={The opacity of deep neural networks remains a challenge in deploying solutions where explanation is as important as precision. We present ConceptX, a human-in-the-loop framework for interpreting and annotating latent representational space in pre-trained Language Models (pLMs). We use an unsupervised method to discover concepts learned in these models and enable a graphical interface for humans to generate explanations for the concepts. To facilitate the process, we provide auto-annotations of the concepts (based on traditional linguistic ontologies). Such annotations enable development of a linguistic resource that directly represents latent concepts learned within deep NLP models. These include not just traditional linguistic concepts, but also task-specific or sensitive concepts (words grouped based on gender or religious connotation) that helps the annotators to mark bias in the model. The framework consists of two parts (i) concept discovery and (ii) annotation platform.},
+</span></span><span style="display:flex;"><span>    number={13},
+</span></span><span style="display:flex;"><span>    journal={Proceedings of the AAAI Conference on Artificial Intelligence},
+</span></span><span style="display:flex;"><span>    author={Alam, Firoj and Dalvi, Fahim and Durrani, Nadir and Sajjad, Hassan and Khan, Abdul Rafae and Xu, Jia},
+</span></span><span style="display:flex;"><span>    year={2023},
+</span></span><span style="display:flex;"><span>    month={Sep.},
+</span></span><span style="display:flex;"><span>    pages={16395-16397}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2023-01-CSL-dropping-layers-transformers/thumbnail.jpg">
@@ -279,30 +597,29 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@article{SAJJAD2023101429,
-    title = {On the effect of dropping layers of pre-trained transformer models},
-    journal = {Computer Speech &amp; Language},
-    volume = {77},
-    pages = {101429},
-    year = {2023},
-    issn = {0885-2308},
-    doi = {https://doi.org/10.1016/j.csl.2022.101429},
-    url = {https://www.sciencedirect.com/science/article/pii/S0885230822000596},
-    author = {Hassan Sajjad and Fahim Dalvi and Nadir Durrani and Preslav Nakov},
-    keywords = {Pre-trained transformer models, Efficient transfer learning, Interpretation and analysis},
-    abstract = {Transformer-based NLP models are trained using hundreds of millions or even billions of parameters, limiting their applicability in computationally constrained environments. While the number of parameters generally correlates with performance, it is not clear whether the entire network is required for a downstream task. Motivated by the recent work on pruning and distilling pre-trained models, we explore strategies to drop layers in pre-trained models, and observe the effect of pruning on downstream GLUE tasks. We were able to prune BERT, RoBERTa and XLNet models up to 40<span style="color:#75715e">%, while maintaining up to 98% of their original performance. Additionally we show that our pruned models are on par with those built using knowledge distillation, both in terms of size and performance. Our experiments yield interesting observations such as: (i) the lower layers are most critical to maintain downstream task performance, (ii) some tasks such as paraphrase detection and sentence similarity are more robust to the dropping of layers, and (iii) models trained using different objective function exhibit different learning patterns and w.r.t the layer dropping.}
-</span><span style="color:#75715e"></span>}
-</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@article{SAJJAD2023101429,
+</span></span><span style="display:flex;"><span>    title = {On the effect of dropping layers of pre-trained transformer models},
+</span></span><span style="display:flex;"><span>    journal = {Computer Speech &amp; Language},
+</span></span><span style="display:flex;"><span>    volume = {77},
+</span></span><span style="display:flex;"><span>    pages = {101429},
+</span></span><span style="display:flex;"><span>    year = {2023},
+</span></span><span style="display:flex;"><span>    issn = {0885-2308},
+</span></span><span style="display:flex;"><span>    doi = {https://doi.org/10.1016/j.csl.2022.101429},
+</span></span><span style="display:flex;"><span>    url = {https://www.sciencedirect.com/science/article/pii/S0885230822000596},
+</span></span><span style="display:flex;"><span>    author = {Hassan Sajjad and Fahim Dalvi and Nadir Durrani and Preslav Nakov},
+</span></span><span style="display:flex;"><span>    keywords = {Pre-trained transformer models, Efficient transfer learning, Interpretation and analysis},
+</span></span><span style="display:flex;"><span>    abstract = {Transformer-based NLP models are trained using hundreds of millions or even billions of parameters, limiting their applicability in computationally constrained environments. While the number of parameters generally correlates with performance, it is not clear whether the entire network is required for a downstream task. Motivated by the recent work on pruning and distilling pre-trained models, we explore strategies to drop layers in pre-trained models, and observe the effect of pruning on downstream GLUE tasks. We were able to prune BERT, RoBERTa and XLNet models up to 40<span style="color:#75715e">%, while maintaining up to 98% of their original performance. Additionally we show that our pruned models are on par with those built using knowledge distillation, both in terms of size and performance. Our experiments yield interesting observations such as: (i) the lower layers are most critical to maintain downstream task performance, (ii) some tasks such as paraphrase detection and sentence similarity are more robust to the dropping of layers, and (iii) models trained using different objective function exhibit different learning patterns and w.r.t the layer dropping.}
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
-
 <h3 id="2022">2022</h3>
 
-
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2022-12-EMNLP-transformation-latent-space-fine-tuned/thumbnail.jpg">
@@ -329,28 +646,29 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{durrani-etal-2022-transformation,
-    title = &#34;On the Transformation of Latent Space in Fine-Tuned {NLP} Models&#34;,
-    author = &#34;Durrani, Nadir  and
-      Sajjad, Hassan  and
-      Dalvi, Fahim  and
-      Alam, Firoj&#34;,
-    booktitle = &#34;Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing&#34;,
-    month = dec,
-    year = &#34;2022&#34;,
-    address = &#34;Abu Dhabi, United Arab Emirates&#34;,
-    publisher = &#34;Association for Computational Linguistics&#34;,
-    url = &#34;https://aclanthology.org/2022.emnlp-main.97&#34;,
-    doi = &#34;10.18653/v1/2022.emnlp-main.97&#34;,
-    pages = &#34;1495--1516&#34;,
-    abstract = &#34;We study the evolution of latent space in fine-tuned NLP models. Different from the commonly used probing-framework, we opt for an unsupervised method to analyze representations. More specifically, we discover latent concepts in the representational space using hierarchical clustering. We then use an alignment function to gauge the similarity between the latent space of a pre-trained model and its fine-tuned version. We use traditional linguistic concepts to facilitate our understanding and also study how the model space transforms towards task-specific information. We perform a thorough analysis, comparing pre-trained and fine-tuned models across three models and three downstream tasks. The notable findings of our work are: i) the latent space of the higher layers evolve towards task-specific concepts, ii) whereas the lower layers retain generic concepts acquired in the pre-trained model, iii) we discovered that some concepts in the higher layers acquire polarity towards the output class, and iv) that these concepts can be used for generating adversarial triggers.&#34;,
-}</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{durrani-etal-2022-transformation,
+</span></span><span style="display:flex;"><span>    title = &#34;On the Transformation of Latent Space in Fine-Tuned {NLP} Models&#34;,
+</span></span><span style="display:flex;"><span>    author = &#34;Durrani, Nadir  and
+</span></span><span style="display:flex;"><span>      Sajjad, Hassan  and
+</span></span><span style="display:flex;"><span>      Dalvi, Fahim  and
+</span></span><span style="display:flex;"><span>      Alam, Firoj&#34;,
+</span></span><span style="display:flex;"><span>    booktitle = &#34;Proceedings of the 2022 Conference on Empirical Methods in Natural Language Processing&#34;,
+</span></span><span style="display:flex;"><span>    month = dec,
+</span></span><span style="display:flex;"><span>    year = &#34;2022&#34;,
+</span></span><span style="display:flex;"><span>    address = &#34;Abu Dhabi, United Arab Emirates&#34;,
+</span></span><span style="display:flex;"><span>    publisher = &#34;Association for Computational Linguistics&#34;,
+</span></span><span style="display:flex;"><span>    url = &#34;https://aclanthology.org/2022.emnlp-main.97&#34;,
+</span></span><span style="display:flex;"><span>    doi = &#34;10.18653/v1/2022.emnlp-main.97&#34;,
+</span></span><span style="display:flex;"><span>    pages = &#34;1495--1516&#34;,
+</span></span><span style="display:flex;"><span>    abstract = &#34;We study the evolution of latent space in fine-tuned NLP models. Different from the commonly used probing-framework, we opt for an unsupervised method to analyze representations. More specifically, we discover latent concepts in the representational space using hierarchical clustering. We then use an alignment function to gauge the similarity between the latent space of a pre-trained model and its fine-tuned version. We use traditional linguistic concepts to facilitate our understanding and also study how the model space transforms towards task-specific information. We perform a thorough analysis, comparing pre-trained and fine-tuned models across three models and three downstream tasks. The notable findings of our work are: i) the latent space of the higher layers evolve towards task-specific concepts, ii) whereas the lower layers retain generic concepts acquired in the pre-trained model, iii) we discovered that some concepts in the higher layers acquire polarity towards the output class, and iv) that these concepts can be used for generating adversarial triggers.&#34;,
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2022-12-blackboxnlp-post-hoc-analysis-arabic-transformers/thumbnail.jpg">
@@ -377,28 +695,29 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{abdelali-etal-2022-post,
-    title = &#34;Post-hoc analysis of {A}rabic transformer models&#34;,
-    author = &#34;Abdelali, Ahmed  and
-      Durrani, Nadir  and
-      Dalvi, Fahim  and
-      Sajjad, Hassan&#34;,
-    booktitle = &#34;Proceedings of the Fifth BlackboxNLP Workshop on Analyzing and Interpreting Neural Networks for NLP&#34;,
-    month = dec,
-    year = &#34;2022&#34;,
-    address = &#34;Abu Dhabi, United Arab Emirates (Hybrid)&#34;,
-    publisher = &#34;Association for Computational Linguistics&#34;,
-    url = &#34;https://aclanthology.org/2022.blackboxnlp-1.8&#34;,
-    doi = &#34;10.18653/v1/2022.blackboxnlp-1.8&#34;,
-    pages = &#34;91--103&#34;,
-    abstract = &#34;Arabic is a Semitic language which is widely spoken with many dialects. Given the success of pre-trained language models, many transformer models trained on Arabic and its dialects have surfaced. While there have been an extrinsic evaluation of these models with respect to downstream NLP tasks, no work has been carried out to analyze and compare their internal representations. We probe how linguistic information is encoded in the transformer models, trained on different Arabic dialects. We perform a layer and neuron analysis on the models using morphological tagging tasks for different dialects of Arabic and a dialectal identification task. Our analysis enlightens interesting findings such as: i) word morphology is learned at the lower and middle layers, ii) while syntactic dependencies are predominantly captured at the higher layers, iii) despite a large overlap in their vocabulary, the MSA-based models fail to capture the nuances of Arabic dialects, iv) we found that neurons in embedding layers are polysemous in nature, while the neurons in middle layers are exclusive to specific properties.&#34;,
-}</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{abdelali-etal-2022-post,
+</span></span><span style="display:flex;"><span>    title = &#34;Post-hoc analysis of {A}rabic transformer models&#34;,
+</span></span><span style="display:flex;"><span>    author = &#34;Abdelali, Ahmed  and
+</span></span><span style="display:flex;"><span>      Durrani, Nadir  and
+</span></span><span style="display:flex;"><span>      Dalvi, Fahim  and
+</span></span><span style="display:flex;"><span>      Sajjad, Hassan&#34;,
+</span></span><span style="display:flex;"><span>    booktitle = &#34;Proceedings of the Fifth BlackboxNLP Workshop on Analyzing and Interpreting Neural Networks for NLP&#34;,
+</span></span><span style="display:flex;"><span>    month = dec,
+</span></span><span style="display:flex;"><span>    year = &#34;2022&#34;,
+</span></span><span style="display:flex;"><span>    address = &#34;Abu Dhabi, United Arab Emirates (Hybrid)&#34;,
+</span></span><span style="display:flex;"><span>    publisher = &#34;Association for Computational Linguistics&#34;,
+</span></span><span style="display:flex;"><span>    url = &#34;https://aclanthology.org/2022.blackboxnlp-1.8&#34;,
+</span></span><span style="display:flex;"><span>    doi = &#34;10.18653/v1/2022.blackboxnlp-1.8&#34;,
+</span></span><span style="display:flex;"><span>    pages = &#34;91--103&#34;,
+</span></span><span style="display:flex;"><span>    abstract = &#34;Arabic is a Semitic language which is widely spoken with many dialects. Given the success of pre-trained language models, many transformer models trained on Arabic and its dialects have surfaced. While there have been an extrinsic evaluation of these models with respect to downstream NLP tasks, no work has been carried out to analyze and compare their internal representations. We probe how linguistic information is encoded in the transformer models, trained on different Arabic dialects. We perform a layer and neuron analysis on the models using morphological tagging tasks for different dialects of Arabic and a dialectal identification task. Our analysis enlightens interesting findings such as: i) word morphology is learned at the lower and middle layers, ii) while syntactic dependencies are predominantly captured at the higher layers, iii) despite a large overlap in their vocabulary, the MSA-based models fail to capture the nuances of Arabic dialects, iv) we found that neurons in embedding layers are polysemous in nature, while the neurons in middle layers are exclusive to specific properties.&#34;,
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2022-12-WANLP-NatiQ-demo/thumbnail.jpg">
@@ -425,30 +744,31 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{abdelali-etal-2022-natiq,
-    title = &#34;{N}ati{Q}: An End-to-end Text-to-Speech System for {A}rabic&#34;,
-    author = &#34;Abdelali, Ahmed  and
-      Durrani, Nadir  and
-      Demiroglu, Cenk  and
-      Dalvi, Fahim  and
-      Mubarak, Hamdy  and
-      Darwish, Kareem&#34;,
-    booktitle = &#34;Proceedings of the The Seventh Arabic Natural Language Processing Workshop (WANLP)&#34;,
-    month = dec,
-    year = &#34;2022&#34;,
-    address = &#34;Abu Dhabi, United Arab Emirates (Hybrid)&#34;,
-    publisher = &#34;Association for Computational Linguistics&#34;,
-    url = &#34;https://aclanthology.org/2022.wanlp-1.38&#34;,
-    doi = &#34;10.18653/v1/2022.wanlp-1.38&#34;,
-    pages = &#34;394--398&#34;,
-    abstract = &#34;NatiQ is end-to-end text-to-speech system for Arabic. Our speech synthesizer uses an encoder-decoder architecture with attention. We used both tacotron-based models (tacotron- 1 and tacotron-2) and the faster transformer model for generating mel-spectrograms from characters. We concatenated Tacotron1 with the WaveRNN vocoder, Tacotron2 with the WaveGlow vocoder and ESPnet transformer with the parallel wavegan vocoder to synthesize waveforms from the spectrograms. We used in-house speech data for two voices: 1) neu- tral male {``}Hamza{&#39;&#39;}- narrating general content and news, and 2) expressive female {``}Amina{&#39;&#39;}- narrating children story books to train our models. Our best systems achieve an aver- age Mean Opinion Score (MOS) of 4.21 and 4.40 for Amina and Hamza respectively. The objective evaluation of the systems using word and character error rate (WER and CER) as well as the response time measured by real- time factor favored the end-to-end architecture ESPnet. NatiQ demo is available online at https://tts.qcri.org.&#34;,
-}</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{abdelali-etal-2022-natiq,
+</span></span><span style="display:flex;"><span>    title = &#34;{N}ati{Q}: An End-to-end Text-to-Speech System for {A}rabic&#34;,
+</span></span><span style="display:flex;"><span>    author = &#34;Abdelali, Ahmed  and
+</span></span><span style="display:flex;"><span>      Durrani, Nadir  and
+</span></span><span style="display:flex;"><span>      Demiroglu, Cenk  and
+</span></span><span style="display:flex;"><span>      Dalvi, Fahim  and
+</span></span><span style="display:flex;"><span>      Mubarak, Hamdy  and
+</span></span><span style="display:flex;"><span>      Darwish, Kareem&#34;,
+</span></span><span style="display:flex;"><span>    booktitle = &#34;Proceedings of the The Seventh Arabic Natural Language Processing Workshop (WANLP)&#34;,
+</span></span><span style="display:flex;"><span>    month = dec,
+</span></span><span style="display:flex;"><span>    year = &#34;2022&#34;,
+</span></span><span style="display:flex;"><span>    address = &#34;Abu Dhabi, United Arab Emirates (Hybrid)&#34;,
+</span></span><span style="display:flex;"><span>    publisher = &#34;Association for Computational Linguistics&#34;,
+</span></span><span style="display:flex;"><span>    url = &#34;https://aclanthology.org/2022.wanlp-1.38&#34;,
+</span></span><span style="display:flex;"><span>    doi = &#34;10.18653/v1/2022.wanlp-1.38&#34;,
+</span></span><span style="display:flex;"><span>    pages = &#34;394--398&#34;,
+</span></span><span style="display:flex;"><span>    abstract = &#34;NatiQ is end-to-end text-to-speech system for Arabic. Our speech synthesizer uses an encoder-decoder architecture with attention. We used both tacotron-based models (tacotron- 1 and tacotron-2) and the faster transformer model for generating mel-spectrograms from characters. We concatenated Tacotron1 with the WaveRNN vocoder, Tacotron2 with the WaveGlow vocoder and ESPnet transformer with the parallel wavegan vocoder to synthesize waveforms from the spectrograms. We used in-house speech data for two voices: 1) neu- tral male {``}Hamza{&#39;&#39;}- narrating general content and news, and 2) expressive female {``}Amina{&#39;&#39;}- narrating children story books to train our models. Our best systems achieve an aver- age Mean Opinion Score (MOS) of 4.21 and 4.40 for Amina and Hamza respectively. The objective evaluation of the systems using word and character error rate (WER and CER) as well as the response time measured by real- time factor favored the end-to-end architecture ESPnet. NatiQ demo is available online at https://tts.qcri.org.&#34;,
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2022-11-TACL-neuron-level-interpretation-survey/thumbnail.jpg">
@@ -475,28 +795,29 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@article{sajjad-etal-2022-neuron,
-    title = &#34;Neuron-level Interpretation of Deep {NLP} Models: A Survey&#34;,
-    author = &#34;Sajjad, Hassan  and
-      Durrani, Nadir  and
-      Dalvi, Fahim&#34;,
-    journal = &#34;Transactions of the Association for Computational Linguistics&#34;,
-    volume = &#34;10&#34;,
-    year = &#34;2022&#34;,
-    address = &#34;Cambridge, MA&#34;,
-    publisher = &#34;MIT Press&#34;,
-    url = &#34;https://aclanthology.org/2022.tacl-1.74&#34;,
-    doi = &#34;10.1162/tacl_a_00519&#34;,
-    pages = &#34;1285--1303&#34;,
-    abstract = &#34;The proliferation of Deep Neural Networks in various domains has seen an increased need for interpretability of these models. Preliminary work done along this line, and papers that surveyed such, are focused on high-level representation analysis. However, a recent branch of work has concentrated on interpretability at a more granular level of analyzing neurons within these models. In this paper, we survey the work done on neuron analysis including: i) methods to discover and understand neurons in a network; ii) evaluation methods; iii) major findings including cross architectural comparisons that neuron analysis has unraveled; iv) applications of neuron probing such as: controlling the model, domain adaptation, and so forth; and v) a discussion on open issues and future research directions.&#34;,
-}
-</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@article{sajjad-etal-2022-neuron,
+</span></span><span style="display:flex;"><span>    title = &#34;Neuron-level Interpretation of Deep {NLP} Models: A Survey&#34;,
+</span></span><span style="display:flex;"><span>    author = &#34;Sajjad, Hassan  and
+</span></span><span style="display:flex;"><span>      Durrani, Nadir  and
+</span></span><span style="display:flex;"><span>      Dalvi, Fahim&#34;,
+</span></span><span style="display:flex;"><span>    journal = &#34;Transactions of the Association for Computational Linguistics&#34;,
+</span></span><span style="display:flex;"><span>    volume = &#34;10&#34;,
+</span></span><span style="display:flex;"><span>    year = &#34;2022&#34;,
+</span></span><span style="display:flex;"><span>    address = &#34;Cambridge, MA&#34;,
+</span></span><span style="display:flex;"><span>    publisher = &#34;MIT Press&#34;,
+</span></span><span style="display:flex;"><span>    url = &#34;https://aclanthology.org/2022.tacl-1.74&#34;,
+</span></span><span style="display:flex;"><span>    doi = &#34;10.1162/tacl_a_00519&#34;,
+</span></span><span style="display:flex;"><span>    pages = &#34;1285--1303&#34;,
+</span></span><span style="display:flex;"><span>    abstract = &#34;The proliferation of Deep Neural Networks in various domains has seen an increased need for interpretability of these models. Preliminary work done along this line, and papers that surveyed such, are focused on high-level representation analysis. However, a recent branch of work has concentrated on interpretability at a more granular level of analyzing neurons within these models. In this paper, we survey the work done on neuron analysis including: i) methods to discover and understand neurons in a network; ii) evaluation methods; iii) major findings including cross architectural comparisons that neuron analysis has unraveled; iv) applications of neuron probing such as: controlling the model, domain adaptation, and so forth; and v) a discussion on open issues and future research directions.&#34;,
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2022-10-COLING-effect-of-post-processing-contextualized/thumbnail.jpg">
@@ -523,27 +844,28 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{sajjad-etal-2022-effect,
-    title = &#34;Effect of Post-processing on Contextualized Word Representations&#34;,
-    author = &#34;Sajjad, Hassan  and
-      Alam, Firoj  and
-      Dalvi, Fahim  and
-      Durrani, Nadir&#34;,
-    booktitle = &#34;Proceedings of the 29th International Conference on Computational Linguistics&#34;,
-    month = oct,
-    year = &#34;2022&#34;,
-    address = &#34;Gyeongju, Republic of Korea&#34;,
-    publisher = &#34;International Committee on Computational Linguistics&#34;,
-    url = &#34;https://aclanthology.org/2022.coling-1.277&#34;,
-    pages = &#34;3127--3142&#34;,
-    abstract = &#34;Post-processing of static embedding has been shown to improve their performance on both lexical and sequence-level tasks. However, post-processing for contextualized embeddings is an under-studied problem. In this work, we question the usefulness of post-processing for contextualized embeddings obtained from different layers of pre-trained language models. More specifically, we standardize individual neuron activations using z-score, min-max normalization, and by removing top principal components using the all-but-the-top method. Additionally, we apply unit length normalization to word representations. On a diverse set of pre-trained models, we show that post-processing unwraps vital information present in the representations for both lexical tasks (such as word similarity and analogy) and sequence classification tasks. Our findings raise interesting points in relation to the research studies that use contextualized representations, and suggest z-score normalization as an essential step to consider when using them in an application.&#34;,
-}</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{sajjad-etal-2022-effect,
+</span></span><span style="display:flex;"><span>    title = &#34;Effect of Post-processing on Contextualized Word Representations&#34;,
+</span></span><span style="display:flex;"><span>    author = &#34;Sajjad, Hassan  and
+</span></span><span style="display:flex;"><span>      Alam, Firoj  and
+</span></span><span style="display:flex;"><span>      Dalvi, Fahim  and
+</span></span><span style="display:flex;"><span>      Durrani, Nadir&#34;,
+</span></span><span style="display:flex;"><span>    booktitle = &#34;Proceedings of the 29th International Conference on Computational Linguistics&#34;,
+</span></span><span style="display:flex;"><span>    month = oct,
+</span></span><span style="display:flex;"><span>    year = &#34;2022&#34;,
+</span></span><span style="display:flex;"><span>    address = &#34;Gyeongju, Republic of Korea&#34;,
+</span></span><span style="display:flex;"><span>    publisher = &#34;International Committee on Computational Linguistics&#34;,
+</span></span><span style="display:flex;"><span>    url = &#34;https://aclanthology.org/2022.coling-1.277&#34;,
+</span></span><span style="display:flex;"><span>    pages = &#34;3127--3142&#34;,
+</span></span><span style="display:flex;"><span>    abstract = &#34;Post-processing of static embedding has been shown to improve their performance on both lexical and sequence-level tasks. However, post-processing for contextualized embeddings is an under-studied problem. In this work, we question the usefulness of post-processing for contextualized embeddings obtained from different layers of pre-trained language models. More specifically, we standardize individual neuron activations using z-score, min-max normalization, and by removing top principal components using the all-but-the-top method. Additionally, we apply unit length normalization to word representations. On a diverse set of pre-trained models, we show that post-processing unwraps vital information present in the representations for both lexical tasks (such as word similarity and analogy) and sequence classification tasks. Our findings raise interesting points in relation to the research studies that use contextualized representations, and suggest z-score normalization as an essential step to consider when using them in an application.&#34;,
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2022-07-NAACL-analyzing-encoded-concepts-transformers/thumbnail.jpg">
@@ -570,30 +892,31 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{sajjad-etal-2022-analyzing,
-    title = &#34;Analyzing Encoded Concepts in Transformer Language Models&#34;,
-    author = &#34;Sajjad, Hassan  and
-      Durrani, Nadir  and
-      Dalvi, Fahim  and
-      Alam, Firoj  and
-      Khan, Abdul  and
-      Xu, Jia&#34;,
-    booktitle = &#34;Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies&#34;,
-    month = jul,
-    year = &#34;2022&#34;,
-    address = &#34;Seattle, United States&#34;,
-    publisher = &#34;Association for Computational Linguistics&#34;,
-    url = &#34;https://aclanthology.org/2022.naacl-main.225&#34;,
-    doi = &#34;10.18653/v1/2022.naacl-main.225&#34;,
-    pages = &#34;3082--3101&#34;,
-    abstract = &#34;We propose a novel framework ConceptX, to analyze how latent concepts are encoded in representations learned within pre-trained lan-guage models. It uses clustering to discover the encoded concepts and explains them by aligning with a large set of human-defined concepts. Our analysis on seven transformer language models reveal interesting insights: i) the latent space within the learned representations overlap with different linguistic concepts to a varying degree, ii) the lower layers in the model are dominated by lexical concepts (e.g., affixation) and linguistic ontologies (e.g. Word-Net), whereas the core-linguistic concepts (e.g., morphology, syntactic relations) are better represented in the middle and higher layers, iii) some encoded concepts are multi-faceted and cannot be adequately explained using the existing human-defined concepts.&#34;,
-}</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{sajjad-etal-2022-analyzing,
+</span></span><span style="display:flex;"><span>    title = &#34;Analyzing Encoded Concepts in Transformer Language Models&#34;,
+</span></span><span style="display:flex;"><span>    author = &#34;Sajjad, Hassan  and
+</span></span><span style="display:flex;"><span>      Durrani, Nadir  and
+</span></span><span style="display:flex;"><span>      Dalvi, Fahim  and
+</span></span><span style="display:flex;"><span>      Alam, Firoj  and
+</span></span><span style="display:flex;"><span>      Khan, Abdul  and
+</span></span><span style="display:flex;"><span>      Xu, Jia&#34;,
+</span></span><span style="display:flex;"><span>    booktitle = &#34;Proceedings of the 2022 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies&#34;,
+</span></span><span style="display:flex;"><span>    month = jul,
+</span></span><span style="display:flex;"><span>    year = &#34;2022&#34;,
+</span></span><span style="display:flex;"><span>    address = &#34;Seattle, United States&#34;,
+</span></span><span style="display:flex;"><span>    publisher = &#34;Association for Computational Linguistics&#34;,
+</span></span><span style="display:flex;"><span>    url = &#34;https://aclanthology.org/2022.naacl-main.225&#34;,
+</span></span><span style="display:flex;"><span>    doi = &#34;10.18653/v1/2022.naacl-main.225&#34;,
+</span></span><span style="display:flex;"><span>    pages = &#34;3082--3101&#34;,
+</span></span><span style="display:flex;"><span>    abstract = &#34;We propose a novel framework ConceptX, to analyze how latent concepts are encoded in representations learned within pre-trained lan-guage models. It uses clustering to discover the encoded concepts and explains them by aligning with a large set of human-defined concepts. Our analysis on seven transformer language models reveal interesting insights: i) the latent space within the learned representations overlap with different linguistic concepts to a varying degree, ii) the lower layers in the model are dominated by lexical concepts (e.g., affixation) and linguistic ontologies (e.g. Word-Net), whereas the core-linguistic concepts (e.g., morphology, syntactic relations) are better represented in the middle and higher layers, iii) some encoded concepts are multi-faceted and cannot be adequately explained using the existing human-defined concepts.&#34;,
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2022-05-ICLR-discovering-latent-concepts-in-bert/thumbnail.jpg">
@@ -620,30 +943,29 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{
-  dalvi2022discovering,
-  title={Discovering Latent Concepts Learned in {BERT}},
-  author={Fahim Dalvi
-    and Abdul Rafae Khan
-    and Firoj Alam
-    and Nadir Durrani
-    and Jia Xu
-    and Hassan Sajjad},
-  booktitle={International Conference on Learning Representations},
-  year={2022},
-  url={https://openreview.net/forum?id=POTMtpYI1xH}
-}
-</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{
+</span></span><span style="display:flex;"><span>  dalvi2022discovering,
+</span></span><span style="display:flex;"><span>  title={Discovering Latent Concepts Learned in {BERT}},
+</span></span><span style="display:flex;"><span>  author={Fahim Dalvi
+</span></span><span style="display:flex;"><span>    and Abdul Rafae Khan
+</span></span><span style="display:flex;"><span>    and Firoj Alam
+</span></span><span style="display:flex;"><span>    and Nadir Durrani
+</span></span><span style="display:flex;"><span>    and Jia Xu
+</span></span><span style="display:flex;"><span>    and Hassan Sajjad},
+</span></span><span style="display:flex;"><span>  booktitle={International Conference on Learning Representations},
+</span></span><span style="display:flex;"><span>  year={2022},
+</span></span><span style="display:flex;"><span>  url={https://openreview.net/forum?id=POTMtpYI1xH}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
-
 <h3 id="2021">2021</h3>
 
-
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2021-11-EMNLP-Findings-fighting-covid-infodemic/thumbnail.jpg">
@@ -670,41 +992,42 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{alam-etal-2021-fighting-covid,
-    title = &#34;Fighting the {COVID}-19 Infodemic: Modeling the Perspective of Journalists, Fact-Checkers, Social Media Platforms, Policy Makers, and the Society&#34;,
-    author = &#34;Alam, Firoj  and
-      Shaar, Shaden  and
-      Dalvi, Fahim  and
-      Sajjad, Hassan  and
-      Nikolov, Alex  and
-      Mubarak, Hamdy  and
-      Da San Martino, Giovanni  and
-      Abdelali, Ahmed  and
-      Durrani, Nadir  and
-      Darwish, Kareem  and
-      Al-Homaid, Abdulaziz  and
-      Zaghouani, Wajdi  and
-      Caselli, Tommaso  and
-      Danoe, Gijs  and
-      Stolk, Friso  and
-      Bruntink, Britt  and
-      Nakov, Preslav&#34;,
-    booktitle = &#34;Findings of the Association for Computational Linguistics: EMNLP 2021&#34;,
-    month = nov,
-    year = &#34;2021&#34;,
-    address = &#34;Punta Cana, Dominican Republic&#34;,
-    publisher = &#34;Association for Computational Linguistics&#34;,
-    url = &#34;https://aclanthology.org/2021.findings-emnlp.56&#34;,
-    doi = &#34;10.18653/v1/2021.findings-emnlp.56&#34;,
-    pages = &#34;611--649&#34;,
-    abstract = &#34;With the emergence of the COVID-19 pandemic, the political and the medical aspects of disinformation merged as the problem got elevated to a whole new level to become the first global infodemic. Fighting this infodemic has been declared one of the most important focus areas of the World Health Organization, with dangers ranging from promoting fake cures, rumors, and conspiracy theories to spreading xenophobia and panic. Addressing the issue requires solving a number of challenging problems such as identifying messages containing claims, determining their check-worthiness and factuality, and their potential to do harm as well as the nature of that harm, to mention just a few. To address this gap, we release a large dataset of 16K manually annotated tweets for fine-grained disinformation analysis that (i) focuses on COVID-19, (ii) combines the perspectives and the interests of journalists, fact-checkers, social media platforms, policy makers, and society, and (iii) covers Arabic, Bulgarian, Dutch, and English. Finally, we show strong evaluation results using pretrained Transformers, thus confirming the practical utility of the dataset in monolingual vs. multilingual, and single task vs. multitask settings.&#34;,
-}</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{alam-etal-2021-fighting-covid,
+</span></span><span style="display:flex;"><span>    title = &#34;Fighting the {COVID}-19 Infodemic: Modeling the Perspective of Journalists, Fact-Checkers, Social Media Platforms, Policy Makers, and the Society&#34;,
+</span></span><span style="display:flex;"><span>    author = &#34;Alam, Firoj  and
+</span></span><span style="display:flex;"><span>      Shaar, Shaden  and
+</span></span><span style="display:flex;"><span>      Dalvi, Fahim  and
+</span></span><span style="display:flex;"><span>      Sajjad, Hassan  and
+</span></span><span style="display:flex;"><span>      Nikolov, Alex  and
+</span></span><span style="display:flex;"><span>      Mubarak, Hamdy  and
+</span></span><span style="display:flex;"><span>      Da San Martino, Giovanni  and
+</span></span><span style="display:flex;"><span>      Abdelali, Ahmed  and
+</span></span><span style="display:flex;"><span>      Durrani, Nadir  and
+</span></span><span style="display:flex;"><span>      Darwish, Kareem  and
+</span></span><span style="display:flex;"><span>      Al-Homaid, Abdulaziz  and
+</span></span><span style="display:flex;"><span>      Zaghouani, Wajdi  and
+</span></span><span style="display:flex;"><span>      Caselli, Tommaso  and
+</span></span><span style="display:flex;"><span>      Danoe, Gijs  and
+</span></span><span style="display:flex;"><span>      Stolk, Friso  and
+</span></span><span style="display:flex;"><span>      Bruntink, Britt  and
+</span></span><span style="display:flex;"><span>      Nakov, Preslav&#34;,
+</span></span><span style="display:flex;"><span>    booktitle = &#34;Findings of the Association for Computational Linguistics: EMNLP 2021&#34;,
+</span></span><span style="display:flex;"><span>    month = nov,
+</span></span><span style="display:flex;"><span>    year = &#34;2021&#34;,
+</span></span><span style="display:flex;"><span>    address = &#34;Punta Cana, Dominican Republic&#34;,
+</span></span><span style="display:flex;"><span>    publisher = &#34;Association for Computational Linguistics&#34;,
+</span></span><span style="display:flex;"><span>    url = &#34;https://aclanthology.org/2021.findings-emnlp.56&#34;,
+</span></span><span style="display:flex;"><span>    doi = &#34;10.18653/v1/2021.findings-emnlp.56&#34;,
+</span></span><span style="display:flex;"><span>    pages = &#34;611--649&#34;,
+</span></span><span style="display:flex;"><span>    abstract = &#34;With the emergence of the COVID-19 pandemic, the political and the medical aspects of disinformation merged as the problem got elevated to a whole new level to become the first global infodemic. Fighting this infodemic has been declared one of the most important focus areas of the World Health Organization, with dangers ranging from promoting fake cures, rumors, and conspiracy theories to spreading xenophobia and panic. Addressing the issue requires solving a number of challenging problems such as identifying messages containing claims, determining their check-worthiness and factuality, and their potential to do harm as well as the nature of that harm, to mention just a few. To address this gap, we release a large dataset of 16K manually annotated tweets for fine-grained disinformation analysis that (i) focuses on COVID-19, (ii) combines the perspectives and the interests of journalists, fact-checkers, social media platforms, policy makers, and society, and (iii) covers Arabic, Bulgarian, Dutch, and English. Finally, we show strong evaluation results using pretrained Transformers, thus confirming the practical utility of the dataset in monolingual vs. multilingual, and single task vs. multitask settings.&#34;,
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2021-08-ACL-Findings-transfer-learning-impact/thumbnail.jpg">
@@ -731,26 +1054,27 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{durrani-etal-2021-transfer,
-    title = &#34;How transfer learning impacts linguistic knowledge in deep {NLP} models?&#34;,
-    author = &#34;Durrani, Nadir  and
-      Sajjad, Hassan  and
-      Dalvi, Fahim&#34;,
-    booktitle = &#34;Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021&#34;,
-    month = aug,
-    year = &#34;2021&#34;,
-    address = &#34;Online&#34;,
-    publisher = &#34;Association for Computational Linguistics&#34;,
-    url = &#34;https://aclanthology.org/2021.findings-acl.438&#34;,
-    doi = &#34;10.18653/v1/2021.findings-acl.438&#34;,
-    pages = &#34;4947--4957&#34;,
-}</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{durrani-etal-2021-transfer,
+</span></span><span style="display:flex;"><span>    title = &#34;How transfer learning impacts linguistic knowledge in deep {NLP} models?&#34;,
+</span></span><span style="display:flex;"><span>    author = &#34;Durrani, Nadir  and
+</span></span><span style="display:flex;"><span>      Sajjad, Hassan  and
+</span></span><span style="display:flex;"><span>      Dalvi, Fahim&#34;,
+</span></span><span style="display:flex;"><span>    booktitle = &#34;Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021&#34;,
+</span></span><span style="display:flex;"><span>    month = aug,
+</span></span><span style="display:flex;"><span>    year = &#34;2021&#34;,
+</span></span><span style="display:flex;"><span>    address = &#34;Online&#34;,
+</span></span><span style="display:flex;"><span>    publisher = &#34;Association for Computational Linguistics&#34;,
+</span></span><span style="display:flex;"><span>    url = &#34;https://aclanthology.org/2021.findings-acl.438&#34;,
+</span></span><span style="display:flex;"><span>    doi = &#34;10.18653/v1/2021.findings-acl.438&#34;,
+</span></span><span style="display:flex;"><span>    pages = &#34;4947--4957&#34;,
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2021-06-ICWSM-fighting-covid-infodemic/thumbnail.jpg">
@@ -777,24 +1101,25 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@article{Alam_covid_infodemic_2021,
-  title={Fighting the COVID-19 Infodemic in Social Media: A Holistic Perspective and a Call to Arms},
-  author={Alam, Firoj and Dalvi, Fahim and Shaar, Shaden and Durrani, Nadir and Mubarak, Hamdy and Nikolov, Alex and Da San Martino, Giovanni and Abdelali, Ahmed and Sajjad, Hassan and Darwish, Kareem and Nakov, Preslav},
-  volume={15},
-  url={https://ojs.aaai.org/index.php/ICWSM/article/view/18114},
-  number={1},
-  journal={Proceedings of the International AAAI Conference on Web and Social Media},
-  year={2021},
-  month={May},
-  pages={913-922},
-  abstractNote={With the outbreak of the COVID-19 pandemic, people turned to social media to read and to share timely information including statistics, warnings, advice, and inspirational stories. Unfortunately, alongside all this useful information, there was also a new blending of medical and political misinformation and disinformation, which gave rise to the first global infodemic. While fighting this infodemic is typically thought of in terms of factuality, the problem is much broader as malicious content includes not only fake news, rumors, and conspiracy theories, but also promotion of fake cures, panic, racism, xenophobia, and mistrust in the authorities, among others. This is a complex problem that needs a holistic approach combining the perspectives of journalists, fact-checkers, policymakers, government entities, social media platforms, and society as a whole. With this in mind, we define an annotation schema and detailed annotation instructions that reflect these perspectives. We further deploy a multilingual annotation platform, and we issue a call to arms to the research community and beyond to join the fight by supporting our crowdsourcing annotation efforts. We perform initial annotations using the annotation schema, and our initial experiments demonstrated sizable improvements over the baselines.}
-}</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@article{Alam_covid_infodemic_2021,
+</span></span><span style="display:flex;"><span>  title={Fighting the COVID-19 Infodemic in Social Media: A Holistic Perspective and a Call to Arms},
+</span></span><span style="display:flex;"><span>  author={Alam, Firoj and Dalvi, Fahim and Shaar, Shaden and Durrani, Nadir and Mubarak, Hamdy and Nikolov, Alex and Da San Martino, Giovanni and Abdelali, Ahmed and Sajjad, Hassan and Darwish, Kareem and Nakov, Preslav},
+</span></span><span style="display:flex;"><span>  volume={15},
+</span></span><span style="display:flex;"><span>  url={https://ojs.aaai.org/index.php/ICWSM/article/view/18114},
+</span></span><span style="display:flex;"><span>  number={1},
+</span></span><span style="display:flex;"><span>  journal={Proceedings of the International AAAI Conference on Web and Social Media},
+</span></span><span style="display:flex;"><span>  year={2021},
+</span></span><span style="display:flex;"><span>  month={May},
+</span></span><span style="display:flex;"><span>  pages={913-922},
+</span></span><span style="display:flex;"><span>  abstractNote={With the outbreak of the COVID-19 pandemic, people turned to social media to read and to share timely information including statistics, warnings, advice, and inspirational stories. Unfortunately, alongside all this useful information, there was also a new blending of medical and political misinformation and disinformation, which gave rise to the first global infodemic. While fighting this infodemic is typically thought of in terms of factuality, the problem is much broader as malicious content includes not only fake news, rumors, and conspiracy theories, but also promotion of fake cures, panic, racism, xenophobia, and mistrust in the authorities, among others. This is a complex problem that needs a holistic approach combining the perspectives of journalists, fact-checkers, policymakers, government entities, social media platforms, and society as a whole. With this in mind, we define an annotation schema and detailed annotation instructions that reflect these perspectives. We further deploy a multilingual annotation platform, and we issue a call to arms to the research community and beyond to join the fight by supporting our crowdsourcing annotation efforts. We perform initial annotations using the annotation schema, and our initial experiments demonstrated sizable improvements over the baselines.}
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2021-06-NAACL-finegrained-interpretation-tutorial/thumbnail.jpg">
@@ -821,31 +1146,30 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{sajjad-etal-2021-fine,
-  title = &#34;Fine-grained Interpretation and Causation Analysis in Deep {NLP} Models&#34;,
-  author = &#34;Sajjad, Hassan  and
-    Kokhlikyan, Narine  and
-    Dalvi, Fahim  and
-    Durrani, Nadir&#34;,
-  booktitle = &#34;Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies: Tutorials&#34;,
-  month = jun,
-  year = &#34;2021&#34;,
-  address = &#34;Online&#34;,
-  publisher = &#34;Association for Computational Linguistics&#34;,
-  url = &#34;https://www.aclweb.org/anthology/2021.naacl-tutorials.2&#34;,
-  pages = &#34;5--10&#34;,
-  abstract = &#34;Deep neural networks have constantly pushed the state-of-the-art performance in natural language processing and are considered as the de-facto modeling approach in solving complex NLP tasks such as machine translation, summarization and question-answering. Despite the proven efficacy of deep neural networks at-large, their opaqueness is a major cause of concern. In this tutorial, we will present research work on interpreting fine-grained components of a neural network model from two perspectives, i) fine-grained interpretation, and ii) causation analysis. The former is a class of methods to analyze neurons with respect to a desired language concept or a task. The latter studies the role of neurons and input features in explaining the decisions made by the model. We will also discuss how interpretation methods and causation analysis can connect towards better interpretability of model prediction. Finally, we will walk you through various toolkits that facilitate fine-grained interpretation and causation analysis of neural models.&#34;,
-}</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{sajjad-etal-2021-fine,
+</span></span><span style="display:flex;"><span>  title = &#34;Fine-grained Interpretation and Causation Analysis in Deep {NLP} Models&#34;,
+</span></span><span style="display:flex;"><span>  author = &#34;Sajjad, Hassan  and
+</span></span><span style="display:flex;"><span>    Kokhlikyan, Narine  and
+</span></span><span style="display:flex;"><span>    Dalvi, Fahim  and
+</span></span><span style="display:flex;"><span>    Durrani, Nadir&#34;,
+</span></span><span style="display:flex;"><span>  booktitle = &#34;Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies: Tutorials&#34;,
+</span></span><span style="display:flex;"><span>  month = jun,
+</span></span><span style="display:flex;"><span>  year = &#34;2021&#34;,
+</span></span><span style="display:flex;"><span>  address = &#34;Online&#34;,
+</span></span><span style="display:flex;"><span>  publisher = &#34;Association for Computational Linguistics&#34;,
+</span></span><span style="display:flex;"><span>  url = &#34;https://www.aclweb.org/anthology/2021.naacl-tutorials.2&#34;,
+</span></span><span style="display:flex;"><span>  pages = &#34;5--10&#34;,
+</span></span><span style="display:flex;"><span>  abstract = &#34;Deep neural networks have constantly pushed the state-of-the-art performance in natural language processing and are considered as the de-facto modeling approach in solving complex NLP tasks such as machine translation, summarization and question-answering. Despite the proven efficacy of deep neural networks at-large, their opaqueness is a major cause of concern. In this tutorial, we will present research work on interpreting fine-grained components of a neural network model from two perspectives, i) fine-grained interpretation, and ii) causation analysis. The former is a class of methods to analyze neurons with respect to a desired language concept or a task. The latter studies the role of neurons and input features in explaining the decisions made by the model. We will also discuss how interpretation methods and causation analysis can connect towards better interpretability of model prediction. Finally, we will walk you through various toolkits that facilitate fine-grained interpretation and causation analysis of neural models.&#34;,
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
-
 <h3 id="2020">2020</h3>
 
-
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2020-12-COLING-arabench/thumbnail.jpg">
@@ -872,29 +1196,30 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{sajjad-etal-2020-arabench,
-    title = &#34;{A}ra{B}ench: Benchmarking Dialectal {A}rabic-{E}nglish Machine Translation&#34;,
-    author = &#34;Sajjad, Hassan  and
-      Abdelali, Ahmed  and
-      Durrani, Nadir  and
-      Dalvi, Fahim&#34;,
-    booktitle = &#34;Proceedings of the 28th International Conference on Computational Linguistics&#34;,
-    month = dec,
-    year = &#34;2020&#34;,
-    address = &#34;Barcelona, Spain (Online)&#34;,
-    publisher = &#34;International Committee on Computational Linguistics&#34;,
-    url = &#34;https://www.aclweb.org/anthology/2020.coling-main.447&#34;,
-    doi = &#34;10.18653/v1/2020.coling-main.447&#34;,
-    pages = &#34;5094--5107&#34;,
-    abstract = &#34;Low-resource machine translation suffers from the scarcity of training data and the unavailability of standard evaluation sets. While a number of research efforts target the former, the unavailability of evaluation benchmarks remain a major hindrance in tracking the progress in low-resource machine translation. In this paper, we introduce AraBench, an evaluation suite for dialectal Arabic to English machine translation. Compared to Modern Standard Arabic, Arabic dialects are challenging due to their spoken nature, non-standard orthography, and a large variation in dialectness. To this end, we pool together already available Dialectal Arabic-English resources and additionally build novel test sets. AraBench offers 4 coarse, 15 fine-grained and 25 city-level dialect categories, belonging to diverse genres, such as media, chat, religion and travel with varying level of dialectness. We report strong baselines using several training settings: fine-tuning, back-translation and data augmentation. The evaluation suite opens a wide range of research frontiers to push efforts in low-resource machine translation, particularly Arabic dialect translation. The evaluation suite and the dialectal system are publicly available for research purposes.&#34;,
-}
-</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{sajjad-etal-2020-arabench,
+</span></span><span style="display:flex;"><span>    title = &#34;{A}ra{B}ench: Benchmarking Dialectal {A}rabic-{E}nglish Machine Translation&#34;,
+</span></span><span style="display:flex;"><span>    author = &#34;Sajjad, Hassan  and
+</span></span><span style="display:flex;"><span>      Abdelali, Ahmed  and
+</span></span><span style="display:flex;"><span>      Durrani, Nadir  and
+</span></span><span style="display:flex;"><span>      Dalvi, Fahim&#34;,
+</span></span><span style="display:flex;"><span>    booktitle = &#34;Proceedings of the 28th International Conference on Computational Linguistics&#34;,
+</span></span><span style="display:flex;"><span>    month = dec,
+</span></span><span style="display:flex;"><span>    year = &#34;2020&#34;,
+</span></span><span style="display:flex;"><span>    address = &#34;Barcelona, Spain (Online)&#34;,
+</span></span><span style="display:flex;"><span>    publisher = &#34;International Committee on Computational Linguistics&#34;,
+</span></span><span style="display:flex;"><span>    url = &#34;https://www.aclweb.org/anthology/2020.coling-main.447&#34;,
+</span></span><span style="display:flex;"><span>    doi = &#34;10.18653/v1/2020.coling-main.447&#34;,
+</span></span><span style="display:flex;"><span>    pages = &#34;5094--5107&#34;,
+</span></span><span style="display:flex;"><span>    abstract = &#34;Low-resource machine translation suffers from the scarcity of training data and the unavailability of standard evaluation sets. While a number of research efforts target the former, the unavailability of evaluation benchmarks remain a major hindrance in tracking the progress in low-resource machine translation. In this paper, we introduce AraBench, an evaluation suite for dialectal Arabic to English machine translation. Compared to Modern Standard Arabic, Arabic dialects are challenging due to their spoken nature, non-standard orthography, and a large variation in dialectness. To this end, we pool together already available Dialectal Arabic-English resources and additionally build novel test sets. AraBench offers 4 coarse, 15 fine-grained and 25 city-level dialect categories, belonging to diverse genres, such as media, chat, religion and travel with varying level of dialectness. We report strong baselines using several training settings: fine-tuning, back-translation and data augmentation. The evaluation suite opens a wide range of research frontiers to push efforts in low-resource machine translation, particularly Arabic dialect translation. The evaluation suite and the dialectal system are publicly available for research purposes.&#34;,
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2020-11-EMNLP-analyzing-indiividual-neurons-transformers/thumbnail.jpg">
@@ -921,29 +1246,30 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{durrani-etal-2020-analyzing,
-    title = &#34;Analyzing Individual Neurons in Pre-trained Language Models&#34;,
-    author = &#34;Durrani, Nadir  and
-      Sajjad, Hassan  and
-      Dalvi, Fahim  and
-      Belinkov, Yonatan&#34;,
-    booktitle = &#34;Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)&#34;,
-    month = nov,
-    year = &#34;2020&#34;,
-    address = &#34;Online&#34;,
-    publisher = &#34;Association for Computational Linguistics&#34;,
-    url = &#34;https://www.aclweb.org/anthology/2020.emnlp-main.395&#34;,
-    doi = &#34;10.18653/v1/2020.emnlp-main.395&#34;,
-    pages = &#34;4865--4880&#34;,
-    abstract = &#34;While a lot of analysis has been carried to demonstrate linguistic knowledge captured by the representations learned within deep NLP models, very little attention has been paid towards individual neurons.We carry outa neuron-level analysis using core linguistic tasks of predicting morphology, syntax and semantics, on pre-trained language models, with questions like: i) do individual neurons in pre-trained models capture linguistic information? ii) which parts of the network learn more about certain linguistic phenomena? iii) how distributed or focused is the information? and iv) how do various architectures differ in learning these properties? We found small subsets of neurons to predict linguistic tasks, with lower level tasks (such as morphology) localized in fewer neurons, compared to higher level task of predicting syntax. Our study also reveals interesting cross architectural comparisons. For example, we found neurons in XLNet to be more localized and disjoint when predicting properties compared to BERT and others, where they are more distributed and coupled.&#34;,
-}
-</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{durrani-etal-2020-analyzing,
+</span></span><span style="display:flex;"><span>    title = &#34;Analyzing Individual Neurons in Pre-trained Language Models&#34;,
+</span></span><span style="display:flex;"><span>    author = &#34;Durrani, Nadir  and
+</span></span><span style="display:flex;"><span>      Sajjad, Hassan  and
+</span></span><span style="display:flex;"><span>      Dalvi, Fahim  and
+</span></span><span style="display:flex;"><span>      Belinkov, Yonatan&#34;,
+</span></span><span style="display:flex;"><span>    booktitle = &#34;Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)&#34;,
+</span></span><span style="display:flex;"><span>    month = nov,
+</span></span><span style="display:flex;"><span>    year = &#34;2020&#34;,
+</span></span><span style="display:flex;"><span>    address = &#34;Online&#34;,
+</span></span><span style="display:flex;"><span>    publisher = &#34;Association for Computational Linguistics&#34;,
+</span></span><span style="display:flex;"><span>    url = &#34;https://www.aclweb.org/anthology/2020.emnlp-main.395&#34;,
+</span></span><span style="display:flex;"><span>    doi = &#34;10.18653/v1/2020.emnlp-main.395&#34;,
+</span></span><span style="display:flex;"><span>    pages = &#34;4865--4880&#34;,
+</span></span><span style="display:flex;"><span>    abstract = &#34;While a lot of analysis has been carried to demonstrate linguistic knowledge captured by the representations learned within deep NLP models, very little attention has been paid towards individual neurons.We carry outa neuron-level analysis using core linguistic tasks of predicting morphology, syntax and semantics, on pre-trained language models, with questions like: i) do individual neurons in pre-trained models capture linguistic information? ii) which parts of the network learn more about certain linguistic phenomena? iii) how distributed or focused is the information? and iv) how do various architectures differ in learning these properties? We found small subsets of neurons to predict linguistic tasks, with lower level tasks (such as morphology) localized in fewer neurons, compared to higher level task of predicting syntax. Our study also reveals interesting cross architectural comparisons. For example, we found neurons in XLNet to be more localized and disjoint when predicting properties compared to BERT and others, where they are more distributed and coupled.&#34;,
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2020-11-EMNLP-analyzing-redundancy-pretrained-models/thumbnail.jpg">
@@ -970,28 +1296,29 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{dalvi-etal-2020-analyzing,
-    title = &#34;Analyzing Redundancy in Pretrained Transformer Models&#34;,
-    author = &#34;Dalvi, Fahim  and
-      Sajjad, Hassan  and
-      Durrani, Nadir  and
-      Belinkov, Yonatan&#34;,
-    booktitle = &#34;Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)&#34;,
-    month = nov,
-    year = &#34;2020&#34;,
-    address = &#34;Online&#34;,
-    publisher = &#34;Association for Computational Linguistics&#34;,
-    url = &#34;https://www.aclweb.org/anthology/2020.emnlp-main.398&#34;,
-    doi = &#34;10.18653/v1/2020.emnlp-main.398&#34;,
-    pages = &#34;4908--4926&#34;,
-    abstract = &#34;Transformer-based deep NLP models are trained using hundreds of millions of parameters, limiting their applicability in computationally constrained environments. In this paper, we study the cause of these limitations by defining a notion of Redundancy, which we categorize into two classes: General Redundancy and Task-specific Redundancy. We dissect two popular pretrained models, BERT and XLNet, studying how much redundancy they exhibit at a representation-level and at a more fine-grained neuron-level. Our analysis reveals interesting insights, such as i) 85{<span style="color:#66d9ef">\%</span>} of the neurons across the network are redundant and ii) at least 92{<span style="color:#66d9ef">\%</span>} of them can be removed when optimizing towards a downstream task. Based on our analysis, we present an efficient feature-based transfer learning procedure, which maintains 97{<span style="color:#66d9ef">\%</span>} performance while using at-most 10{<span style="color:#66d9ef">\%</span>} of the original neurons.&#34;,
-}</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{dalvi-etal-2020-analyzing,
+</span></span><span style="display:flex;"><span>    title = &#34;Analyzing Redundancy in Pretrained Transformer Models&#34;,
+</span></span><span style="display:flex;"><span>    author = &#34;Dalvi, Fahim  and
+</span></span><span style="display:flex;"><span>      Sajjad, Hassan  and
+</span></span><span style="display:flex;"><span>      Durrani, Nadir  and
+</span></span><span style="display:flex;"><span>      Belinkov, Yonatan&#34;,
+</span></span><span style="display:flex;"><span>    booktitle = &#34;Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)&#34;,
+</span></span><span style="display:flex;"><span>    month = nov,
+</span></span><span style="display:flex;"><span>    year = &#34;2020&#34;,
+</span></span><span style="display:flex;"><span>    address = &#34;Online&#34;,
+</span></span><span style="display:flex;"><span>    publisher = &#34;Association for Computational Linguistics&#34;,
+</span></span><span style="display:flex;"><span>    url = &#34;https://www.aclweb.org/anthology/2020.emnlp-main.398&#34;,
+</span></span><span style="display:flex;"><span>    doi = &#34;10.18653/v1/2020.emnlp-main.398&#34;,
+</span></span><span style="display:flex;"><span>    pages = &#34;4908--4926&#34;,
+</span></span><span style="display:flex;"><span>    abstract = &#34;Transformer-based deep NLP models are trained using hundreds of millions of parameters, limiting their applicability in computationally constrained environments. In this paper, we study the cause of these limitations by defining a notion of Redundancy, which we categorize into two classes: General Redundancy and Task-specific Redundancy. We dissect two popular pretrained models, BERT and XLNet, studying how much redundancy they exhibit at a representation-level and at a more fine-grained neuron-level. Our analysis reveals interesting insights, such as i) 85{<span style="color:#66d9ef">\%</span>} of the neurons across the network are redundant and ii) at least 92{<span style="color:#66d9ef">\%</span>} of them can be removed when optimizing towards a downstream task. Based on our analysis, we present an efficient feature-based transfer learning procedure, which maintains 97{<span style="color:#66d9ef">\%</span>} performance while using at-most 10{<span style="color:#66d9ef">\%</span>} of the original neurons.&#34;,
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2020-07-ACL-similarity-analysis/thumbnail.jpg">
@@ -1018,31 +1345,32 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{wu-etal-2020-similarity,
-    title = &#34;Similarity Analysis of Contextual Word Representation Models&#34;,
-    author = &#34;Wu, John  and
-      Belinkov, Yonatan  and
-      Sajjad, Hassan  and
-      Durrani, Nadir  and
-      Dalvi, Fahim  and
-      Glass, James&#34;,
-    booktitle = &#34;Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics&#34;,
-    month = jul,
-    year = &#34;2020&#34;,
-    address = &#34;Online&#34;,
-    publisher = &#34;Association for Computational Linguistics&#34;,
-    url = &#34;https://www.aclweb.org/anthology/2020.acl-main.422&#34;,
-    doi = &#34;10.18653/v1/2020.acl-main.422&#34;,
-    pages = &#34;4638--4655&#34;,
-    abstract = &#34;This paper investigates contextual word representation models from the lens of similarity analysis. Given a collection of trained models, we measure the similarity of their internal representations and attention. Critically, these models come from vastly different architectures. We use existing and novel similarity measures that aim to gauge the level of localization of information in the deep models, and facilitate the investigation of which design factors affect model similarity, without requiring any external linguistic annotation. The analysis reveals that models within the same family are more similar to one another, as may be expected. Surprisingly, different architectures have rather similar representations, but different individual neurons. We also observed differences in information localization in lower and higher layers and found that higher layers are more affected by fine-tuning on downstream tasks.&#34;,
-}
-</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{wu-etal-2020-similarity,
+</span></span><span style="display:flex;"><span>    title = &#34;Similarity Analysis of Contextual Word Representation Models&#34;,
+</span></span><span style="display:flex;"><span>    author = &#34;Wu, John  and
+</span></span><span style="display:flex;"><span>      Belinkov, Yonatan  and
+</span></span><span style="display:flex;"><span>      Sajjad, Hassan  and
+</span></span><span style="display:flex;"><span>      Durrani, Nadir  and
+</span></span><span style="display:flex;"><span>      Dalvi, Fahim  and
+</span></span><span style="display:flex;"><span>      Glass, James&#34;,
+</span></span><span style="display:flex;"><span>    booktitle = &#34;Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics&#34;,
+</span></span><span style="display:flex;"><span>    month = jul,
+</span></span><span style="display:flex;"><span>    year = &#34;2020&#34;,
+</span></span><span style="display:flex;"><span>    address = &#34;Online&#34;,
+</span></span><span style="display:flex;"><span>    publisher = &#34;Association for Computational Linguistics&#34;,
+</span></span><span style="display:flex;"><span>    url = &#34;https://www.aclweb.org/anthology/2020.acl-main.422&#34;,
+</span></span><span style="display:flex;"><span>    doi = &#34;10.18653/v1/2020.acl-main.422&#34;,
+</span></span><span style="display:flex;"><span>    pages = &#34;4638--4655&#34;,
+</span></span><span style="display:flex;"><span>    abstract = &#34;This paper investigates contextual word representation models from the lens of similarity analysis. Given a collection of trained models, we measure the similarity of their internal representations and attention. Critically, these models come from vastly different architectures. We use existing and novel similarity measures that aim to gauge the level of localization of information in the deep models, and facilitate the investigation of which design factors affect model similarity, without requiring any external linguistic annotation. The analysis reveals that models within the same family are more similar to one another, as may be expected. Surprisingly, different architectures have rather similar representations, but different individual neurons. We also observed differences in information localization in lower and higher layers and found that higher layers are more affected by fine-tuning on downstream tasks.&#34;,
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2020-03-CL-linguistic-representations-nmt/thumbnail.jpg">
@@ -1069,33 +1397,32 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@article{belinkov-etal-2020-linguistic,
-    title = &#34;On the Linguistic Representational Power of Neural Machine Translation Models&#34;,
-    author = &#34;Belinkov, Yonatan  and
-      Durrani, Nadir  and
-      Dalvi, Fahim  and
-      Sajjad, Hassan  and
-      Glass, James&#34;,
-    journal = &#34;Computational Linguistics&#34;,
-    volume = &#34;46&#34;,
-    number = &#34;1&#34;,
-    month = mar,
-    year = &#34;2020&#34;,
-    url = &#34;https://www.aclweb.org/anthology/2020.cl-1.1&#34;,
-    doi = &#34;10.1162/coli_a_00367&#34;,
-    pages = &#34;1--52&#34;
-}
-</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@article{belinkov-etal-2020-linguistic,
+</span></span><span style="display:flex;"><span>    title = &#34;On the Linguistic Representational Power of Neural Machine Translation Models&#34;,
+</span></span><span style="display:flex;"><span>    author = &#34;Belinkov, Yonatan  and
+</span></span><span style="display:flex;"><span>      Durrani, Nadir  and
+</span></span><span style="display:flex;"><span>      Dalvi, Fahim  and
+</span></span><span style="display:flex;"><span>      Sajjad, Hassan  and
+</span></span><span style="display:flex;"><span>      Glass, James&#34;,
+</span></span><span style="display:flex;"><span>    journal = &#34;Computational Linguistics&#34;,
+</span></span><span style="display:flex;"><span>    volume = &#34;46&#34;,
+</span></span><span style="display:flex;"><span>    number = &#34;1&#34;,
+</span></span><span style="display:flex;"><span>    month = mar,
+</span></span><span style="display:flex;"><span>    year = &#34;2020&#34;,
+</span></span><span style="display:flex;"><span>    url = &#34;https://www.aclweb.org/anthology/2020.cl-1.1&#34;,
+</span></span><span style="display:flex;"><span>    doi = &#34;10.1162/coli_a_00367&#34;,
+</span></span><span style="display:flex;"><span>    pages = &#34;1--52&#34;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
-
 <h3 id="2019">2019</h3>
 
-
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2019-09-OSNEM-rumour-verification/thumbnail.jpg">
@@ -1122,24 +1449,25 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@article{AKER2019100045,
-  title = &#34;Rumour verification through recurring information and an inner-attention mechanism&#34;,
-  journal = &#34;Online Social Networks and Media&#34;,
-  volume = &#34;13&#34;,
-  pages = &#34;100045&#34;,
-  year = &#34;2019&#34;,
-  issn = &#34;2468-6964&#34;,
-  doi = &#34;https://doi.org/10.1016/j.osnem.2019.07.001&#34;,
-  url = &#34;http://www.sciencedirect.com/science/article/pii/S2468696419300588&#34;,
-  author = &#34;Ahmet Aker and Alfred Sliwa and Fahim Dalvi and Kalina Bontcheva&#34;,
-  keywords = &#34;Rumour Verification, Inner Attention Model, Recurring Terms in Rumours&#34;
-}</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@article{AKER2019100045,
+</span></span><span style="display:flex;"><span>  title = &#34;Rumour verification through recurring information and an inner-attention mechanism&#34;,
+</span></span><span style="display:flex;"><span>  journal = &#34;Online Social Networks and Media&#34;,
+</span></span><span style="display:flex;"><span>  volume = &#34;13&#34;,
+</span></span><span style="display:flex;"><span>  pages = &#34;100045&#34;,
+</span></span><span style="display:flex;"><span>  year = &#34;2019&#34;,
+</span></span><span style="display:flex;"><span>  issn = &#34;2468-6964&#34;,
+</span></span><span style="display:flex;"><span>  doi = &#34;https://doi.org/10.1016/j.osnem.2019.07.001&#34;,
+</span></span><span style="display:flex;"><span>  url = &#34;http://www.sciencedirect.com/science/article/pii/S2468696419300588&#34;,
+</span></span><span style="display:flex;"><span>  author = &#34;Ahmet Aker and Alfred Sliwa and Fahim Dalvi and Kalina Bontcheva&#34;,
+</span></span><span style="display:flex;"><span>  keywords = &#34;Rumour Verification, Inner Attention Model, Recurring Terms in Rumours&#34;
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2019-06-NAACL-comparing-nmt-granularity/thumbnail.jpg">
@@ -1166,29 +1494,30 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{durrani-etal-2019-one,
-  title = &#34;One Size Does Not Fit All: Comparing {NMT} Representations of Different Granularities&#34;,
-  author = &#34;Durrani, Nadir  and
-    Dalvi, Fahim  and
-    Sajjad, Hassan  and
-    Belinkov, Yonatan  and
-    Nakov, Preslav&#34;,
-  booktitle = &#34;Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)&#34;,
-  month = jun,
-  year = &#34;2019&#34;,
-  address = &#34;Minneapolis, Minnesota&#34;,
-  publisher = &#34;Association for Computational Linguistics&#34;,
-  url = &#34;https://www.aclweb.org/anthology/N19-1154&#34;,
-  doi = &#34;10.18653/v1/N19-1154&#34;,
-  pages = &#34;1504--1516&#34;,
-  abstract = &#34;Recent work has shown that contextualized word representations derived from neural machine translation are a viable alternative to such from simple word predictions tasks. This is because the internal understanding that needs to be built in order to be able to translate from one language to another is much more comprehensive. Unfortunately, computational and memory limitations as of present prevent NMT models from using large word vocabularies, and thus alternatives such as subword units (BPE and morphological segmentations) and characters have been used. Here we study the impact of using different kinds of units on the quality of the resulting representations when used to model morphology, syntax, and semantics. We found that while representations derived from subwords are slightly better for modeling syntax, character-based representations are superior for modeling morphology and are also more robust to noisy input.&#34;,
-}</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{durrani-etal-2019-one,
+</span></span><span style="display:flex;"><span>  title = &#34;One Size Does Not Fit All: Comparing {NMT} Representations of Different Granularities&#34;,
+</span></span><span style="display:flex;"><span>  author = &#34;Durrani, Nadir  and
+</span></span><span style="display:flex;"><span>    Dalvi, Fahim  and
+</span></span><span style="display:flex;"><span>    Sajjad, Hassan  and
+</span></span><span style="display:flex;"><span>    Belinkov, Yonatan  and
+</span></span><span style="display:flex;"><span>    Nakov, Preslav&#34;,
+</span></span><span style="display:flex;"><span>  booktitle = &#34;Proceedings of the 2019 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers)&#34;,
+</span></span><span style="display:flex;"><span>  month = jun,
+</span></span><span style="display:flex;"><span>  year = &#34;2019&#34;,
+</span></span><span style="display:flex;"><span>  address = &#34;Minneapolis, Minnesota&#34;,
+</span></span><span style="display:flex;"><span>  publisher = &#34;Association for Computational Linguistics&#34;,
+</span></span><span style="display:flex;"><span>  url = &#34;https://www.aclweb.org/anthology/N19-1154&#34;,
+</span></span><span style="display:flex;"><span>  doi = &#34;10.18653/v1/N19-1154&#34;,
+</span></span><span style="display:flex;"><span>  pages = &#34;1504--1516&#34;,
+</span></span><span style="display:flex;"><span>  abstract = &#34;Recent work has shown that contextualized word representations derived from neural machine translation are a viable alternative to such from simple word predictions tasks. This is because the internal understanding that needs to be built in order to be able to translate from one language to another is much more comprehensive. Unfortunately, computational and memory limitations as of present prevent NMT models from using large word vocabularies, and thus alternatives such as subword units (BPE and morphological segmentations) and characters have been used. Here we study the impact of using different kinds of units on the quality of the resulting representations when used to model morphology, syntax, and semantics. We found that while representations derived from subwords are slightly better for modeling syntax, character-based representations are superior for modeling morphology and are also more robust to noisy input.&#34;,
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2019-05-ICLR-unsupervised-neurons/thumbnail.jpg">
@@ -1215,26 +1544,27 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{
-  bau2018identifying,
-  title={Identifying and Controlling Important Neurons in Neural Machine Translation},
-  author={Anthony Bau
-    and Yonatan Belinkov
-    and Hassan Sajjad
-    and Nadir Durrani
-    and Fahim Dalvi
-    and James Glass},
-  booktitle={International Conference on Learning Representations},
-  year={2019},
-  url={https://openreview.net/forum?id=H1z-PsR5KX},
-}
-</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{
+</span></span><span style="display:flex;"><span>  bau2018identifying,
+</span></span><span style="display:flex;"><span>  title={Identifying and Controlling Important Neurons in Neural Machine Translation},
+</span></span><span style="display:flex;"><span>  author={Anthony Bau
+</span></span><span style="display:flex;"><span>    and Yonatan Belinkov
+</span></span><span style="display:flex;"><span>    and Hassan Sajjad
+</span></span><span style="display:flex;"><span>    and Nadir Durrani
+</span></span><span style="display:flex;"><span>    and Fahim Dalvi
+</span></span><span style="display:flex;"><span>    and James Glass},
+</span></span><span style="display:flex;"><span>  booktitle={International Conference on Learning Representations},
+</span></span><span style="display:flex;"><span>  year={2019},
+</span></span><span style="display:flex;"><span>  url={https://openreview.net/forum?id=H1z-PsR5KX},
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2019-02-AAAI-individual-neurons/thumbnail.jpg">
@@ -1261,26 +1591,27 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@article{dalvi2019individualneurons, 
-  title={What Is One Grain of Sand in the Desert? Analyzing Individual Neurons in Deep NLP Models},
-  author={Dalvi, Fahim and Durrani, Nadir and Sajjad, Hassan and Belinkov, Yonatan and Bau, Anthony and Glass, James},
-  volume={33},
-  url={https://ojs.aaai.org/index.php/AAAI/article/view/4592},
-  DOI={10.1609/aaai.v33i01.33016309},
-  number={01},
-  journal={Proceedings of the AAAI Conference on Artificial Intelligence},
-  year={2019},
-  month={Jul.},
-  pages={6309-6317},
-  abstractNote={Despite the remarkable evolution of deep neural networks in natural language processing (NLP), their interpretability remains a challenge. Previous work largely focused on what these models learn at the representation level. We break this analysis down further and study individual dimensions (neurons) in the vector representation learned by end-to-end neural models in NLP tasks. We propose two methods: &amp;lt;em&amp;gt;Linguistic Correlation Analysis&amp;lt;/em&amp;gt;, based on a supervised method to extract the most relevant neurons with respect to an extrinsic task, and &amp;lt;em&amp;gt;Cross-model Correlation Analysis&amp;lt;/em&amp;gt;, an unsupervised method to extract salient neurons w.r.t. the model itself. We evaluate the effectiveness of our techniques by ablating the identified neurons and reevaluating the network’s performance for two tasks: neural machine translation (NMT) and neural language modeling (NLM). We further present a comprehensive analysis of neurons with the aim to address the following questions: i) how localized or distributed are different linguistic properties in the models? ii) are certain neurons exclusive to some properties and not others? iii) is the information more or less distributed in NMT vs. NLM? and iv) how important are the neurons identified through the linguistic correlation method to the overall task? Our code is publicly available as part of the NeuroX toolkit (Dalvi et al. 2019a). This paper is a non-archived version of the paper published at AAAI (Dalvi et al. 2019b).}
-}
-</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@article{dalvi2019individualneurons, 
+</span></span><span style="display:flex;"><span>  title={What Is One Grain of Sand in the Desert? Analyzing Individual Neurons in Deep NLP Models},
+</span></span><span style="display:flex;"><span>  author={Dalvi, Fahim and Durrani, Nadir and Sajjad, Hassan and Belinkov, Yonatan and Bau, Anthony and Glass, James},
+</span></span><span style="display:flex;"><span>  volume={33},
+</span></span><span style="display:flex;"><span>  url={https://ojs.aaai.org/index.php/AAAI/article/view/4592},
+</span></span><span style="display:flex;"><span>  DOI={10.1609/aaai.v33i01.33016309},
+</span></span><span style="display:flex;"><span>  number={01},
+</span></span><span style="display:flex;"><span>  journal={Proceedings of the AAAI Conference on Artificial Intelligence},
+</span></span><span style="display:flex;"><span>  year={2019},
+</span></span><span style="display:flex;"><span>  month={Jul.},
+</span></span><span style="display:flex;"><span>  pages={6309-6317},
+</span></span><span style="display:flex;"><span>  abstractNote={Despite the remarkable evolution of deep neural networks in natural language processing (NLP), their interpretability remains a challenge. Previous work largely focused on what these models learn at the representation level. We break this analysis down further and study individual dimensions (neurons) in the vector representation learned by end-to-end neural models in NLP tasks. We propose two methods: &amp;lt;em&amp;gt;Linguistic Correlation Analysis&amp;lt;/em&amp;gt;, based on a supervised method to extract the most relevant neurons with respect to an extrinsic task, and &amp;lt;em&amp;gt;Cross-model Correlation Analysis&amp;lt;/em&amp;gt;, an unsupervised method to extract salient neurons w.r.t. the model itself. We evaluate the effectiveness of our techniques by ablating the identified neurons and reevaluating the network’s performance for two tasks: neural machine translation (NMT) and neural language modeling (NLM). We further present a comprehensive analysis of neurons with the aim to address the following questions: i) how localized or distributed are different linguistic properties in the models? ii) are certain neurons exclusive to some properties and not others? iii) is the information more or less distributed in NMT vs. NLM? and iv) how important are the neurons identified through the linguistic correlation method to the overall task? Our code is publicly available as part of the NeuroX toolkit (Dalvi et al. 2019a). This paper is a non-archived version of the paper published at AAAI (Dalvi et al. 2019b).}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2019-02-AAAI-neurox/thumbnail.jpg">
@@ -1307,30 +1638,29 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@article{dalvi2019neurox,
-  title={NeuroX: A Toolkit for Analyzing Individual Neurons in Neural Networks},
-  author={Dalvi, Fahim and Nortonsmith, Avery and Bau, Anthony and Belinkov, Yonatan and Sajjad, Hassan and Durrani, Nadir and Glass, James},
-  volume={33},
-  url={https://ojs.aaai.org/index.php/AAAI/article/view/5063},
-  DOI={10.1609/aaai.v33i01.33019851},
-  number={01},
-  journal={Proceedings of the AAAI Conference on Artificial Intelligence},
-  year={2019},
-  month={Jul.},
-  pages={9851-9852},
-  abstractNote={We present a toolkit to facilitate the interpretation and understanding of neural network models. The toolkit provides several methods to identify salient neurons with respect to the model itself or an external task. A user can visualize selected neurons, ablate them to measure their effect on the model accuracy, and manipulate them to control the behavior of the model at the test time. Such an analysis has a potential to serve as a springboard in various research directions, such as understanding the model, better architectural choices, model distillation and controlling data biases. The toolkit is available for download.}
-}
-</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@article{dalvi2019neurox,
+</span></span><span style="display:flex;"><span>  title={NeuroX: A Toolkit for Analyzing Individual Neurons in Neural Networks},
+</span></span><span style="display:flex;"><span>  author={Dalvi, Fahim and Nortonsmith, Avery and Bau, Anthony and Belinkov, Yonatan and Sajjad, Hassan and Durrani, Nadir and Glass, James},
+</span></span><span style="display:flex;"><span>  volume={33},
+</span></span><span style="display:flex;"><span>  url={https://ojs.aaai.org/index.php/AAAI/article/view/5063},
+</span></span><span style="display:flex;"><span>  DOI={10.1609/aaai.v33i01.33019851},
+</span></span><span style="display:flex;"><span>  number={01},
+</span></span><span style="display:flex;"><span>  journal={Proceedings of the AAAI Conference on Artificial Intelligence},
+</span></span><span style="display:flex;"><span>  year={2019},
+</span></span><span style="display:flex;"><span>  month={Jul.},
+</span></span><span style="display:flex;"><span>  pages={9851-9852},
+</span></span><span style="display:flex;"><span>  abstractNote={We present a toolkit to facilitate the interpretation and understanding of neural network models. The toolkit provides several methods to identify salient neurons with respect to the model itself or an external task. A user can visualize selected neurons, ablate them to measure their effect on the model accuracy, and manipulate them to control the behavior of the model at the test time. Such an analysis has a potential to serve as a springboard in various research directions, such as understanding the model, better architectural choices, model distillation and controlling data biases. The toolkit is available for download.}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
-
 <h3 id="2018">2018</h3>
 
-
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2018-10-LCN-group-identification-crowd/thumbnail.jpg">
@@ -1357,22 +1687,23 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@InProceedings{shaar2018group,
-  title={Group Identification in Crowded Environments Using Proximity Sensing},
-  author={Shaar, Shaden and Razak, Saquib and Dalvi, Fahim and Moosavi, Syed Ali Hashim},
-  booktitle={43rd {IEEE} Conference on Local Computer Networks, {LCN} 2018, Chicago, IL, USA, October 1-4, 2018},
-  pages={319--322},
-  year={2018},
-  organization={IEEE},
-  url={https://doi.org/10.1109/LCN.2018.8638142},
-  doi={10.1109/LCN.2018.8638142}
-}</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@InProceedings{shaar2018group,
+</span></span><span style="display:flex;"><span>  title={Group Identification in Crowded Environments Using Proximity Sensing},
+</span></span><span style="display:flex;"><span>  author={Shaar, Shaden and Razak, Saquib and Dalvi, Fahim and Moosavi, Syed Ali Hashim},
+</span></span><span style="display:flex;"><span>  booktitle={43rd {IEEE} Conference on Local Computer Networks, {LCN} 2018, Chicago, IL, USA, October 1-4, 2018},
+</span></span><span style="display:flex;"><span>  pages={319--322},
+</span></span><span style="display:flex;"><span>  year={2018},
+</span></span><span style="display:flex;"><span>  organization={IEEE},
+</span></span><span style="display:flex;"><span>  url={https://doi.org/10.1109/LCN.2018.8638142},
+</span></span><span style="display:flex;"><span>  doi={10.1109/LCN.2018.8638142}
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2018-06-NAACL-stream-decoding/thumbnail.jpg">
@@ -1399,29 +1730,30 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{dalvi-etal-2018-incremental,
-  title = &#34;Incremental Decoding and Training Methods for Simultaneous Translation in Neural Machine Translation&#34;,
-  author = &#34;Dalvi, Fahim  and
-    Durrani, Nadir  and
-    Sajjad, Hassan  and
-    Vogel, Stephan&#34;,
-  booktitle = &#34;Proceedings of the 2018 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 2 (Short Papers)&#34;,
-  month = jun,
-  year = &#34;2018&#34;,
-  address = &#34;New Orleans, Louisiana&#34;,
-  publisher = &#34;Association for Computational Linguistics&#34;,
-  url = &#34;https://www.aclweb.org/anthology/N18-2079&#34;,
-  doi = &#34;10.18653/v1/N18-2079&#34;,
-  pages = &#34;493--499&#34;,
-  abstract = &#34;We address the problem of simultaneous translation by modifying the Neural MT decoder to operate with dynamically built encoder and attention. We propose a tunable agent which decides the best segmentation strategy for a user-defined BLEU loss and Average Proportion (AP) constraint. Our agent outperforms previously proposed Wait-if-diff and Wait-if-worse agents (Cho and Esipova, 2016) on BLEU with a lower latency. Secondly we proposed data-driven changes to Neural MT training to better match the incremental decoding framework.&#34;,
-}
-</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{dalvi-etal-2018-incremental,
+</span></span><span style="display:flex;"><span>  title = &#34;Incremental Decoding and Training Methods for Simultaneous Translation in Neural Machine Translation&#34;,
+</span></span><span style="display:flex;"><span>  author = &#34;Dalvi, Fahim  and
+</span></span><span style="display:flex;"><span>    Durrani, Nadir  and
+</span></span><span style="display:flex;"><span>    Sajjad, Hassan  and
+</span></span><span style="display:flex;"><span>    Vogel, Stephan&#34;,
+</span></span><span style="display:flex;"><span>  booktitle = &#34;Proceedings of the 2018 Conference of the North {A}merican Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 2 (Short Papers)&#34;,
+</span></span><span style="display:flex;"><span>  month = jun,
+</span></span><span style="display:flex;"><span>  year = &#34;2018&#34;,
+</span></span><span style="display:flex;"><span>  address = &#34;New Orleans, Louisiana&#34;,
+</span></span><span style="display:flex;"><span>  publisher = &#34;Association for Computational Linguistics&#34;,
+</span></span><span style="display:flex;"><span>  url = &#34;https://www.aclweb.org/anthology/N18-2079&#34;,
+</span></span><span style="display:flex;"><span>  doi = &#34;10.18653/v1/N18-2079&#34;,
+</span></span><span style="display:flex;"><span>  pages = &#34;493--499&#34;,
+</span></span><span style="display:flex;"><span>  abstract = &#34;We address the problem of simultaneous translation by modifying the Neural MT decoder to operate with dynamically built encoder and attention. We propose a tunable agent which decides the best segmentation strategy for a user-defined BLEU loss and Average Proportion (AP) constraint. Our agent outperforms previously proposed Wait-if-diff and Wait-if-worse agents (Cho and Esipova, 2016) on BLEU with a lower latency. Secondly we proposed data-driven changes to Neural MT training to better match the incremental decoding framework.&#34;,
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2018-03-NEWSIR-qclusty/thumbnail.jpg">
@@ -1448,28 +1780,27 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@article{barron2018qlusty,
-  title={Qlusty: Quick and Dirty Generation of Event Videos from Written Media Coverage.},
-  author={Barr{<span style="color:#66d9ef">\&#39;</span>o}n-Cede{<span style="color:#66d9ef">\~</span>n}o, Alberto 
-    and Da San Martino, Giovanni
-    and Zhang, Yifan
-    and Ali, Ahmed M
-    and Dalvi, Fahim},
-  journal={NewsIR@ ECIR},
-  volume={2079},
-  pages={27--32},
-  year={2018}
-}</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@article{barron2018qlusty,
+</span></span><span style="display:flex;"><span>  title={Qlusty: Quick and Dirty Generation of Event Videos from Written Media Coverage.},
+</span></span><span style="display:flex;"><span>  author={Barr{<span style="color:#66d9ef">\&#39;</span>o}n-Cede{<span style="color:#66d9ef">\~</span>n}o, Alberto 
+</span></span><span style="display:flex;"><span>    and Da San Martino, Giovanni
+</span></span><span style="display:flex;"><span>    and Zhang, Yifan
+</span></span><span style="display:flex;"><span>    and Ali, Ahmed M
+</span></span><span style="display:flex;"><span>    and Dalvi, Fahim},
+</span></span><span style="display:flex;"><span>  journal={NewsIR@ ECIR},
+</span></span><span style="display:flex;"><span>  volume={2079},
+</span></span><span style="display:flex;"><span>  pages={27--32},
+</span></span><span style="display:flex;"><span>  year={2018}
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
-
 <h3 id="2017">2017</h3>
 
-
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2017-12-IWSLT-multidomain-nmt/thumbnail.jpg">
@@ -1496,19 +1827,20 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{sajjad2017iwslt,
-  title={Neural Machine Translation Training in a Multi-Domain Scenario},
-  author={Sajjad, Hassan and Durrani, Nadir and Dalvi, Fahim and Belinkov, Yonatan and Vogel, Stephan},
-  booktitle={International Workshop on Spoken Language Translation},
-  year={2017}
-}
-</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{sajjad2017iwslt,
+</span></span><span style="display:flex;"><span>  title={Neural Machine Translation Training in a Multi-Domain Scenario},
+</span></span><span style="display:flex;"><span>  author={Sajjad, Hassan and Durrani, Nadir and Dalvi, Fahim and Belinkov, Yonatan and Vogel, Stephan},
+</span></span><span style="display:flex;"><span>  booktitle={International Workshop on Spoken Language Translation},
+</span></span><span style="display:flex;"><span>  year={2017}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2017-12-IWSLT-reordering-models/thumbnail.jpg">
@@ -1535,19 +1867,20 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{durrani2017iwslt,
-  title={Continuous Space Reordering Models for Phrase-based MT},
-  author={Durrani, Nadir and Dalvi, Fahim},
-  booktitle={International Workshop on Spoken Language Translation},
-  year={2017}
-}
-</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{durrani2017iwslt,
+</span></span><span style="display:flex;"><span>  title={Continuous Space Reordering Models for Phrase-based MT},
+</span></span><span style="display:flex;"><span>  author={Durrani, Nadir and Dalvi, Fahim},
+</span></span><span style="display:flex;"><span>  booktitle={International Workshop on Spoken Language Translation},
+</span></span><span style="display:flex;"><span>  year={2017}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2017-11-IJCNLP-improving-nmt/thumbnail.jpg">
@@ -1574,29 +1907,30 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{dalvi-etal-2017-understanding,
-  title = &#34;Understanding and Improving Morphological Learning in the Neural Machine Translation Decoder&#34;,
-  author = &#34;Dalvi, Fahim  and
-    Durrani, Nadir  and
-    Sajjad, Hassan  and
-    Belinkov, Yonatan  and
-    Vogel, Stephan&#34;,
-  booktitle = &#34;Proceedings of the Eighth International Joint Conference on Natural Language Processing (Volume 1: Long Papers)&#34;,
-  month = nov,
-  year = &#34;2017&#34;,
-  address = &#34;Taipei, Taiwan&#34;,
-  publisher = &#34;Asian Federation of Natural Language Processing&#34;,
-  url = &#34;https://www.aclweb.org/anthology/I17-1015&#34;,
-  pages = &#34;142--151&#34;,
-  abstract = &#34;End-to-end training makes the neural machine translation (NMT) architecture simpler, yet elegant compared to traditional statistical machine translation (SMT). However, little is known about linguistic patterns of morphology, syntax and semantics learned during the training of NMT systems, and more importantly, which parts of the architecture are responsible for learning each of these phenomenon. In this paper we i) analyze how much morphology an NMT decoder learns, and ii) investigate whether injecting target morphology in the decoder helps it to produce better translations. To this end we present three methods: i) simultaneous translation, ii) joint-data learning, and iii) multi-task learning. Our results show that explicit morphological information helps the decoder learn target language morphology and improves the translation quality by 0.2{--}0.6 BLEU points.&#34;,
-}
-</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{dalvi-etal-2017-understanding,
+</span></span><span style="display:flex;"><span>  title = &#34;Understanding and Improving Morphological Learning in the Neural Machine Translation Decoder&#34;,
+</span></span><span style="display:flex;"><span>  author = &#34;Dalvi, Fahim  and
+</span></span><span style="display:flex;"><span>    Durrani, Nadir  and
+</span></span><span style="display:flex;"><span>    Sajjad, Hassan  and
+</span></span><span style="display:flex;"><span>    Belinkov, Yonatan  and
+</span></span><span style="display:flex;"><span>    Vogel, Stephan&#34;,
+</span></span><span style="display:flex;"><span>  booktitle = &#34;Proceedings of the Eighth International Joint Conference on Natural Language Processing (Volume 1: Long Papers)&#34;,
+</span></span><span style="display:flex;"><span>  month = nov,
+</span></span><span style="display:flex;"><span>  year = &#34;2017&#34;,
+</span></span><span style="display:flex;"><span>  address = &#34;Taipei, Taiwan&#34;,
+</span></span><span style="display:flex;"><span>  publisher = &#34;Asian Federation of Natural Language Processing&#34;,
+</span></span><span style="display:flex;"><span>  url = &#34;https://www.aclweb.org/anthology/I17-1015&#34;,
+</span></span><span style="display:flex;"><span>  pages = &#34;142--151&#34;,
+</span></span><span style="display:flex;"><span>  abstract = &#34;End-to-end training makes the neural machine translation (NMT) architecture simpler, yet elegant compared to traditional statistical machine translation (SMT). However, little is known about linguistic patterns of morphology, syntax and semantics learned during the training of NMT systems, and more importantly, which parts of the architecture are responsible for learning each of these phenomenon. In this paper we i) analyze how much morphology an NMT decoder learns, and ii) investigate whether injecting target morphology in the decoder helps it to produce better translations. To this end we present three methods: i) simultaneous translation, ii) joint-data learning, and iii) multi-task learning. Our results show that explicit morphological information helps the decoder learn target language morphology and improves the translation quality by 0.2{--}0.6 BLEU points.&#34;,
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2017-11-IJCNLP-nmt-layers/thumbnail.jpg">
@@ -1623,30 +1957,31 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{belinkov-etal-2017-evaluating,
-  title = &#34;Evaluating Layers of Representation in Neural Machine Translation on Part-of-Speech and Semantic Tagging Tasks&#34;,
-  author = &#34;Belinkov, Yonatan  and
-    M{<span style="color:#66d9ef">\`</span>a}rquez, Llu{<span style="color:#66d9ef">\&#39;\i</span>}s  and
-    Sajjad, Hassan  and
-    Durrani, Nadir  and
-    Dalvi, Fahim  and
-    Glass, James&#34;,
-  booktitle = &#34;Proceedings of the Eighth International Joint Conference on Natural Language Processing (Volume 1: Long Papers)&#34;,
-  month = nov,
-  year = &#34;2017&#34;,
-  address = &#34;Taipei, Taiwan&#34;,
-  publisher = &#34;Asian Federation of Natural Language Processing&#34;,
-  url = &#34;https://www.aclweb.org/anthology/I17-1001&#34;,
-  pages = &#34;1--10&#34;,
-  abstract = &#34;While neural machine translation (NMT) models provide improved translation quality in an elegant framework, it is less clear what they learn about language. Recent work has started evaluating the quality of vector representations learned by NMT models on morphological and syntactic tasks. In this paper, we investigate the representations learned at different layers of NMT encoders. We train NMT systems on parallel data and use the models to extract features for training a classifier on two tasks: part-of-speech and semantic tagging. We then measure the performance of the classifier as a proxy to the quality of the original NMT model for the given task. Our quantitative analysis yields interesting insights regarding representation learning in NMT models. For instance, we find that higher layers are better at learning semantics while lower layers tend to be better for part-of-speech tagging. We also observe little effect of the target language on source-side representations, especially in higher quality models.&#34;,
-}
-</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{belinkov-etal-2017-evaluating,
+</span></span><span style="display:flex;"><span>  title = &#34;Evaluating Layers of Representation in Neural Machine Translation on Part-of-Speech and Semantic Tagging Tasks&#34;,
+</span></span><span style="display:flex;"><span>  author = &#34;Belinkov, Yonatan  and
+</span></span><span style="display:flex;"><span>    M{<span style="color:#66d9ef">\`</span>a}rquez, Llu{<span style="color:#66d9ef">\&#39;\i</span>}s  and
+</span></span><span style="display:flex;"><span>    Sajjad, Hassan  and
+</span></span><span style="display:flex;"><span>    Durrani, Nadir  and
+</span></span><span style="display:flex;"><span>    Dalvi, Fahim  and
+</span></span><span style="display:flex;"><span>    Glass, James&#34;,
+</span></span><span style="display:flex;"><span>  booktitle = &#34;Proceedings of the Eighth International Joint Conference on Natural Language Processing (Volume 1: Long Papers)&#34;,
+</span></span><span style="display:flex;"><span>  month = nov,
+</span></span><span style="display:flex;"><span>  year = &#34;2017&#34;,
+</span></span><span style="display:flex;"><span>  address = &#34;Taipei, Taiwan&#34;,
+</span></span><span style="display:flex;"><span>  publisher = &#34;Asian Federation of Natural Language Processing&#34;,
+</span></span><span style="display:flex;"><span>  url = &#34;https://www.aclweb.org/anthology/I17-1001&#34;,
+</span></span><span style="display:flex;"><span>  pages = &#34;1--10&#34;,
+</span></span><span style="display:flex;"><span>  abstract = &#34;While neural machine translation (NMT) models provide improved translation quality in an elegant framework, it is less clear what they learn about language. Recent work has started evaluating the quality of vector representations learned by NMT models on morphological and syntactic tasks. In this paper, we investigate the representations learned at different layers of NMT encoders. We train NMT systems on parallel data and use the models to extract features for training a classifier on two tasks: part-of-speech and semantic tagging. We then measure the performance of the classifier as a proxy to the quality of the original NMT model for the given task. Our quantitative analysis yields interesting insights regarding representation learning in NMT models. For instance, we find that higher layers are better at learning semantics while lower layers tend to be better for part-of-speech tagging. We also observe little effect of the target language on source-side representations, especially in higher quality models.&#34;,
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2017-07-ACL-challenging-morphology/thumbnail.jpg">
@@ -1673,30 +2008,31 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{sajjad-etal-2017-challenging,
-  title = &#34;Challenging Language-Dependent Segmentation for {A}rabic: An Application to Machine Translation and Part-of-Speech Tagging&#34;,
-  author = &#34;Sajjad, Hassan  and
-    Dalvi, Fahim  and
-    Durrani, Nadir  and
-    Abdelali, Ahmed  and
-    Belinkov, Yonatan  and
-    Vogel, Stephan&#34;,
-  booktitle = &#34;Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)&#34;,
-  month = jul,
-  year = &#34;2017&#34;,
-  address = &#34;Vancouver, Canada&#34;,
-  publisher = &#34;Association for Computational Linguistics&#34;,
-  url = &#34;https://www.aclweb.org/anthology/P17-2095&#34;,
-  doi = &#34;10.18653/v1/P17-2095&#34;,
-  pages = &#34;601--607&#34;,
-  abstract = &#34;Word segmentation plays a pivotal role in improving any Arabic NLP application. Therefore, a lot of research has been spent in improving its accuracy. Off-the-shelf tools, however, are: i) complicated to use and ii) domain/dialect dependent. We explore three language-independent alternatives to morphological segmentation using: i) data-driven sub-word units, ii) characters as a unit of learning, and iii) word embeddings learned using a character CNN (Convolution Neural Network). On the tasks of Machine Translation and POS tagging, we found these methods to achieve close to, and occasionally surpass state-of-the-art performance. In our analysis, we show that a neural machine translation system is sensitive to the ratio of source and target tokens, and a ratio close to 1 or greater, gives optimal performance.&#34;,
-}</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{sajjad-etal-2017-challenging,
+</span></span><span style="display:flex;"><span>  title = &#34;Challenging Language-Dependent Segmentation for {A}rabic: An Application to Machine Translation and Part-of-Speech Tagging&#34;,
+</span></span><span style="display:flex;"><span>  author = &#34;Sajjad, Hassan  and
+</span></span><span style="display:flex;"><span>    Dalvi, Fahim  and
+</span></span><span style="display:flex;"><span>    Durrani, Nadir  and
+</span></span><span style="display:flex;"><span>    Abdelali, Ahmed  and
+</span></span><span style="display:flex;"><span>    Belinkov, Yonatan  and
+</span></span><span style="display:flex;"><span>    Vogel, Stephan&#34;,
+</span></span><span style="display:flex;"><span>  booktitle = &#34;Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)&#34;,
+</span></span><span style="display:flex;"><span>  month = jul,
+</span></span><span style="display:flex;"><span>  year = &#34;2017&#34;,
+</span></span><span style="display:flex;"><span>  address = &#34;Vancouver, Canada&#34;,
+</span></span><span style="display:flex;"><span>  publisher = &#34;Association for Computational Linguistics&#34;,
+</span></span><span style="display:flex;"><span>  url = &#34;https://www.aclweb.org/anthology/P17-2095&#34;,
+</span></span><span style="display:flex;"><span>  doi = &#34;10.18653/v1/P17-2095&#34;,
+</span></span><span style="display:flex;"><span>  pages = &#34;601--607&#34;,
+</span></span><span style="display:flex;"><span>  abstract = &#34;Word segmentation plays a pivotal role in improving any Arabic NLP application. Therefore, a lot of research has been spent in improving its accuracy. Off-the-shelf tools, however, are: i) complicated to use and ii) domain/dialect dependent. We explore three language-independent alternatives to morphological segmentation using: i) data-driven sub-word units, ii) characters as a unit of learning, and iii) word embeddings learned using a character CNN (Convolution Neural Network). On the tasks of Machine Translation and POS tagging, we found these methods to achieve close to, and occasionally surpass state-of-the-art performance. In our analysis, we show that a neural machine translation system is sensitive to the ratio of source and target tokens, and a ratio close to 1 or greater, gives optimal performance.&#34;,
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2017-07-ACL-nmt-morphology/thumbnail.jpg">
@@ -1723,30 +2059,31 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{belinkov-etal-2017-neural,
-  title = &#34;What do Neural Machine Translation Models Learn about Morphology?&#34;,
-  author = &#34;Belinkov, Yonatan  and
-    Durrani, Nadir  and
-    Dalvi, Fahim  and
-    Sajjad, Hassan  and
-    Glass, James&#34;,
-  booktitle = &#34;Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)&#34;,
-  month = jul,
-  year = &#34;2017&#34;,
-  address = &#34;Vancouver, Canada&#34;,
-  publisher = &#34;Association for Computational Linguistics&#34;,
-  url = &#34;https://www.aclweb.org/anthology/P17-1080&#34;,
-  doi = &#34;10.18653/v1/P17-1080&#34;,
-  pages = &#34;861--872&#34;,
-  abstract = &#34;Neural machine translation (MT) models obtain state-of-the-art performance while maintaining a simple, end-to-end architecture. However, little is known about what these models learn about source and target languages during the training process. In this work, we analyze the representations learned by neural MT models at various levels of granularity and empirically evaluate the quality of the representations for learning morphology through extrinsic part-of-speech and morphological tagging tasks. We conduct a thorough investigation along several parameters: word-based vs. character-based representations, depth of the encoding layer, the identity of the target language, and encoder vs. decoder representations. Our data-driven, quantitative evaluation sheds light on important aspects in the neural MT system and its ability to capture word structure.&#34;,
-}
-</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{belinkov-etal-2017-neural,
+</span></span><span style="display:flex;"><span>  title = &#34;What do Neural Machine Translation Models Learn about Morphology?&#34;,
+</span></span><span style="display:flex;"><span>  author = &#34;Belinkov, Yonatan  and
+</span></span><span style="display:flex;"><span>    Durrani, Nadir  and
+</span></span><span style="display:flex;"><span>    Dalvi, Fahim  and
+</span></span><span style="display:flex;"><span>    Sajjad, Hassan  and
+</span></span><span style="display:flex;"><span>    Glass, James&#34;,
+</span></span><span style="display:flex;"><span>  booktitle = &#34;Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)&#34;,
+</span></span><span style="display:flex;"><span>  month = jul,
+</span></span><span style="display:flex;"><span>  year = &#34;2017&#34;,
+</span></span><span style="display:flex;"><span>  address = &#34;Vancouver, Canada&#34;,
+</span></span><span style="display:flex;"><span>  publisher = &#34;Association for Computational Linguistics&#34;,
+</span></span><span style="display:flex;"><span>  url = &#34;https://www.aclweb.org/anthology/P17-1080&#34;,
+</span></span><span style="display:flex;"><span>  doi = &#34;10.18653/v1/P17-1080&#34;,
+</span></span><span style="display:flex;"><span>  pages = &#34;861--872&#34;,
+</span></span><span style="display:flex;"><span>  abstract = &#34;Neural machine translation (MT) models obtain state-of-the-art performance while maintaining a simple, end-to-end architecture. However, little is known about what these models learn about source and target languages during the training process. In this work, we analyze the representations learned by neural MT models at various levels of granularity and empirically evaluate the quality of the representations for learning morphology through extrinsic part-of-speech and morphological tagging tasks. We conduct a thorough investigation along several parameters: word-based vs. character-based representations, depth of the encoding layer, the identity of the target language, and encoder vs. decoder representations. Our data-driven, quantitative evaluation sheds light on important aspects in the neural MT system and its ability to capture word structure.&#34;,
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2017-04-EACL-Demo/thumbnail.jpg">
@@ -1773,37 +2110,36 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{dalvi-etal-2017-qcri,
-  title = &#34;{QCRI} Live Speech Translation System&#34;,
-  author = &#34;Dalvi, Fahim  and
-    Zhang, Yifan  and
-    Khurana, Sameer  and
-    Durrani, Nadir  and
-    Sajjad, Hassan  and
-    Abdelali, Ahmed  and
-    Mubarak, Hamdy  and
-    Ali, Ahmed  and
-    Vogel, Stephan&#34;,
-  booktitle = &#34;Proceedings of the Software Demonstrations of the 15th Conference of the {E}uropean Chapter of the Association for Computational Linguistics&#34;,
-  month = apr,
-  year = &#34;2017&#34;,
-  address = &#34;Valencia, Spain&#34;,
-  publisher = &#34;Association for Computational Linguistics&#34;,
-  url = &#34;https://www.aclweb.org/anthology/E17-3016&#34;,
-  pages = &#34;61--64&#34;,
-  abstract = &#34;This paper presents QCRI{&#39;}s Arabic-to-English live speech translation system. It features modern web technologies to capture live audio, and broadcasts Arabic transcriptions and English translations simultaneously. Our Kaldi-based ASR system uses the Time Delay Neural Network (TDNN) architecture, while our Machine Translation (MT) system uses both phrase-based and neural frameworks. Although our neural MT system is slower than the phrase-based system, it produces significantly better translations and is memory efficient. The demo is available at <span style="color:#66d9ef">\url</span>{https://st.qcri.org/demos/livetranslation}.&#34;,
-}
-</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{dalvi-etal-2017-qcri,
+</span></span><span style="display:flex;"><span>  title = &#34;{QCRI} Live Speech Translation System&#34;,
+</span></span><span style="display:flex;"><span>  author = &#34;Dalvi, Fahim  and
+</span></span><span style="display:flex;"><span>    Zhang, Yifan  and
+</span></span><span style="display:flex;"><span>    Khurana, Sameer  and
+</span></span><span style="display:flex;"><span>    Durrani, Nadir  and
+</span></span><span style="display:flex;"><span>    Sajjad, Hassan  and
+</span></span><span style="display:flex;"><span>    Abdelali, Ahmed  and
+</span></span><span style="display:flex;"><span>    Mubarak, Hamdy  and
+</span></span><span style="display:flex;"><span>    Ali, Ahmed  and
+</span></span><span style="display:flex;"><span>    Vogel, Stephan&#34;,
+</span></span><span style="display:flex;"><span>  booktitle = &#34;Proceedings of the Software Demonstrations of the 15th Conference of the {E}uropean Chapter of the Association for Computational Linguistics&#34;,
+</span></span><span style="display:flex;"><span>  month = apr,
+</span></span><span style="display:flex;"><span>  year = &#34;2017&#34;,
+</span></span><span style="display:flex;"><span>  address = &#34;Valencia, Spain&#34;,
+</span></span><span style="display:flex;"><span>  publisher = &#34;Association for Computational Linguistics&#34;,
+</span></span><span style="display:flex;"><span>  url = &#34;https://www.aclweb.org/anthology/E17-3016&#34;,
+</span></span><span style="display:flex;"><span>  pages = &#34;61--64&#34;,
+</span></span><span style="display:flex;"><span>  abstract = &#34;This paper presents QCRI{&#39;}s Arabic-to-English live speech translation system. It features modern web technologies to capture live audio, and broadcasts Arabic transcriptions and English translations simultaneously. Our Kaldi-based ASR system uses the Time Delay Neural Network (TDNN) architecture, while our Machine Translation (MT) system uses both phrase-based and neural frameworks. Although our neural MT system is slower than the phrase-based system, it produces significantly better translations and is memory efficient. The demo is available at <span style="color:#66d9ef">\url</span>{https://st.qcri.org/demos/livetranslation}.&#34;,
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
-
 <h3 id="2016">2016</h3>
 
-
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2016-12-DSL-Dialect-ID/thumbnail.jpg">
@@ -1830,28 +2166,29 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{eldesouki-etal-2016-qcri,
-  title = &#34;{QCRI} @ {DSL} 2016: Spoken {A}rabic Dialect Identification Using Textual Features&#34;,
-  author = &#34;Eldesouki, Mohamed  and
-    Dalvi, Fahim  and
-    Sajjad, Hassan  and
-    Darwish, Kareem&#34;,
-  booktitle = &#34;Proceedings of the Third Workshop on {NLP} for Similar Languages, Varieties and Dialects ({V}ar{D}ial3)&#34;,
-  month = dec,
-  year = &#34;2016&#34;,
-  address = &#34;Osaka, Japan&#34;,
-  publisher = &#34;The COLING 2016 Organizing Committee&#34;,
-  url = &#34;https://www.aclweb.org/anthology/W16-4828&#34;,
-  pages = &#34;221--226&#34;,
-  abstract = &#34;The paper describes the QCRI submissions to the task of automatic Arabic dialect classification into 5 Arabic variants, namely Egyptian, Gulf, Levantine, North-African, and Modern Standard Arabic (MSA). The training data is relatively small and is automatically generated from an ASR system. To avoid over-fitting on such small data, we carefully selected and designed the features to capture the morphological essence of the different dialects. We submitted four runs to the Arabic sub-task. For all runs, we used a combined feature vector of character bi-grams, tri-grams, 4-grams, and 5-grams. We tried several machine-learning algorithms, namely Logistic Regression, Naive Bayes, Neural Networks, and Support Vector Machines (SVM) with linear and string kernels. However, our submitted runs used SVM with a linear kernel. In the closed submission, we got the best accuracy of 0.5136 and the third best weighted F1 score, with a difference less than 0.002 from the highest score.&#34;,
-}
-</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{eldesouki-etal-2016-qcri,
+</span></span><span style="display:flex;"><span>  title = &#34;{QCRI} @ {DSL} 2016: Spoken {A}rabic Dialect Identification Using Textual Features&#34;,
+</span></span><span style="display:flex;"><span>  author = &#34;Eldesouki, Mohamed  and
+</span></span><span style="display:flex;"><span>    Dalvi, Fahim  and
+</span></span><span style="display:flex;"><span>    Sajjad, Hassan  and
+</span></span><span style="display:flex;"><span>    Darwish, Kareem&#34;,
+</span></span><span style="display:flex;"><span>  booktitle = &#34;Proceedings of the Third Workshop on {NLP} for Similar Languages, Varieties and Dialects ({V}ar{D}ial3)&#34;,
+</span></span><span style="display:flex;"><span>  month = dec,
+</span></span><span style="display:flex;"><span>  year = &#34;2016&#34;,
+</span></span><span style="display:flex;"><span>  address = &#34;Osaka, Japan&#34;,
+</span></span><span style="display:flex;"><span>  publisher = &#34;The COLING 2016 Organizing Committee&#34;,
+</span></span><span style="display:flex;"><span>  url = &#34;https://www.aclweb.org/anthology/W16-4828&#34;,
+</span></span><span style="display:flex;"><span>  pages = &#34;221--226&#34;,
+</span></span><span style="display:flex;"><span>  abstract = &#34;The paper describes the QCRI submissions to the task of automatic Arabic dialect classification into 5 Arabic variants, namely Egyptian, Gulf, Levantine, North-African, and Modern Standard Arabic (MSA). The training data is relatively small and is automatically generated from an ASR system. To avoid over-fitting on such small data, we carefully selected and designed the features to capture the morphological essence of the different dialects. We submitted four runs to the Arabic sub-task. For all runs, we used a combined feature vector of character bi-grams, tri-grams, 4-grams, and 5-grams. We tried several machine-learning algorithms, namely Logistic Regression, Naive Bayes, Neural Networks, and Support Vector Machines (SVM) with linear and string kernels. However, our submitted runs used SVM with a linear kernel. In the closed submission, we got the best accuracy of 0.5136 and the third best weighted F1 score, with a difference less than 0.002 from the highest score.&#34;,
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/2016-12-IWSLT/thumbnail.jpg">
@@ -1878,25 +2215,23 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@inproceedings{durrani2016iwslt,
-  title={QCRI Machine Translation Systems for IWSLT 16},
-  author={Durrani, Nadir and Dalvi, Fahim and Sajjad, Hassan and Vogel, Stephan},
-  booktitle={International Workshop on Spoken Language Translation},
-  year={2016}
-}
-</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@inproceedings{durrani2016iwslt,
+</span></span><span style="display:flex;"><span>  title={QCRI Machine Translation Systems for IWSLT 16},
+</span></span><span style="display:flex;"><span>  author={Durrani, Nadir and Dalvi, Fahim and Sajjad, Hassan and Vogel, Stephan},
+</span></span><span style="display:flex;"><span>  booktitle={International Workshop on Spoken Language Translation},
+</span></span><span style="display:flex;"><span>  year={2016}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
-
 <h3 id="unpublished-works">Unpublished works</h3>
-
 <p><em>A list of unpublished work that resulted from student research or class projects</em></p>
 
-
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/unpublished-2016-stanford-ee267/thumbnail.jpg">
@@ -1926,6 +2261,7 @@ if (!doNotTrack) {
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/unpublished-2016-stanford-231n/thumbnail.jpg">
@@ -1952,27 +2288,28 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@article{DBLP:journals/corr/CateDH17a,
-  author    = {Hardie Cate and
-               Fahim Dalvi and
-               Zeshan Hussain},
-  title     = {DeepFace: Face Generation using Deep Learning},
-  journal   = {CoRR},
-  volume    = {abs/1701.01876},
-  year      = {2017},
-  url       = {http://arxiv.org/abs/1701.01876},
-  archivePrefix = {arXiv},
-  eprint    = {1701.01876},
-  timestamp = {Wed, 07 Jun 2017 14:40:49 +0200},
-  biburl    = {https://dblp.org/rec/bib/journals/corr/CateDH17a},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
-}</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@article{DBLP:journals/corr/CateDH17a,
+</span></span><span style="display:flex;"><span>  author    = {Hardie Cate and
+</span></span><span style="display:flex;"><span>               Fahim Dalvi and
+</span></span><span style="display:flex;"><span>               Zeshan Hussain},
+</span></span><span style="display:flex;"><span>  title     = {DeepFace: Face Generation using Deep Learning},
+</span></span><span style="display:flex;"><span>  journal   = {CoRR},
+</span></span><span style="display:flex;"><span>  volume    = {abs/1701.01876},
+</span></span><span style="display:flex;"><span>  year      = {2017},
+</span></span><span style="display:flex;"><span>  url       = {http://arxiv.org/abs/1701.01876},
+</span></span><span style="display:flex;"><span>  archivePrefix = {arXiv},
+</span></span><span style="display:flex;"><span>  eprint    = {1701.01876},
+</span></span><span style="display:flex;"><span>  timestamp = {Wed, 07 Jun 2017 14:40:49 +0200},
+</span></span><span style="display:flex;"><span>  biburl    = {https://dblp.org/rec/bib/journals/corr/CateDH17a},
+</span></span><span style="display:flex;"><span>  bibsource = {dblp computer science bibliography, https://dblp.org}
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/unpublished-2015-stanford-229/thumbnail.jpg">
@@ -1999,27 +2336,28 @@ if (!doNotTrack) {
 		</div>
 		
 			<div class="research-citation">	
-				<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-tex" data-lang="tex">@article{DBLP:journals/corr/CateDH17,
-  author    = {Hardie Cate and
-               Fahim Dalvi and
-               Zeshan Hussain},
-  title     = {Sign Language Recognition Using Temporal Classification},
-  journal   = {CoRR},
-  volume    = {abs/1701.01875},
-  year      = {2017},
-  url       = {http://arxiv.org/abs/1701.01875},
-  archivePrefix = {arXiv},
-  eprint    = {1701.01875},
-  timestamp = {Wed, 07 Jun 2017 14:41:28 +0200},
-  biburl    = {https://dblp.org/rec/bib/journals/corr/CateDH17},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
-}</code></pre></div>
+				<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tex" data-lang="tex"><span style="display:flex;"><span>@article{DBLP:journals/corr/CateDH17,
+</span></span><span style="display:flex;"><span>  author    = {Hardie Cate and
+</span></span><span style="display:flex;"><span>               Fahim Dalvi and
+</span></span><span style="display:flex;"><span>               Zeshan Hussain},
+</span></span><span style="display:flex;"><span>  title     = {Sign Language Recognition Using Temporal Classification},
+</span></span><span style="display:flex;"><span>  journal   = {CoRR},
+</span></span><span style="display:flex;"><span>  volume    = {abs/1701.01875},
+</span></span><span style="display:flex;"><span>  year      = {2017},
+</span></span><span style="display:flex;"><span>  url       = {http://arxiv.org/abs/1701.01875},
+</span></span><span style="display:flex;"><span>  archivePrefix = {arXiv},
+</span></span><span style="display:flex;"><span>  eprint    = {1701.01875},
+</span></span><span style="display:flex;"><span>  timestamp = {Wed, 07 Jun 2017 14:41:28 +0200},
+</span></span><span style="display:flex;"><span>  biburl    = {https://dblp.org/rec/bib/journals/corr/CateDH17},
+</span></span><span style="display:flex;"><span>  bibsource = {dblp computer science bibliography, https://dblp.org}
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 			</div>
 		
 	</div>
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/unpublished-2015-stanford-231a/thumbnail.jpg">
@@ -2049,6 +2387,7 @@ if (!doNotTrack) {
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/unpublished-2014-stanford-221/thumbnail.jpg">
@@ -2078,6 +2417,7 @@ if (!doNotTrack) {
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/unpublished-2013-met-qcri/thumbnail.jpg">
@@ -2107,6 +2447,7 @@ if (!doNotTrack) {
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/unpublished-2013-i-want-my-mommy/thumbnail.jpg">
@@ -2136,6 +2477,7 @@ if (!doNotTrack) {
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/unpublished-2012-riss/thumbnail.jpg">
@@ -2165,6 +2507,7 @@ if (!doNotTrack) {
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/unpublished-2012-malware-inc/thumbnail.jpg">
@@ -2194,6 +2537,7 @@ if (!doNotTrack) {
 </div>
 
 
+	
 	<div class="research-entry">
 	<div class="research-thumb">
 		<img src="/research/unpublished-2011-hala-interface/thumbnail.jpg">
@@ -2276,7 +2620,7 @@ if (!doNotTrack) {
   </nav>
 </section>
           <div class='copyright'>
-  <p> &copy; 2017-2023 Fahim Dalvi. Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> and <a href="https://github.com/MunifTanjim/minimo" target="_blank">Minimo</a></p>
+  <p> &copy; 2017-2024 Fahim Dalvi. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/MunifTanjim/minimo">Minimo</a></p>
 </div>
 
         </div>
