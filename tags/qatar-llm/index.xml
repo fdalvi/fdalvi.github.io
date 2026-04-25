@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Qatar-Llm on Fahim Dalvi</title>
+    <link>https://fdalvi.github.io/tags/qatar-llm/</link>
+    <description>Recent content in Qatar-Llm on Fahim Dalvi</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 15 Mar 2026 19:00:00 +0300</lastBuildDate>
+    <atom:link href="https://fdalvi.github.io/tags/qatar-llm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fanar 2.0 Released!</title>
+      <link>https://fdalvi.github.io/blog/2025-12-09-fanar-2-launch/</link>
+      <pubDate>Tue, 09 Dec 2025 13:00:00 +0300</pubDate>
+      <guid>https://fdalvi.github.io/blog/2025-12-09-fanar-2-launch/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://fanar.qa&#34;&gt;Fanar 2.0&lt;/a&gt; launched today at the &lt;a href=&#34;https://qatar.worldsummit.ai&#34;&gt;World AI Summit&lt;/a&gt;. It brings together the efforts of a wonderful team at the &lt;a href=&#34;https://www.hbku.edu.qa/en/qcri&#34;&gt;Qatar Computing Research Institute&lt;/a&gt;. With this release, we continue our efforts to create a sovereign, Arabic-focused generative AI platform that strives to advance Arabic AI. The platform goes beyond just text this year, with support for Speech, Images and Video. We have also added specialized models like translation to further cater to a wide range of use cases.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
