@@ -9,6 +9,13 @@
     <lastBuildDate>Sun, 15 Mar 2026 19:00:00 +0300</lastBuildDate>
     <atom:link href="https://fdalvi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Arabic-Ai</title>
+      <link>https://fdalvi.github.io/tags/arabic-ai/</link>
+      <pubDate>Tue, 09 Dec 2025 13:00:00 +0300</pubDate>
+      <guid>https://fdalvi.github.io/tags/arabic-ai/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Fanar</title>
       <link>https://fdalvi.github.io/tags/fanar/</link>
       <pubDate>Tue, 09 Dec 2025 13:00:00 +0300</pubDate>
@@ -30,17 +37,66 @@
       <description></description>
     </item>
     <item>
+      <title>Arabicnlp</title>
+      <link>https://fdalvi.github.io/tags/arabicnlp/</link>
+      <pubDate>Sat, 15 Nov 2025 13:00:00 +0300</pubDate>
+      <guid>https://fdalvi.github.io/tags/arabicnlp/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Emnlp</title>
       <link>https://fdalvi.github.io/tags/emnlp/</link>
-      <pubDate>Tue, 12 Nov 2024 13:00:00 +0300</pubDate>
+      <pubDate>Sat, 15 Nov 2025 13:00:00 +0300</pubDate>
       <guid>https://fdalvi.github.io/tags/emnlp/</guid>
       <description></description>
     </item>
     <item>
       <title>Interpretability</title>
       <link>https://fdalvi.github.io/tags/interpretability/</link>
-      <pubDate>Tue, 12 Nov 2024 13:00:00 +0300</pubDate>
+      <pubDate>Sat, 15 Nov 2025 13:00:00 +0300</pubDate>
       <guid>https://fdalvi.github.io/tags/interpretability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Knowledge-Editing</title>
+      <link>https://fdalvi.github.io/tags/knowledge-editing/</link>
+      <pubDate>Sat, 15 Nov 2025 13:00:00 +0300</pubDate>
+      <guid>https://fdalvi.github.io/tags/knowledge-editing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Llm</title>
+      <link>https://fdalvi.github.io/tags/llm/</link>
+      <pubDate>Sat, 15 Nov 2025 13:00:00 +0300</pubDate>
+      <guid>https://fdalvi.github.io/tags/llm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Multilingual</title>
+      <link>https://fdalvi.github.io/tags/multilingual/</link>
+      <pubDate>Sat, 15 Nov 2025 13:00:00 +0300</pubDate>
+      <guid>https://fdalvi.github.io/tags/multilingual/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Interspeech</title>
+      <link>https://fdalvi.github.io/tags/interspeech/</link>
+      <pubDate>Fri, 15 Aug 2025 13:00:00 +0300</pubDate>
+      <guid>https://fdalvi.github.io/tags/interspeech/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Speech</title>
+      <link>https://fdalvi.github.io/tags/speech/</link>
+      <pubDate>Fri, 15 Aug 2025 13:00:00 +0300</pubDate>
+      <guid>https://fdalvi.github.io/tags/speech/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Coling</title>
+      <link>https://fdalvi.github.io/tags/coling/</link>
+      <pubDate>Mon, 20 Jan 2025 13:00:00 +0300</pubDate>
+      <guid>https://fdalvi.github.io/tags/coling/</guid>
       <description></description>
     </item>
     <item>
@@ -55,20 +111,6 @@
       <link>https://fdalvi.github.io/tags/acl/</link>
       <pubDate>Sun, 11 Aug 2024 13:00:00 +0300</pubDate>
       <guid>https://fdalvi.github.io/tags/acl/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Multilingual</title>
-      <link>https://fdalvi.github.io/tags/multilingual/</link>
-      <pubDate>Sun, 11 Aug 2024 13:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/multilingual/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Arabic-Ai</title>
-      <link>https://fdalvi.github.io/tags/arabic-ai/</link>
-      <pubDate>Sun, 17 Mar 2024 13:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/arabic-ai/</guid>
       <description></description>
     </item>
     <item>

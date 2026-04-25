@@ -6,14 +6,42 @@
     <description>Recent content in Arabic-Ai on Fahim Dalvi</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 17 Mar 2024 13:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Sun, 15 Mar 2026 19:00:00 +0300</lastBuildDate>
     <atom:link href="https://fdalvi.github.io/tags/arabic-ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fanar 2.0 Released!</title>
+      <link>https://fdalvi.github.io/blog/2025-12-09-fanar-2-launch/</link>
+      <pubDate>Tue, 09 Dec 2025 13:00:00 +0300</pubDate>
+      <guid>https://fdalvi.github.io/blog/2025-12-09-fanar-2-launch/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://fanar.qa&#34;&gt;Fanar 2.0&lt;/a&gt; launched today at the &lt;a href=&#34;https://qatar.worldsummit.ai&#34;&gt;World AI Summit&lt;/a&gt;. It brings together the efforts of a wonderful team at the &lt;a href=&#34;https://www.hbku.edu.qa/en/qcri&#34;&gt;Qatar Computing Research Institute&lt;/a&gt;. With this release, we continue our efforts to create a sovereign, Arabic-focused generative AI platform that strives to advance Arabic AI. The platform goes beyond just text this year, with support for Speech, Images and Video. We have also added specialized models like translation to further cater to a wide range of use cases.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Three Papers Accepted at EMNLP &amp; ArabicNLP 2025</title>
+      <link>https://fdalvi.github.io/blog/2025-11-15-two-papers-accepted-at-emnlp-2025/</link>
+      <pubDate>Sat, 15 Nov 2025 13:00:00 +0300</pubDate>
+      <guid>https://fdalvi.github.io/blog/2025-11-15-two-papers-accepted-at-emnlp-2025/</guid>
+      <description>&lt;p&gt;Thrilled to announce that we have two papers have been accepted at &lt;a href=&#34;https://2025.emnlp.org&#34;&gt;EMNLP 2025&lt;/a&gt;, and one in the co-located &lt;a href=&#34;https://arabicnlp2025.sigarab.org&#34;&gt;ArabicNLP 2025&lt;/a&gt; conference.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Beyond the Leaderboard: Understanding Performance Disparities in Large Language Models via Model Diffing&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Fine-tuning LLMs is the go-to way to improve them, but most evaluations only tell you &lt;em&gt;that&lt;/em&gt; a model got better, not &lt;em&gt;why&lt;/em&gt;. Our paper takes a different approach using &lt;strong&gt;model diffing&lt;/strong&gt; in order to compare the internal representations of two models. We specifically choose SimPO as a case study, and use crosscoders to find and categorize the latent concepts that differentiate the original Gemma-2-9b-it from its fine-tuned version. By looking at the mechanistic changes, we can attribute performance gains to concrete capabilities. This gives us a much richer, more actionable picture of what fine-tuning actually does.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Accepted at COLING 2025</title>
+      <link>https://fdalvi.github.io/blog/2025-01-20-aradice-benchmarks-for-arabic-dialects/</link>
+      <pubDate>Mon, 20 Jan 2025 13:00:00 +0300</pubDate>
+      <guid>https://fdalvi.github.io/blog/2025-01-20-aradice-benchmarks-for-arabic-dialects/</guid>
+      <description>&lt;p&gt;Excited to share that our paper &lt;a href=&#34;https://aclanthology.org/2025.coling-main.283/&#34;&gt;AraDiCE: Benchmarks for Dialectal and Cultural Capabilities in LLMs&lt;/a&gt; has been accepted at &lt;a href=&#34;https://coling2025.org/&#34;&gt;COLING 2025&lt;/a&gt; in Abu Dhabi.&lt;/p&gt;&#xA;&lt;p&gt;Arabic isn&amp;rsquo;t just one language — it&amp;rsquo;s a family of dialects that vary dramatically from region to region. Yet most LLM evaluations treat Arabic as a monolith, using only Modern Standard Arabic (MSA). This paper addresses that gap by introducing &lt;strong&gt;AraDiCE&lt;/strong&gt;, a benchmark that evaluates LLMs on both dialectal and cultural dimensions. We evaluated several LLMs on these benchmarks and found an interesting pattern: Arabic-specific models like Fanar, Jais and AceGPT do outperform general multilingual models on dialectal tasks. But significant challenges remain — particularly in dialect identification, generation, and translation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fanar - An Arabic-Centric Multimodal Generative AI Platform</title>
+      <link>https://fdalvi.github.io/blog/2024-12-12-fanar-arabic-centric-multimodal-platform/</link>
+      <pubDate>Thu, 12 Dec 2024 13:00:00 +0300</pubDate>
+      <guid>https://fdalvi.github.io/blog/2024-12-12-fanar-arabic-centric-multimodal-platform/</guid>
+      <description>&lt;p&gt;After over a year of combined effort of a large team at QCRI, I&amp;rsquo;m pleased to announce that &lt;a href=&#34;https://fanar.qa&#34;&gt;Fanar&lt;/a&gt; is finally out for the world to try! This milestone represents our journey to make sure the Arabic language, the culture and the norms of this region are represented in key technologies such as generative AI. At a glance, here&amp;rsquo;s what the platform includes:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Two Arabic LLMs:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Fanar Star&lt;/strong&gt; (7B parameters) — trained from scratch on ~1 trillion clean Arabic, English, and Code tokens&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Fanar Prime&lt;/strong&gt; (9B parameters) — continually trained on the Gemma-2 9B base model using the same data. Both models are concurrently deployed with a custom orchestrator that routes prompts transparently to the right model.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Beyond text:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Three Papers Accepted at EACL 2024</title>
       <link>https://fdalvi.github.io/blog/2024-03-17-three-papers-accepted-at-eacl-2024/</link>
       <pubDate>Sun, 17 Mar 2024 13:00:00 +0300</pubDate>
       <guid>https://fdalvi.github.io/blog/2024-03-17-three-papers-accepted-at-eacl-2024/</guid>
-      <description>&lt;p&gt;We&amp;rsquo;re thrilled to share that three papers have been accepted at &lt;a href=&#34;https://2024.eacl.org&#34;&gt;EACL 2024&lt;/a&gt;, Here&amp;rsquo;s a quick peek at what each paper explores.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;LLMeBench: Making LLM Evaluation Easier&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Large language models are being used for an ever-wider range of tasks and languages, but evaluating them across different setups can be surprisingly cumbersome. Our team built &lt;a href=&#34;https://github.com/qcri/LLMeBench/&#34;&gt;LLMeBench&lt;/a&gt;, a flexible framework that lets you evaluate LLMs on any NLP task in just a few lines of code. It comes with ready-made dataset loaders, supports multiple model providers (including local models, OpenAI API compatible hosted ones), and handles most standard evaluation metrics out of the box. Whether you want to test zero-shot or few-shot learning, it&amp;rsquo;s all supported. We put it through its paces across 31 unique NLP tasks, 53 datasets, and roughly 296K data points. The framework is open source and ready for the community to use. You can watch a demo &lt;a href=&#34;https://youtu.be/9cC2m_abk3A&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Thrilled to announce that three papers have been accepted at &lt;a href=&#34;https://2024.eacl.org&#34;&gt;EACL 2024&lt;/a&gt;, Here&amp;rsquo;s a quick peek at what each paper explores.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;LLMeBench: Making LLM Evaluation Easier&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Large language models are being used for an ever-wider range of tasks and languages, but evaluating them across different setups can be surprisingly cumbersome. Our team built &lt;a href=&#34;https://github.com/qcri/LLMeBench/&#34;&gt;LLMeBench&lt;/a&gt;, a flexible framework that lets you evaluate LLMs on any NLP task in just a few lines of code. It comes with ready-made dataset loaders, supports multiple model providers (including local models, OpenAI API compatible hosted ones), and handles most standard evaluation metrics out of the box. Whether you want to test zero-shot or few-shot learning, it&amp;rsquo;s all supported. We put it through its paces across 31 unique NLP tasks, 53 datasets, and roughly 296K data points. The framework is open source and ready for the community to use. You can watch a demo &lt;a href=&#34;https://youtu.be/9cC2m_abk3A&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -16,6 +16,13 @@
       <description>&lt;p&gt;&lt;a href=&#34;https://fanar.qa&#34;&gt;Fanar 2.0&lt;/a&gt; launched today at the &lt;a href=&#34;https://qatar.worldsummit.ai&#34;&gt;World AI Summit&lt;/a&gt;. It brings together the efforts of a wonderful team at the &lt;a href=&#34;https://www.hbku.edu.qa/en/qcri&#34;&gt;Qatar Computing Research Institute&lt;/a&gt;. With this release, we continue our efforts to create a sovereign, Arabic-focused generative AI platform that strives to advance Arabic AI. The platform goes beyond just text this year, with support for Speech, Images and Video. We have also added specialized models like translation to further cater to a wide range of use cases.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Fanar - An Arabic-Centric Multimodal Generative AI Platform</title>
+      <link>https://fdalvi.github.io/blog/2024-12-12-fanar-arabic-centric-multimodal-platform/</link>
+      <pubDate>Thu, 12 Dec 2024 13:00:00 +0300</pubDate>
+      <guid>https://fdalvi.github.io/blog/2024-12-12-fanar-arabic-centric-multimodal-platform/</guid>
+      <description>&lt;p&gt;After over a year of combined effort of a large team at QCRI, I&amp;rsquo;m pleased to announce that &lt;a href=&#34;https://fanar.qa&#34;&gt;Fanar&lt;/a&gt; is finally out for the world to try! This milestone represents our journey to make sure the Arabic language, the culture and the norms of this region are represented in key technologies such as generative AI. At a glance, here&amp;rsquo;s what the platform includes:&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Two Arabic LLMs:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Fanar Star&lt;/strong&gt; (7B parameters) — trained from scratch on ~1 trillion clean Arabic, English, and Code tokens&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Fanar Prime&lt;/strong&gt; (9B parameters) — continually trained on the Gemma-2 9B base model using the same data. Both models are concurrently deployed with a custom orchestrator that routes prompts transparently to the right model.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Beyond text:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>ALT wins the King Salman Global Academy for Arabic award!</title>
       <link>https://fdalvi.github.io/blog/2023-10-02-ksga-award/</link>
       <pubDate>Mon, 02 Oct 2023 13:00:00 +0300</pubDate>

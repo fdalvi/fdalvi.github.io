@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Knowledge-Editing on Fahim Dalvi</title>
+    <link>https://fdalvi.github.io/tags/knowledge-editing/</link>
+    <description>Recent content in Knowledge-Editing on Fahim Dalvi</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 15 Nov 2025 13:00:00 +0300</lastBuildDate>
+    <atom:link href="https://fdalvi.github.io/tags/knowledge-editing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Three Papers Accepted at EMNLP &amp; ArabicNLP 2025</title>
+      <link>https://fdalvi.github.io/blog/2025-11-15-two-papers-accepted-at-emnlp-2025/</link>
+      <pubDate>Sat, 15 Nov 2025 13:00:00 +0300</pubDate>
+      <guid>https://fdalvi.github.io/blog/2025-11-15-two-papers-accepted-at-emnlp-2025/</guid>
+      <description>&lt;p&gt;Thrilled to announce that we have two papers have been accepted at &lt;a href=&#34;https://2025.emnlp.org&#34;&gt;EMNLP 2025&lt;/a&gt;, and one in the co-located &lt;a href=&#34;https://arabicnlp2025.sigarab.org&#34;&gt;ArabicNLP 2025&lt;/a&gt; conference.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Beyond the Leaderboard: Understanding Performance Disparities in Large Language Models via Model Diffing&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Fine-tuning LLMs is the go-to way to improve them, but most evaluations only tell you &lt;em&gt;that&lt;/em&gt; a model got better, not &lt;em&gt;why&lt;/em&gt;. Our paper takes a different approach using &lt;strong&gt;model diffing&lt;/strong&gt; in order to compare the internal representations of two models. We specifically choose SimPO as a case study, and use crosscoders to find and categorize the latent concepts that differentiate the original Gemma-2-9b-it from its fine-tuned version. By looking at the mechanistic changes, we can attribute performance gains to concrete capabilities. This gives us a much richer, more actionable picture of what fine-tuning actually does.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

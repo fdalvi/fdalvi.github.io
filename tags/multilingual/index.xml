@@ -6,8 +6,29 @@
     <description>Recent content in Multilingual on Fahim Dalvi</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 11 Aug 2024 13:00:00 +0300</lastBuildDate>
+    <lastBuildDate>Sat, 15 Nov 2025 13:00:00 +0300</lastBuildDate>
     <atom:link href="https://fdalvi.github.io/tags/multilingual/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Three Papers Accepted at EMNLP &amp; ArabicNLP 2025</title>
+      <link>https://fdalvi.github.io/blog/2025-11-15-two-papers-accepted-at-emnlp-2025/</link>
+      <pubDate>Sat, 15 Nov 2025 13:00:00 +0300</pubDate>
+      <guid>https://fdalvi.github.io/blog/2025-11-15-two-papers-accepted-at-emnlp-2025/</guid>
+      <description>&lt;p&gt;Thrilled to announce that we have two papers have been accepted at &lt;a href=&#34;https://2025.emnlp.org&#34;&gt;EMNLP 2025&lt;/a&gt;, and one in the co-located &lt;a href=&#34;https://arabicnlp2025.sigarab.org&#34;&gt;ArabicNLP 2025&lt;/a&gt; conference.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Beyond the Leaderboard: Understanding Performance Disparities in Large Language Models via Model Diffing&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Fine-tuning LLMs is the go-to way to improve them, but most evaluations only tell you &lt;em&gt;that&lt;/em&gt; a model got better, not &lt;em&gt;why&lt;/em&gt;. Our paper takes a different approach using &lt;strong&gt;model diffing&lt;/strong&gt; in order to compare the internal representations of two models. We specifically choose SimPO as a case study, and use crosscoders to find and categorize the latent concepts that differentiate the original Gemma-2-9b-it from its fine-tuned version. By looking at the mechanistic changes, we can attribute performance gains to concrete capabilities. This gives us a much richer, more actionable picture of what fine-tuning actually does.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Accepted at Interspeech 2025!</title>
+      <link>https://fdalvi.github.io/blog/2025-08-15-from-words-to-waves-interspeech-2025/</link>
+      <pubDate>Fri, 15 Aug 2025 13:00:00 +0300</pubDate>
+      <guid>https://fdalvi.github.io/blog/2025-08-15-from-words-to-waves-interspeech-2025/</guid>
+      <description>&lt;p&gt;Our paper &lt;a href=&#34;https://doi.org/10.21437/Interspeech.2025-2180&#34;&gt;From Words to Waves: Analyzing Concept Formation in Speech and Text-Based Foundation Models&lt;/a&gt; has been accepted at &lt;a href=&#34;https://interspeech2025.org/&#34;&gt;Interspeech 2025&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;LLMs have shown that text-only training can give models remarkable reasoning abilities and abstract semantic understanding. This raises a fascinating question: &lt;strong&gt;do speech models develop similar conceptual structures when trained only on audio?&lt;/strong&gt; And when models are trained on both speech and text together, do they build a richer understanding?&lt;/p&gt;&#xA;&lt;p&gt;We used &lt;strong&gt;Latent Concept Analysis&lt;/strong&gt; from our prior work on interpretability to examine how semantic abstractions form across modalities, and find lots of interesting differences on how speech and text modalities differ in their internal representations. We released our code and a curated audio version of the SST-2 dataset on &lt;a href=&#34;https://github.com/shammur/MultimodalXplain&#34;&gt;GitHub&lt;/a&gt; and &lt;a href=&#34;https://huggingface.co/collections/QCRI/multimodalxplain&#34;&gt;Hugging Face&lt;/a&gt; to support reproducibility.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Accepted at COLING 2025</title>
+      <link>https://fdalvi.github.io/blog/2025-01-20-aradice-benchmarks-for-arabic-dialects/</link>
+      <pubDate>Mon, 20 Jan 2025 13:00:00 +0300</pubDate>
+      <guid>https://fdalvi.github.io/blog/2025-01-20-aradice-benchmarks-for-arabic-dialects/</guid>
+      <description>&lt;p&gt;Excited to share that our paper &lt;a href=&#34;https://aclanthology.org/2025.coling-main.283/&#34;&gt;AraDiCE: Benchmarks for Dialectal and Cultural Capabilities in LLMs&lt;/a&gt; has been accepted at &lt;a href=&#34;https://coling2025.org/&#34;&gt;COLING 2025&lt;/a&gt; in Abu Dhabi.&lt;/p&gt;&#xA;&lt;p&gt;Arabic isn&amp;rsquo;t just one language — it&amp;rsquo;s a family of dialects that vary dramatically from region to region. Yet most LLM evaluations treat Arabic as a monolith, using only Modern Standard Arabic (MSA). This paper addresses that gap by introducing &lt;strong&gt;AraDiCE&lt;/strong&gt;, a benchmark that evaluates LLMs on both dialectal and cultural dimensions. We evaluated several LLMs on these benchmarks and found an interesting pattern: Arabic-specific models like Fanar, Jais and AceGPT do outperform general multilingual models on dialectal tasks. But significant challenges remain — particularly in dialect identification, generation, and translation.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Paper Accepted at ACL 2024</title>
       <link>https://fdalvi.github.io/blog/2024-08-11-paper-accepted-at-acl-2024/</link>
