@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arabic-Ai on Fahim Dalvi</title>
+    <link>https://fdalvi.github.io/tags/arabic-ai/</link>
+    <description>Recent content in Arabic-Ai on Fahim Dalvi</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 17 Mar 2024 13:00:00 +0300</lastBuildDate>
+    <atom:link href="https://fdalvi.github.io/tags/arabic-ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Three Papers Accepted at EACL 2024</title>
+      <link>https://fdalvi.github.io/blog/2024-03-17-three-papers-accepted-at-eacl-2024/</link>
+      <pubDate>Sun, 17 Mar 2024 13:00:00 +0300</pubDate>
+      <guid>https://fdalvi.github.io/blog/2024-03-17-three-papers-accepted-at-eacl-2024/</guid>
+      <description>&lt;p&gt;We&amp;rsquo;re thrilled to share that three papers have been accepted at &lt;a href=&#34;https://2024.eacl.org&#34;&gt;EACL 2024&lt;/a&gt;, Here&amp;rsquo;s a quick peek at what each paper explores.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;LLMeBench: Making LLM Evaluation Easier&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Large language models are being used for an ever-wider range of tasks and languages, but evaluating them across different setups can be surprisingly cumbersome. Our team built &lt;a href=&#34;https://github.com/qcri/LLMeBench/&#34;&gt;LLMeBench&lt;/a&gt;, a flexible framework that lets you evaluate LLMs on any NLP task in just a few lines of code. It comes with ready-made dataset loaders, supports multiple model providers (including local models, OpenAI API compatible hosted ones), and handles most standard evaluation metrics out of the box. Whether you want to test zero-shot or few-shot learning, it&amp;rsquo;s all supported. We put it through its paces across 31 unique NLP tasks, 53 datasets, and roughly 296K data points. The framework is open source and ready for the community to use. You can watch a demo &lt;a href=&#34;https://youtu.be/9cC2m_abk3A&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

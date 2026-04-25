@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Acl on Fahim Dalvi</title>
+    <link>https://fdalvi.github.io/tags/acl/</link>
+    <description>Recent content in Acl on Fahim Dalvi</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 11 Aug 2024 13:00:00 +0300</lastBuildDate>
+    <atom:link href="https://fdalvi.github.io/tags/acl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Paper Accepted at ACL 2024</title>
+      <link>https://fdalvi.github.io/blog/2024-08-11-paper-accepted-at-acl-2024/</link>
+      <pubDate>Sun, 11 Aug 2024 13:00:00 +0300</pubDate>
+      <guid>https://fdalvi.github.io/blog/2024-08-11-paper-accepted-at-acl-2024/</guid>
+      <description>&lt;p&gt;Excited to share that our paper &lt;a href=&#34;https://aclanthology.org/2024.acl-long.344&#34;&gt;Exploring Alignment in Shared Cross-lingual Spaces&lt;/a&gt; has been accepted at &lt;a href=&#34;https://2024.aclweb.org/&#34;&gt;ACL 2024&lt;/a&gt;. This paper aims to build a better understanding of how Multilingual Models align different languages internally in their representation space. Multilingual language models like mBERT, XLM-R, and mT5 are trained on dozens of languages, but we don&amp;rsquo;t really know how aligned the representations are across languages inside the model. Do they share a common conceptual space, or does each language occupy its own corner?&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

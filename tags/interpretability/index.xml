@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Interpretability on Fahim Dalvi</title>
+    <link>https://fdalvi.github.io/tags/interpretability/</link>
+    <description>Recent content in Interpretability on Fahim Dalvi</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 12 Nov 2024 13:00:00 +0300</lastBuildDate>
+    <atom:link href="https://fdalvi.github.io/tags/interpretability/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Paper Accepted at EMNLP 2024</title>
+      <link>https://fdalvi.github.io/blog/2024-11-12-paper-accepted-at-emnlp-2024/</link>
+      <pubDate>Tue, 12 Nov 2024 13:00:00 +0300</pubDate>
+      <guid>https://fdalvi.github.io/blog/2024-11-12-paper-accepted-at-emnlp-2024/</guid>
+      <description>&lt;p&gt;Pleased to share that our paper, &lt;a href=&#34;https://aclanthology.org/2024.emnlp-main.692&#34;&gt;Latent Concept-based Explanation of NLP Models&lt;/a&gt;, has been accepted at EMNLP 2024!&lt;/p&gt;&#xA;&lt;p&gt;This paper continues our series of work on interpretability. We introduce a method called &lt;strong&gt;LACOAT&lt;/strong&gt; (Latent Concept Attribution) that connects predictions with latent concepts present in a model&amp;rsquo;s representation. Hence, we move beyond attribution to individual tokens in the input to a more holistic concept.&lt;/p&gt;&#xA;&lt;p&gt;The code is available on &lt;a href=&#34;https://github.com/xuemin-yu/eraser_movie_latentConcept&#34;&gt;GitHub&lt;/a&gt;. Congratulations to Xuemin, Nadir, Marzia, and Hassan on this work!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

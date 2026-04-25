@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Natural-Language-Processing on Fahim Dalvi</title>
+    <link>https://fdalvi.github.io/tags/natural-language-processing/</link>
+    <description>Recent content in Natural-Language-Processing on Fahim Dalvi</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 12 Nov 2024 13:00:00 +0300</lastBuildDate>
+    <atom:link href="https://fdalvi.github.io/tags/natural-language-processing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Paper Accepted at EMNLP 2024</title>
+      <link>https://fdalvi.github.io/blog/2024-11-12-paper-accepted-at-emnlp-2024/</link>
+      <pubDate>Tue, 12 Nov 2024 13:00:00 +0300</pubDate>
+      <guid>https://fdalvi.github.io/blog/2024-11-12-paper-accepted-at-emnlp-2024/</guid>
+      <description>&lt;p&gt;Pleased to share that our paper, &lt;a href=&#34;https://aclanthology.org/2024.emnlp-main.692&#34;&gt;Latent Concept-based Explanation of NLP Models&lt;/a&gt;, has been accepted at EMNLP 2024!&lt;/p&gt;&#xA;&lt;p&gt;This paper continues our series of work on interpretability. We introduce a method called &lt;strong&gt;LACOAT&lt;/strong&gt; (Latent Concept Attribution) that connects predictions with latent concepts present in a model&amp;rsquo;s representation. Hence, we move beyond attribution to individual tokens in the input to a more holistic concept.&lt;/p&gt;&#xA;&lt;p&gt;The code is available on &lt;a href=&#34;https://github.com/xuemin-yu/eraser_movie_latentConcept&#34;&gt;GitHub&lt;/a&gt;. Congratulations to Xuemin, Nadir, Marzia, and Hassan on this work!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Paper Accepted at ACL 2024</title>
+      <link>https://fdalvi.github.io/blog/2024-08-11-paper-accepted-at-acl-2024/</link>
+      <pubDate>Sun, 11 Aug 2024 13:00:00 +0300</pubDate>
+      <guid>https://fdalvi.github.io/blog/2024-08-11-paper-accepted-at-acl-2024/</guid>
+      <description>&lt;p&gt;Excited to share that our paper &lt;a href=&#34;https://aclanthology.org/2024.acl-long.344&#34;&gt;Exploring Alignment in Shared Cross-lingual Spaces&lt;/a&gt; has been accepted at &lt;a href=&#34;https://2024.aclweb.org/&#34;&gt;ACL 2024&lt;/a&gt;. This paper aims to build a better understanding of how Multilingual Models align different languages internally in their representation space. Multilingual language models like mBERT, XLM-R, and mT5 are trained on dozens of languages, but we don&amp;rsquo;t really know how aligned the representations are across languages inside the model. Do they share a common conceptual space, or does each language occupy its own corner?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Three Papers Accepted at EACL 2024</title>
+      <link>https://fdalvi.github.io/blog/2024-03-17-three-papers-accepted-at-eacl-2024/</link>
+      <pubDate>Sun, 17 Mar 2024 13:00:00 +0300</pubDate>
+      <guid>https://fdalvi.github.io/blog/2024-03-17-three-papers-accepted-at-eacl-2024/</guid>
+      <description>&lt;p&gt;We&amp;rsquo;re thrilled to share that three papers have been accepted at &lt;a href=&#34;https://2024.eacl.org&#34;&gt;EACL 2024&lt;/a&gt;, Here&amp;rsquo;s a quick peek at what each paper explores.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;LLMeBench: Making LLM Evaluation Easier&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Large language models are being used for an ever-wider range of tasks and languages, but evaluating them across different setups can be surprisingly cumbersome. Our team built &lt;a href=&#34;https://github.com/qcri/LLMeBench/&#34;&gt;LLMeBench&lt;/a&gt;, a flexible framework that lets you evaluate LLMs on any NLP task in just a few lines of code. It comes with ready-made dataset loaders, supports multiple model providers (including local models, OpenAI API compatible hosted ones), and handles most standard evaluation metrics out of the box. Whether you want to test zero-shot or few-shot learning, it&amp;rsquo;s all supported. We put it through its paces across 31 unique NLP tasks, 53 datasets, and roughly 296K data points. The framework is open source and ready for the community to use. You can watch a demo &lt;a href=&#34;https://youtu.be/9cC2m_abk3A&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
