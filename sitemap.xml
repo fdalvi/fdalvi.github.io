@@ -14,6 +14,76 @@
       <loc>https://fdalvi.github.io/research/</loc>
     </url>
       <url>
+        <loc>https://fdalvi.github.io/research/2026-03-arXiv-Fanar-2.0/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2025-11-EMNLP-model-diffing/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2025-11-EMNLP-model-diffing/poster.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2025-11-EMNLP-knowledge-editing-survey/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2025-11-EMNLP-knowledge-editing-survey/poster.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2025-11-ArabicNLP-exploration-knowledge-editing/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2025-11-ArabicNLP-exploration-knowledge-editing/poster.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2025-08-Interspeech-from-words-to-waves/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2025-01-COLING-AraDiCE/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2025-01-arXiv-Fanar/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2024-11-EMNLP-Latent-concept-based-explanations/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2024-11-EMNLP-Latent-concept-based-explanations/poster.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2024-08-ACL-exploring-alignment/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2024-08-ACL-exploring-alignment/poster.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
         <loc>https://fdalvi.github.io/research/2024-03-EACL-LLMeBench/paper.pdf</loc>
         <priority>0.4</priority>
       </url>
