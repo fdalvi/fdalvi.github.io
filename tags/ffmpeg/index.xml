@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>ffmpeg on Fahim Dalvi</title>
+    <title>Ffmpeg on Fahim Dalvi</title>
     <link>https://fdalvi.github.io/tags/ffmpeg/</link>
-    <description>Recent content in ffmpeg on Fahim Dalvi</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Ffmpeg on Fahim Dalvi</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 01 Sep 2018 12:00:00 +0300</lastBuildDate><atom:link href="https://fdalvi.github.io/tags/ffmpeg/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Sep 2018 12:00:00 +0300</lastBuildDate>
+    <atom:link href="https://fdalvi.github.io/tags/ffmpeg/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Creating Video Screencaps using FFMPEG and ImageMagick</title>
       <link>https://fdalvi.github.io/blog/2018-09-01-creating-video-screencaps/</link>
       <pubDate>Sat, 01 Sep 2018 12:00:00 +0300</pubDate>
-      
       <guid>https://fdalvi.github.io/blog/2018-09-01-creating-video-screencaps/</guid>
-      <description>I recently wanted to create screencaps for a large set of videos of various lengths and resolutions - basically screenshot each video 5 times, and then combine these 5 screencaps all into one nice image per video, with all of the images being of consistent size.
-Sample render from a seaplane ride over Vancouver
-There are a bunch of tools available online that I can either install locally, or upload my video files to get similar results - but given that this was easily achievable using simple tools like ffmpeg and imagemagick, I decided to whip up a quick script to accomplish this.</description>
+      <description>&lt;p&gt;I recently wanted to create screencaps for a large set of videos of various lengths and resolutions - basically screenshot each video 5 times, and then combine these 5 screencaps all into one nice image per video, with all of the images being of consistent size.&lt;/p&gt;&#xA;&lt;div class=&#39;align-center&#39;&gt;&#xA;  &lt;figure&gt;&lt;img src=&#34;https://github.com/fdalvi/video-screencaps/blob/master/docs/sample%20-%20500px.jpg?raw=true&#34;&#xA;      alt=&#34;Sample render from a seaplane ride over Vancouver&#34;&gt;&lt;figcaption&gt;&#xA;        &lt;p&gt;Sample render from a seaplane ride over Vancouver&lt;/p&gt;&#xA;      &lt;/figcaption&gt;&#xA;  &lt;/figure&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;There are a bunch of tools available online that I can either install locally, or upload my video files to get similar results - but given that this was easily achievable using simple tools like &lt;code&gt;ffmpeg&lt;/code&gt; and &lt;code&gt;imagemagick&lt;/code&gt;, I decided to whip up a quick script to accomplish this. The script is accessible &lt;a href=&#34;https://github.com/fdalvi/video-screencaps/blob/master/create_screenshots.sh&#34;&gt;here&lt;/a&gt;, and here is a quick walk through so that you can modify it to suit your needs:&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

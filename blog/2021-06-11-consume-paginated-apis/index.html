@@ -4,18 +4,32 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <meta name='description' content='Several providers adopt a notion of pagination in their API&rsquo;s when the number of results from a query is large. This is common to see when the API provides a list of things, like users, billing statements, posts and so on.
 A pattern that is adopted by several providers works as follows:
-Developer makes a request to provider (e.g. for the billing statements) The API returns a &ldquo;page&rdquo; with say 10 statements, and a link to the next page Developer makes a request to the provided link The API returns another &ldquo;page&rdquo; with statements, and no link Seeing no link, the developer now knows that all the required entries have been fetched The number of pages can be dynamic, so the developer needs to keep following the links until they exist if they want to fetch all the results.'>
+
+Developer makes a request to provider (e.g. for the billing statements)
+The API returns a &ldquo;page&rdquo; with say 10 statements, and a link to the next page
+Developer makes a request to the provided link
+The API returns another &ldquo;page&rdquo; with statements, and no link
+Seeing no link, the developer now knows that all the required entries have been fetched
+
+The number of pages can be dynamic, so the developer needs to keep following the links until they exist if they want to fetch all the results. The code to do this manually can get quite convoluted, with many custom solutions requiring some sort of queue. An easier solution is to use the excellent async library, which works both in the browser and in NodeJS.'>
 <meta name='theme-color' content='#ffcd00'>
 
 <meta property='og:title' content='Consuming Paginated API&#39;s in Javascript • Fahim Dalvi'>
 <meta property='og:description' content='Several providers adopt a notion of pagination in their API&rsquo;s when the number of results from a query is large. This is common to see when the API provides a list of things, like users, billing statements, posts and so on.
 A pattern that is adopted by several providers works as follows:
-Developer makes a request to provider (e.g. for the billing statements) The API returns a &ldquo;page&rdquo; with say 10 statements, and a link to the next page Developer makes a request to the provided link The API returns another &ldquo;page&rdquo; with statements, and no link Seeing no link, the developer now knows that all the required entries have been fetched The number of pages can be dynamic, so the developer needs to keep following the links until they exist if they want to fetch all the results.'>
+
+Developer makes a request to provider (e.g. for the billing statements)
+The API returns a &ldquo;page&rdquo; with say 10 statements, and a link to the next page
+Developer makes a request to the provided link
+The API returns another &ldquo;page&rdquo; with statements, and no link
+Seeing no link, the developer now knows that all the required entries have been fetched
+
+The number of pages can be dynamic, so the developer needs to keep following the links until they exist if they want to fetch all the results. The code to do this manually can get quite convoluted, with many custom solutions requiring some sort of queue. An easier solution is to use the excellent async library, which works both in the browser and in NodeJS.'>
 <meta property='og:url' content='https://fdalvi.github.io/blog/2021-06-11-consume-paginated-apis/'>
 <meta property='og:site_name' content='Fahim Dalvi'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/6c9adb6a0501da300bcdc582ade1e58d?s=256'><meta property='article:section' content='blog'><meta property='article:tag' content='javascript'><meta property='article:tag' content='api'><meta property='article:tag' content='nodejs'><meta property='article:tag' content='async'><meta property='article:tag' content='paginations'><meta property='article:tag' content='browser'><meta property='article:published_time' content='2021-06-11T12:00:00&#43;03:00'/><meta property='article:modified_time' content='2021-06-11T12:00:00&#43;03:00'/><meta name='twitter:card' content='summary'>
 
-<meta name="generator" content="Hugo 0.118.2">
+<meta name="generator" content="Hugo 0.160.1">
 
   <title>Consuming Paginated API&#39;s in Javascript • Fahim Dalvi</title>
   <link rel='canonical' href='https://fdalvi.github.io/blog/2021-06-11-consume-paginated-apis/'>
@@ -31,22 +45,10 @@ Developer makes a request to provider (e.g. for the billing statements) The API 
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
-<link rel='stylesheet' href='/assets/css/main.ab98e12b.css'><link rel='stylesheet' href='/css/custom.css'><style>
+<link rel='stylesheet' href='/assets/css/main.e45c9137.css'><link rel='stylesheet' href='/css/custom.css'><style>
 :root{--color-accent:#ffcd00;}
 </style>
 
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-	ga('create', 'UA-19417017-2', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
   
 
 </head>
@@ -158,18 +160,18 @@ if (!doNotTrack) {
 </ol>
 <p>The number of pages can be dynamic, so the developer needs to keep following the links until they exist if they want to fetch all the results. The code to do this manually can get quite convoluted, with many custom solutions requiring some sort of queue. An easier solution is to use the excellent <a href="https://caolan.github.io/async/v3/">async</a> library, which works both in the browser and in NodeJS.</p>
 <p>Let us first create a sample API provider that returns paginated results:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">sample_paginated_api</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">query</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">sample_paginated_api</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">query</span>)
 </span></span><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Promise(<span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">resolve</span>, <span style="color:#a6e22e">reject</span>) {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">page_number</span> <span style="color:#f92672">=</span> parseInt(<span style="color:#a6e22e">query</span>);
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">page_number</span> <span style="color:#f92672">==</span> <span style="color:#ae81ff">5</span>) {
 </span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Final page
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">resolve</span>({
+</span></span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">resolve</span>({
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;results&#34;</span><span style="color:#f92672">:</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>].<span style="color:#a6e22e">map</span>((<span style="color:#a6e22e">x</span>) =&gt; (<span style="color:#a6e22e">x</span><span style="color:#f92672">*</span><span style="color:#a6e22e">page_number</span>)),
 </span></span><span style="display:flex;"><span>      });
 </span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> {
 </span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Intermediate pages
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">resolve</span>({
+</span></span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">resolve</span>({
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;results&#34;</span><span style="color:#f92672">:</span> [<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>].<span style="color:#a6e22e">map</span>((<span style="color:#a6e22e">x</span>) =&gt; (<span style="color:#a6e22e">x</span><span style="color:#f92672">*</span><span style="color:#a6e22e">page_number</span>)),
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;nextLink&#34;</span><span style="color:#f92672">:</span> (<span style="color:#a6e22e">page_number</span><span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>).<span style="color:#a6e22e">toString</span>()
 </span></span><span style="display:flex;"><span>      });
@@ -177,12 +179,12 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span>  });
 </span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 <p>This little snippet emulates a request to a API provider that returns a Promise, which resolves to the response. The response may contain a <code>nextLink</code> key if there are more pages. For example, Using the API with <code>query</code> as <code>0</code>, we get the following output:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#a6e22e">sample_paginated_api</span>(<span style="color:#e6db74">&#39;0&#39;</span>).<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>) =&gt; <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">res</span>))
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#a6e22e">sample_paginated_api</span>(<span style="color:#e6db74">&#39;0&#39;</span>).<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">res</span>) =&gt; <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">res</span>))
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// Output: { results: [ 0, 0, 0, 0, 0 ], nextLink: &#39;1&#39; }
 </span></span></span></code></pre></div>
 <p>Now let us use the aformentioned <a href="https://caolan.github.io/async/v3/">async</a> library to implement our consumer that can follow the next links until all the pages are exhausted. Specifically, we will use the <a href="https://caolan.github.io/async/v3/docs.html#whilst">async.whilst</a> control flow helper.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#75715e">// Tested in node v14
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">async</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;async&#39;</span>);
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span><span style="color:#75715e">// Tested in node v14
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">async</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;async&#39;</span>);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">all_results</span> <span style="color:#f92672">=</span> []
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">sample_paginated_api</span>(<span style="color:#e6db74">&#39;0&#39;</span>).<span style="color:#a6e22e">then</span>((<span style="color:#a6e22e">results</span>)  =&gt; {
@@ -209,7 +211,7 @@ if (!doNotTrack) {
 <li>The <strong>final callback</strong>: This function is called at the end of all iterations, but only contains the results from the last iteration. Hence, we store the results from all iterations in a global variable <code>all_results</code></li>
 </ol>
 <p>The output of the above snippet is:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span>[
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-JavaScript" data-lang="JavaScript"><span style="display:flex;"><span>[
 </span></span><span style="display:flex;"><span>  { <span style="color:#a6e22e">results</span><span style="color:#f92672">:</span> [ <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span> ], <span style="color:#a6e22e">nextLink</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;1&#39;</span> },
 </span></span><span style="display:flex;"><span>  { <span style="color:#a6e22e">results</span><span style="color:#f92672">:</span> [ <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span> ], <span style="color:#a6e22e">nextLink</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;2&#39;</span> },
 </span></span><span style="display:flex;"><span>  { <span style="color:#a6e22e">results</span><span style="color:#f92672">:</span> [ <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">8</span> ], <span style="color:#a6e22e">nextLink</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;3&#39;</span> },
@@ -233,7 +235,7 @@ if (!doNotTrack) {
   aria-hidden="true"
 ><path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z" />
 </svg>
-<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/techtips/'>techtips</a></div>
+<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/techtips/'>Techtips</a></div>
 <div class='tags'><svg
   class="icon"
   xmlns="http://www.w3.org/2000/svg"
@@ -245,7 +247,7 @@ if (!doNotTrack) {
 ><path d="M20.59,13.41l-7.17,7.17a2,2,0,0,1-2.83,0L2,12V2H12l8.59,8.59A2,2,0,0,1,20.59,13.41Z" />
 <line x1="7" y1="7" x2="7" y2="7" />
 </svg>
-<span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/javascript/'>javascript</a>, <a class='tag' href='/tags/api/'>api</a>, <a class='tag' href='/tags/nodejs/'>nodejs</a>, <a class='tag' href='/tags/async/'>async</a>, <a class='tag' href='/tags/paginations/'>paginations</a>, <a class='tag' href='/tags/browser/'>browser</a></div>
+<span class='screen-reader-text'>Tags: </span><a class='tag' href='/tags/javascript/'>Javascript</a>, <a class='tag' href='/tags/api/'>Api</a>, <a class='tag' href='/tags/nodejs/'>Nodejs</a>, <a class='tag' href='/tags/async/'>Async</a>, <a class='tag' href='/tags/paginations/'>Paginations</a>, <a class='tag' href='/tags/browser/'>Browser</a></div>
 
   </div>
 </footer>
@@ -475,7 +477,7 @@ if (!doNotTrack) {
       </li></ul>
   </nav>
 </section><div class='copyright'>
-  <p> &copy; 2017-2024 Fahim Dalvi. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/MunifTanjim/minimo">Minimo</a></p>
+  <p> &copy; 2017-2026 Fahim Dalvi. Powered by <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/MunifTanjim/minimo">Minimo</a></p>
 </div>
 
         </div>
@@ -484,7 +486,7 @@ if (!doNotTrack) {
     </div>
   </div><script>window.__assets_js_src="/assets/js/"</script>
 
-<script src='/assets/js/main.c3bcf2df.js'></script>
+<script src='/assets/js/main.56dcff95.js'></script>
 
 </body>
 

@@ -4,95 +4,65 @@
     <title>Blog on Fahim Dalvi</title>
     <link>https://fdalvi.github.io/blog/</link>
     <description>Recent content in Blog on Fahim Dalvi</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 11 Jun 2021 12:00:00 +0300</lastBuildDate><atom:link href="https://fdalvi.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Jun 2021 12:00:00 +0300</lastBuildDate>
+    <atom:link href="https://fdalvi.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Consuming Paginated API&#39;s in Javascript</title>
       <link>https://fdalvi.github.io/blog/2021-06-11-consume-paginated-apis/</link>
       <pubDate>Fri, 11 Jun 2021 12:00:00 +0300</pubDate>
-      
       <guid>https://fdalvi.github.io/blog/2021-06-11-consume-paginated-apis/</guid>
-      <description>Several providers adopt a notion of pagination in their API&amp;rsquo;s when the number of results from a query is large. This is common to see when the API provides a list of things, like users, billing statements, posts and so on.
-A pattern that is adopted by several providers works as follows:
-Developer makes a request to provider (e.g. for the billing statements) The API returns a &amp;ldquo;page&amp;rdquo; with say 10 statements, and a link to the next page Developer makes a request to the provided link The API returns another &amp;ldquo;page&amp;rdquo; with statements, and no link Seeing no link, the developer now knows that all the required entries have been fetched The number of pages can be dynamic, so the developer needs to keep following the links until they exist if they want to fetch all the results.</description>
+      <description>&lt;p&gt;Several providers adopt a notion of pagination in their API&amp;rsquo;s when the number of results from a query is large. This is common to see when the API provides a list of &lt;em&gt;things&lt;/em&gt;, like &lt;em&gt;users&lt;/em&gt;, &lt;em&gt;billing statements&lt;/em&gt;, &lt;em&gt;posts&lt;/em&gt; and so on.&lt;/p&gt;&#xA;&lt;p&gt;A pattern that is adopted by several providers works as follows:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Developer makes a request to provider (e.g. for the billing statements)&lt;/li&gt;&#xA;&lt;li&gt;The API returns a &amp;ldquo;page&amp;rdquo; with say 10 statements, and a link to the next page&lt;/li&gt;&#xA;&lt;li&gt;Developer makes a request to the provided link&lt;/li&gt;&#xA;&lt;li&gt;The API returns another &amp;ldquo;page&amp;rdquo; with statements, and no link&lt;/li&gt;&#xA;&lt;li&gt;Seeing no link, the developer now knows that all the required entries have been fetched&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;The number of pages can be dynamic, so the developer needs to keep following the links until they exist if they want to fetch all the results. The code to do this manually can get quite convoluted, with many custom solutions requiring some sort of queue. An easier solution is to use the excellent &lt;a href=&#34;https://caolan.github.io/async/v3/&#34;&gt;async&lt;/a&gt; library, which works both in the browser and in NodeJS.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>COVID19 Vaccine Registration Guide for Qatar</title>
       <link>https://fdalvi.github.io/blog/2021-03-29-covid-vaccine-registration-guide/</link>
       <pubDate>Mon, 29 Mar 2021 12:00:00 +0300</pubDate>
-      
       <guid>https://fdalvi.github.io/blog/2021-03-29-covid-vaccine-registration-guide/</guid>
-      <description>COVID-19 vaccine registration guide in English, Urdu, Tamil, Sinhala and Hindi. More languages coming soon!
-How can I register for the COVID-19 vaccine in Qatar? (English)
-میں قطر میں کووڈ ۱۹ ویکسین کیلیے کیسے رجسٹر کر سکتا ہوں؟ (Urdu)
-நான் எப்படி கத்தாரில் COVID 19 தடுப்பூசி பதிவு செய்யலாம்? (Tamil)
-මම කොහොමද කටාර් COVID-19 එන්නත් සඳහා ලියාපදිංචි විය හැකිය? (Sinhala)
-कतर में COVID-19 के टीके के लिए पंजीकरण कैसे कर सकते हैं?</description>
+      <description>&lt;div class=&#39;align-center&#39;&gt;&#xA;  &lt;blockquote&gt;&#xA;&lt;p&gt;COVID-19 vaccine registration guide in English, Urdu, Tamil, Sinhala and Hindi. More languages coming soon!&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#39;align-center&#39;&gt;&#xA;  &lt;p&gt;&lt;a href=&#34;https://fdalvi.github.io/blog/2021-03-29-covid-vaccine-registration-guide/covid19-vaccine-registration-guide-qatar-english.pdf&#34;&gt;How can I register for the COVID-19 vaccine in Qatar? &lt;strong&gt;(English)&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://fdalvi.github.io/blog/2021-03-29-covid-vaccine-registration-guide/covid19-vaccine-registration-guide-qatar-urdu.pdf&#34;&gt;میں قطر میں کووڈ ۱۹ ویکسین کیلیے کیسے رجسٹر کر سکتا ہوں؟ &lt;strong&gt;(Urdu)&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://fdalvi.github.io/blog/2021-03-29-covid-vaccine-registration-guide/covid19-vaccine-registration-guide-qatar-tamil.pdf&#34;&gt;நான் எப்படி கத்தாரில் COVID 19 தடுப்பூசி பதிவு செய்யலாம்? &lt;strong&gt;(Tamil)&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://fdalvi.github.io/blog/2021-03-29-covid-vaccine-registration-guide/covid19-vaccine-registration-guide-qatar-sinhala.pdf&#34;&gt;මම කොහොමද කටාර් COVID-19 එන්නත් සඳහා ලියාපදිංචි විය හැකිය? &lt;strong&gt;(Sinhala)&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://fdalvi.github.io/blog/2021-03-29-covid-vaccine-registration-guide/covid19-vaccine-registration-guide-qatar-hindi.pdf&#34;&gt;कतर में COVID-19 के टीके के लिए पंजीकरण कैसे कर सकते हैं? &lt;strong&gt;(Hindi)&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Creating Video Screencaps using FFMPEG and ImageMagick</title>
       <link>https://fdalvi.github.io/blog/2018-09-01-creating-video-screencaps/</link>
       <pubDate>Sat, 01 Sep 2018 12:00:00 +0300</pubDate>
-      
       <guid>https://fdalvi.github.io/blog/2018-09-01-creating-video-screencaps/</guid>
-      <description>I recently wanted to create screencaps for a large set of videos of various lengths and resolutions - basically screenshot each video 5 times, and then combine these 5 screencaps all into one nice image per video, with all of the images being of consistent size.
-Sample render from a seaplane ride over Vancouver
-There are a bunch of tools available online that I can either install locally, or upload my video files to get similar results - but given that this was easily achievable using simple tools like ffmpeg and imagemagick, I decided to whip up a quick script to accomplish this.</description>
+      <description>&lt;p&gt;I recently wanted to create screencaps for a large set of videos of various lengths and resolutions - basically screenshot each video 5 times, and then combine these 5 screencaps all into one nice image per video, with all of the images being of consistent size.&lt;/p&gt;&#xA;&lt;div class=&#39;align-center&#39;&gt;&#xA;  &lt;figure&gt;&lt;img src=&#34;https://github.com/fdalvi/video-screencaps/blob/master/docs/sample%20-%20500px.jpg?raw=true&#34;&#xA;      alt=&#34;Sample render from a seaplane ride over Vancouver&#34;&gt;&lt;figcaption&gt;&#xA;        &lt;p&gt;Sample render from a seaplane ride over Vancouver&lt;/p&gt;&#xA;      &lt;/figcaption&gt;&#xA;  &lt;/figure&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;There are a bunch of tools available online that I can either install locally, or upload my video files to get similar results - but given that this was easily achievable using simple tools like &lt;code&gt;ffmpeg&lt;/code&gt; and &lt;code&gt;imagemagick&lt;/code&gt;, I decided to whip up a quick script to accomplish this. The script is accessible &lt;a href=&#34;https://github.com/fdalvi/video-screencaps/blob/master/create_screenshots.sh&#34;&gt;here&lt;/a&gt;, and here is a quick walk through so that you can modify it to suit your needs:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Introducing GroupMe Archiver</title>
       <link>https://fdalvi.github.io/blog/2018-08-20-introducing-groupme-archiver/</link>
       <pubDate>Mon, 20 Aug 2018 16:00:00 +0300</pubDate>
-      
       <guid>https://fdalvi.github.io/blog/2018-08-20-introducing-groupme-archiver/</guid>
-      <description>I was recently looking into various ways of archiving old chats into something more future proof, but it seems like these tools are very limited. They either don&amp;rsquo;t exist, or only work for specific scenarios like one-on-one chats without attachments.
-Today, the situation gets a bit better for one platform, GroupMe. GroupMe is a platform focused on group messaging, and features nice subtle features like likes per message, attachments and so on.</description>
+      <description>&lt;p&gt;I was recently looking into various ways of archiving old chats into something more future proof, but it seems like these tools are very limited. They either don&amp;rsquo;t exist, or only work for specific scenarios like one-on-one chats without attachments.&lt;/p&gt;&#xA;&lt;p&gt;Today, the situation gets a bit better for one platform, &lt;a href=&#34;https://www.groupme.com&#34;&gt;GroupMe&lt;/a&gt;. GroupMe is a platform focused on group messaging, and features nice subtle features like &lt;em&gt;likes per message&lt;/em&gt;, attachments and so on. They also provide an awesome dev REST API - so it was very easy to pull historical data. The result is &lt;a href=&#34;https://github.com/fdalvi/groupme-archiver&#34;&gt;hosted on GitHub&lt;/a&gt; - scripts to archive any chat on GroupMe, along with its metadata like group and user avatars, mentions, likes and attachments.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Deep Learning for NLP Crash Course @ Uni Duisburg-Essen</title>
       <link>https://fdalvi.github.io/blog/2018-04-15-dl4nlp-duisburg/</link>
       <pubDate>Sun, 15 Apr 2018 19:00:00 +0300</pubDate>
-      
       <guid>https://fdalvi.github.io/blog/2018-04-15-dl4nlp-duisburg/</guid>
-      <description>Hassan Sajjad and I just had a great time delivering a 5-day crash course at the Universität Duisburg-Essen. It was delivered roughly over 18 hours - with quite a lot of practical exercises! Check out the course materials.
-Duisburg was a nice and calm place, with a döner restaurant ready to greet you almost around every corner. The Königstraße was super-lively with a lot of pop-up shops and restaurants, and was quite a fun walk in the afternoon.</description>
+      <description>&lt;p&gt;Hassan Sajjad and I just had a great time delivering a 5-day crash course at the Universität Duisburg-Essen. It was delivered roughly over 18 hours - with quite a lot of practical exercises! Check out the &lt;a href=&#34;https://fdalvi.github.io/teaching/2018-dl4nlp-duisburg&#34;&gt;course materials&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Duisburg was a nice and calm place, with a döner restaurant ready to greet you almost around every corner. The Königstraße was super-lively with a lot of pop-up shops and restaurants, and was quite a fun walk in the afternoon.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>One-Hot layer in Keras&#39;s Sequential API</title>
       <link>https://fdalvi.github.io/blog/2018-04-07-keras-sequential-onehot/</link>
       <pubDate>Sat, 07 Apr 2018 20:00:00 +0300</pubDate>
-      
       <guid>https://fdalvi.github.io/blog/2018-04-07-keras-sequential-onehot/</guid>
-      <description>It is quite common to use a One-Hot representation for categorical data in machine learning, for example textual instances in Natural Language Processing tasks. In Keras, the Embedding layer automatically takes inputs with the category indices (such as [5, 3, 1, 5]) and converts them into dense vectors of some length (e.g. 5 → [0.2 1.7 3.2 -7.6 ...]). What actually happens internally is that 5 gets converted to a one-hot vector (like [0 0 0 0 0 1 0 0 .</description>
+      <description>&lt;p&gt;It is quite common to use a &lt;a href=&#34;https://en.wikipedia.org/wiki/One-hot&#34;&gt;One-Hot&lt;/a&gt; representation for categorical data in machine learning, for example textual instances in Natural Language Processing tasks. In Keras, the &lt;a href=&#34;https://keras.io/layers/embeddings/&#34;&gt;Embedding&lt;/a&gt; layer automatically takes inputs with the category indices (such as &lt;code&gt;[5, 3, 1, 5]&lt;/code&gt;) and converts them into dense vectors of some length (e.g. &lt;code&gt;5&lt;/code&gt; → &lt;code&gt;[0.2 1.7 3.2 -7.6 ...]&lt;/code&gt;). What actually happens internally is that &lt;code&gt;5&lt;/code&gt; gets converted to a one-hot vector (like &lt;code&gt;[0 0 0 0 0 1 0 0 ... 0]&lt;/code&gt; of length equal to the vocabulary size), and is then multiplied by a normal weight matrix (such as a Dense layer), essentially picking the &lt;code&gt;5th&lt;/code&gt; indexed row from the weight matrix. However, there is no way in Keras to just get a one-hot vector as the output of a layer &lt;a href=&#34;https://github.com/keras-team/keras/issues/4838&#34;&gt;[1]&lt;/a&gt; &lt;a href=&#34;https://github.com/keras-team/keras/issues/3680&#34;&gt;[2]&lt;/a&gt;. The default proposed solution is to use a Lambda layer as follows: &lt;code&gt;Lambda(K.one_hot)&lt;/code&gt;, but this has a few caveats - the biggest one being that the input to &lt;code&gt;K.one_hot&lt;/code&gt; must be an integer tensor, but by default Keras passes around float tensors.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Speech Translation at ALT wins the Best Innovation Award</title>
       <link>https://fdalvi.github.io/blog/2018-03-21-arc-best-innovation-award/</link>
       <pubDate>Wed, 21 Mar 2018 14:00:00 +0300</pubDate>
-      
       <guid>https://fdalvi.github.io/blog/2018-03-21-arc-best-innovation-award/</guid>
-      <description>One of our projects in the Arabic Language Team at the Qatar Computing Research Institute is the Speech Translation Project - a real-time low-latency system where a speaker&amp;rsquo;s voice is transcribed and translated (both in Arabic or English). Check out the project here.
-This project was recently awarded the Best Innovation Award at the annual Qatar Foundation Annual Research Conference! It was been a long effort to take our state-of-the-art research in Speech Recognition and Machine Translation and bring it all together in one system.</description>
+      <description>&lt;p&gt;One of our projects in the Arabic Language Team at the Qatar Computing Research Institute is the &lt;em&gt;Speech Translation&lt;/em&gt; Project - a real-time low-latency system where a speaker&amp;rsquo;s voice is transcribed and translated (both in Arabic or English). Check out the project &lt;a href=&#34;https://fdalvi.github.io/projects/live-speech-translation/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;This project was recently awarded the &lt;strong&gt;Best Innovation Award&lt;/strong&gt; at the annual &lt;a href=&#34;https://www.qf-arc.org&#34;&gt;Qatar Foundation Annual Research Conference&lt;/a&gt;! It was been a long effort to take our state-of-the-art research in Speech Recognition and Machine Translation and bring it all together in one system. Check out the video below on QCRI&amp;rsquo;s official facebook page to get a glipmse of the project:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Network throttling in Puppeteer</title>
       <link>https://fdalvi.github.io/blog/2018-02-05-puppeteer-network-throttle/</link>
       <pubDate>Mon, 05 Feb 2018 22:00:00 +0300</pubDate>
-      
       <guid>https://fdalvi.github.io/blog/2018-02-05-puppeteer-network-throttle/</guid>
-      <description>Puppeteer is an awesome way to run Chrome (or Chromium) in headless mode, i.e. load and interact with web pages without ever visually seeing them.
-Why would this be useful?
-A headless browser is a great way to automate testing, even on remote server machines!
-Puppeteer provides a nice interface through Node to script any interactions you can have with a page, like entering input in a textbox, clicking a button and so on.</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/GoogleChrome/puppeteer&#34;&gt;Puppeteer&lt;/a&gt; is an awesome way to run Chrome (or Chromium) in &lt;em&gt;headless&lt;/em&gt; mode, i.e. load and interact with web pages without ever visually seeing them.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Why would this be useful?&lt;br&gt;&#xA;A headless browser is a great way to automate testing, even on remote server machines!&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Puppeteer provides a nice interface through &lt;a href=&#34;https://nodejs.org/en/&#34;&gt;Node&lt;/a&gt; to script any interactions you can have with a page, like entering input in a textbox, clicking a button and so on. It also allows you grab screenshots or convert web pages into PDFs.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

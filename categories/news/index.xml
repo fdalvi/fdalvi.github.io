@@ -1,31 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>news on Fahim Dalvi</title>
+    <title>News on Fahim Dalvi</title>
     <link>https://fdalvi.github.io/categories/news/</link>
-    <description>Recent content in news on Fahim Dalvi</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in News on Fahim Dalvi</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 15 Apr 2018 19:00:00 +0300</lastBuildDate><atom:link href="https://fdalvi.github.io/categories/news/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 15 Apr 2018 19:00:00 +0300</lastBuildDate>
+    <atom:link href="https://fdalvi.github.io/categories/news/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deep Learning for NLP Crash Course @ Uni Duisburg-Essen</title>
       <link>https://fdalvi.github.io/blog/2018-04-15-dl4nlp-duisburg/</link>
       <pubDate>Sun, 15 Apr 2018 19:00:00 +0300</pubDate>
-      
       <guid>https://fdalvi.github.io/blog/2018-04-15-dl4nlp-duisburg/</guid>
-      <description>Hassan Sajjad and I just had a great time delivering a 5-day crash course at the Universität Duisburg-Essen. It was delivered roughly over 18 hours - with quite a lot of practical exercises! Check out the course materials.
-Duisburg was a nice and calm place, with a döner restaurant ready to greet you almost around every corner. The Königstraße was super-lively with a lot of pop-up shops and restaurants, and was quite a fun walk in the afternoon.</description>
+      <description>&lt;p&gt;Hassan Sajjad and I just had a great time delivering a 5-day crash course at the Universität Duisburg-Essen. It was delivered roughly over 18 hours - with quite a lot of practical exercises! Check out the &lt;a href=&#34;https://fdalvi.github.io/teaching/2018-dl4nlp-duisburg&#34;&gt;course materials&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Duisburg was a nice and calm place, with a döner restaurant ready to greet you almost around every corner. The Königstraße was super-lively with a lot of pop-up shops and restaurants, and was quite a fun walk in the afternoon.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Speech Translation at ALT wins the Best Innovation Award</title>
       <link>https://fdalvi.github.io/blog/2018-03-21-arc-best-innovation-award/</link>
       <pubDate>Wed, 21 Mar 2018 14:00:00 +0300</pubDate>
-      
       <guid>https://fdalvi.github.io/blog/2018-03-21-arc-best-innovation-award/</guid>
-      <description>One of our projects in the Arabic Language Team at the Qatar Computing Research Institute is the Speech Translation Project - a real-time low-latency system where a speaker&amp;rsquo;s voice is transcribed and translated (both in Arabic or English). Check out the project here.
-This project was recently awarded the Best Innovation Award at the annual Qatar Foundation Annual Research Conference! It was been a long effort to take our state-of-the-art research in Speech Recognition and Machine Translation and bring it all together in one system.</description>
+      <description>&lt;p&gt;One of our projects in the Arabic Language Team at the Qatar Computing Research Institute is the &lt;em&gt;Speech Translation&lt;/em&gt; Project - a real-time low-latency system where a speaker&amp;rsquo;s voice is transcribed and translated (both in Arabic or English). Check out the project &lt;a href=&#34;https://fdalvi.github.io/projects/live-speech-translation/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;This project was recently awarded the &lt;strong&gt;Best Innovation Award&lt;/strong&gt; at the annual &lt;a href=&#34;https://www.qf-arc.org&#34;&gt;Qatar Foundation Annual Research Conference&lt;/a&gt;! It was been a long effort to take our state-of-the-art research in Speech Recognition and Machine Translation and bring it all together in one system. Check out the video below on QCRI&amp;rsquo;s official facebook page to get a glipmse of the project:&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

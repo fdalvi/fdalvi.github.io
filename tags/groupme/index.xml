@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>groupme on Fahim Dalvi</title>
+    <title>Groupme on Fahim Dalvi</title>
     <link>https://fdalvi.github.io/tags/groupme/</link>
-    <description>Recent content in groupme on Fahim Dalvi</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Groupme on Fahim Dalvi</description>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 20 Aug 2018 16:00:00 +0300</lastBuildDate><atom:link href="https://fdalvi.github.io/tags/groupme/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Aug 2018 16:00:00 +0300</lastBuildDate>
+    <atom:link href="https://fdalvi.github.io/tags/groupme/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introducing GroupMe Archiver</title>
       <link>https://fdalvi.github.io/blog/2018-08-20-introducing-groupme-archiver/</link>
       <pubDate>Mon, 20 Aug 2018 16:00:00 +0300</pubDate>
-      
       <guid>https://fdalvi.github.io/blog/2018-08-20-introducing-groupme-archiver/</guid>
-      <description>I was recently looking into various ways of archiving old chats into something more future proof, but it seems like these tools are very limited. They either don&amp;rsquo;t exist, or only work for specific scenarios like one-on-one chats without attachments.
-Today, the situation gets a bit better for one platform, GroupMe. GroupMe is a platform focused on group messaging, and features nice subtle features like likes per message, attachments and so on.</description>
+      <description>&lt;p&gt;I was recently looking into various ways of archiving old chats into something more future proof, but it seems like these tools are very limited. They either don&amp;rsquo;t exist, or only work for specific scenarios like one-on-one chats without attachments.&lt;/p&gt;&#xA;&lt;p&gt;Today, the situation gets a bit better for one platform, &lt;a href=&#34;https://www.groupme.com&#34;&gt;GroupMe&lt;/a&gt;. GroupMe is a platform focused on group messaging, and features nice subtle features like &lt;em&gt;likes per message&lt;/em&gt;, attachments and so on. They also provide an awesome dev REST API - so it was very easy to pull historical data. The result is &lt;a href=&#34;https://github.com/fdalvi/groupme-archiver&#34;&gt;hosted on GitHub&lt;/a&gt; - scripts to archive any chat on GroupMe, along with its metadata like group and user avatars, mentions, likes and attachments.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

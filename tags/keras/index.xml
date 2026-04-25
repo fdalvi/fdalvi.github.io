@@ -4,17 +4,16 @@
     <title>Keras on Fahim Dalvi</title>
     <link>https://fdalvi.github.io/tags/keras/</link>
     <description>Recent content in Keras on Fahim Dalvi</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 07 Apr 2018 20:00:00 +0300</lastBuildDate><atom:link href="https://fdalvi.github.io/tags/keras/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Apr 2018 20:00:00 +0300</lastBuildDate>
+    <atom:link href="https://fdalvi.github.io/tags/keras/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>One-Hot layer in Keras&#39;s Sequential API</title>
       <link>https://fdalvi.github.io/blog/2018-04-07-keras-sequential-onehot/</link>
       <pubDate>Sat, 07 Apr 2018 20:00:00 +0300</pubDate>
-      
       <guid>https://fdalvi.github.io/blog/2018-04-07-keras-sequential-onehot/</guid>
-      <description>It is quite common to use a One-Hot representation for categorical data in machine learning, for example textual instances in Natural Language Processing tasks. In Keras, the Embedding layer automatically takes inputs with the category indices (such as [5, 3, 1, 5]) and converts them into dense vectors of some length (e.g. 5 → [0.2 1.7 3.2 -7.6 ...]). What actually happens internally is that 5 gets converted to a one-hot vector (like [0 0 0 0 0 1 0 0 .</description>
+      <description>&lt;p&gt;It is quite common to use a &lt;a href=&#34;https://en.wikipedia.org/wiki/One-hot&#34;&gt;One-Hot&lt;/a&gt; representation for categorical data in machine learning, for example textual instances in Natural Language Processing tasks. In Keras, the &lt;a href=&#34;https://keras.io/layers/embeddings/&#34;&gt;Embedding&lt;/a&gt; layer automatically takes inputs with the category indices (such as &lt;code&gt;[5, 3, 1, 5]&lt;/code&gt;) and converts them into dense vectors of some length (e.g. &lt;code&gt;5&lt;/code&gt; → &lt;code&gt;[0.2 1.7 3.2 -7.6 ...]&lt;/code&gt;). What actually happens internally is that &lt;code&gt;5&lt;/code&gt; gets converted to a one-hot vector (like &lt;code&gt;[0 0 0 0 0 1 0 0 ... 0]&lt;/code&gt; of length equal to the vocabulary size), and is then multiplied by a normal weight matrix (such as a Dense layer), essentially picking the &lt;code&gt;5th&lt;/code&gt; indexed row from the weight matrix. However, there is no way in Keras to just get a one-hot vector as the output of a layer &lt;a href=&#34;https://github.com/keras-team/keras/issues/4838&#34;&gt;[1]&lt;/a&gt; &lt;a href=&#34;https://github.com/keras-team/keras/issues/3680&#34;&gt;[2]&lt;/a&gt;. The default proposed solution is to use a Lambda layer as follows: &lt;code&gt;Lambda(K.one_hot)&lt;/code&gt;, but this has a few caveats - the biggest one being that the input to &lt;code&gt;K.one_hot&lt;/code&gt; must be an integer tensor, but by default Keras passes around float tensors.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
