@@ -348,3 +348,7 @@
 	margin-top: 10px;
 	font-size: 1em;
 }
+
+.menu li.current > a {
+  pointer-events: auto;
+}
