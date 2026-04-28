@@ -1,12 +1,12 @@
 .profile_photo {
-	width: 50%;
+	width: 75%;
 	/*height: 50%;*/
 	border-radius: 10px;
 }
 
 @media only screen and (min-width: 768px) {
 	.profile_photo {
-		width: 30%;
+		width: 75%;
 		/*height: 10vw;*/
 		border-radius: 10px;
 	}
@@ -351,4 +351,118 @@
 
 .menu li.current > a {
   pointer-events: auto;
+}
+
+/************************ Carousel ************************/
+.profile-carousel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+	max-width: 740px;
+	margin: 0 auto;
+}
+
+.carousel-photo-row {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.carousel-slides {
+	position: relative;
+	width: 280px;
+	display: flex;
+	justify-content: center;
+}
+
+.carousel-slide {
+	display: none;
+}
+
+.carousel-slide.active {
+	display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.carousel-slide img {
+	display: block;
+	transition: opacity 0.4s ease;
+}
+
+.carousel-description {
+	text-align: left;
+	width: 100%;
+	max-width: 740px;
+}
+
+.carousel-desc-slide {
+	display: none;
+}
+
+.carousel-desc-slide.active {
+	display: block;
+}
+
+.carousel-description p {
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+
+.carousel-description p:last-child {
+	margin-bottom: 0;
+}
+
+.carousel-arrow {
+	display: none;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: none;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+	width: 44px;
+	height: 44px;
+	font-size: 1.2rem;
+	color: #666;
+	cursor: pointer;
+	padding: 0;
+	line-height: 42px;
+	text-align: center;
+	z-index: 1;
+	transition: transform 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.carousel-arrow:hover {
+	color: #111;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+	transform: translateY(-50%) scale(1.05);
+}
+
+.carousel-photo-row:hover .carousel-arrow:not(.disabled) {
+	display: block;
+}
+
+.carousel-arrow-left {
+	left: -2rem;
+}
+
+.carousel-arrow-right {
+	right: -2rem;
+}
+
+@media only screen and (max-width: 768px) {
+	.carousel-slides {
+		width: 200px;
+	}
+
+	.carousel-arrow-left {
+		left: -0.5rem;
+	}
+
+	.carousel-arrow-right {
+		right: -0.5rem;
+	}
 }
