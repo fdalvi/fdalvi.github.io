@@ -370,40 +370,71 @@
 	justify-content: center;
 }
 
+.carousel-photo-row::before,
+.carousel-photo-row::after {
+	content: '';
+	position: absolute;
+	top: -6rem;
+	width: 4rem;
+	height: calc(100% + 12rem);
+}
+
+.carousel-photo-row::before {
+	left: -2rem;
+}
+
+.carousel-photo-row::after {
+	right: -2rem;
+}
+
 .carousel-slides {
 	position: relative;
 	width: 280px;
+	height: 210px;
 	display: flex;
 	justify-content: center;
 }
 
 .carousel-slide {
-	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.4s ease;
+	pointer-events: none;
 }
 
 .carousel-slide.active {
-	display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.carousel-slide img {
-	display: block;
-	transition: opacity 0.4s ease;
+	opacity: 1;
+	pointer-events: auto;
 }
 
 .carousel-description {
+	position: relative;
 	text-align: left;
 	width: 100%;
 	max-width: 740px;
 }
 
 .carousel-desc-slide {
-	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(10px);
+	transition: opacity 0.4s ease, transform 0.4s ease;
+	white-space: pre-wrap;
 }
 
 .carousel-desc-slide.active {
-	display: block;
+	position: relative;
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0);
 }
 
 .carousel-description p {
@@ -416,7 +447,6 @@
 }
 
 .carousel-arrow {
-	display: none;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -432,17 +462,32 @@
 	line-height: 42px;
 	text-align: center;
 	z-index: 1;
-	transition: transform 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.2s ease, color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .carousel-arrow:hover {
+	opacity: 1;
 	color: #111;
 	box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 	transform: translateY(-50%) scale(1.05);
 }
 
+.carousel-arrow.disabled:hover {
+	opacity: 0;
+	box-shadow: none;
+	transform: translateY(-50%);
+}
+
 .carousel-photo-row:hover .carousel-arrow:not(.disabled) {
-	display: block;
+	opacity: 0.3;
+	pointer-events: auto;
+}
+
+.carousel-photo-row:hover .carousel-arrow:not(.disabled):hover {
+	opacity: 1;
+	pointer-events: auto;
 }
 
 .carousel-arrow-left {
@@ -456,6 +501,7 @@
 @media only screen and (max-width: 768px) {
 	.carousel-slides {
 		width: 200px;
+		height: 150px;
 	}
 
 	.carousel-arrow-left {
