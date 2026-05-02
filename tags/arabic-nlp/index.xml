@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arabic NLP on Fahim Dalvi</title>
+    <link>https://fdalvi.github.io/tags/arabic-nlp/</link>
+    <description>Recent content in Arabic NLP on Fahim Dalvi</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 01 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://fdalvi.github.io/tags/arabic-nlp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fanar</title>
+      <link>https://fdalvi.github.io/projects/fanar/</link>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/fanar/</guid>
+      <description>&lt;p&gt;Fanar is Qatar&amp;rsquo;s sovereign GenAI platform, built to preserve the Arabic language and culture. I lead the pretraining team and contribute across other teams as well.&lt;/p&gt;&#xA;&lt;p&gt;Training at this scale of ~200 GPUs, massive datasets, and large models is super demanding, but in the best way. It&amp;rsquo;s brought every foundational CS concept from my university days back to life: distributed systems, networking, databases, security, Data Structures, Compilers and more. Also one of the largest projects I&amp;rsquo;ve worked on in terms of the number (and variety) of people involved, which has been incredibly fun and rewarding as well!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Shaheen: Machine Translation API</title>
+      <link>https://fdalvi.github.io/projects/shaheen-mt-api/</link>
+      <pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/shaheen-mt-api/</guid>
+      <description>&lt;p&gt;Shaheen represents the &lt;a href=&#34;https://mt.qcri.org&#34;&gt;machine translation&lt;/a&gt; arm of Arabic Language Technologies at QCRI. I&amp;rsquo;ve been involved in training SOTA models, as well as managing a distributed backend to serve multiple machine translation engines. Our API has served over 150 million requests from 40+ countries so far!&lt;/p&gt;&#xA;&lt;p&gt;After serving a lot of customers, it is now part of the &lt;a href=&#34;https://fanar.qa&#34;&gt;Fanar&lt;/a&gt; Platform, check us out there!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Tarteel</title>
+      <link>https://fdalvi.github.io/projects/tarteel/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/tarteel/</guid>
+      <description>&lt;p&gt;I was lucky enough to be involved in the early days of &lt;a href=&#34;https://tarteel.ai&#34;&gt;Tarteel, an AI enabled Quran Memorization app&lt;/a&gt;. I was able to apply my skills as a Machine Learning expert to contribute in a couple of projects:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Automated dataset curation&lt;/strong&gt;: Early on, the folks over at Tarteel setup a portal to collection recitation data from everyday users, and thousands of contributions later they needed a pipeline that would automatically filter these based on quality and accuracy of recitation. I was able to help build a heuristic based pipeline that tagged every contributed recitation and curate the dataset for training.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Follow along algorithm&lt;/strong&gt;: A key feature of Tarteel is the follow along experience, where the app automatically tracks which words from which verse is being recited by the user. While the current version of Tarteel goes far beyond a simple follow along experience, I was lucky enough to contribute towards the first version of this follow along algorithm!&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Check them &lt;a href=&#34;https://tarteel.ai&#34;&gt;out&lt;/a&gt;, they are doing some really cool work!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

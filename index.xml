@@ -23,6 +23,13 @@
       <description>&lt;p&gt;&lt;div class=&#34;teaching-entry&#34; onclick=&#34;window.location.href=&#39;\/teaching\/&#39;&#34;&gt;&#xA;&#x9;&lt;div class=&#34;teaching-title&#34;&gt;&lt;h4&gt;Neural Networks for NLP&lt;/h4&gt;&lt;/div&gt;&#xA;&#x9;&lt;div class=&#34;teaching-role&#34;&gt;&lt;i&gt;Guest Lecturer&lt;/i&gt;&lt;/div&gt;&#xA;&#x9;&lt;div class=&#34;teaching-venue&#34;&gt;&lt;a href=&#39;https://qatar.cmu.edu&#39;&gt;Carnegie Mellon University Qatar&lt;/a&gt;, 2022&lt;/div&gt;&#xA;&#x9;&lt;div class=&#34;teaching-abstract&#34;&gt;&#x9;&#xA;&#x9;&#x9;Two-part guest lectures for the 67-212 course taught at Carnegie Mellon&#xA;&#x9;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;div class=&#34;teaching-entry&#34; onclick=&#34;window.location.href=&#39;\/teaching\/2018-dl4nlp-duisburg\/&#39;&#34;&gt;&#xA;&#x9;&lt;div class=&#34;teaching-title&#34;&gt;&lt;h4&gt;From Theory to Practice: Deep Learning for NLP&lt;/h4&gt;&lt;/div&gt;&#xA;&#x9;&lt;div class=&#34;teaching-role&#34;&gt;&lt;i&gt;Co-Lecturer&lt;/i&gt;&lt;/div&gt;&#xA;&#x9;&lt;div class=&#34;teaching-venue&#34;&gt;&lt;a href=&#39;https://www.uni-due.de&#39;&gt;Universität Duisburg-Essen&lt;/a&gt;, 2018&lt;/div&gt;&#xA;&#x9;&lt;div class=&#34;teaching-abstract&#34;&gt;&#x9;&#xA;&#x9;&#x9;A 5-day lecture series covering the basics of machine learning, neural networks and deep neural networks. We look at several deep neural network architectures from the perspective of applying them to various classification tasks, such as sequence prediction and generation. Every lecture is accompanied with practice problems implemented in Keras, a popular Python framework for deep learning.&#xA;&#x9;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Fanar</title>
+      <link>https://fdalvi.github.io/projects/fanar/</link>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/fanar/</guid>
+      <description>&lt;p&gt;Fanar is Qatar&amp;rsquo;s sovereign GenAI platform, built to preserve the Arabic language and culture. I lead the pretraining team and contribute across other teams as well.&lt;/p&gt;&#xA;&lt;p&gt;Training at this scale of ~200 GPUs, massive datasets, and large models is super demanding, but in the best way. It&amp;rsquo;s brought every foundational CS concept from my university days back to life: distributed systems, networking, databases, security, Data Structures, Compilers and more. Also one of the largest projects I&amp;rsquo;ve worked on in terms of the number (and variety) of people involved, which has been incredibly fun and rewarding as well!&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Fanar 2.0 Released!</title>
       <link>https://fdalvi.github.io/blog/2025-12-09-fanar-2-launch/</link>
       <pubDate>Tue, 09 Dec 2025 13:00:00 +0300</pubDate>
@@ -44,11 +51,32 @@
       <description>&lt;p&gt;Our paper &lt;a href=&#34;https://doi.org/10.21437/Interspeech.2025-2180&#34;&gt;From Words to Waves: Analyzing Concept Formation in Speech and Text-Based Foundation Models&lt;/a&gt; has been accepted at &lt;a href=&#34;https://interspeech2025.org/&#34;&gt;Interspeech 2025&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;LLMs have shown that text-only training can give models remarkable reasoning abilities and abstract semantic understanding. This raises a fascinating question: &lt;strong&gt;do speech models develop similar conceptual structures when trained only on audio?&lt;/strong&gt; And when models are trained on both speech and text together, do they build a richer understanding?&lt;/p&gt;&#xA;&lt;p&gt;We used &lt;strong&gt;Latent Concept Analysis&lt;/strong&gt; from our prior work on interpretability to examine how semantic abstractions form across modalities, and find lots of interesting differences on how speech and text modalities differ in their internal representations. We released our code and a curated audio version of the SST-2 dataset on &lt;a href=&#34;https://github.com/shammur/MultimodalXplain&#34;&gt;GitHub&lt;/a&gt; and &lt;a href=&#34;https://huggingface.co/collections/QCRI/multimodalxplain&#34;&gt;Hugging Face&lt;/a&gt; to support reproducibility.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Shaheen: Machine Translation API</title>
+      <link>https://fdalvi.github.io/projects/shaheen-mt-api/</link>
+      <pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/shaheen-mt-api/</guid>
+      <description>&lt;p&gt;Shaheen represents the &lt;a href=&#34;https://mt.qcri.org&#34;&gt;machine translation&lt;/a&gt; arm of Arabic Language Technologies at QCRI. I&amp;rsquo;ve been involved in training SOTA models, as well as managing a distributed backend to serve multiple machine translation engines. Our API has served over 150 million requests from 40+ countries so far!&lt;/p&gt;&#xA;&lt;p&gt;After serving a lot of customers, it is now part of the &lt;a href=&#34;https://fanar.qa&#34;&gt;Fanar&lt;/a&gt; Platform, check us out there!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NeuroX: Explainable AI</title>
+      <link>https://fdalvi.github.io/projects/neurox/</link>
+      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/neurox/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Paper Accepted at COLING 2025</title>
       <link>https://fdalvi.github.io/blog/2025-01-20-aradice-benchmarks-for-arabic-dialects/</link>
       <pubDate>Mon, 20 Jan 2025 13:00:00 +0300</pubDate>
       <guid>https://fdalvi.github.io/blog/2025-01-20-aradice-benchmarks-for-arabic-dialects/</guid>
       <description>&lt;p&gt;Excited to share that our paper &lt;a href=&#34;https://aclanthology.org/2025.coling-main.283/&#34;&gt;AraDiCE: Benchmarks for Dialectal and Cultural Capabilities in LLMs&lt;/a&gt; has been accepted at &lt;a href=&#34;https://coling2025.org/&#34;&gt;COLING 2025&lt;/a&gt; in Abu Dhabi.&lt;/p&gt;&#xA;&lt;p&gt;Arabic isn&amp;rsquo;t just one language — it&amp;rsquo;s a family of dialects that vary dramatically from region to region. Yet most LLM evaluations treat Arabic as a monolith, using only Modern Standard Arabic (MSA). This paper addresses that gap by introducing &lt;strong&gt;AraDiCE&lt;/strong&gt;, a benchmark that evaluates LLMs on both dialectal and cultural dimensions. We evaluated several LLMs on these benchmarks and found an interesting pattern: Arabic-specific models like Fanar, Jais and AceGPT do outperform general multilingual models on dialectal tasks. But significant challenges remain — particularly in dialect identification, generation, and translation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>FlightGear</title>
+      <link>https://fdalvi.github.io/projects/flightgear/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/flightgear/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.flightgear.org&#34;&gt;FlightGear&lt;/a&gt; is a fully open source flight simulator started in 1996! My journey with FlightGear began as a user (flying is quite soothing once you get the hang of it), but soon transformed into a contributor role. After all, tinkering with code always takes precedence :)&lt;/p&gt;&#xA;&lt;p&gt;Early days (around 2008-2012) were contributions mainly in the form of assets, both &lt;a href=&#34;https://scenery.flightgear.org/authors/54&#34;&gt;scenery models&lt;/a&gt; and then later more complex aircraft contributions, like &lt;a href=&#34;https://wiki.flightgear.org/Airbus_A380&#34;&gt;the A380&lt;/a&gt;. Also spent some time improving the underlying terrain meshes for a few areas like &lt;a href=&#34;https://forum.flightgear.org/viewtopic.php?p=87090&#34;&gt;Qatar&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Fanar - An Arabic-Centric Multimodal Generative AI Platform</title>
@@ -79,10 +107,10 @@
       <description>&lt;p&gt;Thrilled to announce that three papers have been accepted at &lt;a href=&#34;https://2024.eacl.org&#34;&gt;EACL 2024&lt;/a&gt;, Here&amp;rsquo;s a quick peek at what each paper explores.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;LLMeBench: Making LLM Evaluation Easier&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Large language models are being used for an ever-wider range of tasks and languages, but evaluating them across different setups can be surprisingly cumbersome. Our team built &lt;a href=&#34;https://github.com/qcri/LLMeBench/&#34;&gt;LLMeBench&lt;/a&gt;, a flexible framework that lets you evaluate LLMs on any NLP task in just a few lines of code. It comes with ready-made dataset loaders, supports multiple model providers (including local models, OpenAI API compatible hosted ones), and handles most standard evaluation metrics out of the box. Whether you want to test zero-shot or few-shot learning, it&amp;rsquo;s all supported. We put it through its paces across 31 unique NLP tasks, 53 datasets, and roughly 296K data points. The framework is open source and ready for the community to use. You can watch a demo &lt;a href=&#34;https://youtu.be/9cC2m_abk3A&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>NeuroX: Explainable AI</title>
-      <link>https://fdalvi.github.io/projects/neurox/</link>
+      <title>LLMEBench / Benchmarking</title>
+      <link>https://fdalvi.github.io/projects/llmebench-benchmarking/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/projects/neurox/</guid>
+      <guid>https://fdalvi.github.io/projects/llmebench-benchmarking/</guid>
       <description></description>
     </item>
     <item>
@@ -93,16 +121,9 @@
       <description>&lt;p&gt;Our team received the &lt;a href=&#34;https://www.hbku.edu.qa/en/news/king-salman-international-academy-award&#34;&gt;King Salman Global Academy for the Arabic Langauge Award&lt;/a&gt; for our efforts on &amp;ldquo;Computerizing the Arabic langauge and serving it with modern technologies&amp;rdquo;. We were chosen from over a 130 teams from 31 countries, and this really brings together that decade plus effort of so many people that have called ALT their home at some point or another.&lt;/p&gt;&#xA;&lt;p&gt;Incredibly proud to be part of this wonderful team!&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Live Speech Translation</title>
-      <link>https://fdalvi.github.io/projects/live-speech-translation/</link>
-      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/projects/live-speech-translation/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>QCRI Text To Speech API</title>
       <link>https://fdalvi.github.io/projects/text-to-speech-api/</link>
-      <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
       <guid>https://fdalvi.github.io/projects/text-to-speech-api/</guid>
       <description></description>
     </item>
@@ -121,11 +142,11 @@
       <description>&lt;div class=&#39;align-center&#39;&gt;&#xA;  &lt;blockquote&gt;&#xA;&lt;p&gt;COVID-19 vaccine registration guide in English, Urdu, Tamil, Sinhala and Hindi. More languages coming soon!&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#39;align-center&#39;&gt;&#xA;  &lt;p&gt;&lt;a href=&#34;https://fdalvi.github.io/blog/2021-03-29-covid-vaccine-registration-guide/covid19-vaccine-registration-guide-qatar-english.pdf&#34;&gt;How can I register for the COVID-19 vaccine in Qatar? &lt;strong&gt;(English)&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://fdalvi.github.io/blog/2021-03-29-covid-vaccine-registration-guide/covid19-vaccine-registration-guide-qatar-urdu.pdf&#34;&gt;میں قطر میں کووڈ ۱۹ ویکسین کیلیے کیسے رجسٹر کر سکتا ہوں؟ &lt;strong&gt;(Urdu)&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://fdalvi.github.io/blog/2021-03-29-covid-vaccine-registration-guide/covid19-vaccine-registration-guide-qatar-tamil.pdf&#34;&gt;நான் எப்படி கத்தாரில் COVID 19 தடுப்பூசி பதிவு செய்யலாம்? &lt;strong&gt;(Tamil)&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://fdalvi.github.io/blog/2021-03-29-covid-vaccine-registration-guide/covid19-vaccine-registration-guide-qatar-sinhala.pdf&#34;&gt;මම කොහොමද කටාර් COVID-19 එන්නත් සඳහා ලියාපදිංචි විය හැකිය? &lt;strong&gt;(Sinhala)&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://fdalvi.github.io/blog/2021-03-29-covid-vaccine-registration-guide/covid19-vaccine-registration-guide-qatar-hindi.pdf&#34;&gt;कतर में COVID-19 के टीके के लिए पंजीकरण कैसे कर सकते हैं? &lt;strong&gt;(Hindi)&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Shaheen: Machine Translation API</title>
-      <link>https://fdalvi.github.io/projects/shaheen-mt-api/</link>
-      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/projects/shaheen-mt-api/</guid>
-      <description></description>
+      <title>Tarteel</title>
+      <link>https://fdalvi.github.io/projects/tarteel/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/tarteel/</guid>
+      <description>&lt;p&gt;I was lucky enough to be involved in the early days of &lt;a href=&#34;https://tarteel.ai&#34;&gt;Tarteel, an AI enabled Quran Memorization app&lt;/a&gt;. I was able to apply my skills as a Machine Learning expert to contribute in a couple of projects:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Automated dataset curation&lt;/strong&gt;: Early on, the folks over at Tarteel setup a portal to collection recitation data from everyday users, and thousands of contributions later they needed a pipeline that would automatically filter these based on quality and accuracy of recitation. I was able to help build a heuristic based pipeline that tagged every contributed recitation and curate the dataset for training.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Follow along algorithm&lt;/strong&gt;: A key feature of Tarteel is the follow along experience, where the app automatically tracks which words from which verse is being recited by the user. While the current version of Tarteel goes far beyond a simple follow along experience, I was lucky enough to contribute towards the first version of this follow along algorithm!&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Check them &lt;a href=&#34;https://tarteel.ai&#34;&gt;out&lt;/a&gt;, they are doing some really cool work!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Creating Video Screencaps using FFMPEG and ImageMagick</title>
@@ -140,6 +161,13 @@
       <pubDate>Mon, 20 Aug 2018 16:00:00 +0300</pubDate>
       <guid>https://fdalvi.github.io/blog/2018-08-20-introducing-groupme-archiver/</guid>
       <description>&lt;p&gt;I was recently looking into various ways of archiving old chats into something more future proof, but it seems like these tools are very limited. They either don&amp;rsquo;t exist, or only work for specific scenarios like one-on-one chats without attachments.&lt;/p&gt;&#xA;&lt;p&gt;Today, the situation gets a bit better for one platform, &lt;a href=&#34;https://www.groupme.com&#34;&gt;GroupMe&lt;/a&gt;. GroupMe is a platform focused on group messaging, and features nice subtle features like &lt;em&gt;likes per message&lt;/em&gt;, attachments and so on. They also provide an awesome dev REST API - so it was very easy to pull historical data. The result is &lt;a href=&#34;https://github.com/fdalvi/groupme-archiver&#34;&gt;hosted on GitHub&lt;/a&gt; - scripts to archive any chat on GroupMe, along with its metadata like group and user avatars, mentions, likes and attachments.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Groupme Archiver</title>
+      <link>https://fdalvi.github.io/projects/groupme-archiver/</link>
+      <pubDate>Fri, 17 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/groupme-archiver/</guid>
+      <description></description>
     </item>
     <item>
       <title>Deep Learning for NLP Crash Course @ Uni Duisburg-Essen</title>
@@ -163,11 +191,46 @@
       <description>&lt;p&gt;One of our projects in the Arabic Language Team at the Qatar Computing Research Institute is the &lt;em&gt;Speech Translation&lt;/em&gt; Project - a real-time low-latency system where a speaker&amp;rsquo;s voice is transcribed and translated (both in Arabic or English). Check out the project &lt;a href=&#34;https://fdalvi.github.io/projects/live-speech-translation/&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;This project was recently awarded the &lt;strong&gt;Best Innovation Award&lt;/strong&gt; at the annual &lt;a href=&#34;https://www.qf-arc.org&#34;&gt;Qatar Foundation Annual Research Conference&lt;/a&gt;! It was been a long effort to take our state-of-the-art research in Speech Recognition and Machine Translation and bring it all together in one system. Check out the video below on QCRI&amp;rsquo;s official facebook page to get a glipmse of the project:&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Stretchly</title>
+      <link>https://fdalvi.github.io/projects/stretchly/</link>
+      <pubDate>Tue, 13 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/stretchly/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Network throttling in Puppeteer</title>
       <link>https://fdalvi.github.io/blog/2018-02-05-puppeteer-network-throttle/</link>
       <pubDate>Mon, 05 Feb 2018 22:00:00 +0300</pubDate>
       <guid>https://fdalvi.github.io/blog/2018-02-05-puppeteer-network-throttle/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/GoogleChrome/puppeteer&#34;&gt;Puppeteer&lt;/a&gt; is an awesome way to run Chrome (or Chromium) in &lt;em&gt;headless&lt;/em&gt; mode, i.e. load and interact with web pages without ever visually seeing them.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Why would this be useful?&lt;br&gt;&#xA;A headless browser is a great way to automate testing, even on remote server machines!&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Puppeteer provides a nice interface through &lt;a href=&#34;https://nodejs.org/en/&#34;&gt;Node&lt;/a&gt; to script any interactions you can have with a page, like entering input in a textbox, clicking a button and so on. It also allows you grab screenshots or convert web pages into PDFs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Speech Translation</title>
+      <link>https://fdalvi.github.io/projects/live-speech-translation/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/live-speech-translation/</guid>
+      <description>&lt;p&gt;Speech Translation is a bilingual Arabic and English transcription and translation platform with a robust backend enabling live broadcastable sessions.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;A platform for live speech translation between Arabic and English, supporting broadcast-quality sessions with a scalable backend infrastructure.&lt;/p&gt;&#xA;&lt;h3 id=&#34;key-features&#34;&gt;Key Features&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Bilingual support&lt;/strong&gt;: Arabic and English transcription and translation&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Live sessions&lt;/strong&gt;: Real-time translation for broadcast-quality interactions&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Scalable backend&lt;/strong&gt;: Robust infrastructure handling concurrent sessions&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;tech-stack&#34;&gt;Tech Stack&lt;/h3&gt;&#xA;&lt;p&gt;React, NodeJS, MongoDB, Nginx, Puppeteer, and Artillery.io for load testing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cat Detector</title>
+      <link>https://fdalvi.github.io/projects/cat-detector/</link>
+      <pubDate>Sat, 20 May 2017 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/cat-detector/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>BattStatsX</title>
+      <link>https://fdalvi.github.io/projects/battstatsx/</link>
+      <pubDate>Mon, 21 Jul 2014 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/battstatsx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dropfrenzy</title>
+      <link>https://fdalvi.github.io/projects/dropfrenzy/</link>
+      <pubDate>Sat, 29 Jun 2013 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/dropfrenzy/</guid>
+      <description></description>
     </item>
     <item>
       <title>15-213: Introduction to Computer Systems</title>

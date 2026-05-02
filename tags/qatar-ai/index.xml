@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Qatar AI on Fahim Dalvi</title>
+    <link>https://fdalvi.github.io/tags/qatar-ai/</link>
+    <description>Recent content in Qatar AI on Fahim Dalvi</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 01 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://fdalvi.github.io/tags/qatar-ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fanar</title>
+      <link>https://fdalvi.github.io/projects/fanar/</link>
+      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/fanar/</guid>
+      <description>&lt;p&gt;Fanar is Qatar&amp;rsquo;s sovereign GenAI platform, built to preserve the Arabic language and culture. I lead the pretraining team and contribute across other teams as well.&lt;/p&gt;&#xA;&lt;p&gt;Training at this scale of ~200 GPUs, massive datasets, and large models is super demanding, but in the best way. It&amp;rsquo;s brought every foundational CS concept from my university days back to life: distributed systems, networking, databases, security, Data Structures, Compilers and more. Also one of the largest projects I&amp;rsquo;ve worked on in terms of the number (and variety) of people involved, which has been incredibly fun and rewarding as well!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

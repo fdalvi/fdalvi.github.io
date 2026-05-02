@@ -6,21 +6,21 @@
     <description>Recent content in Puppeteer on Fahim Dalvi</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 15 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Feb 2018 22:00:00 +0300</lastBuildDate>
     <atom:link href="https://fdalvi.github.io/tags/puppeteer/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Live Speech Translation</title>
-      <link>https://fdalvi.github.io/projects/live-speech-translation/</link>
-      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/projects/live-speech-translation/</guid>
-      <description></description>
-    </item>
     <item>
       <title>Network throttling in Puppeteer</title>
       <link>https://fdalvi.github.io/blog/2018-02-05-puppeteer-network-throttle/</link>
       <pubDate>Mon, 05 Feb 2018 22:00:00 +0300</pubDate>
       <guid>https://fdalvi.github.io/blog/2018-02-05-puppeteer-network-throttle/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/GoogleChrome/puppeteer&#34;&gt;Puppeteer&lt;/a&gt; is an awesome way to run Chrome (or Chromium) in &lt;em&gt;headless&lt;/em&gt; mode, i.e. load and interact with web pages without ever visually seeing them.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Why would this be useful?&lt;br&gt;&#xA;A headless browser is a great way to automate testing, even on remote server machines!&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Puppeteer provides a nice interface through &lt;a href=&#34;https://nodejs.org/en/&#34;&gt;Node&lt;/a&gt; to script any interactions you can have with a page, like entering input in a textbox, clicking a button and so on. It also allows you grab screenshots or convert web pages into PDFs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Speech Translation</title>
+      <link>https://fdalvi.github.io/projects/live-speech-translation/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/live-speech-translation/</guid>
+      <description>&lt;p&gt;Speech Translation is a bilingual Arabic and English transcription and translation platform with a robust backend enabling live broadcastable sessions.&lt;/p&gt;&#xA;&lt;h2 id=&#34;overview&#34;&gt;Overview&lt;/h2&gt;&#xA;&lt;p&gt;A platform for live speech translation between Arabic and English, supporting broadcast-quality sessions with a scalable backend infrastructure.&lt;/p&gt;&#xA;&lt;h3 id=&#34;key-features&#34;&gt;Key Features&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Bilingual support&lt;/strong&gt;: Arabic and English transcription and translation&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Live sessions&lt;/strong&gt;: Real-time translation for broadcast-quality interactions&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Scalable backend&lt;/strong&gt;: Robust infrastructure handling concurrent sessions&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;tech-stack&#34;&gt;Tech Stack&lt;/h3&gt;&#xA;&lt;p&gt;React, NodeJS, MongoDB, Nginx, Puppeteer, and Artillery.io for load testing.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

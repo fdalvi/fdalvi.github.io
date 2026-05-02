@@ -6,27 +6,48 @@
     <description>Recent content in Python on Fahim Dalvi</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://fdalvi.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shaheen: Machine Translation API</title>
+      <link>https://fdalvi.github.io/projects/shaheen-mt-api/</link>
+      <pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/shaheen-mt-api/</guid>
+      <description>&lt;p&gt;Shaheen represents the &lt;a href=&#34;https://mt.qcri.org&#34;&gt;machine translation&lt;/a&gt; arm of Arabic Language Technologies at QCRI. I&amp;rsquo;ve been involved in training SOTA models, as well as managing a distributed backend to serve multiple machine translation engines. Our API has served over 150 million requests from 40+ countries so far!&lt;/p&gt;&#xA;&lt;p&gt;After serving a lot of customers, it is now part of the &lt;a href=&#34;https://fanar.qa&#34;&gt;Fanar&lt;/a&gt; Platform, check us out there!&lt;/p&gt;</description>
+    </item>
     <item>
       <title>NeuroX: Explainable AI</title>
       <link>https://fdalvi.github.io/projects/neurox/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
       <guid>https://fdalvi.github.io/projects/neurox/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LLMEBench / Benchmarking</title>
+      <link>https://fdalvi.github.io/projects/llmebench-benchmarking/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/llmebench-benchmarking/</guid>
       <description></description>
     </item>
     <item>
       <title>QCRI Text To Speech API</title>
       <link>https://fdalvi.github.io/projects/text-to-speech-api/</link>
-      <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
       <guid>https://fdalvi.github.io/projects/text-to-speech-api/</guid>
       <description></description>
     </item>
     <item>
-      <title>Shaheen: Machine Translation API</title>
-      <link>https://fdalvi.github.io/projects/shaheen-mt-api/</link>
-      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/projects/shaheen-mt-api/</guid>
+      <title>Tarteel</title>
+      <link>https://fdalvi.github.io/projects/tarteel/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/tarteel/</guid>
+      <description>&lt;p&gt;I was lucky enough to be involved in the early days of &lt;a href=&#34;https://tarteel.ai&#34;&gt;Tarteel, an AI enabled Quran Memorization app&lt;/a&gt;. I was able to apply my skills as a Machine Learning expert to contribute in a couple of projects:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Automated dataset curation&lt;/strong&gt;: Early on, the folks over at Tarteel setup a portal to collection recitation data from everyday users, and thousands of contributions later they needed a pipeline that would automatically filter these based on quality and accuracy of recitation. I was able to help build a heuristic based pipeline that tagged every contributed recitation and curate the dataset for training.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Follow along algorithm&lt;/strong&gt;: A key feature of Tarteel is the follow along experience, where the app automatically tracks which words from which verse is being recited by the user. While the current version of Tarteel goes far beyond a simple follow along experience, I was lucky enough to contribute towards the first version of this follow along algorithm!&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Check them &lt;a href=&#34;https://tarteel.ai&#34;&gt;out&lt;/a&gt;, they are doing some really cool work!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Groupme Archiver</title>
+      <link>https://fdalvi.github.io/projects/groupme-archiver/</link>
+      <pubDate>Fri, 17 Aug 2018 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/groupme-archiver/</guid>
       <description></description>
     </item>
     <item>
@@ -35,6 +56,20 @@
       <pubDate>Sat, 07 Apr 2018 20:00:00 +0300</pubDate>
       <guid>https://fdalvi.github.io/blog/2018-04-07-keras-sequential-onehot/</guid>
       <description>&lt;p&gt;It is quite common to use a &lt;a href=&#34;https://en.wikipedia.org/wiki/One-hot&#34;&gt;One-Hot&lt;/a&gt; representation for categorical data in machine learning, for example textual instances in Natural Language Processing tasks. In Keras, the &lt;a href=&#34;https://keras.io/layers/embeddings/&#34;&gt;Embedding&lt;/a&gt; layer automatically takes inputs with the category indices (such as &lt;code&gt;[5, 3, 1, 5]&lt;/code&gt;) and converts them into dense vectors of some length (e.g. &lt;code&gt;5&lt;/code&gt; → &lt;code&gt;[0.2 1.7 3.2 -7.6 ...]&lt;/code&gt;). What actually happens internally is that &lt;code&gt;5&lt;/code&gt; gets converted to a one-hot vector (like &lt;code&gt;[0 0 0 0 0 1 0 0 ... 0]&lt;/code&gt; of length equal to the vocabulary size), and is then multiplied by a normal weight matrix (such as a Dense layer), essentially picking the &lt;code&gt;5th&lt;/code&gt; indexed row from the weight matrix. However, there is no way in Keras to just get a one-hot vector as the output of a layer &lt;a href=&#34;https://github.com/keras-team/keras/issues/4838&#34;&gt;[1]&lt;/a&gt; &lt;a href=&#34;https://github.com/keras-team/keras/issues/3680&#34;&gt;[2]&lt;/a&gt;. The default proposed solution is to use a Lambda layer as follows: &lt;code&gt;Lambda(K.one_hot)&lt;/code&gt;, but this has a few caveats - the biggest one being that the input to &lt;code&gt;K.one_hot&lt;/code&gt; must be an integer tensor, but by default Keras passes around float tensors.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cat Detector</title>
+      <link>https://fdalvi.github.io/projects/cat-detector/</link>
+      <pubDate>Sat, 20 May 2017 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/cat-detector/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>BattStatsX</title>
+      <link>https://fdalvi.github.io/projects/battstatsx/</link>
+      <pubDate>Mon, 21 Jul 2014 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/battstatsx/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>

@@ -8,7 +8,7 @@
   
     <url>
       <loc>https://fdalvi.github.io/projects/</loc>
-      <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+      <lastmod>2026-02-01T00:00:00+00:00</lastmod>
     </url>
   
     <url>
@@ -480,6 +480,41 @@
     </url>
   
     <url>
+      <loc>https://fdalvi.github.io/tags/arabic-nlp/</loc>
+      <lastmod>2026-02-01T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/projects/fanar/</loc>
+      <lastmod>2026-02-01T00:00:00+00:00</lastmod>
+    </url>
+      <url>
+        <loc>https://fdalvi.github.io/research/2026-03-arXiv-Fanar-2.0/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+      <url>
+        <loc>https://fdalvi.github.io/research/2025-01-arXiv-Fanar/paper.pdf</loc>
+        <priority>0.4</priority>
+      </url>
+    
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/large-language-model/</loc>
+      <lastmod>2026-03-15T19:00:00+03:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/qatar-ai/</loc>
+      <lastmod>2026-02-01T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/</loc>
+      <lastmod>2026-03-15T19:00:00+03:00</lastmod>
+    </url>
+  
+    <url>
       <loc>https://fdalvi.github.io/tags/arabic-ai/</loc>
       <lastmod>2026-03-15T19:00:00+03:00</lastmod>
     </url>
@@ -500,22 +535,12 @@
     </url>
   
     <url>
-      <loc>https://fdalvi.github.io/tags/large-language-model/</loc>
-      <lastmod>2026-03-15T19:00:00+03:00</lastmod>
-    </url>
-  
-    <url>
       <loc>https://fdalvi.github.io/categories/news/</loc>
       <lastmod>2026-03-15T19:00:00+03:00</lastmod>
     </url>
   
     <url>
       <loc>https://fdalvi.github.io/tags/qatar-llm/</loc>
-      <lastmod>2026-03-15T19:00:00+03:00</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://fdalvi.github.io/tags/</loc>
       <lastmod>2026-03-15T19:00:00+03:00</lastmod>
     </url>
   
@@ -605,6 +630,56 @@
     </url>
   
     <url>
+      <loc>https://fdalvi.github.io/tags/grommet/</loc>
+      <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/mongodb/</loc>
+      <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/nodejs/</loc>
+      <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/python/</loc>
+      <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/react/</loc>
+      <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/projects/shaheen-mt-api/</loc>
+      <lastmod>2025-07-01T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/flask/</loc>
+      <lastmod>2025-02-01T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/projects/neurox/</loc>
+      <lastmod>2025-02-01T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/pytorch/</loc>
+      <lastmod>2025-02-01T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/transformers/</loc>
+      <lastmod>2025-02-01T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
       <loc>https://fdalvi.github.io/tags/coling/</loc>
       <lastmod>2025-01-20T13:00:00+03:00</lastmod>
     </url>
@@ -618,6 +693,31 @@
         <priority>0.4</priority>
       </url>
     
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/3d-graphics/</loc>
+      <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/c&#43;&#43;/</loc>
+      <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/projects/flightgear/</loc>
+      <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/scripting/</loc>
+      <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/xml/</loc>
+      <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+    </url>
   
     <url>
       <loc>https://fdalvi.github.io/blog/2024-12-12-fanar-arabic-centric-multimodal-platform/</loc>
@@ -660,32 +760,17 @@
     </url>
   
     <url>
-      <loc>https://fdalvi.github.io/tags/flask/</loc>
+      <loc>https://fdalvi.github.io/tags/benchmarking/</loc>
       <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     </url>
   
     <url>
-      <loc>https://fdalvi.github.io/projects/neurox/</loc>
+      <loc>https://fdalvi.github.io/tags/evaluation/</loc>
       <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     </url>
   
     <url>
-      <loc>https://fdalvi.github.io/tags/python/</loc>
-      <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://fdalvi.github.io/tags/pytorch/</loc>
-      <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://fdalvi.github.io/tags/react/</loc>
-      <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://fdalvi.github.io/tags/transformers/</loc>
+      <loc>https://fdalvi.github.io/projects/llmebench-benchmarking/</loc>
       <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     </url>
   
@@ -705,48 +790,18 @@
     </url>
   
     <url>
-      <loc>https://fdalvi.github.io/tags/artillery.io/</loc>
-      <lastmod>2023-06-15T00:00:00+00:00</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://fdalvi.github.io/projects/live-speech-translation/</loc>
-      <lastmod>2023-06-15T00:00:00+00:00</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://fdalvi.github.io/tags/mongodb/</loc>
-      <lastmod>2023-06-15T00:00:00+00:00</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://fdalvi.github.io/tags/nginx/</loc>
-      <lastmod>2023-06-15T00:00:00+00:00</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://fdalvi.github.io/tags/nodejs/</loc>
-      <lastmod>2023-06-15T00:00:00+00:00</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://fdalvi.github.io/tags/puppeteer/</loc>
-      <lastmod>2023-06-15T00:00:00+00:00</lastmod>
-    </url>
-  
-    <url>
       <loc>https://fdalvi.github.io/tags/docker-swarm/</loc>
-      <lastmod>2022-03-10T00:00:00+00:00</lastmod>
+      <lastmod>2022-07-01T00:00:00+00:00</lastmod>
     </url>
   
     <url>
       <loc>https://fdalvi.github.io/projects/text-to-speech-api/</loc>
-      <lastmod>2022-03-10T00:00:00+00:00</lastmod>
+      <lastmod>2022-07-01T00:00:00+00:00</lastmod>
     </url>
   
     <url>
       <loc>https://fdalvi.github.io/tags/tensorflow/</loc>
-      <lastmod>2022-03-10T00:00:00+00:00</lastmod>
+      <lastmod>2022-07-01T00:00:00+00:00</lastmod>
     </url>
   
     <url>
@@ -830,13 +885,13 @@
     </url>
   
     <url>
-      <loc>https://fdalvi.github.io/tags/grommet/</loc>
-      <lastmod>2021-01-20T00:00:00+00:00</lastmod>
+      <loc>https://fdalvi.github.io/tags/speech-recognition/</loc>
+      <lastmod>2019-06-01T00:00:00+00:00</lastmod>
     </url>
   
     <url>
-      <loc>https://fdalvi.github.io/projects/shaheen-mt-api/</loc>
-      <lastmod>2021-01-20T00:00:00+00:00</lastmod>
+      <loc>https://fdalvi.github.io/projects/tarteel/</loc>
+      <lastmod>2019-06-01T00:00:00+00:00</lastmod>
     </url>
   
     <url>
@@ -890,12 +945,17 @@
     </url>
   
     <url>
-      <loc>https://fdalvi.github.io/blog/2018-04-15-dl4nlp-duisburg/</loc>
-      <lastmod>2018-04-15T19:00:00+03:00</lastmod>
+      <loc>https://fdalvi.github.io/projects/groupme-archiver/</loc>
+      <lastmod>2018-08-17T00:00:00+00:00</lastmod>
     </url>
   
     <url>
       <loc>https://fdalvi.github.io/tags/deep-learning/</loc>
+      <lastmod>2018-04-15T19:00:00+03:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/blog/2018-04-15-dl4nlp-duisburg/</loc>
       <lastmod>2018-04-15T19:00:00+03:00</lastmod>
     </url>
   
@@ -935,6 +995,21 @@
     </url>
   
     <url>
+      <loc>https://fdalvi.github.io/tags/electron/</loc>
+      <lastmod>2018-02-13T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/projects/stretchly/</loc>
+      <lastmod>2018-02-13T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/typescript/</loc>
+      <lastmod>2018-02-13T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
       <loc>https://fdalvi.github.io/tags/chrome/</loc>
       <lastmod>2018-02-05T22:00:00+03:00</lastmod>
     </url>
@@ -950,6 +1025,11 @@
     </url>
   
     <url>
+      <loc>https://fdalvi.github.io/tags/puppeteer/</loc>
+      <lastmod>2018-02-05T22:00:00+03:00</lastmod>
+    </url>
+  
+    <url>
       <loc>https://fdalvi.github.io/tags/testing/</loc>
       <lastmod>2018-02-05T22:00:00+03:00</lastmod>
     </url>
@@ -957,6 +1037,51 @@
     <url>
       <loc>https://fdalvi.github.io/tags/webapps/</loc>
       <lastmod>2018-02-05T22:00:00+03:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/artillery.io/</loc>
+      <lastmod>2017-07-01T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/nginx/</loc>
+      <lastmod>2017-07-01T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/projects/live-speech-translation/</loc>
+      <lastmod>2017-07-01T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/projects/cat-detector/</loc>
+      <lastmod>2017-05-20T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/computer-vision/</loc>
+      <lastmod>2017-05-20T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/projects/battstatsx/</loc>
+      <lastmod>2014-07-21T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/macos/</loc>
+      <lastmod>2014-07-21T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/projects/dropfrenzy/</loc>
+      <lastmod>2013-06-29T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/webrtc/</loc>
+      <lastmod>2013-06-29T00:00:00+00:00</lastmod>
     </url>
   
     <url>

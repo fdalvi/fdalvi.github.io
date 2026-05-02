@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C&#43;&#43; on Fahim Dalvi</title>
+    <link>https://fdalvi.github.io/tags/c&#43;&#43;/</link>
+    <description>Recent content in C&#43;&#43; on Fahim Dalvi</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://fdalvi.github.io/tags/c++/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FlightGear</title>
+      <link>https://fdalvi.github.io/projects/flightgear/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/flightgear/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.flightgear.org&#34;&gt;FlightGear&lt;/a&gt; is a fully open source flight simulator started in 1996! My journey with FlightGear began as a user (flying is quite soothing once you get the hang of it), but soon transformed into a contributor role. After all, tinkering with code always takes precedence :)&lt;/p&gt;&#xA;&lt;p&gt;Early days (around 2008-2012) were contributions mainly in the form of assets, both &lt;a href=&#34;https://scenery.flightgear.org/authors/54&#34;&gt;scenery models&lt;/a&gt; and then later more complex aircraft contributions, like &lt;a href=&#34;https://wiki.flightgear.org/Airbus_A380&#34;&gt;the A380&lt;/a&gt;. Also spent some time improving the underlying terrain meshes for a few areas like &lt;a href=&#34;https://forum.flightgear.org/viewtopic.php?p=87090&#34;&gt;Qatar&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

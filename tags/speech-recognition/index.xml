@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Speech Recognition on Fahim Dalvi</title>
+    <link>https://fdalvi.github.io/tags/speech-recognition/</link>
+    <description>Recent content in Speech Recognition on Fahim Dalvi</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 01 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://fdalvi.github.io/tags/speech-recognition/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tarteel</title>
+      <link>https://fdalvi.github.io/projects/tarteel/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/tarteel/</guid>
+      <description>&lt;p&gt;I was lucky enough to be involved in the early days of &lt;a href=&#34;https://tarteel.ai&#34;&gt;Tarteel, an AI enabled Quran Memorization app&lt;/a&gt;. I was able to apply my skills as a Machine Learning expert to contribute in a couple of projects:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Automated dataset curation&lt;/strong&gt;: Early on, the folks over at Tarteel setup a portal to collection recitation data from everyday users, and thousands of contributions later they needed a pipeline that would automatically filter these based on quality and accuracy of recitation. I was able to help build a heuristic based pipeline that tagged every contributed recitation and curate the dataset for training.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Follow along algorithm&lt;/strong&gt;: A key feature of Tarteel is the follow along experience, where the app automatically tracks which words from which verse is being recited by the user. While the current version of Tarteel goes far beyond a simple follow along experience, I was lucky enough to contribute towards the first version of this follow along algorithm!&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Check them &lt;a href=&#34;https://tarteel.ai&#34;&gt;out&lt;/a&gt;, they are doing some really cool work!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

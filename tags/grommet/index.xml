@@ -6,14 +6,14 @@
     <description>Recent content in Grommet on Fahim Dalvi</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 20 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Jul 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://fdalvi.github.io/tags/grommet/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Shaheen: Machine Translation API</title>
       <link>https://fdalvi.github.io/projects/shaheen-mt-api/</link>
-      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
       <guid>https://fdalvi.github.io/projects/shaheen-mt-api/</guid>
-      <description></description>
+      <description>&lt;p&gt;Shaheen represents the &lt;a href=&#34;https://mt.qcri.org&#34;&gt;machine translation&lt;/a&gt; arm of Arabic Language Technologies at QCRI. I&amp;rsquo;ve been involved in training SOTA models, as well as managing a distributed backend to serve multiple machine translation engines. Our API has served over 150 million requests from 40+ countries so far!&lt;/p&gt;&#xA;&lt;p&gt;After serving a lot of customers, it is now part of the &lt;a href=&#34;https://fanar.qa&#34;&gt;Fanar&lt;/a&gt; Platform, check us out there!&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
