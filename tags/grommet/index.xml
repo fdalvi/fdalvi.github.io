@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Grommet on Fahim Dalvi</title>
+    <link>https://fdalvi.github.io/tags/grommet/</link>
+    <description>Recent content in Grommet on Fahim Dalvi</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 20 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://fdalvi.github.io/tags/grommet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shaheen: Machine Translation API</title>
+      <link>https://fdalvi.github.io/projects/shaheen-mt-api/</link>
+      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/shaheen-mt-api/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

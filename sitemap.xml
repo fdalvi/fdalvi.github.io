@@ -8,6 +8,7 @@
   
     <url>
       <loc>https://fdalvi.github.io/projects/</loc>
+      <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     </url>
   
     <url>
@@ -659,6 +660,36 @@
     </url>
   
     <url>
+      <loc>https://fdalvi.github.io/tags/flask/</loc>
+      <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/projects/neurox/</loc>
+      <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/python/</loc>
+      <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/pytorch/</loc>
+      <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/react/</loc>
+      <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/transformers/</loc>
+      <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
       <loc>https://fdalvi.github.io/blog/2023-10-02-ksga-award/</loc>
       <lastmod>2023-11-15T19:00:00+03:00</lastmod>
     </url>
@@ -671,6 +702,51 @@
     <url>
       <loc>https://fdalvi.github.io/tags/awards/</loc>
       <lastmod>2023-11-15T19:00:00+03:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/artillery.io/</loc>
+      <lastmod>2023-06-15T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/projects/live-speech-translation/</loc>
+      <lastmod>2023-06-15T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/mongodb/</loc>
+      <lastmod>2023-06-15T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/nginx/</loc>
+      <lastmod>2023-06-15T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/nodejs/</loc>
+      <lastmod>2023-06-15T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/puppeteer/</loc>
+      <lastmod>2023-06-15T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/docker-swarm/</loc>
+      <lastmod>2022-03-10T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/projects/text-to-speech-api/</loc>
+      <lastmod>2022-03-10T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/tensorflow/</loc>
+      <lastmod>2022-03-10T00:00:00+00:00</lastmod>
     </url>
   
     <url>
@@ -695,11 +771,6 @@
   
     <url>
       <loc>https://fdalvi.github.io/tags/javascript/</loc>
-      <lastmod>2021-06-11T12:00:00+03:00</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://fdalvi.github.io/tags/nodejs/</loc>
       <lastmod>2021-06-11T12:00:00+03:00</lastmod>
     </url>
   
@@ -756,6 +827,16 @@
     <url>
       <loc>https://fdalvi.github.io/tags/vaccine/</loc>
       <lastmod>2021-04-06T12:00:00+03:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/tags/grommet/</loc>
+      <lastmod>2021-01-20T00:00:00+00:00</lastmod>
+    </url>
+  
+    <url>
+      <loc>https://fdalvi.github.io/projects/shaheen-mt-api/</loc>
+      <lastmod>2021-01-20T00:00:00+00:00</lastmod>
     </url>
   
     <url>
@@ -839,11 +920,6 @@
     </url>
   
     <url>
-      <loc>https://fdalvi.github.io/tags/python/</loc>
-      <lastmod>2018-04-07T20:00:00+03:00</lastmod>
-    </url>
-  
-    <url>
       <loc>https://fdalvi.github.io/tags/representations/</loc>
       <lastmod>2018-04-07T20:00:00+03:00</lastmod>
     </url>
@@ -870,11 +946,6 @@
   
     <url>
       <loc>https://fdalvi.github.io/blog/2018-02-05-puppeteer-network-throttle/</loc>
-      <lastmod>2018-02-05T22:00:00+03:00</lastmod>
-    </url>
-  
-    <url>
-      <loc>https://fdalvi.github.io/tags/puppeteer/</loc>
       <lastmod>2018-02-05T22:00:00+03:00</lastmod>
     </url>
   

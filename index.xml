@@ -9,13 +9,6 @@
     <lastBuildDate>Sun, 15 Mar 2026 19:00:00 +0300</lastBuildDate>
     <atom:link href="https://fdalvi.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Projects</title>
-      <link>https://fdalvi.github.io/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/projects/</guid>
-      <description>&lt;div class=&#39;align-center&#39;&gt;&#xA;  &lt;div class=&#34;project-list&#34;&gt;&#xA;  &lt;div class=&#34;project&#34; onclick=&#34;window.location.href=&#39;https://neurox.qcri.org&#39;&#34;&gt;&#xA;    &lt;img src=&#34;https://fdalvi.github.io/img/projects/neurox.png&#34;&gt;&lt;/img&gt;&#xA;    &lt;div class=&#34;project-container&#34;&gt;&#xA;      &lt;p class=&#34;project-title&#34;&gt;NeuroX: Explainable AI&lt;/p&gt;&#xA;      &lt;p class=&#34;project-description&#34;&gt; Interpretation and Explainability for Deep NLP models. Lots of analysis of Foundational language models and Machine Translation models. Research assets and toolkits for easy interpretation at the neuron-level in Deep NLP models.&lt;/p&gt;&#xA;      &lt;p class=&#34;project-tags&#34;&gt;&#xA;        &lt;span class=&#34;project-tag&#34;&gt;Python&lt;/span&gt;&#xA;        &lt;span class=&#34;project-tag&#34;&gt;Flask&lt;/span&gt;&#xA;        &lt;span class=&#34;project-tag&#34;&gt;PyTorch&lt;/span&gt;&#xA;        &lt;span class=&#34;project-tag&#34;&gt;Transformers&lt;/span&gt;&#xA;        &lt;span class=&#34;project-tag&#34;&gt;React&lt;/span&gt;&#xA;      &lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;div class=&#34;project&#34; onclick=&#34;window.location.href=&#39;https://st.qcri.org/demos/livetranslation/&#39;&#34;&gt;&#xA;    &lt;img src=&#34;https://fdalvi.github.io/img/projects/live-speech-translation.png&#34;&gt;&lt;/img&gt;&#xA;    &lt;div class=&#34;project-container&#34;&gt;&#xA;      &lt;p class=&#34;project-title&#34;&gt;Live Speech Translation&lt;/p&gt;&#xA;      &lt;p class=&#34;project-description&#34;&gt; Bilingual Arabic and English transcription and translation platform with a robust backend enabling live broadcastable sessions&lt;/p&gt;&#xA;      &lt;p class=&#34;project-tags&#34;&gt;&#xA;        &lt;span class=&#34;project-tag&#34;&gt;React&lt;/span&gt;&#xA;        &lt;span class=&#34;project-tag&#34;&gt;NodeJS&lt;/span&gt;&#xA;        &lt;span class=&#34;project-tag&#34;&gt;MongoDB&lt;/span&gt;&#xA;        &lt;span class=&#34;project-tag&#34;&gt;Nginx&lt;/span&gt;&#xA;        &lt;span class=&#34;project-tag&#34;&gt;Puppeteer&lt;/span&gt;&#xA;        &lt;span class=&#34;project-tag&#34;&gt;Artillery.io&lt;/span&gt;&#xA;      &lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;div class=&#34;project&#34; onclick=&#34;window.location.href=&#39;https://mt.qcri.org/api&#39;&#34;&gt;&#xA;    &lt;img src=&#34;https://fdalvi.github.io/img/projects/machine-translation-api.png&#34;&gt;&lt;/img&gt;&#xA;    &lt;div class=&#34;project-container&#34;&gt;&#xA;      &lt;p class=&#34;project-title&#34;&gt;Shaheen: Machine Translation API&lt;/p&gt;&#xA;      &lt;p class=&#34;project-description&#34;&gt; Distributed backend managing multiple machine translation engines built at QCRI and a simple to use user-facing REST API. Served over 140 million requests from 40+ countries so far! &lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Research</title>
       <link>https://fdalvi.github.io/research/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -86,11 +79,32 @@
       <description>&lt;p&gt;Thrilled to announce that three papers have been accepted at &lt;a href=&#34;https://2024.eacl.org&#34;&gt;EACL 2024&lt;/a&gt;, Here&amp;rsquo;s a quick peek at what each paper explores.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;LLMeBench: Making LLM Evaluation Easier&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Large language models are being used for an ever-wider range of tasks and languages, but evaluating them across different setups can be surprisingly cumbersome. Our team built &lt;a href=&#34;https://github.com/qcri/LLMeBench/&#34;&gt;LLMeBench&lt;/a&gt;, a flexible framework that lets you evaluate LLMs on any NLP task in just a few lines of code. It comes with ready-made dataset loaders, supports multiple model providers (including local models, OpenAI API compatible hosted ones), and handles most standard evaluation metrics out of the box. Whether you want to test zero-shot or few-shot learning, it&amp;rsquo;s all supported. We put it through its paces across 31 unique NLP tasks, 53 datasets, and roughly 296K data points. The framework is open source and ready for the community to use. You can watch a demo &lt;a href=&#34;https://youtu.be/9cC2m_abk3A&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>NeuroX: Explainable AI</title>
+      <link>https://fdalvi.github.io/projects/neurox/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/neurox/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>ALT wins the King Salman Global Academy for Arabic award!</title>
       <link>https://fdalvi.github.io/blog/2023-10-02-ksga-award/</link>
       <pubDate>Mon, 02 Oct 2023 13:00:00 +0300</pubDate>
       <guid>https://fdalvi.github.io/blog/2023-10-02-ksga-award/</guid>
       <description>&lt;p&gt;Our team received the &lt;a href=&#34;https://www.hbku.edu.qa/en/news/king-salman-international-academy-award&#34;&gt;King Salman Global Academy for the Arabic Langauge Award&lt;/a&gt; for our efforts on &amp;ldquo;Computerizing the Arabic langauge and serving it with modern technologies&amp;rdquo;. We were chosen from over a 130 teams from 31 countries, and this really brings together that decade plus effort of so many people that have called ALT their home at some point or another.&lt;/p&gt;&#xA;&lt;p&gt;Incredibly proud to be part of this wonderful team!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Live Speech Translation</title>
+      <link>https://fdalvi.github.io/projects/live-speech-translation/</link>
+      <pubDate>Thu, 15 Jun 2023 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/live-speech-translation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>QCRI Text To Speech API</title>
+      <link>https://fdalvi.github.io/projects/text-to-speech-api/</link>
+      <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/text-to-speech-api/</guid>
+      <description></description>
     </item>
     <item>
       <title>Consuming Paginated API&#39;s in Javascript</title>
@@ -105,6 +119,13 @@
       <pubDate>Mon, 29 Mar 2021 12:00:00 +0300</pubDate>
       <guid>https://fdalvi.github.io/blog/2021-03-29-covid-vaccine-registration-guide/</guid>
       <description>&lt;div class=&#39;align-center&#39;&gt;&#xA;  &lt;blockquote&gt;&#xA;&lt;p&gt;COVID-19 vaccine registration guide in English, Urdu, Tamil, Sinhala and Hindi. More languages coming soon!&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#39;align-center&#39;&gt;&#xA;  &lt;p&gt;&lt;a href=&#34;https://fdalvi.github.io/blog/2021-03-29-covid-vaccine-registration-guide/covid19-vaccine-registration-guide-qatar-english.pdf&#34;&gt;How can I register for the COVID-19 vaccine in Qatar? &lt;strong&gt;(English)&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://fdalvi.github.io/blog/2021-03-29-covid-vaccine-registration-guide/covid19-vaccine-registration-guide-qatar-urdu.pdf&#34;&gt;میں قطر میں کووڈ ۱۹ ویکسین کیلیے کیسے رجسٹر کر سکتا ہوں؟ &lt;strong&gt;(Urdu)&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://fdalvi.github.io/blog/2021-03-29-covid-vaccine-registration-guide/covid19-vaccine-registration-guide-qatar-tamil.pdf&#34;&gt;நான் எப்படி கத்தாரில் COVID 19 தடுப்பூசி பதிவு செய்யலாம்? &lt;strong&gt;(Tamil)&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://fdalvi.github.io/blog/2021-03-29-covid-vaccine-registration-guide/covid19-vaccine-registration-guide-qatar-sinhala.pdf&#34;&gt;මම කොහොමද කටාර් COVID-19 එන්නත් සඳහා ලියාපදිංචි විය හැකිය? &lt;strong&gt;(Sinhala)&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://fdalvi.github.io/blog/2021-03-29-covid-vaccine-registration-guide/covid19-vaccine-registration-guide-qatar-hindi.pdf&#34;&gt;कतर में COVID-19 के टीके के लिए पंजीकरण कैसे कर सकते हैं? &lt;strong&gt;(Hindi)&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Shaheen: Machine Translation API</title>
+      <link>https://fdalvi.github.io/projects/shaheen-mt-api/</link>
+      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/shaheen-mt-api/</guid>
+      <description></description>
     </item>
     <item>
       <title>Creating Video Screencaps using FFMPEG and ImageMagick</title>

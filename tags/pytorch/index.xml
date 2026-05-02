@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PyTorch on Fahim Dalvi</title>
+    <link>https://fdalvi.github.io/tags/pytorch/</link>
+    <description>Recent content in PyTorch on Fahim Dalvi</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://fdalvi.github.io/tags/pytorch/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>NeuroX: Explainable AI</title>
+      <link>https://fdalvi.github.io/projects/neurox/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://fdalvi.github.io/projects/neurox/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
