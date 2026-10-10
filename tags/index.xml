@@ -1,502 +1,507 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Tags on Fahim Dalvi</title>
-    <link>https://fdalvi.github.io/tags/</link>
-    <description>Recent content in Tags on Fahim Dalvi</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 15 Mar 2026 19:00:00 +0300</lastBuildDate>
-    <atom:link href="https://fdalvi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Arabic NLP</title>
-      <link>https://fdalvi.github.io/tags/arabic-nlp/</link>
-      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/tags/arabic-nlp/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Large-Language-Model</title>
-      <link>https://fdalvi.github.io/tags/large-language-model/</link>
-      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/tags/large-language-model/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Qatar AI</title>
-      <link>https://fdalvi.github.io/tags/qatar-ai/</link>
-      <pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/tags/qatar-ai/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Arabic-Ai</title>
-      <link>https://fdalvi.github.io/tags/arabic-ai/</link>
-      <pubDate>Tue, 09 Dec 2025 13:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/arabic-ai/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Fanar</title>
-      <link>https://fdalvi.github.io/tags/fanar/</link>
-      <pubDate>Tue, 09 Dec 2025 13:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/fanar/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Qatar-Llm</title>
-      <link>https://fdalvi.github.io/tags/qatar-llm/</link>
-      <pubDate>Tue, 09 Dec 2025 13:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/qatar-llm/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Arabicnlp</title>
-      <link>https://fdalvi.github.io/tags/arabicnlp/</link>
-      <pubDate>Sat, 15 Nov 2025 13:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/arabicnlp/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Emnlp</title>
-      <link>https://fdalvi.github.io/tags/emnlp/</link>
-      <pubDate>Sat, 15 Nov 2025 13:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/emnlp/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Interpretability</title>
-      <link>https://fdalvi.github.io/tags/interpretability/</link>
-      <pubDate>Sat, 15 Nov 2025 13:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/interpretability/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Knowledge-Editing</title>
-      <link>https://fdalvi.github.io/tags/knowledge-editing/</link>
-      <pubDate>Sat, 15 Nov 2025 13:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/knowledge-editing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>LLM</title>
-      <link>https://fdalvi.github.io/tags/llm/</link>
-      <pubDate>Sat, 15 Nov 2025 13:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/llm/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Multilingual</title>
-      <link>https://fdalvi.github.io/tags/multilingual/</link>
-      <pubDate>Sat, 15 Nov 2025 13:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/multilingual/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Interspeech</title>
-      <link>https://fdalvi.github.io/tags/interspeech/</link>
-      <pubDate>Fri, 15 Aug 2025 13:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/interspeech/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Speech</title>
-      <link>https://fdalvi.github.io/tags/speech/</link>
-      <pubDate>Fri, 15 Aug 2025 13:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/speech/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Grommet</title>
-      <link>https://fdalvi.github.io/tags/grommet/</link>
-      <pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/tags/grommet/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>MongoDB</title>
-      <link>https://fdalvi.github.io/tags/mongodb/</link>
-      <pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/tags/mongodb/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nodejs</title>
-      <link>https://fdalvi.github.io/tags/nodejs/</link>
-      <pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/tags/nodejs/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Python</title>
-      <link>https://fdalvi.github.io/tags/python/</link>
-      <pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/tags/python/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>React</title>
-      <link>https://fdalvi.github.io/tags/react/</link>
-      <pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/tags/react/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Flask</title>
-      <link>https://fdalvi.github.io/tags/flask/</link>
-      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/tags/flask/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>PyTorch</title>
-      <link>https://fdalvi.github.io/tags/pytorch/</link>
-      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/tags/pytorch/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Transformers</title>
-      <link>https://fdalvi.github.io/tags/transformers/</link>
-      <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/tags/transformers/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Coling</title>
-      <link>https://fdalvi.github.io/tags/coling/</link>
-      <pubDate>Mon, 20 Jan 2025 13:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/coling/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>3D Graphics</title>
-      <link>https://fdalvi.github.io/tags/3d-graphics/</link>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/tags/3d-graphics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>C&#43;&#43;</title>
-      <link>https://fdalvi.github.io/tags/c&#43;&#43;/</link>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/tags/c&#43;&#43;/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Scripting</title>
-      <link>https://fdalvi.github.io/tags/scripting/</link>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/tags/scripting/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>XML</title>
-      <link>https://fdalvi.github.io/tags/xml/</link>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/tags/xml/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Natural-Language-Processing</title>
-      <link>https://fdalvi.github.io/tags/natural-language-processing/</link>
-      <pubDate>Tue, 12 Nov 2024 13:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/natural-language-processing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Acl</title>
-      <link>https://fdalvi.github.io/tags/acl/</link>
-      <pubDate>Sun, 11 Aug 2024 13:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/acl/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Eacl</title>
-      <link>https://fdalvi.github.io/tags/eacl/</link>
-      <pubDate>Sun, 17 Mar 2024 13:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/eacl/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Benchmarking</title>
-      <link>https://fdalvi.github.io/tags/benchmarking/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/tags/benchmarking/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Evaluation</title>
-      <link>https://fdalvi.github.io/tags/evaluation/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/tags/evaluation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Arabic-Language-Technologies</title>
-      <link>https://fdalvi.github.io/tags/arabic-language-technologies/</link>
-      <pubDate>Mon, 02 Oct 2023 13:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/arabic-language-technologies/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Awards</title>
-      <link>https://fdalvi.github.io/tags/awards/</link>
-      <pubDate>Mon, 02 Oct 2023 13:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/awards/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Docker Swarm</title>
-      <link>https://fdalvi.github.io/tags/docker-swarm/</link>
-      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/tags/docker-swarm/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>TensorFlow</title>
-      <link>https://fdalvi.github.io/tags/tensorflow/</link>
-      <pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/tags/tensorflow/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Api</title>
-      <link>https://fdalvi.github.io/tags/api/</link>
-      <pubDate>Fri, 11 Jun 2021 12:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/api/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Async</title>
-      <link>https://fdalvi.github.io/tags/async/</link>
-      <pubDate>Fri, 11 Jun 2021 12:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/async/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Browser</title>
-      <link>https://fdalvi.github.io/tags/browser/</link>
-      <pubDate>Fri, 11 Jun 2021 12:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/browser/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>JavaScript</title>
-      <link>https://fdalvi.github.io/tags/javascript/</link>
-      <pubDate>Fri, 11 Jun 2021 12:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/javascript/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Paginations</title>
-      <link>https://fdalvi.github.io/tags/paginations/</link>
-      <pubDate>Fri, 11 Jun 2021 12:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/paginations/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Guide</title>
-      <link>https://fdalvi.github.io/tags/guide/</link>
-      <pubDate>Mon, 29 Mar 2021 12:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/guide/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Vaccine</title>
-      <link>https://fdalvi.github.io/tags/vaccine/</link>
-      <pubDate>Mon, 29 Mar 2021 12:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/vaccine/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Speech Recognition</title>
-      <link>https://fdalvi.github.io/tags/speech-recognition/</link>
-      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/tags/speech-recognition/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Ffmpeg</title>
-      <link>https://fdalvi.github.io/tags/ffmpeg/</link>
-      <pubDate>Sat, 01 Sep 2018 12:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/ffmpeg/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Imagemagick</title>
-      <link>https://fdalvi.github.io/tags/imagemagick/</link>
-      <pubDate>Sat, 01 Sep 2018 12:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/imagemagick/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Screencaps</title>
-      <link>https://fdalvi.github.io/tags/screencaps/</link>
-      <pubDate>Sat, 01 Sep 2018 12:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/screencaps/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Video Processing</title>
-      <link>https://fdalvi.github.io/tags/video-processing/</link>
-      <pubDate>Sat, 01 Sep 2018 12:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/video-processing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Archive</title>
-      <link>https://fdalvi.github.io/tags/archive/</link>
-      <pubDate>Mon, 20 Aug 2018 16:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/archive/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Backup</title>
-      <link>https://fdalvi.github.io/tags/backup/</link>
-      <pubDate>Mon, 20 Aug 2018 16:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/backup/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Chats</title>
-      <link>https://fdalvi.github.io/tags/chats/</link>
-      <pubDate>Mon, 20 Aug 2018 16:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/chats/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Groupme</title>
-      <link>https://fdalvi.github.io/tags/groupme/</link>
-      <pubDate>Mon, 20 Aug 2018 16:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/groupme/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Deep Learning</title>
-      <link>https://fdalvi.github.io/tags/deep-learning/</link>
-      <pubDate>Sun, 15 Apr 2018 19:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/deep-learning/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Neural-Networks</title>
-      <link>https://fdalvi.github.io/tags/neural-networks/</link>
-      <pubDate>Sun, 15 Apr 2018 19:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/neural-networks/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Teaching</title>
-      <link>https://fdalvi.github.io/tags/teaching/</link>
-      <pubDate>Sun, 15 Apr 2018 19:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/teaching/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Keras</title>
-      <link>https://fdalvi.github.io/tags/keras/</link>
-      <pubDate>Sat, 07 Apr 2018 20:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/keras/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Representations</title>
-      <link>https://fdalvi.github.io/tags/representations/</link>
-      <pubDate>Sat, 07 Apr 2018 20:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/representations/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Speech-Translation</title>
-      <link>https://fdalvi.github.io/tags/speech-translation/</link>
-      <pubDate>Wed, 21 Mar 2018 14:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/speech-translation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Electron</title>
-      <link>https://fdalvi.github.io/tags/electron/</link>
-      <pubDate>Tue, 13 Feb 2018 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/tags/electron/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>TypeScript</title>
-      <link>https://fdalvi.github.io/tags/typescript/</link>
-      <pubDate>Tue, 13 Feb 2018 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/tags/typescript/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Chrome</title>
-      <link>https://fdalvi.github.io/tags/chrome/</link>
-      <pubDate>Mon, 05 Feb 2018 22:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/chrome/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Network</title>
-      <link>https://fdalvi.github.io/tags/network/</link>
-      <pubDate>Mon, 05 Feb 2018 22:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/network/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Puppeteer</title>
-      <link>https://fdalvi.github.io/tags/puppeteer/</link>
-      <pubDate>Mon, 05 Feb 2018 22:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/puppeteer/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Testing</title>
-      <link>https://fdalvi.github.io/tags/testing/</link>
-      <pubDate>Mon, 05 Feb 2018 22:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/testing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Webapps</title>
-      <link>https://fdalvi.github.io/tags/webapps/</link>
-      <pubDate>Mon, 05 Feb 2018 22:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/tags/webapps/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Artillery.io</title>
-      <link>https://fdalvi.github.io/tags/artillery.io/</link>
-      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/tags/artillery.io/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Nginx</title>
-      <link>https://fdalvi.github.io/tags/nginx/</link>
-      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/tags/nginx/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Computer Vision</title>
-      <link>https://fdalvi.github.io/tags/computer-vision/</link>
-      <pubDate>Sat, 20 May 2017 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/tags/computer-vision/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>MacOS</title>
-      <link>https://fdalvi.github.io/tags/macos/</link>
-      <pubDate>Mon, 21 Jul 2014 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/tags/macos/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>WebRTC</title>
-      <link>https://fdalvi.github.io/tags/webrtc/</link>
-      <pubDate>Sat, 29 Jun 2013 00:00:00 +0000</pubDate>
-      <guid>https://fdalvi.github.io/tags/webrtc/</guid>
-      <description></description>
-    </item>
-  </channel>
+	<channel>
+		<title>Tags on Fahim Dalvi</title>
+		<link>https://fdalvi.github.io/tags/</link>
+		<description>Recent content in Tags on Fahim Dalvi</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 15 Mar 2026 19:00:00 +0300</lastBuildDate>
+		
+			<atom:link href="https://fdalvi.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Arabic NLP</title>
+				<link>https://fdalvi.github.io/tags/arabic-nlp/</link>
+				<pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>https://fdalvi.github.io/tags/arabic-nlp/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Large-Language-Model</title>
+				<link>https://fdalvi.github.io/tags/large-language-model/</link>
+				<pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>https://fdalvi.github.io/tags/large-language-model/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Qatar AI</title>
+				<link>https://fdalvi.github.io/tags/qatar-ai/</link>
+				<pubDate>Sun, 01 Feb 2026 00:00:00 +0000</pubDate>
+				<guid>https://fdalvi.github.io/tags/qatar-ai/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Arabic-Ai</title>
+				<link>https://fdalvi.github.io/tags/arabic-ai/</link>
+				<pubDate>Tue, 09 Dec 2025 13:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/arabic-ai/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Fanar</title>
+				<link>https://fdalvi.github.io/tags/fanar/</link>
+				<pubDate>Tue, 09 Dec 2025 13:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/fanar/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Qatar-Llm</title>
+				<link>https://fdalvi.github.io/tags/qatar-llm/</link>
+				<pubDate>Tue, 09 Dec 2025 13:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/qatar-llm/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Arabicnlp</title>
+				<link>https://fdalvi.github.io/tags/arabicnlp/</link>
+				<pubDate>Sat, 15 Nov 2025 13:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/arabicnlp/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Emnlp</title>
+				<link>https://fdalvi.github.io/tags/emnlp/</link>
+				<pubDate>Sat, 15 Nov 2025 13:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/emnlp/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Interpretability</title>
+				<link>https://fdalvi.github.io/tags/interpretability/</link>
+				<pubDate>Sat, 15 Nov 2025 13:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/interpretability/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Knowledge-Editing</title>
+				<link>https://fdalvi.github.io/tags/knowledge-editing/</link>
+				<pubDate>Sat, 15 Nov 2025 13:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/knowledge-editing/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Llm</title>
+				<link>https://fdalvi.github.io/tags/llm/</link>
+				<pubDate>Sat, 15 Nov 2025 13:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/llm/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Multilingual</title>
+				<link>https://fdalvi.github.io/tags/multilingual/</link>
+				<pubDate>Sat, 15 Nov 2025 13:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/multilingual/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Interspeech</title>
+				<link>https://fdalvi.github.io/tags/interspeech/</link>
+				<pubDate>Fri, 15 Aug 2025 13:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/interspeech/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Speech</title>
+				<link>https://fdalvi.github.io/tags/speech/</link>
+				<pubDate>Fri, 15 Aug 2025 13:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/speech/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Grommet</title>
+				<link>https://fdalvi.github.io/tags/grommet/</link>
+				<pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
+				<guid>https://fdalvi.github.io/tags/grommet/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>MongoDB</title>
+				<link>https://fdalvi.github.io/tags/mongodb/</link>
+				<pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
+				<guid>https://fdalvi.github.io/tags/mongodb/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>NodeJS</title>
+				<link>https://fdalvi.github.io/tags/nodejs/</link>
+				<pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
+				<guid>https://fdalvi.github.io/tags/nodejs/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Python</title>
+				<link>https://fdalvi.github.io/tags/python/</link>
+				<pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
+				<guid>https://fdalvi.github.io/tags/python/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>React</title>
+				<link>https://fdalvi.github.io/tags/react/</link>
+				<pubDate>Tue, 01 Jul 2025 00:00:00 +0000</pubDate>
+				<guid>https://fdalvi.github.io/tags/react/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Flask</title>
+				<link>https://fdalvi.github.io/tags/flask/</link>
+				<pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
+				<guid>https://fdalvi.github.io/tags/flask/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>PyTorch</title>
+				<link>https://fdalvi.github.io/tags/pytorch/</link>
+				<pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
+				<guid>https://fdalvi.github.io/tags/pytorch/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Transformers</title>
+				<link>https://fdalvi.github.io/tags/transformers/</link>
+				<pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
+				<guid>https://fdalvi.github.io/tags/transformers/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Coling</title>
+				<link>https://fdalvi.github.io/tags/coling/</link>
+				<pubDate>Mon, 20 Jan 2025 13:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/coling/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>3D Graphics</title>
+				<link>https://fdalvi.github.io/tags/3d-graphics/</link>
+				<pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+				<guid>https://fdalvi.github.io/tags/3d-graphics/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>C&#43;&#43;</title>
+				<link>https://fdalvi.github.io/tags/c&#43;&#43;/</link>
+				<pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+				<guid>https://fdalvi.github.io/tags/c&#43;&#43;/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Scripting</title>
+				<link>https://fdalvi.github.io/tags/scripting/</link>
+				<pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+				<guid>https://fdalvi.github.io/tags/scripting/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>XML</title>
+				<link>https://fdalvi.github.io/tags/xml/</link>
+				<pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+				<guid>https://fdalvi.github.io/tags/xml/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Natural-Language-Processing</title>
+				<link>https://fdalvi.github.io/tags/natural-language-processing/</link>
+				<pubDate>Tue, 12 Nov 2024 13:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/natural-language-processing/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Acl</title>
+				<link>https://fdalvi.github.io/tags/acl/</link>
+				<pubDate>Sun, 11 Aug 2024 13:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/acl/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Eacl</title>
+				<link>https://fdalvi.github.io/tags/eacl/</link>
+				<pubDate>Sun, 17 Mar 2024 13:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/eacl/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Benchmarking</title>
+				<link>https://fdalvi.github.io/tags/benchmarking/</link>
+				<pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+				<guid>https://fdalvi.github.io/tags/benchmarking/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Evaluation</title>
+				<link>https://fdalvi.github.io/tags/evaluation/</link>
+				<pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+				<guid>https://fdalvi.github.io/tags/evaluation/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Arabic-Language-Technologies</title>
+				<link>https://fdalvi.github.io/tags/arabic-language-technologies/</link>
+				<pubDate>Mon, 02 Oct 2023 13:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/arabic-language-technologies/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Awards</title>
+				<link>https://fdalvi.github.io/tags/awards/</link>
+				<pubDate>Mon, 02 Oct 2023 13:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/awards/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Docker Swarm</title>
+				<link>https://fdalvi.github.io/tags/docker-swarm/</link>
+				<pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+				<guid>https://fdalvi.github.io/tags/docker-swarm/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>TensorFlow</title>
+				<link>https://fdalvi.github.io/tags/tensorflow/</link>
+				<pubDate>Fri, 01 Jul 2022 00:00:00 +0000</pubDate>
+				<guid>https://fdalvi.github.io/tags/tensorflow/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Api</title>
+				<link>https://fdalvi.github.io/tags/api/</link>
+				<pubDate>Fri, 11 Jun 2021 12:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/api/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Async</title>
+				<link>https://fdalvi.github.io/tags/async/</link>
+				<pubDate>Fri, 11 Jun 2021 12:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/async/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Browser</title>
+				<link>https://fdalvi.github.io/tags/browser/</link>
+				<pubDate>Fri, 11 Jun 2021 12:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/browser/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>JavaScript</title>
+				<link>https://fdalvi.github.io/tags/javascript/</link>
+				<pubDate>Fri, 11 Jun 2021 12:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/javascript/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Paginations</title>
+				<link>https://fdalvi.github.io/tags/paginations/</link>
+				<pubDate>Fri, 11 Jun 2021 12:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/paginations/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Guide</title>
+				<link>https://fdalvi.github.io/tags/guide/</link>
+				<pubDate>Mon, 29 Mar 2021 12:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/guide/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Vaccine</title>
+				<link>https://fdalvi.github.io/tags/vaccine/</link>
+				<pubDate>Mon, 29 Mar 2021 12:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/vaccine/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Speech Recognition</title>
+				<link>https://fdalvi.github.io/tags/speech-recognition/</link>
+				<pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+				<guid>https://fdalvi.github.io/tags/speech-recognition/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Ffmpeg</title>
+				<link>https://fdalvi.github.io/tags/ffmpeg/</link>
+				<pubDate>Sat, 01 Sep 2018 12:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/ffmpeg/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Imagemagick</title>
+				<link>https://fdalvi.github.io/tags/imagemagick/</link>
+				<pubDate>Sat, 01 Sep 2018 12:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/imagemagick/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Screencaps</title>
+				<link>https://fdalvi.github.io/tags/screencaps/</link>
+				<pubDate>Sat, 01 Sep 2018 12:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/screencaps/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Video Processing</title>
+				<link>https://fdalvi.github.io/tags/video-processing/</link>
+				<pubDate>Sat, 01 Sep 2018 12:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/video-processing/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Archive</title>
+				<link>https://fdalvi.github.io/tags/archive/</link>
+				<pubDate>Mon, 20 Aug 2018 16:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/archive/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Backup</title>
+				<link>https://fdalvi.github.io/tags/backup/</link>
+				<pubDate>Mon, 20 Aug 2018 16:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/backup/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Chats</title>
+				<link>https://fdalvi.github.io/tags/chats/</link>
+				<pubDate>Mon, 20 Aug 2018 16:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/chats/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Groupme</title>
+				<link>https://fdalvi.github.io/tags/groupme/</link>
+				<pubDate>Mon, 20 Aug 2018 16:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/groupme/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Deep Learning</title>
+				<link>https://fdalvi.github.io/tags/deep-learning/</link>
+				<pubDate>Sun, 15 Apr 2018 19:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/deep-learning/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Neural-Networks</title>
+				<link>https://fdalvi.github.io/tags/neural-networks/</link>
+				<pubDate>Sun, 15 Apr 2018 19:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/neural-networks/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Teaching</title>
+				<link>https://fdalvi.github.io/tags/teaching/</link>
+				<pubDate>Sun, 15 Apr 2018 19:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/teaching/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Keras</title>
+				<link>https://fdalvi.github.io/tags/keras/</link>
+				<pubDate>Sat, 07 Apr 2018 20:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/keras/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Representations</title>
+				<link>https://fdalvi.github.io/tags/representations/</link>
+				<pubDate>Sat, 07 Apr 2018 20:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/representations/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Speech-Translation</title>
+				<link>https://fdalvi.github.io/tags/speech-translation/</link>
+				<pubDate>Wed, 21 Mar 2018 14:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/speech-translation/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Electron</title>
+				<link>https://fdalvi.github.io/tags/electron/</link>
+				<pubDate>Tue, 13 Feb 2018 00:00:00 +0000</pubDate>
+				<guid>https://fdalvi.github.io/tags/electron/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>TypeScript</title>
+				<link>https://fdalvi.github.io/tags/typescript/</link>
+				<pubDate>Tue, 13 Feb 2018 00:00:00 +0000</pubDate>
+				<guid>https://fdalvi.github.io/tags/typescript/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Chrome</title>
+				<link>https://fdalvi.github.io/tags/chrome/</link>
+				<pubDate>Mon, 05 Feb 2018 22:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/chrome/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Network</title>
+				<link>https://fdalvi.github.io/tags/network/</link>
+				<pubDate>Mon, 05 Feb 2018 22:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/network/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Puppeteer</title>
+				<link>https://fdalvi.github.io/tags/puppeteer/</link>
+				<pubDate>Mon, 05 Feb 2018 22:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/puppeteer/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Testing</title>
+				<link>https://fdalvi.github.io/tags/testing/</link>
+				<pubDate>Mon, 05 Feb 2018 22:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/testing/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Webapps</title>
+				<link>https://fdalvi.github.io/tags/webapps/</link>
+				<pubDate>Mon, 05 Feb 2018 22:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/tags/webapps/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Artillery.io</title>
+				<link>https://fdalvi.github.io/tags/artillery.io/</link>
+				<pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+				<guid>https://fdalvi.github.io/tags/artillery.io/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Nginx</title>
+				<link>https://fdalvi.github.io/tags/nginx/</link>
+				<pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+				<guid>https://fdalvi.github.io/tags/nginx/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>Computer Vision</title>
+				<link>https://fdalvi.github.io/tags/computer-vision/</link>
+				<pubDate>Sat, 20 May 2017 00:00:00 +0000</pubDate>
+				<guid>https://fdalvi.github.io/tags/computer-vision/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>MacOS</title>
+				<link>https://fdalvi.github.io/tags/macos/</link>
+				<pubDate>Mon, 21 Jul 2014 00:00:00 +0000</pubDate>
+				<guid>https://fdalvi.github.io/tags/macos/</guid>
+				<description></description>
+			</item>
+			<item>
+				<title>WebRTC</title>
+				<link>https://fdalvi.github.io/tags/webrtc/</link>
+				<pubDate>Sat, 29 Jun 2013 00:00:00 +0000</pubDate>
+				<guid>https://fdalvi.github.io/tags/webrtc/</guid>
+				<description></description>
+			</item>
+	</channel>
 </rss>

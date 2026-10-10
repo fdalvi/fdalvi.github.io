@@ -1,26 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Emnlp on Fahim Dalvi</title>
-    <link>https://fdalvi.github.io/tags/emnlp/</link>
-    <description>Recent content in Emnlp on Fahim Dalvi</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 15 Nov 2025 13:00:00 +0300</lastBuildDate>
-    <atom:link href="https://fdalvi.github.io/tags/emnlp/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Three Papers Accepted at EMNLP &amp; ArabicNLP 2025</title>
-      <link>https://fdalvi.github.io/blog/2025-11-15-two-papers-accepted-at-emnlp-2025/</link>
-      <pubDate>Sat, 15 Nov 2025 13:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/blog/2025-11-15-two-papers-accepted-at-emnlp-2025/</guid>
-      <description>&lt;p&gt;Thrilled to announce that we have two papers have been accepted at &lt;a href=&#34;https://2025.emnlp.org&#34;&gt;EMNLP 2025&lt;/a&gt;, and one in the co-located &lt;a href=&#34;https://arabicnlp2025.sigarab.org&#34;&gt;ArabicNLP 2025&lt;/a&gt; conference.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Beyond the Leaderboard: Understanding Performance Disparities in Large Language Models via Model Diffing&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Fine-tuning LLMs is the go-to way to improve them, but most evaluations only tell you &lt;em&gt;that&lt;/em&gt; a model got better, not &lt;em&gt;why&lt;/em&gt;. Our paper takes a different approach using &lt;strong&gt;model diffing&lt;/strong&gt; in order to compare the internal representations of two models. We specifically choose SimPO as a case study, and use crosscoders to find and categorize the latent concepts that differentiate the original Gemma-2-9b-it from its fine-tuned version. By looking at the mechanistic changes, we can attribute performance gains to concrete capabilities. This gives us a much richer, more actionable picture of what fine-tuning actually does.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Paper Accepted at EMNLP 2024</title>
-      <link>https://fdalvi.github.io/blog/2024-11-12-paper-accepted-at-emnlp-2024/</link>
-      <pubDate>Tue, 12 Nov 2024 13:00:00 +0300</pubDate>
-      <guid>https://fdalvi.github.io/blog/2024-11-12-paper-accepted-at-emnlp-2024/</guid>
-      <description>&lt;p&gt;Pleased to share that our paper, &lt;a href=&#34;https://aclanthology.org/2024.emnlp-main.692&#34;&gt;Latent Concept-based Explanation of NLP Models&lt;/a&gt;, has been accepted at EMNLP 2024!&lt;/p&gt;&#xA;&lt;p&gt;This paper continues our series of work on interpretability. We introduce a method called &lt;strong&gt;LACOAT&lt;/strong&gt; (Latent Concept Attribution) that connects predictions with latent concepts present in a model&amp;rsquo;s representation. Hence, we move beyond attribution to individual tokens in the input to a more holistic concept.&lt;/p&gt;&#xA;&lt;p&gt;The code is available on &lt;a href=&#34;https://github.com/xuemin-yu/eraser_movie_latentConcept&#34;&gt;GitHub&lt;/a&gt;. Congratulations to Xuemin, Nadir, Marzia, and Hassan on this work!&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Emnlp on Fahim Dalvi</title>
+		<link>https://fdalvi.github.io/tags/emnlp/</link>
+		<description>Recent content in Emnlp on Fahim Dalvi</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Sat, 15 Nov 2025 13:00:00 +0300</lastBuildDate>
+		
+			<atom:link href="https://fdalvi.github.io/tags/emnlp/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Three Papers Accepted at EMNLP &amp; ArabicNLP 2025</title>
+				<link>https://fdalvi.github.io/blog/2025-11-15-two-papers-accepted-at-emnlp-2025/</link>
+				<pubDate>Sat, 15 Nov 2025 13:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/blog/2025-11-15-two-papers-accepted-at-emnlp-2025/</guid>
+				<description>&lt;p&gt;Thrilled to announce that we have two papers have been accepted at &lt;a href=&#34;https://2025.emnlp.org&#34;&gt;EMNLP 2025&lt;/a&gt;, and one in the co-located &lt;a href=&#34;https://arabicnlp2025.sigarab.org&#34;&gt;ArabicNLP 2025&lt;/a&gt; conference.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Beyond the Leaderboard: Understanding Performance Disparities in Large Language Models via Model Diffing&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Fine-tuning LLMs is the go-to way to improve them, but most evaluations only tell you &lt;em&gt;that&lt;/em&gt; a model got better, not &lt;em&gt;why&lt;/em&gt;. Our paper takes a different approach using &lt;strong&gt;model diffing&lt;/strong&gt; in order to compare the internal representations of two models. We specifically choose SimPO as a case study, and use crosscoders to find and categorize the latent concepts that differentiate the original Gemma-2-9b-it from its fine-tuned version. By looking at the mechanistic changes, we can attribute performance gains to concrete capabilities. This gives us a much richer, more actionable picture of what fine-tuning actually does.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Paper Accepted at EMNLP 2024</title>
+				<link>https://fdalvi.github.io/blog/2024-11-12-paper-accepted-at-emnlp-2024/</link>
+				<pubDate>Tue, 12 Nov 2024 13:00:00 +0300</pubDate>
+				<guid>https://fdalvi.github.io/blog/2024-11-12-paper-accepted-at-emnlp-2024/</guid>
+				<description>&lt;p&gt;Pleased to share that our paper, &lt;a href=&#34;https://aclanthology.org/2024.emnlp-main.692&#34;&gt;Latent Concept-based Explanation of NLP Models&lt;/a&gt;, has been accepted at EMNLP 2024!&lt;/p&gt;&#xA;&lt;p&gt;This paper continues our series of work on interpretability. We introduce a method called &lt;strong&gt;LACOAT&lt;/strong&gt; (Latent Concept Attribution) that connects predictions with latent concepts present in a model&amp;rsquo;s representation. Hence, we move beyond attribution to individual tokens in the input to a more holistic concept.&lt;/p&gt;&#xA;&lt;p&gt;The code is available on &lt;a href=&#34;https://github.com/xuemin-yu/eraser_movie_latentConcept&#34;&gt;GitHub&lt;/a&gt;. Congratulations to Xuemin, Nadir, Marzia, and Hassan on this work!&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>
